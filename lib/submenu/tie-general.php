@@ -28,8 +28,13 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 			$this->menu_ext = $ext;
 		}
 
-		// called by the extended WpssoAdmin class
+		/**
+		 * Called by the extended WpssoAdmin class.
+		 */
 		protected function add_meta_boxes() {
+
+			$this->p->notice->inf( sprintf( __( 'After making changes, please do not forget to <a href="%s">regenerate all image thumbnails / sizes</a>.', 'wpsso-tune-image-editors' ),
+				'https://wordpress.org/plugins/search/regenerate+thumbnails/' ), false );
 
 			/**
 			 * Load the WP class libraries to avoid triggering a known bug in EWWW

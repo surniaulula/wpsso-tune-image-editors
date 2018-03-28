@@ -192,53 +192,59 @@ msgctxt "option comment"
 msgid "recommended value is 0 to 0.05"
 msgstr ""
 
-#: lib/submenu/tie-general.php:45
+#: lib/submenu/tie-general.php:36
+msgid ""
+"After making changes, please do not forget to <a href=\"%s\">regenerate all "
+"image thumbnails / sizes</a>."
+msgstr ""
+
+#: lib/submenu/tie-general.php:50
 msgctxt "metabox title"
 msgid "WordPress Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:49
+#: lib/submenu/tie-general.php:54
 msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:65
+#: lib/submenu/tie-general.php:70
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr ""
 
-#: lib/submenu/tie-general.php:85
+#: lib/submenu/tie-general.php:90
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:95
+#: lib/submenu/tie-general.php:100
 msgid "Used as editor #%s"
 msgstr ""
 
-#: lib/submenu/tie-general.php:97
+#: lib/submenu/tie-general.php:102
 msgid "Not used"
 msgstr ""
 
-#: lib/submenu/tie-general.php:101
+#: lib/submenu/tie-general.php:106
 msgid "Loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:103
+#: lib/submenu/tie-general.php:108
 msgid "Not loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:107
+#: lib/submenu/tie-general.php:112
 msgctxt "option label"
 msgid "WordPress ImageMagick Editor"
 msgstr ""
 
-#: lib/submenu/tie-general.php:111
+#: lib/submenu/tie-general.php:116
 msgctxt "option label"
 msgid "PHP ImageMagick Extension"
 msgstr ""
 
-#: lib/submenu/tie-general.php:115
+#: lib/submenu/tie-general.php:120
 msgctxt "option label"
 msgid "Adjust Image Types"
 msgstr ""
