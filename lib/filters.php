@@ -157,9 +157,9 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'tooltip-tie_wp_image_editors':
 
-					$text = __( 'By default, WordPress uses the ImageMagick editor first (provided the PHP "imagick" extension is loaded), and uses the GD editor as a fallback.', 'wpsso-tune-image-extension' ).' ';
+					$text = __( 'By default, WordPress uses the ImageMagick editor first (provided the PHP "imagick" extension is loaded), and uses the GD editor as a fallback.', 'wpsso-tune-image-editors' ).' ';
 					
-					$text .= __( 'This option allows you to select a different default editor list for WordPress.', 'wpsso-tune-image-extension' );
+					$text .= __( 'This option allows you to select a different default editor list for WordPress.', 'wpsso-tune-image-editors' );
 
 					break;
 
@@ -167,67 +167,67 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 					$short = $this->p->cf['plugin']['wpssotie']['short'];
 
-					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-extension' ), $short ).' ';
+					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-editors' ), $short ).' ';
 					
-					$text .= __( 'You may change the priority at which these adjustments are made to process images before / after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-extension' );
+					$text .= __( 'You may change the priority at which these adjustments are made to process images before / after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
 
 					break;
 
 				case 'tooltip-tie_wp_imagick_avail':
 
-					$text = sprintf( __( 'Status of the ImageMagick editor in the WordPress \'%s\' array.', 'wpsso-tune-image-extension' ), 'wp_image_editors' ).' ';
+					$text = sprintf( __( 'Status of the ImageMagick editor in the WordPress \'%s\' array.', 'wpsso-tune-image-editors' ), 'wp_image_editors' ).' ';
 
-					$text .= sprintf( __( 'By default, WordPress uses the ImageMagick editor first, as editor #1 in the \'%s\' array.', 'wpsso-tune-image-extension' ), 'wp_image_editors' );
+					$text .= sprintf( __( 'By default, WordPress uses the ImageMagick editor first, as editor #1 in the \'%s\' array.', 'wpsso-tune-image-editors' ), 'wp_image_editors' );
 
 					break;
 
 				case 'tooltip-tie_php_imagick_avail':
 
-					$text = __( 'Status of the PHP "imagick" extension.', 'wpsso-tune-image-extension' ).' ';
+					$text = __( 'Status of the PHP "imagick" extension.', 'wpsso-tune-image-editors' ).' ';
 					
-					$text .= __( 'If the WordPress ImageMagick editor is available, but the PHP "imagick" extension is not loaded, contact your hosting provider and ask to have the PHP "imagick" extension installed.', 'wpsso-tune-image-extension' );
+					$text .= __( 'If the WordPress ImageMagick editor is available, but the PHP "imagick" extension is not loaded, contact your hosting provider and ask to have the PHP "imagick" extension installed.', 'wpsso-tune-image-editors' );
 
 					break;
 
 				case 'tooltip-tie_imagick_adjust_enable':
 
-					$text = __( 'Enabled image adjustments only for these checked image types.', 'wpsso-tune-image-extension' );
+					$text = __( 'Enabled image adjustments only for these checked image types.', 'wpsso-tune-image-editors' );
 
 					break;
 
 				case 'tooltip-tie_imagick_compress_quality':
 
-					$text = __( 'The resized image compression quality as a positive integer value between 1 and 100. The recommended value is 90 to 95.', 'wpsso-tune-image-extension' );
+					$text = __( 'The resized image compression quality as a positive integer value between 1 and 100. The recommended value is 90 to 95.', 'wpsso-tune-image-editors' );
 
 					break;
 
 				case 'tooltip-tie_imagick_contrast_leveling':
 
-					$text = __( 'Contrast leveling further enhances the resized image by adjusting the pixel colors to span the entire range of available colors.', 'wpsso-tune-image-extension' );
+					$text = __( 'Contrast leveling further enhances the resized image by adjusting the pixel colors to span the entire range of available colors.', 'wpsso-tune-image-editors' );
 
 					break;
 
 				case 'tooltip-tie_imagick_sharpen_sigma':
 
-					$text = __( 'The sharpening sigma can be any floating point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening. A sigma value between 0.5 and 1.0 is recommended.', 'wpsso-tune-image-extension' );
+					$text = __( 'The sharpening sigma can be any floating point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening. A sigma value between 0.5 and 1.0 is recommended.', 'wpsso-tune-image-editors' );
 
 					break;
 
 				case 'tooltip-tie_imagick_sharpen_radius':
 
-					$text = __( 'The sharpening radius is an integer value, one to two times the sharpening sigma value. The best sharpening radius also depends on the resized image resolution, and for this reason, the default and commended value is 0 (auto).', 'wpsso-tune-image-extension' );
+					$text = __( 'The sharpening radius is an integer value, one to two times the sharpening sigma value. The best sharpening radius also depends on the resized image resolution, and for this reason, the default and commended value is 0 (auto).', 'wpsso-tune-image-editors' );
 
 					break;
 
 				case 'tooltip-tie_imagick_sharpen_amount':
 
-					$text = __( 'The amount (ie. strength) of the sharpening effect. A larger value increases the contrast of sharpened pixels. The default value is 1.0 and the recommended range is between 0.8 and 1.2.', 'wpsso-tune-image-extension' );
+					$text = __( 'The amount (ie. strength) of the sharpening effect. A larger value increases the contrast of sharpened pixels. The default value is 1.0 and the recommended range is between 0.8 and 1.2.', 'wpsso-tune-image-editors' );
 
 					break;
 
 				case 'tooltip-tie_imagick_sharpen_threshold':
 
-					$text = __( 'Minimum contrast required for a pixel to be considered an edge pixel for sharpening. Higher values (closer to 1) allow sharpening only in high-contrast regions, such as strong edges, while leaving low-contrast regions unaffected. Lower values (closer to 0) allow sharpening in relatively smoother regions of the image. A value of 0 may be desirable to retain fine skin details in portrait photographs.', 'wpsso-tune-image-extension' );
+					$text = __( 'Minimum contrast required for a pixel to be considered an edge pixel for sharpening. Higher values (closer to 1) allow sharpening only in high-contrast regions, such as strong edges, while leaving low-contrast regions unaffected. Lower values (closer to 0) allow sharpening in relatively smoother regions of the image. A value of 0 may be desirable to retain fine skin details in portrait photographs.', 'wpsso-tune-image-editors' );
 
 					break;
 			}

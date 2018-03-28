@@ -21,10 +21,10 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'short' => 'WPSSO TIE',		// Short plugin name.
 					'name' => 'WPSSO Tune Image Editors',
 					'desc' => 'WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.',
-					'slug' => 'wpsso-tune-image-extension',
-					'base' => 'wpsso-tune-image-extension/wpsso-tune-image-extension.php',
+					'slug' => 'wpsso-tune-image-editors',
+					'base' => 'wpsso-tune-image-editors/wpsso-tune-image-editors.php',
 					'update_auth' => 'tid',
-					'text_domain' => 'wpsso-tune-image-extension',
+					'text_domain' => 'wpsso-tune-image-editors',
 					'domain_path' => '/languages',
 					'req' => array(
 						'short' => 'WPSSO Core',
@@ -98,8 +98,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 			define( 'WPSSOTIE_VERSION', self::$cf['plugin']['wpssotie']['version'] );						
 			define( 'WPSSOTIE_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOTIE_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOTIE_PLUGINSLUG', self::$cf['plugin']['wpssotie']['slug'] );		// wpsso-tune-image-extension
-			define( 'WPSSOTIE_PLUGINBASE', self::$cf['plugin']['wpssotie']['base'] );		// wpsso-tune-image-extension/wpsso-tune-image-extension.php
+			define( 'WPSSOTIE_PLUGINSLUG', self::$cf['plugin']['wpssotie']['slug'] );		// wpsso-tune-image-editors
+			define( 'WPSSOTIE_PLUGINBASE', self::$cf['plugin']['wpssotie']['base'] );		// wpsso-tune-image-editors/wpsso-tune-image-editors.php
 			define( 'WPSSOTIE_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
 		}
 
