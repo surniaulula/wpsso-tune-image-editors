@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: WPSSO Tune WP Image Extensions
+ * Plugin Name: WPSSO Tune Image Editors
  * Plugin Slug: wpsso-tune-image-extension
  * Text Domain: wpsso-tune-image-extension
  * Domain Path: /languages
@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core add-on to provide tuning options for the WordPress and PHP image extensions.
+ * Description: WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
  * Tested Up To: 4.9.4

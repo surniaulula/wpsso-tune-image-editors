@@ -111,6 +111,10 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 					$this->form->get_th_html( _x( 'PHP ImageMagick Extension', 'option label', 'wpsso-tune-image-extension' ), '', 'tie_php_imagick_avail' ).
 					'<td><strong>'.$php_imagick_status.'</strong></td>';
 
+					$table_rows[] = ''.
+					$this->form->get_th_html( _x( 'Adjust Image Types', 'option label', 'wpsso-tune-image-extension' ), '', 'tie_imagick_adjust_enable' ).
+					'<td>'.$this->form->get_checkbox( 'tie_imagick_adjust_jpeg' ).' jpeg</td>';
+
 					break;
 			}
 

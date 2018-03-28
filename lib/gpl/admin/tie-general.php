@@ -41,10 +41,6 @@ if ( ! class_exists( 'WpssoTieGplAdminTieGeneral' ) && class_exists( 'WpssoAdmin
 
 			$table_rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssotie' ) ).'</td>';
 
-			$table_rows[] = ''.
-			$form->get_th_html( _x( 'Adjust Image Types', 'option label', 'wpsso-tune-image-extension' ), '', 'tie_imagick_adjust_enable' ).
-			'<td class="blank">'.$form->get_no_checkbox( 'tie_imagick_adjust_jpeg' ).' jpeg</td>';
-
 			$table_rows[] = $form->get_tr_hide( 'basic', 'tie_imagick_contrast_leveling' ).
 			$form->get_th_html( _x( 'Contrast Leveling', 'option label', 'wpsso-tune-image-extension' ), '', 'tie_imagick_contrast_leveling' ).
 			'<td class="blank">'.$form->get_no_checkbox( 'tie_imagick_contrast_leveling' ).'</td>';

@@ -1,8 +1,8 @@
-# Copyright (C) 2018 WPSSO Tune WP Image Extensions
-# This file is distributed under the same license as the WPSSO Tune WP Image Extensions package.
+# Copyright (C) 2018 WPSSO Tune Image Editors
+# This file is distributed under the same license as the WPSSO Tune Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Extensions 1.0.0\n"
+"Project-Id-Version: WPSSO Tune Image Editors 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "extension\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -24,25 +24,25 @@ msgid "GD Only"
 msgstr ""
 
 #: lib/config-gettext-extract.php:5
-msgctxt "option value"
-msgid "ImageMagick and GD"
+msgctxt "lib file description"
+msgid "Image Editors"
 msgstr ""
 
 #: lib/config-gettext-extract.php:6
 msgctxt "option value"
-msgid "ImageMagick Only"
+msgid "ImageMagick and GD"
 msgstr ""
 
 #: lib/config-gettext-extract.php:7
-msgctxt "lib file description"
-msgid "Tune WP Image Extensions"
+msgctxt "option value"
+msgid "ImageMagick Only"
 msgstr ""
 
 #: lib/config-gettext-extract.php:8
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on to provide tuning options for the WordPress and PHP image "
-"extensions."
+"WPSSO Core add-on to provide tuning options for the WordPress image editors "
+"and PHP image extensions."
 msgstr ""
 
 #: lib/filters.php:160
@@ -144,55 +144,50 @@ msgstr ""
 
 #: lib/gpl/admin/tie-general.php:45 lib/pro/admin/tie-general.php:52
 msgctxt "option label"
-msgid "Adjust Image Types"
+msgid "Contrast Leveling"
 msgstr ""
 
 #: lib/gpl/admin/tie-general.php:49 lib/pro/admin/tie-general.php:56
 msgctxt "option label"
-msgid "Contrast Leveling"
+msgid "Compression Quality"
 msgstr ""
 
 #: lib/gpl/admin/tie-general.php:53 lib/pro/admin/tie-general.php:60
 msgctxt "option label"
-msgid "Compression Quality"
-msgstr ""
-
-#: lib/gpl/admin/tie-general.php:57 lib/pro/admin/tie-general.php:64
-msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:59 lib/pro/admin/tie-general.php:66
+#: lib/gpl/admin/tie-general.php:55 lib/pro/admin/tie-general.php:62
 msgctxt "option comment"
 msgid "recommended value is 0.5 to 1.0"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:62 lib/pro/admin/tie-general.php:69
+#: lib/gpl/admin/tie-general.php:58 lib/pro/admin/tie-general.php:65
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:64 lib/pro/admin/tie-general.php:71
+#: lib/gpl/admin/tie-general.php:60 lib/pro/admin/tie-general.php:67
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:67 lib/pro/admin/tie-general.php:74
+#: lib/gpl/admin/tie-general.php:63 lib/pro/admin/tie-general.php:70
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:69 lib/pro/admin/tie-general.php:76
+#: lib/gpl/admin/tie-general.php:65 lib/pro/admin/tie-general.php:72
 msgctxt "option comment"
 msgid "recommended value is 0.8 to 1.2"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:72 lib/pro/admin/tie-general.php:79
+#: lib/gpl/admin/tie-general.php:68 lib/pro/admin/tie-general.php:75
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:74 lib/pro/admin/tie-general.php:81
+#: lib/gpl/admin/tie-general.php:70 lib/pro/admin/tie-general.php:77
 msgctxt "option comment"
 msgid "recommended value is 0 to 0.05"
 msgstr ""
@@ -243,6 +238,11 @@ msgctxt "option label"
 msgid "PHP ImageMagick Extension"
 msgstr ""
 
+#: lib/submenu/tie-general.php:115
+msgctxt "option label"
+msgid "Adjust Image Types"
+msgstr ""
+
 #: wpsso-tune-image-extension.php:95
 msgid ""
 "%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
@@ -267,7 +267,7 @@ msgid "%s warning:"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Tune WP Image Extensions"
+msgid "WPSSO Tune Image Editors"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
@@ -276,8 +276,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on to provide tuning options for the WordPress and PHP image "
-"extensions."
+"WPSSO Core add-on to provide tuning options for the WordPress image editors "
+"and PHP image extensions."
 msgstr ""
 
 #. Author of the plugin/theme

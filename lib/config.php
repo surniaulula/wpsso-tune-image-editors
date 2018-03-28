@@ -19,8 +19,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'version' => '1.0.0',		// Plugin version.
 					'opt_version' => '1',		// Increment when changing default option values.
 					'short' => 'WPSSO TIE',		// Short plugin name.
-					'name' => 'WPSSO Tune WP Image Extensions',
-					'desc' => 'WPSSO Core add-on to provide tuning options for the WordPress and PHP image extensions.',
+					'name' => 'WPSSO Tune Image Editors',
+					'desc' => 'WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.',
 					'slug' => 'wpsso-tune-image-extension',
 					'base' => 'wpsso-tune-image-extension/wpsso-tune-image-extension.php',
 					'update_auth' => 'tid',
@@ -39,16 +39,16 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					),
 					'lib' => array(
 						'submenu' => array(	// Note that submenu elements must have unique keys.
-							'tie-general' => 'Tune WP Image Extensions',
+							'tie-general' => 'Image Editors',
 						),
 						'gpl' => array(
 							'admin' => array(
-								'tie-general' => 'Tune WP Image Extensions',
+								'tie-general' => 'Image Editors',
 							),
 						),
 						'pro' => array(
 							'admin' => array(
-								'tie-general' => 'Tune WP Image Extensions',
+								'tie-general' => 'Image Editors',
 							),
 						),
 					),
