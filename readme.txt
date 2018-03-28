@@ -1,5 +1,5 @@
-=== WPSSO Tune WP Image Extensions ===
-Plugin Name: WPSSO Tune WP Image Extensions
+=== WPSSO Tune Image Editors ===
+Plugin Name: WPSSO Tune Image Editors
 Plugin Slug: wpsso-tune-image-extension
 Text Domain: wpsso-tune-image-extension
 Domain Path: /languages
@@ -13,7 +13,7 @@ Requires At Least: 3.8
 Tested Up To: 4.9.4
 Stable Tag: 1.0.0
 
-WPSSO Core add-on to provide tuning options for the WordPress and PHP image extensions.
+WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.
 
 == Description ==
 
@@ -21,11 +21,11 @@ WPSSO Core add-on to provide tuning options for the WordPress and PHP image exte
 
 **WPSSO Core add-on to provide tuning options for the WordPress and PHP image extensions.**
 
-WPSSO Tune WP Image Extensions is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
+WPSSO Tune Image Editors is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Tune WP Image Extensions (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
+WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, etc.
 
 == Installation ==
 
