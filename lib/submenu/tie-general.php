@@ -33,8 +33,10 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 		 */
 		protected function add_meta_boxes() {
 
-			$this->p->notice->inf( sprintf( __( 'After making changes, please do not forget to <a href="%s">regenerate all image thumbnails / sizes</a>.', 'wpsso-tune-image-editors' ),
-				'https://wordpress.org/plugins/search/regenerate+thumbnails/' ), false );
+			$regen_url = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
+			$dismiss_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
+
+			$this->p->notice->inf( sprintf( __( 'When activating the add-on or changing these options, please do not forget to <a href="%s">regenerate all image thumbnails / sizes</a> to see the results.', 'wpsso-tune-image-editors' ), $regen_url ).' ;-)', true, $dismiss_key, true );	// do not save in the user options table
 
 			/**
 			 * Load the WP class libraries to avoid triggering a known bug in EWWW
