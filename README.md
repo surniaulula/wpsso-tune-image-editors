@@ -13,9 +13,9 @@
 
 <h2>Description</h2>
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-extension/assets/icon-256x256.png"></p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png"></p>
 
-<p><strong>WPSSO Core add-on to provide tuning options for the WordPress and PHP image extensions.</strong></p>
+<p><strong>WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.</strong></p>
 
 <p>WPSSO Tune Image Editors is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
 
@@ -29,8 +29,8 @@
 <h3>Install and Uninstall</h3>
 
 <ul>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-extension/installation/install-the-plugin/">Install the WPSSO TIE Add-on</a></li>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-extension/installation/uninstall-the-plugin/">Uninstall the WPSSO TIE Add-on</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/">Install the WPSSO TIE Add-on</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/">Uninstall the WPSSO TIE Add-on</a></li>
 </ul>
 
 

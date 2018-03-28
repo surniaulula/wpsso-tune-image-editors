@@ -1,11 +1,11 @@
 === WPSSO Tune Image Editors ===
 Plugin Name: WPSSO Tune Image Editors
-Plugin Slug: wpsso-tune-image-extension
-Text Domain: wpsso-tune-image-extension
+Plugin Slug: wpsso-tune-image-editors
+Text Domain: wpsso-tune-image-editors
 Domain Path: /languages
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl.txt
-Assets URI: https://surniaulula.github.io/wpsso-tune-image-extension/assets/
+Assets URI: https://surniaulula.github.io/wpsso-tune-image-editors/assets/
 Tags: image, sharpen, resize, imagemagick, imagick
 Contributors: jsmoriss
 Requires PHP: 5.4
@@ -17,9 +17,9 @@ WPSSO Core add-on to provide tuning options for the WordPress image editors and 
 
 == Description ==
 
-<img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-extension/assets/icon-256x256.png">
+<img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png">
 
-**WPSSO Core add-on to provide tuning options for the WordPress and PHP image extensions.**
+**WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.**
 
 WPSSO Tune Image Editors is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
@@ -31,8 +31,8 @@ WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin 
 
 <h3>Install and Uninstall</h3>
 
-* [Install the WPSSO TIE Add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-extension/installation/install-the-plugin/)
-* [Uninstall the WPSSO TIE Add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-extension/installation/uninstall-the-plugin/)
+* [Install the WPSSO TIE Add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/)
+* [Uninstall the WPSSO TIE Add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/)
 
 == Frequently Asked Questions ==
 
@@ -63,8 +63,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Free / Standard Version Repositories</h3>
 
-* [GitHub](https://surniaulula.github.io/wpsso-tune-image-extension/)
-* [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-tune-image-extension/)
+* [GitHub](https://surniaulula.github.io/wpsso-tune-image-editors/)
+* [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-tune-image-editors/)
 
 <h3>Changelog / Release Notes</h3>
 
