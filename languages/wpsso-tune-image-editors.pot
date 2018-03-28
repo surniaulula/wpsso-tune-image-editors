@@ -24,18 +24,18 @@ msgid "GD Only"
 msgstr ""
 
 #: lib/config-gettext-extract.php:5
-msgctxt "lib file description"
-msgid "Image Editors"
-msgstr ""
-
-#: lib/config-gettext-extract.php:6
 msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
 
-#: lib/config-gettext-extract.php:7
+#: lib/config-gettext-extract.php:6
 msgctxt "option value"
 msgid "ImageMagick Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:7
+msgctxt "lib file description"
+msgid "WP Image Editors"
 msgstr ""
 
 #: lib/config-gettext-extract.php:8
