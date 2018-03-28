@@ -1,8 +1,8 @@
-# Copyright (C) 2018 WPSSO Tune Image Editors
-# This file is distributed under the same license as the WPSSO Tune Image Editors package.
+# Copyright (C) 2018 WPSSO Tune WP Image Editors
+# This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 1.0.0\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -195,8 +195,8 @@ msgstr ""
 #: lib/submenu/tie-general.php:39
 msgid ""
 "When activating the add-on or changing these options, please do not forget "
-"to <a href=\"%s\">regenerate all image thumbnails / sizes</a> to see the "
-"results."
+"to <a href=\"%s\">regenerate all image thumbnails / image sizes</a> to see "
+"the results."
 msgstr ""
 
 #: lib/submenu/tie-general.php:52
@@ -247,7 +247,7 @@ msgstr ""
 
 #: lib/submenu/tie-general.php:122
 msgctxt "option label"
-msgid "Adjust Image Types"
+msgid "Adjust Resized Image Types"
 msgstr ""
 
 #: wpsso-tune-image-editors.php:95
@@ -274,7 +274,7 @@ msgid "%s warning:"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Tune Image Editors"
+msgid "WPSSO Tune WP Image Editors"
 msgstr ""
 
 #. Plugin URI of the plugin/theme

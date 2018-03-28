@@ -36,7 +36,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 			$regen_url = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
 			$dismiss_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
 
-			$this->p->notice->inf( sprintf( __( 'When activating the add-on or changing these options, please do not forget to <a href="%s">regenerate all image thumbnails / sizes</a> to see the results.', 'wpsso-tune-image-editors' ), $regen_url ).' ;-)', true, $dismiss_key, true );	// do not save in the user options table
+			$this->p->notice->inf( sprintf( __( 'When activating the add-on or changing these options, please do not forget to <a href="%s">regenerate all image thumbnails / image sizes</a> to see the results.', 'wpsso-tune-image-editors' ), $regen_url ).' ;-)', true, $dismiss_key, true );	// do not save in the user options table
 
 			/**
 			 * Load the WP class libraries to avoid triggering a known bug in EWWW
@@ -119,7 +119,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 					'<td><strong>'.$php_imagick_status.'</strong></td>';
 
 					$table_rows[] = ''.
-					$this->form->get_th_html( _x( 'Adjust Image Types', 'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_adjust_enable' ).
+					$this->form->get_th_html( _x( 'Adjust Resized Image Types', 'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_adjust_enable' ).
 					'<td>'.$this->form->get_checkbox( 'tie_imagick_adjust_jpeg' ).' jpeg</td>';
 
 					break;
