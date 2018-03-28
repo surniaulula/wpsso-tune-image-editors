@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: WPSSO Tune Image Editors
- * Plugin Slug: wpsso-tune-image-extension
- * Text Domain: wpsso-tune-image-extension
+ * Plugin Slug: wpsso-tune-image-editors
+ * Text Domain: wpsso-tune-image-editors
  * Domain Path: /languages
- * Plugin URI: https://wpsso.com/extend/plugins/wpsso-tune-image-extension/
- * Assets URI: https://surniaulula.github.io/wpsso-tune-image-extension/assets/
+ * Plugin URI: https://wpsso.com/extend/plugins/wpsso-tune-image-editors/
+ * Assets URI: https://surniaulula.github.io/wpsso-tune-image-editors/assets/
  * Author: JS Morisset
  * Author URI: https://wpsso.com/
  * License: GPLv3
@@ -92,9 +92,9 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 
 			$info = WpssoTieConfig::$cf['plugin']['wpssotie'];
 
-			$die_msg = __( '%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.', 'wpsso-tune-image-extension' );
+			$die_msg = __( '%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s.', 'wpsso-tune-image-editors' );
 
-			$error_msg = __( 'The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href="%4$s">deactivate the %5$s add-on</a>.', 'wpsso-tune-image-extension' );
+			$error_msg = __( 'The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href="%4$s">deactivate the %5$s add-on</a>.', 'wpsso-tune-image-editors' );
 
 			if ( true === $deactivate ) {
 
@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 		}
 
 		public static function wpsso_init_textdomain() {
-			load_plugin_textdomain( 'wpsso-tune-image-extension', false, 'wpsso-tune-image-extension/languages/' );
+			load_plugin_textdomain( 'wpsso-tune-image-editors', false, 'wpsso-tune-image-editors/languages/' );
 		}
 
 		/**
@@ -199,7 +199,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			$info = WpssoTieConfig::$cf['plugin']['wpssotie'];
 			$have_version = $this->p->cf['plugin']['wpsso']['version'];
 			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
-				'wpsso-tune-image-extension' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
+				'wpsso-tune-image-editors' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
 
 			if ( is_admin() ) {
 				$this->p->notice->err( $error_msg );
@@ -210,7 +210,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 
 			if ( method_exists( 'SucomUtil', 'safe_trigger_error' ) ) {
 				// translators: %s is the short plugin name
-				$error_prefix = sprintf( __( '%s warning:', 'wpsso-tune-image-extension' ), $info['short'] );
+				$error_prefix = sprintf( __( '%s warning:', 'wpsso-tune-image-editors' ), $info['short'] );
 				SucomUtil::safe_trigger_error( $error_prefix.' '.rtrim( $error_msg, '.' ), E_USER_WARNING );
 			}
 		}
