@@ -31,7 +31,7 @@ WPSSO Tune Image Editors is *incredibly fast* and coded for performance &mdash; 
 
 WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, and more.
 
-The Free add-on plugin works with either the Free or Pro version of WPSSO Core. The [WPSSO TIE Pro add-on](https://wpsso.com/extend/plugins/wpsso-tune-image-editors/?utm_source=wpssotie-readme) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssotie-readme).
+The Free add-on works with either the Free or Pro version of WPSSO Core. The [WPSSO TIE Pro add-on](https://wpsso.com/extend/plugins/wpsso-tune-image-editors/?utm_source=wpssotie-readme) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssotie-readme).
 
 <h3>Quick List of Features</h3>
 
