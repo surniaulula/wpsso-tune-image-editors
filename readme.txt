@@ -46,7 +46,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * ImageMagick Only
 * ImageMagick and GD (default)
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally adjust resized jpeg images using ImageMagick:
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally adjust resized images (aka thumbnails) using ImageMagick:
 
 * Enable or disable image adjustments to resized images.
 * Sets a better compression quality of 92% (instead of the default 82%).
@@ -66,7 +66,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 * Adjustment the filter hook priority.
 * Enable or disable contrast leveling.
 * Increase or decrease the compression quality.
-* Adjust image sharpening values (sigma, radius, amount, threshold).
+* Adjust resized image sharpening values (sigma, radius, amount, threshold).
 
 <h3>Extends the WPSSO Core Plugin</h3>
 
