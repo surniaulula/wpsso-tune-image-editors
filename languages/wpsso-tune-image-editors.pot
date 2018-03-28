@@ -102,7 +102,7 @@ msgstr ""
 
 #: lib/filters.php:206
 msgid ""
-"Contrast leveling further enhances the resized image by adjusting the pixel "
+"Contrast leveling further enhances resized images by adjusting the pixel "
 "colors to span the entire range of available colors."
 msgstr ""
 

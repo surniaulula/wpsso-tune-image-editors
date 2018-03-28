@@ -203,7 +203,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'tooltip-tie_imagick_contrast_leveling':
 
-					$text = __( 'Contrast leveling further enhances the resized image by adjusting the pixel colors to span the entire range of available colors.', 'wpsso-tune-image-editors' );
+					$text = __( 'Contrast leveling further enhances resized images by adjusting the pixel colors to span the entire range of available colors.', 'wpsso-tune-image-editors' );
 
 					break;
 
