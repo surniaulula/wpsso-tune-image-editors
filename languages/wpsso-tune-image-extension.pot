@@ -1,0 +1,289 @@
+# Copyright (C) 2018 WPSSO Tune WP Image Extensions
+# This file is distributed under the same license as the WPSSO Tune WP Image Extensions package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPSSO Tune WP Image Extensions 1.3.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
+"extension\n"
+"POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: lib/config-gettext-extract.php:3
+msgctxt "option value"
+msgid "GD and ImageMagick"
+msgstr ""
+
+#: lib/config-gettext-extract.php:4
+msgctxt "option value"
+msgid "GD Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:5
+msgctxt "option value"
+msgid "ImageMagick and GD"
+msgstr ""
+
+#: lib/config-gettext-extract.php:6
+msgctxt "option value"
+msgid "ImageMagick Only"
+msgstr ""
+
+#: lib/config-gettext-extract.php:7
+msgctxt "lib file description"
+msgid "Tune WP Image Extensions"
+msgstr ""
+
+#: lib/config-gettext-extract.php:8
+msgctxt "plugin description"
+msgid ""
+"WPSSO Core add-on to provide tuning options for the WordPress and PHP image "
+"extensions."
+msgstr ""
+
+#: lib/filters.php:160
+msgid ""
+"By default, WordPress uses the ImageMagick editor first (provided the PHP "
+"\"imagick\" extension is loaded), and uses the GD editor as a fallback."
+msgstr ""
+
+#: lib/filters.php:162
+msgid ""
+"This option allows you to select a different default editor list for "
+"WordPress."
+msgstr ""
+
+#: lib/filters.php:170
+msgid ""
+"%s hooks the WordPress 'image_make_intermediate_size' filter to adjust and "
+"sharpen images."
+msgstr ""
+
+#: lib/filters.php:172
+msgid ""
+"You may change the priority at which these adjustments are made to process "
+"images before / after other image processing plugins or custom filter hooks."
+msgstr ""
+
+#: lib/filters.php:178
+msgid "Status of the ImageMagick editor in the WordPress '%s' array."
+msgstr ""
+
+#: lib/filters.php:180
+msgid ""
+"By default, WordPress uses the ImageMagick editor first, as editor #1 in the "
+"'%s' array."
+msgstr ""
+
+#: lib/filters.php:186
+msgid "Status of the PHP \"imagick\" extension."
+msgstr ""
+
+#: lib/filters.php:188
+msgid ""
+"If the WordPress ImageMagick editor is available, but the PHP \"imagick\" "
+"extension is not loaded, contact your hosting provider and ask to have the "
+"PHP \"imagick\" extension installed."
+msgstr ""
+
+#: lib/filters.php:194
+msgid "Enabled image adjustments only for these checked image types."
+msgstr ""
+
+#: lib/filters.php:200
+msgid ""
+"The resized image compression quality as a positive integer value between 1 "
+"and 100. The recommended value is 90 to 95."
+msgstr ""
+
+#: lib/filters.php:206
+msgid ""
+"Contrast leveling further enhances the resized image by adjusting the pixel "
+"colors to span the entire range of available colors."
+msgstr ""
+
+#: lib/filters.php:212
+msgid ""
+"The sharpening sigma can be any floating point value, from 0.1 for almost no "
+"sharpening, to 3 or more for severe sharpening. A sigma value between 0.5 "
+"and 1.0 is recommended."
+msgstr ""
+
+#: lib/filters.php:218
+msgid ""
+"The sharpening radius is an integer value, one to two times the sharpening "
+"sigma value. The best sharpening radius also depends on the resized image "
+"resolution, and for this reason, the default and commended value is 0 (auto)."
+msgstr ""
+
+#: lib/filters.php:224
+msgid ""
+"The amount (ie. strength) of the sharpening effect. A larger value increases "
+"the contrast of sharpened pixels. The default value is 1.0 and the "
+"recommended range is between 0.8 and 1.2."
+msgstr ""
+
+#: lib/filters.php:230
+msgid ""
+"Minimum contrast required for a pixel to be considered an edge pixel for "
+"sharpening. Higher values (closer to 1) allow sharpening only in high-"
+"contrast regions, such as strong edges, while leaving low-contrast regions "
+"unaffected. Lower values (closer to 0) allow sharpening in relatively "
+"smoother regions of the image. A value of 0 may be desirable to retain fine "
+"skin details in portrait photographs."
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:34 lib/pro/admin/tie-general.php:43
+msgctxt "option label"
+msgid "Adjustment Filter Priority"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:45 lib/pro/admin/tie-general.php:52
+msgctxt "option label"
+msgid "Adjust Image Types"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:49 lib/pro/admin/tie-general.php:56
+msgctxt "option label"
+msgid "Contrast Leveling"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:53 lib/pro/admin/tie-general.php:60
+msgctxt "option label"
+msgid "Compression Quality"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:57 lib/pro/admin/tie-general.php:64
+msgctxt "option label"
+msgid "Sharpening Sigma"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:59 lib/pro/admin/tie-general.php:66
+msgctxt "option comment"
+msgid "recommended value is 0.5 to 1.0"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:62 lib/pro/admin/tie-general.php:69
+msgctxt "option label"
+msgid "Sharpening Radius"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:64 lib/pro/admin/tie-general.php:71
+msgctxt "option comment"
+msgid "recommended value is 0 (auto)"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:67 lib/pro/admin/tie-general.php:74
+msgctxt "option label"
+msgid "Sharpening Amount"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:69 lib/pro/admin/tie-general.php:76
+msgctxt "option comment"
+msgid "recommended value is 0.8 to 1.2"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:72 lib/pro/admin/tie-general.php:79
+msgctxt "option label"
+msgid "Sharpening Threshold"
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:74 lib/pro/admin/tie-general.php:81
+msgctxt "option comment"
+msgid "recommended value is 0 to 0.05"
+msgstr ""
+
+#: lib/submenu/tie-general.php:45
+msgctxt "metabox title"
+msgid "WordPress Settings"
+msgstr ""
+
+#: lib/submenu/tie-general.php:49
+msgctxt "metabox title"
+msgid "PHP Extension Settings"
+msgstr ""
+
+#: lib/submenu/tie-general.php:65
+msgctxt "metabox tab"
+msgid "ImageMagick"
+msgstr ""
+
+#: lib/submenu/tie-general.php:85
+msgctxt "option label"
+msgid "Default WordPress Image Editor(s)"
+msgstr ""
+
+#: lib/submenu/tie-general.php:95
+msgid "Used as editor #%s"
+msgstr ""
+
+#: lib/submenu/tie-general.php:97
+msgid "Not used"
+msgstr ""
+
+#: lib/submenu/tie-general.php:101
+msgid "Loaded"
+msgstr ""
+
+#: lib/submenu/tie-general.php:103
+msgid "Not loaded"
+msgstr ""
+
+#: lib/submenu/tie-general.php:107
+msgctxt "option label"
+msgid "WordPress ImageMagick Editor"
+msgstr ""
+
+#: lib/submenu/tie-general.php:111
+msgctxt "option label"
+msgid "PHP ImageMagick Extension"
+msgstr ""
+
+#: wpsso-tune-image-extension.php:95
+msgid ""
+"%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
+"the %3$s plugin before activating %4$s."
+msgstr ""
+
+#: wpsso-tune-image-extension.php:97
+msgid ""
+"The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
+"%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
+msgstr ""
+
+#: wpsso-tune-image-extension.php:201
+msgid ""
+"The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
+"%5$s is currently installed)."
+msgstr ""
+
+#. translators: %s is the short plugin name
+#: wpsso-tune-image-extension.php:213
+msgid "%s warning:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WPSSO Tune WP Image Extensions"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpsso.com/extend/plugins/wpsso-tune-image-extension/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"WPSSO Core add-on to provide tuning options for the WordPress and PHP image "
+"extensions."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "JS Morisset"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://wpsso.com/"
+msgstr ""
