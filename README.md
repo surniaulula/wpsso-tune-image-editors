@@ -1,7 +1,7 @@
-<h1>WPSSO Tune Image Editors</h1>
+<h1>WPSSO Tune WP Image Editors</h1>
 
 <table>
-<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune Image Editors</td></tr>
+<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>1.0.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
@@ -19,13 +19,13 @@
 
 <p>Get even better looking shares on social sites by improving your resized images!</p>
 
-<p>The WPSSO Tune Image Editors add-on improves all JPEG images by defining a better compression quality, add contrast leveling to use the entire range of pixel colors, and applies much needed sharpening to resized images.</p>
+<p>The WPSSO Tune WP Image Editors add-on improves all JPEG images by defining a better compression quality, add contrast leveling to use the entire range of pixel colors, and applies much needed sharpening to resized images.</p>
 
-<p>WPSSO Tune Image Editors is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
+<p>WPSSO Tune WP Image Editors is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, and more.</p>
+<p>WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, and more.</p>
 
 <p>The Free add-on works with either the Free or Pro version of WPSSO Core. The <a href="https://wpsso.com/extend/plugins/wpsso-tune-image-editors/?utm_source=wpssotie-readme">WPSSO TIE Pro add-on</a> uses many WPSSO Core Pro features and requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssotie-readme">WPSSO Core Pro plugin</a>.</p>
 
@@ -72,11 +72,11 @@
 
 <h3>Extends the WPSSO Core Plugin</h3>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO Tune Image Editors (aka WPSSO TIE) Free add-on works with either the Free or Pro version of WPSSO Core.</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO Tune WP Image Editors (aka WPSSO TIE) Free add-on works with either the Free or Pro version of WPSSO Core.</p>
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-am/?utm_source=wpssoam-readme">WPSSO TIE Pro add-on</a> uses many WPSSO Core Pro features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssoam-readme">WPSSO Core Pro plugin</a>.</p>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-am/?utm_source=wpssoam-readme">Purchase the WPSSO Tune Image Editors Pro add-on here</a> (all plugin purchases include a <em>No Risk 30 Day Refund Policy</em>).</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-am/?utm_source=wpssoam-readme">Purchase the WPSSO Tune WP Image Editors Pro add-on here</a> (all plugin purchases include a <em>No Risk 30 Day Refund Policy</em>).</p>
 
 
 <h2>Installation</h2>

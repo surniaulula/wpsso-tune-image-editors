@@ -1,5 +1,5 @@
-=== WPSSO Tune Image Editors ===
-Plugin Name: WPSSO Tune Image Editors
+=== WPSSO Tune WP Image Editors ===
+Plugin Name: WPSSO Tune WP Image Editors
 Plugin Slug: wpsso-tune-image-editors
 Text Domain: wpsso-tune-image-editors
 Domain Path: /languages
@@ -23,13 +23,13 @@ WPSSO Core add-on to provide tuning options for the WordPress image editors and 
 
 Get even better looking shares on social sites by improving your resized images!
 
-The WPSSO Tune Image Editors add-on improves all JPEG images by defining a better compression quality, add contrast leveling to use the entire range of pixel colors, and applies much needed sharpening to resized images.
+The WPSSO Tune WP Image Editors add-on improves all JPEG images by defining a better compression quality, add contrast leveling to use the entire range of pixel colors, and applies much needed sharpening to resized images.
 
-WPSSO Tune Image Editors is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
+WPSSO Tune WP Image Editors is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, and more.
+WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, and more.
 
 The Free add-on works with either the Free or Pro version of WPSSO Core. The [WPSSO TIE Pro add-on](https://wpsso.com/extend/plugins/wpsso-tune-image-editors/?utm_source=wpssotie-readme) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssotie-readme).
 
@@ -70,11 +70,11 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 
 <h3>Extends the WPSSO Core Plugin</h3>
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO Tune Image Editors (aka WPSSO TIE) Free add-on works with either the Free or Pro version of WPSSO Core.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO Tune WP Image Editors (aka WPSSO TIE) Free add-on works with either the Free or Pro version of WPSSO Core.
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-am/?utm_source=wpssoam-readme">WPSSO TIE Pro add-on</a> uses many WPSSO Core Pro features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssoam-readme">WPSSO Core Pro plugin</a>.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-am/?utm_source=wpssoam-readme">Purchase the WPSSO Tune Image Editors Pro add-on here</a> (all plugin purchases include a <em>No Risk 30 Day Refund Policy</em>).
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-am/?utm_source=wpssoam-readme">Purchase the WPSSO Tune WP Image Editors Pro add-on here</a> (all plugin purchases include a <em>No Risk 30 Day Refund Policy</em>).
 
 == Installation ==
 
