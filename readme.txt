@@ -61,12 +61,20 @@ The Free add-on plugin works with either the Free or Pro version of WPSSO Core. 
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally fine-tune the filter priority and adjustment options:
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally fine-tune the filter priority and image adjustment options:
 
 * Adjustment the filter hook priority.
 * Enable or disable contrast leveling.
 * Increase or decrease the compression quality.
 * Adjust image sharpening values (sigma, radius, amount, threshold).
+
+<h3>Extends the WPSSO Core Plugin</h3>
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The WPSSO Tune Image Editors (aka WPSSO TIE) Free add-on works with either the Free or Pro version of WPSSO Core.
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-am/?utm_source=wpssoam-readme">WPSSO TIE Pro add-on</a> uses many WPSSO Core Pro features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssoam-readme">WPSSO Core Pro plugin</a>.
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-am/?utm_source=wpssoam-readme">Purchase the WPSSO Tune Image Editors Pro add-on here</a> (all plugin purchases include a <em>No Risk 30 Day Refund Policy</em>).
 
 == Installation ==
 
