@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
 					'version' => '1.1.0',		// Plugin version.
-					'opt_version' => '3',		// Increment when changing default option values.
+					'opt_version' => '4',		// Increment when changing default option values.
 					'short' => 'WPSSO TIE',		// Short plugin name.
 					'name' => 'WPSSO Tune WP Image Editors',
 					'desc' => 'WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.',
