@@ -59,7 +59,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'tie_wp_image_editors' => 'imagick+gd',
 					'tie_wp_image_adj_filter_prio' => -1000,	// integer
 					'tie_imagick_adjust_jpeg' => 1,			// checkbox
-					'tie_imagick_contrast_leveling' => 1,		// checkbox
+					'tie_imagick_contrast_leveling' => 0,		// checkbox
 					'tie_imagick_compress_quality' => 92,		// positive number
 					'tie_imagick_sharpen_sigma' => 0.5,		// float
 					'tie_imagick_sharpen_radius' => 0,		// integer
