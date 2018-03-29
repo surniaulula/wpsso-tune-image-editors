@@ -17,9 +17,15 @@
 
 <p><strong>WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.</strong></p>
 
-<p>Get even better looking shares on social sites by improving your resized images!</p>
+<p><strong>Get even better looking shares on social sites by improving your WordPress resized images!</strong></p>
 
-<p>The WPSSO Tune WP Image Editors add-on improves all JPEG images by defining a better compression quality, add contrast leveling to use the entire range of pixel colors, and applies much needed sharpening to resized images.</p>
+<p>The WPSSO Tune WP Image Editors add-on improves all JPEG images by:</p>
+
+<ul>
+<li>Defining a better compression quality.</li>
+<li>Optionally applying contrast leveling to use the entire range of pixel colors.</li>
+<li>Applying sharpening to resized images, which is <em>always</em> needed when resizing images.</li>
+</ul>
 
 <p>WPSSO Tune WP Image Editors is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
 
@@ -35,7 +41,7 @@
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Core Free or Pro.</p>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Allows you to select your preferred WordPress image editors:</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Allows you to select your preferred WordPress image editor(s):</p>
 
 <ul>
 <li>GD Only</li>
@@ -44,13 +50,12 @@
 <li>ImageMagick and GD (default)</li>
 </ul>
 
-<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally adjust resized images (aka thumbnails) using ImageMagick:</p>
+<p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally apply adjustments to resized images (aka thumbnails) using ImageMagick:</p>
 
 <ul>
-<li>Enable or disable image adjustments to resized images.</li>
-<li>Sets a better compression quality of 92% (instead of the default 82%).</li>
-<li>Adds contrast leveling to use the entire range of pixel colors.</li>
-<li>Applies much needed sharpening to resized images.</li>
+<li>Enable or disable adjustments for resized images.</li>
+<li>Sets a better compression quality of 92% (instead of the WordPress default of 82%).</li>
+<li>Applies standard / default sharpening values to resized images.</li>
 </ul>
 
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Download the Free version from <a href="https://surniaulula.github.io/wpsso-tune-image-editots/">GitHub</a> or <a href="https://wordpress.org/plugins/wpsso-tune-image-editots/">WordPress.org</a>.</p>
@@ -64,10 +69,10 @@
 <p><span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally fine-tune the filter priority and image adjustment options:</p>
 
 <ul>
-<li>Adjustment the filter hook priority.</li>
-<li>Enable or disable contrast leveling.</li>
-<li>Increase or decrease the compression quality.</li>
-<li>Adjust resized image sharpening values (sigma, radius, amount, threshold).</li>
+<li>Adjustment the 'image_make_intermediate_size' filter hook priority.</li>
+<li>Enable or disable contrast leveling, to use the entire range of pixel colors.</li>
+<li>Increase or decrease the compression quality percentage.</li>
+<li>Adjust each sharpening value individually (sigma, radius, amount, threshold).</li>
 </ul>
 
 <h3>Extends the WPSSO Core Plugin</h3>
