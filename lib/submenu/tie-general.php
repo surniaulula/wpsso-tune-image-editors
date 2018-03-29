@@ -89,7 +89,8 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 				case 'tie-wp-general':
 
 					$table_rows[] = ''.
-					$this->form->get_th_html( _x( 'Default WordPress Image Editor(s)', 'option label', 'wpsso-tune-image-editors' ), '', 'tie_wp_image_editors' ).
+					$this->form->get_th_html( _x( 'Default WordPress Image Editor(s)',
+						'option label', 'wpsso-tune-image-editors' ), '', 'tie_wp_image_editors' ).
 					'<td>'.$this->form->get_select( 'tie_wp_image_editors', $this->p->cf['form']['editors'], '', '', true ).'</td>';
 
 					break;
@@ -99,7 +100,8 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 					$wp_imagick_position = array_search( 'WP_Image_Editor_Imagick', $this->implementations );
 
 					if ( $wp_imagick_position !== false ) {
-						$wp_imagick_status = '<font color="green">'.sprintf( __( 'Used as editor #%s', 'wpsso-tune-image-editors' ), $wp_imagick_position + 1 ).'</font>';
+						$wp_imagick_status = '<font color="green">'.sprintf( __( 'Used as editor #%d',
+							'wpsso-tune-image-editors' ), $wp_imagick_position + 1 ).'</font>';
 					} else {
 						$wp_imagick_status = '<font color="red">'.__( 'Not used', 'wpsso-tune-image-editors' ).'</font>';
 					}
@@ -111,16 +113,22 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 					}
 
 					$table_rows[] = ''.
-					$this->form->get_th_html( _x( 'WordPress ImageMagick Editor', 'option label', 'wpsso-tune-image-editors' ), '', 'tie_wp_imagick_avail' ).
+					$this->form->get_th_html( sprintf( _x( 'WordPress %s Editor',
+						'option label', 'wpsso-tune-image-editors' ), 'ImageMagick' ), '', 'tie_wp_imagick_avail' ).
 					'<td><strong>'.$wp_imagick_status.'</strong></td>';
 
 					$table_rows[] = ''.
-					$this->form->get_th_html( _x( 'PHP ImageMagick Extension', 'option label', 'wpsso-tune-image-editors' ), '', 'tie_php_imagick_avail' ).
+					$this->form->get_th_html( sprintf( _x( 'PHP %s Extension',
+						'option label', 'wpsso-tune-image-editors' ), 'ImageMagick' ), '', 'tie_php_imagick_avail' ).
 					'<td><strong>'.$php_imagick_status.'</strong></td>';
 
+					$table_rows['subsection_imagick_jpeg'] = '<td></td><td class="subsection"><h4>'.
+						sprintf( _x( '%s Resized Images', 'metabox title', 'wpsso-tune-image-editors' ), 'JPEG' ).'</h4></td>';
+
 					$table_rows[] = ''.
-					$this->form->get_th_html( _x( 'Adjust Resized Image Types', 'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_adjust_enable' ).
-					'<td>'.$this->form->get_checkbox( 'tie_imagick_adjust_jpeg' ).' jpeg</td>';
+					$this->form->get_th_html( sprintf( _x( 'Adjust %s Images',
+						'option label', 'wpsso-tune-image-editors' ), 'JPEG' ), '', 'tie_imagick_jpeg_adjust' ).
+					'<td>'.$this->form->get_checkbox( 'tie_imagick_jpeg_adjust' ).'</td>';
 
 					break;
 			}

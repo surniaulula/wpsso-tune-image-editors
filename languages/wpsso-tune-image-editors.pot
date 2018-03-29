@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 1.0.0\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: lib/filters.php:178
 msgid ""
-"You may change the priority at which these adjustments are made to process "
+"You can change the priority at which these adjustments are made, to process "
 "images before / after other image processing plugins or custom filter hooks."
 msgstr ""
 
@@ -80,7 +80,7 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:192
-msgid "Status of the PHP \"imagick\" extension."
+msgid "Status of the PHP \"imagick\" extension module."
 msgstr ""
 
 #: lib/filters.php:194
@@ -91,103 +91,129 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:200
-msgid "Enabled image adjustments only for these checked image types."
+msgid "Enabled image adjustments for resized %s images."
 msgstr ""
 
 #: lib/filters.php:206
+msgid ""
+"Contrast leveling further enhances images by adjusting the pixel colors to "
+"span the entire range of available colors."
+msgstr ""
+
+#: lib/filters.php:212
 msgid ""
 "The resized image compression quality as a positive integer value between 1 "
 "and 100. The recommended value is 90 to 95."
 msgstr ""
 
-#: lib/filters.php:212
-msgid ""
-"Contrast leveling further enhances resized images by adjusting the pixel "
-"colors to span the entire range of available colors."
-msgstr ""
-
 #: lib/filters.php:218
 msgid ""
 "The sharpening sigma can be any floating point value, from 0.1 for almost no "
-"sharpening, to 3 or more for severe sharpening. A sigma value between 0.5 "
-"and 1.0 is recommended."
+"sharpening, to 3 or more for severe sharpening."
 msgstr ""
 
-#: lib/filters.php:224
+#: lib/filters.php:220
+msgid "A sharpening sigma value between 0.5 and 1.0 is recommended."
+msgstr ""
+
+#: lib/filters.php:226
 msgid ""
-"The sharpening radius is an integer value, one to two times the sharpening "
-"sigma value. The best sharpening radius also depends on the resized image "
-"resolution, and for this reason, the default and commended value is 0 (auto)."
+"The sharpening radius is an integer value, generally one to two times the "
+"sharpening sigma value."
 msgstr ""
 
-#: lib/filters.php:230
+#: lib/filters.php:228
+msgid ""
+"The best sharpening radius depends on the resized image resolution, and for "
+"this reason, the recommended value is 0 (auto)."
+msgstr ""
+
+#: lib/filters.php:234
 msgid ""
 "The amount (ie. strength) of the sharpening effect. A larger value increases "
-"the contrast of sharpened pixels. The default value is 1.0 and the "
-"recommended range is between 0.8 and 1.2."
+"the contrast of sharpened pixels."
 msgstr ""
 
 #: lib/filters.php:236
 msgid ""
-"Minimum contrast required for a pixel to be considered an edge pixel for "
-"sharpening. Higher values (closer to 1) allow sharpening only in high-"
-"contrast regions, such as strong edges, while leaving low-contrast regions "
-"unaffected. Lower values (closer to 0) allow sharpening in relatively "
-"smoother regions of the image. A value of 0 may be desirable to retain fine "
-"skin details in portrait photographs."
+"The default value is 1.0, and the recommended range is between 0.8 and 1.2."
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:34 lib/pro/admin/tie-general.php:43
+#: lib/filters.php:242
+msgid ""
+"Minimum contrast required for a pixel to be considered an edge pixel for "
+"sharpening."
+msgstr ""
+
+#: lib/filters.php:244
+msgid ""
+"Higher values (closer to 1) allow sharpening only in high-contrast regions, "
+"like strong edges, while leaving low-contrast areas unaffected."
+msgstr ""
+
+#: lib/filters.php:246
+msgid ""
+"Lower values (closer to 0) allow sharpening in relatively smoother regions "
+"of the image."
+msgstr ""
+
+#: lib/filters.php:248
+msgid ""
+"A value of 0 may be desirable to retain fine skin details in portrait "
+"photographs."
+msgstr ""
+
+#: lib/gpl/admin/tie-general.php:35 lib/pro/admin/tie-general.php:43
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:45 lib/pro/admin/tie-general.php:52
+#: lib/gpl/admin/tie-general.php:48 lib/pro/admin/tie-general.php:53
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:49 lib/pro/admin/tie-general.php:56
+#: lib/gpl/admin/tie-general.php:53 lib/pro/admin/tie-general.php:58
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:53 lib/pro/admin/tie-general.php:60
+#: lib/gpl/admin/tie-general.php:58 lib/pro/admin/tie-general.php:63
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:55 lib/pro/admin/tie-general.php:62
+#: lib/gpl/admin/tie-general.php:61 lib/pro/admin/tie-general.php:66
 msgctxt "option comment"
 msgid "recommended value is 0.5 to 1.0"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:58 lib/pro/admin/tie-general.php:65
+#: lib/gpl/admin/tie-general.php:65 lib/pro/admin/tie-general.php:70
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:60 lib/pro/admin/tie-general.php:67
+#: lib/gpl/admin/tie-general.php:68 lib/pro/admin/tie-general.php:73
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:63 lib/pro/admin/tie-general.php:70
+#: lib/gpl/admin/tie-general.php:72 lib/pro/admin/tie-general.php:77
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:65 lib/pro/admin/tie-general.php:72
+#: lib/gpl/admin/tie-general.php:75 lib/pro/admin/tie-general.php:80
 msgctxt "option comment"
 msgid "recommended value is 0.8 to 1.2"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:68 lib/pro/admin/tie-general.php:75
+#: lib/gpl/admin/tie-general.php:79 lib/pro/admin/tie-general.php:84
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:70 lib/pro/admin/tie-general.php:77
+#: lib/gpl/admin/tie-general.php:82 lib/pro/admin/tie-general.php:87
 msgctxt "option comment"
 msgid "recommended value is 0 to 0.05"
 msgstr ""
@@ -219,35 +245,40 @@ msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:102
-msgid "Used as editor #%s"
+#: lib/submenu/tie-general.php:103
+msgid "Used as editor #%d"
 msgstr ""
 
-#: lib/submenu/tie-general.php:104
+#: lib/submenu/tie-general.php:106
 msgid "Not used"
 msgstr ""
 
-#: lib/submenu/tie-general.php:108
+#: lib/submenu/tie-general.php:110
 msgid "Loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:110
+#: lib/submenu/tie-general.php:112
 msgid "Not loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:114
+#: lib/submenu/tie-general.php:116
 msgctxt "option label"
-msgid "WordPress ImageMagick Editor"
+msgid "WordPress %s Editor"
 msgstr ""
 
-#: lib/submenu/tie-general.php:118
+#: lib/submenu/tie-general.php:121
 msgctxt "option label"
-msgid "PHP ImageMagick Extension"
+msgid "PHP %s Extension"
 msgstr ""
 
-#: lib/submenu/tie-general.php:122
+#: lib/submenu/tie-general.php:126
+msgctxt "metabox title"
+msgid "%s Resized Images"
+msgstr ""
+
+#: lib/submenu/tie-general.php:129
 msgctxt "option label"
-msgid "Adjust Resized Image Types"
+msgid "Adjust %s Images"
 msgstr ""
 
 #: wpsso-tune-image-editors.php:95

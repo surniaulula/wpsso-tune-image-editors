@@ -16,8 +16,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version' => '1.0.0',		// Plugin version.
-					'opt_version' => '2',		// Increment when changing default option values.
+					'version' => '1.1.0',		// Plugin version.
+					'opt_version' => '3',		// Increment when changing default option values.
 					'short' => 'WPSSO TIE',		// Short plugin name.
 					'name' => 'WPSSO Tune WP Image Editors',
 					'desc' => 'WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.',
@@ -58,14 +58,14 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 				'defaults' => array(
 					'tie_wp_image_editors' => 'imagick+gd',
 					'tie_wp_image_adj_filter_prio' => -1000,	// integer
-					'tie_imagick_adjust_jpeg' => 1,			// checkbox
-					'tie_imagick_auto_level' => 0,			// checkbox
-					'tie_imagick_contrast_level' => 0,		// checkbox
-					'tie_imagick_compress_quality' => 92,		// positive number
-					'tie_imagick_sharpen_sigma' => 0.5,		// float
-					'tie_imagick_sharpen_radius' => 0,		// integer
-					'tie_imagick_sharpen_amount' => 1.0,		// float
-					'tie_imagick_sharpen_threshold' => 0.05,	// float
+					'tie_imagick_jpeg_adjust' => 1,			// checkbox
+					'tie_imagick_jpeg_auto_level' => 0,		// checkbox
+					'tie_imagick_jpeg_contrast_level' => 0,		// checkbox
+					'tie_imagick_jpeg_compress_quality' => 92,	// positive number
+					'tie_imagick_jpeg_sharpen_sigma' => 0.5,	// float
+					'tie_imagick_jpeg_sharpen_radius' => 0,		// integer
+					'tie_imagick_jpeg_sharpen_amount' => 1.0,	// float
+					'tie_imagick_jpeg_sharpen_threshold' => 0.05,	// float
 				),
 			),
 			'wp' => array(

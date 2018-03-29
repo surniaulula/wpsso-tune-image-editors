@@ -74,7 +74,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 						case 'image/jpg':
 						case 'image/jpeg':
 
-							if ( $this->p->options['tie_imagick_adjust_jpeg'] ) {
+							if ( $this->p->options['tie_imagick_jpeg_adjust'] ) {
 								return 100;
 							}
 
@@ -112,7 +112,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 						case 'image/jpg':
 						case 'image/jpeg':
 
-							if ( $this->p->options['tie_imagick_adjust_jpeg'] ) {
+							if ( $this->p->options['tie_imagick_jpeg_adjust'] ) {
 								return $this->adjust_imagick_jpeg( $filepath );
 							}
 
@@ -129,24 +129,24 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 			$image = new Imagick( $filepath );
 
-			if ( $this->p->options['tie_imagick_auto_level'] ) {
+			if ( $this->p->options['tie_imagick_jpeg_auto_level'] ) {
 				$image->autoLevelImage();
 			}
 
-			if ( $this->p->options['tie_imagick_contrast_level'] ) {
+			if ( $this->p->options['tie_imagick_jpeg_contrast_level'] ) {
 				$image->normalizeImage();
 			}
 
 			$image->unsharpMaskImage(
-				$this->p->options['tie_imagick_sharpen_radius'],
-				$this->p->options['tie_imagick_sharpen_sigma'],
-				$this->p->options['tie_imagick_sharpen_amount'],
-				$this->p->options['tie_imagick_sharpen_threshold']
+				$this->p->options['tie_imagick_jpeg_sharpen_radius'],
+				$this->p->options['tie_imagick_jpeg_sharpen_sigma'],
+				$this->p->options['tie_imagick_jpeg_sharpen_amount'],
+				$this->p->options['tie_imagick_jpeg_sharpen_threshold']
 			);
 
 			$image->setImageFormat( 'jpg' );
 			$image->setImageCompression( Imagick::COMPRESSION_JPEG );
-			$image->setImageCompressionQuality( $this->p->options['tie_imagick_compress_quality'] );
+			$image->setImageCompressionQuality( $this->p->options['tie_imagick_jpeg_compress_quality'] );
 			$image->writeImage( $filepath );
 			$image->destroy();
 
@@ -175,7 +175,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-editors' ), $short ).' ';
 					
-					$text .= __( 'You may change the priority at which these adjustments are made to process images before / after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
+					$text .= __( 'You can change the priority at which these adjustments are made, to process images before / after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
 
 					break;
 
@@ -189,51 +189,63 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'tooltip-tie_php_imagick_avail':
 
-					$text = __( 'Status of the PHP "imagick" extension.', 'wpsso-tune-image-editors' ).' ';
+					$text = __( 'Status of the PHP "imagick" extension module.', 'wpsso-tune-image-editors' ).' ';
 					
 					$text .= __( 'If the WordPress ImageMagick editor is available, but the PHP "imagick" extension is not loaded, contact your hosting provider and ask to have the PHP "imagick" extension installed.', 'wpsso-tune-image-editors' );
 
 					break;
 
-				case 'tooltip-tie_imagick_adjust_enable':
+				case 'tooltip-tie_imagick_jpeg_adjust':
 
-					$text = __( 'Enabled image adjustments only for these checked image types.', 'wpsso-tune-image-editors' );
+					$text = sprintf( __( 'Enabled image adjustments for resized %s images.', 'wpsso-tune-image-editors' ), 'JPEG' );
 
 					break;
 
-				case 'tooltip-tie_imagick_compress_quality':
+				case 'tooltip-tie_imagick_jpeg_contrast_level':
+
+					$text = __( 'Contrast leveling further enhances images by adjusting the pixel colors to span the entire range of available colors.', 'wpsso-tune-image-editors' );
+
+					break;
+
+				case 'tooltip-tie_imagick_jpeg_compress_quality':
 
 					$text = __( 'The resized image compression quality as a positive integer value between 1 and 100. The recommended value is 90 to 95.', 'wpsso-tune-image-editors' );
 
 					break;
 
-				case 'tooltip-tie_imagick_contrast_level':
+				case 'tooltip-tie_imagick_jpeg_sharpen_sigma':
 
-					$text = __( 'Contrast leveling further enhances resized images by adjusting the pixel colors to span the entire range of available colors.', 'wpsso-tune-image-editors' );
+					$text = __( 'The sharpening sigma can be any floating point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening.', 'wpsso-tune-image-editors' ).' ';
 
-					break;
-
-				case 'tooltip-tie_imagick_sharpen_sigma':
-
-					$text = __( 'The sharpening sigma can be any floating point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening. A sigma value between 0.5 and 1.0 is recommended.', 'wpsso-tune-image-editors' );
+					$text .= __( 'A sharpening sigma value between 0.5 and 1.0 is recommended.', 'wpsso-tune-image-editors' );
 
 					break;
 
-				case 'tooltip-tie_imagick_sharpen_radius':
+				case 'tooltip-tie_imagick_jpeg_sharpen_radius':
 
-					$text = __( 'The sharpening radius is an integer value, one to two times the sharpening sigma value. The best sharpening radius also depends on the resized image resolution, and for this reason, the default and commended value is 0 (auto).', 'wpsso-tune-image-editors' );
-
-					break;
-
-				case 'tooltip-tie_imagick_sharpen_amount':
-
-					$text = __( 'The amount (ie. strength) of the sharpening effect. A larger value increases the contrast of sharpened pixels. The default value is 1.0 and the recommended range is between 0.8 and 1.2.', 'wpsso-tune-image-editors' );
+					$text = __( 'The sharpening radius is an integer value, generally one to two times the sharpening sigma value.', 'wpsso-tune-image-editors' ).' ';
+					
+					$text .= __( 'The best sharpening radius depends on the resized image resolution, and for this reason, the recommended value is 0 (auto).', 'wpsso-tune-image-editors' );
 
 					break;
 
-				case 'tooltip-tie_imagick_sharpen_threshold':
+				case 'tooltip-tie_imagick_jpeg_sharpen_amount':
 
-					$text = __( 'Minimum contrast required for a pixel to be considered an edge pixel for sharpening. Higher values (closer to 1) allow sharpening only in high-contrast regions, such as strong edges, while leaving low-contrast regions unaffected. Lower values (closer to 0) allow sharpening in relatively smoother regions of the image. A value of 0 may be desirable to retain fine skin details in portrait photographs.', 'wpsso-tune-image-editors' );
+					$text = __( 'The amount (ie. strength) of the sharpening effect. A larger value increases the contrast of sharpened pixels.', 'wpsso-tune-image-editors' ).' ';
+					
+					$text .= __( 'The default value is 1.0, and the recommended range is between 0.8 and 1.2.', 'wpsso-tune-image-editors' );
+
+					break;
+
+				case 'tooltip-tie_imagick_jpeg_sharpen_threshold':
+
+					$text = __( 'Minimum contrast required for a pixel to be considered an edge pixel for sharpening.', 'wpsso-tune-image-editors' ).' ';
+					
+					$text .= __( 'Higher values (closer to 1) allow sharpening only in high-contrast regions, like strong edges, while leaving low-contrast areas unaffected.', 'wpsso-tune-image-editors' ).' ';
+					
+					$text .= __( 'Lower values (closer to 0) allow sharpening in relatively smoother regions of the image.', 'wpsso-tune-image-editors' ).' ';
+					
+					$text .= __( 'A value of 0 may be desirable to retain fine skin details in portrait photographs.', 'wpsso-tune-image-editors' );
 
 					break;
 			}
@@ -253,23 +265,23 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				case 'tie_wp_image_editors':
 					return 'not_blank';
 					break;
-				case 'tie_imagick_compress_quality':
+				case 'tie_imagick_jpeg_compress_quality':
 					return 'pos_num';
 					break;
 				case 'tie_wp_image_adj_filter_prio':
-				case 'tie_imagick_sharpen_radius':
+				case 'tie_imagick_jpeg_sharpen_radius':
 					return 'integer';
 					break;
-				case 'tie_imagick_sharpen_sigma':
-				case 'tie_imagick_sharpen_amount':
+				case 'tie_imagick_jpeg_sharpen_sigma':
+				case 'tie_imagick_jpeg_sharpen_amount':
 					return 'float1';
 					break;
-				case 'tie_imagick_sharpen_threshold':
+				case 'tie_imagick_jpeg_sharpen_threshold':
 					return 'float2';
 					break;
-				case 'tie_imagick_adjust_jpeg':
-				case 'tie_imagick_auto_level':
-				case 'tie_imagick_contrast_level':
+				case 'tie_imagick_jpeg_adjust':
+				case 'tie_imagick_jpeg_auto_level':
+				case 'tie_imagick_jpeg_contrast_level':
 					return 'checkbox';
 					break;
 			}
