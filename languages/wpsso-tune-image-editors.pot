@@ -45,89 +45,89 @@ msgid ""
 "and PHP image extensions."
 msgstr ""
 
-#: lib/filters.php:160
+#: lib/filters.php:162
 msgid ""
 "By default, WordPress uses the ImageMagick editor first (provided the PHP "
 "\"imagick\" extension is loaded), and uses the GD editor as a fallback."
 msgstr ""
 
-#: lib/filters.php:162
+#: lib/filters.php:164
 msgid ""
 "This option allows you to select a different default editor list for "
 "WordPress."
 msgstr ""
 
-#: lib/filters.php:170
+#: lib/filters.php:172
 msgid ""
 "%s hooks the WordPress 'image_make_intermediate_size' filter to adjust and "
 "sharpen images."
 msgstr ""
 
-#: lib/filters.php:172
+#: lib/filters.php:174
 msgid ""
 "You may change the priority at which these adjustments are made to process "
 "images before / after other image processing plugins or custom filter hooks."
 msgstr ""
 
-#: lib/filters.php:178
+#: lib/filters.php:180
 msgid "Status of the ImageMagick editor in the WordPress '%s' array."
 msgstr ""
 
-#: lib/filters.php:180
+#: lib/filters.php:182
 msgid ""
 "By default, WordPress uses the ImageMagick editor first, as editor #1 in the "
 "'%s' array."
 msgstr ""
 
-#: lib/filters.php:186
+#: lib/filters.php:188
 msgid "Status of the PHP \"imagick\" extension."
 msgstr ""
 
-#: lib/filters.php:188
+#: lib/filters.php:190
 msgid ""
 "If the WordPress ImageMagick editor is available, but the PHP \"imagick\" "
 "extension is not loaded, contact your hosting provider and ask to have the "
 "PHP \"imagick\" extension installed."
 msgstr ""
 
-#: lib/filters.php:194
+#: lib/filters.php:196
 msgid "Enabled image adjustments only for these checked image types."
 msgstr ""
 
-#: lib/filters.php:200
+#: lib/filters.php:202
 msgid ""
 "The resized image compression quality as a positive integer value between 1 "
 "and 100. The recommended value is 90 to 95."
 msgstr ""
 
-#: lib/filters.php:206
+#: lib/filters.php:208
 msgid ""
 "Contrast leveling further enhances resized images by adjusting the pixel "
 "colors to span the entire range of available colors."
 msgstr ""
 
-#: lib/filters.php:212
+#: lib/filters.php:214
 msgid ""
 "The sharpening sigma can be any floating point value, from 0.1 for almost no "
 "sharpening, to 3 or more for severe sharpening. A sigma value between 0.5 "
 "and 1.0 is recommended."
 msgstr ""
 
-#: lib/filters.php:218
+#: lib/filters.php:220
 msgid ""
 "The sharpening radius is an integer value, one to two times the sharpening "
 "sigma value. The best sharpening radius also depends on the resized image "
 "resolution, and for this reason, the default and commended value is 0 (auto)."
 msgstr ""
 
-#: lib/filters.php:224
+#: lib/filters.php:226
 msgid ""
 "The amount (ie. strength) of the sharpening effect. A larger value increases "
 "the contrast of sharpened pixels. The default value is 1.0 and the "
 "recommended range is between 0.8 and 1.2."
 msgstr ""
 
-#: lib/filters.php:230
+#: lib/filters.php:232
 msgid ""
 "Minimum contrast required for a pixel to be considered an edge pixel for "
 "sharpening. Higher values (closer to 1) allow sharpening only in high-"

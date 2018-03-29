@@ -71,6 +71,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 					switch ( $mime_type ) {
 
+						case 'image/jpg':
 						case 'image/jpeg':
 
 							if ( $this->p->options['tie_imagick_adjust_jpeg'] ) {
@@ -108,6 +109,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 					switch ( $image_size['mime'] ) {
 
+						case 'image/jpg':
 						case 'image/jpeg':
 
 							if ( $this->p->options['tie_imagick_adjust_jpeg'] ) {
