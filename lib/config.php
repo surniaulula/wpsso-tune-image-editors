@@ -62,10 +62,10 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'tie_imagick_jpeg_auto_level' => 0,		// checkbox
 					'tie_imagick_jpeg_contrast_level' => 0,		// checkbox
 					'tie_imagick_jpeg_compress_quality' => 92,	// positive number
-					'tie_imagick_jpeg_sharpen_sigma' => 0.5,	// float
+					'tie_imagick_jpeg_sharpen_sigma' => 0.5,	// floating-point number
 					'tie_imagick_jpeg_sharpen_radius' => 0,		// integer
-					'tie_imagick_jpeg_sharpen_amount' => 1.0,	// float
-					'tie_imagick_jpeg_sharpen_threshold' => 0.05,	// float
+					'tie_imagick_jpeg_sharpen_amount' => 1.0,	// floating-point number
+					'tie_imagick_jpeg_sharpen_threshold' => 0.05,	// floating-point number
 				),
 			),
 			'wp' => array(

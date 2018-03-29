@@ -215,7 +215,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'tooltip-tie_imagick_jpeg_sharpen_sigma':
 
-					$text = __( 'The sharpening sigma can be any floating point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening.', 'wpsso-tune-image-editors' ).' ';
+					$text = __( 'The sharpening sigma can be any floating-point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening.', 'wpsso-tune-image-editors' ).' ';
 
 					$text .= __( 'A sharpening sigma value between 0.5 and 1.0 is recommended.', 'wpsso-tune-image-editors' );
 
@@ -274,10 +274,10 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 					break;
 				case 'tie_imagick_jpeg_sharpen_sigma':
 				case 'tie_imagick_jpeg_sharpen_amount':
-					return 'float1';
+					return 'fnum1';
 					break;
 				case 'tie_imagick_jpeg_sharpen_threshold':
-					return 'float2';
+					return 'fnum2';
 					break;
 				case 'tie_imagick_jpeg_adjust':
 				case 'tie_imagick_jpeg_auto_level':

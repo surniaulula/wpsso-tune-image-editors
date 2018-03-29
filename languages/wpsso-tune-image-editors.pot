@@ -108,7 +108,7 @@ msgstr ""
 
 #: lib/filters.php:218
 msgid ""
-"The sharpening sigma can be any floating point value, from 0.1 for almost no "
+"The sharpening sigma can be any floating-point value, from 0.1 for almost no "
 "sharpening, to 3 or more for severe sharpening."
 msgstr ""
 
