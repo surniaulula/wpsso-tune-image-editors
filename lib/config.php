@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
-						'min_version' => '3.56.3-dev.3',
+						'min_version' => '3.56.3',
 					),
 					'img' => array(
 						'icons' => array(
