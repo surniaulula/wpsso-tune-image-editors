@@ -129,7 +129,11 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 			$image = new Imagick( $filepath );
 
-			if ( $this->p->options['tie_imagick_contrast_leveling'] ) {
+			if ( $this->p->options['tie_imagick_auto_level'] ) {
+				$image->autoLevelImage();
+			}
+
+			if ( $this->p->options['tie_imagick_contrast_level'] ) {
 				$image->normalizeImage();
 			}
 
@@ -203,7 +207,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 					break;
 
-				case 'tooltip-tie_imagick_contrast_leveling':
+				case 'tooltip-tie_imagick_contrast_level':
 
 					$text = __( 'Contrast leveling further enhances resized images by adjusting the pixel colors to span the entire range of available colors.', 'wpsso-tune-image-editors' );
 
@@ -264,7 +268,8 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 					return 'float2';
 					break;
 				case 'tie_imagick_adjust_jpeg':
-				case 'tie_imagick_contrast_leveling':
+				case 'tie_imagick_auto_level':
+				case 'tie_imagick_contrast_level':
 					return 'checkbox';
 					break;
 			}
