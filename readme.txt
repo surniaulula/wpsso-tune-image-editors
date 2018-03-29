@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.4
-Stable Tag: 1.0.0
+Stable Tag: 1.1.0
 
 WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.
 
@@ -115,7 +115,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.0.0 (2018/03/29)**
+**Version 1.1.0 (2018/03/29)**
 
 * *New Features*
 	* Initial release.
@@ -128,7 +128,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.0.0 =
+= 1.1.0 =
 
 (2018/03/29) Initial release.
 
