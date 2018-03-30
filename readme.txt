@@ -1,4 +1,4 @@
-=== WPSSO Tune WP Image Editors ===
+=== WPSSO Tune WP Image Editors - Fastest / Easiest Way to Improve Social Images ===
 Plugin Name: WPSSO Tune WP Image Editors
 Plugin Slug: wpsso-tune-image-editors
 Text Domain: wpsso-tune-image-editors

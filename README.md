@@ -1,4 +1,4 @@
-<h1>WPSSO Tune WP Image Editors</h1>
+<h1>WPSSO Tune WP Image Editors</h1><h3>Fastest / Easiest Way to Improve Social Images</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
