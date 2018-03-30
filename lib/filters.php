@@ -31,15 +31,37 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			}
 
 			/**
-			 * Run at lowest priority to re-define the default editors array.
+			 * Run at lowest priority to re-define the default editors array. The array could be modified by other filters afterwards.
 			 */
 			add_filter( 'wp_image_editors', array( &$this, 'wp_image_editors' ), SucomUtil::get_min_int(), 1 );
 
+			/**
+			 * Run at highest priority to make sure our quality setting is last.
+			 */
 			add_filter( 'wp_editor_set_quality', array( &$this, 'wp_editor_set_quality' ), SucomUtil::get_max_int(), 2 );
 
+			/**
+			 * Run at a variable priority to allow image adjustments before / after some plugins or themes (default is -1000).
+			 */
 			add_filter( 'image_make_intermediate_size', array( &$this, 'image_make_intermediate_size' ), $this->p->options['tie_wp_image_adj_filter_prio'], 1 );
 		}
 
+		/**
+		 * Re-define the default image editors array. The array could be modified by other filters afterwards.
+		 * 
+		 * Possible 'tie_wp_image_editors' option values:
+		 *
+		 * $cf = array(
+		 * 	'wp' => array(
+		 * 		'editors' => array(
+		 * 			'gd'         => array( 'WP_Image_Editor_GD' ),
+		 * 			'gd+imagick' => array( 'WP_Image_Editor_GD', 'WP_Image_Editor_Imagick' ),
+		 * 			'imagick'    => array( 'WP_Image_Editor_Imagick' ),
+		 * 			'imagick+gd' => array( 'WP_Image_Editor_Imagick', 'WP_Image_Editor_GD' ),
+		 * 		),
+		 * 	),
+		 * );
+		 */
 		public function wp_image_editors( $implementations ) {
 
 			if ( ! empty( $this->p->options['tie_wp_image_editors'] ) ) {
@@ -61,7 +83,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		 */
 		public function wp_editor_set_quality( $quality, $mime_type ) {
 
-			if ( $this->editor === null ) {
+			if ( $this->editor === null ) {	// Get the current editor only once.
 				$editor = _wp_image_editor_choose( array( 'mime_type' => $mime_type ) );
 			}
 
@@ -87,6 +109,9 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $quality;
 		}
 
+		/**
+		 * Apply adjustments to the resized image (leveling, sharpening, etc.).
+		 */
 		public function image_make_intermediate_size( $filepath ) {
 
 			if ( ! file_exists( $filepath ) ) {
@@ -99,10 +124,13 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				return $filepath;
 			}
 
-			if ( $this->editor === null ) {
+			if ( $this->editor === null ) {	// Get the current editor only once.
 				$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size['mime'] ) );
 			}
 
+			/**
+			 * Adjust resized images based on the image editor and the image type.
+			 */
 			switch ( $editor ) {
 
 				case 'WP_Image_Editor_Imagick':
@@ -125,13 +153,12 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $filepath;
 		}
 
+		/**
+		 * Adjust a JPEG image using ImageMagick.
+		 */
 		protected function adjust_imagick_jpeg( $filepath ) {
 
 			$image = new Imagick( $filepath );
-
-			if ( $this->p->options['tie_imagick_jpeg_auto_level'] ) {
-				$image->autoLevelImage();
-			}
 
 			if ( $this->p->options['tie_imagick_jpeg_contrast_level'] ) {
 				$image->normalizeImage();
@@ -153,6 +180,9 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $filepath;
 		}
 
+		/**
+		 * Option tooltips specific to this add-on.
+		 */
 		public function filter_messages_tooltip( $text, $idx, $info ) {
 
 			if ( strpos( $idx, 'tooltip-tie_' ) !== 0 ) {
@@ -253,6 +283,9 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $text;
 		}
 
+		/**
+		 * Return a sanitation type for each option.
+		 */
 		public function filter_option_type( $type, $base_key ) {
 
 			if ( ! empty( $type ) ) {
@@ -280,7 +313,6 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 					return 'fnum2';
 					break;
 				case 'tie_imagick_jpeg_adjust':
-				case 'tie_imagick_jpeg_auto_level':
 				case 'tie_imagick_jpeg_contrast_level':
 					return 'checkbox';
 					break;
