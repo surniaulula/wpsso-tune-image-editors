@@ -27,8 +27,6 @@
 <li>Applying sharpening to resized images, which is <em>always</em> needed when resizing images.</li>
 </ul>
 
-<p>WPSSO Tune WP Image Editors is <em>incredibly fast</em> and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).</p>
-
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
 <p>WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, and more.</p>

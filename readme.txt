@@ -29,8 +29,6 @@ The WPSSO Tune WP Image Editors add-on improves all JPEG images by:
 * Optionally applying contrast leveling to use the entire range of pixel colors.
 * Applying sharpening to resized images, which is *always* needed when resizing images.
 
-WPSSO Tune WP Image Editors is *incredibly fast* and coded for performance &mdash; WPSSO Core and its add-ons make full use of all available caching techniques (persistent / non-persistent object and disk caching), and load only the PHP library files and object classes they need, keeping their code small, fast, and light. WPSSO Core and its add-ons are also fully tested and compatible with PHP v7.x (PHP v5.4 or better required).
-
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
 WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, and more.
