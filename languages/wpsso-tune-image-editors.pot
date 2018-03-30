@@ -70,7 +70,7 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:214
-msgid "Status of the ImageMagick editor in the WordPress '%s' array."
+msgid "Status of the %1$s editor in the WordPress '%2$s' array."
 msgstr ""
 
 #: lib/filters.php:216
@@ -80,18 +80,18 @@ msgid ""
 msgstr ""
 
 #: lib/filters.php:222
-msgid "Status of the PHP \"imagick\" extension module."
+msgid "Status of the PHP \"%s\" extension module."
 msgstr ""
 
 #: lib/filters.php:224
 msgid ""
-"If the WordPress ImageMagick editor is available, but the PHP \"imagick\" "
-"extension is not loaded, contact your hosting provider and ask to have the "
-"PHP \"imagick\" extension installed."
+"If the WordPress %1$s editor is available, but the PHP \"%2$s\" extension is "
+"not loaded, contact your hosting provider and ask to have the PHP \"%2$s\" "
+"extension installed."
 msgstr ""
 
 #: lib/filters.php:230
-msgid "Enabled image adjustments for resized %s images."
+msgid "Apply image adjustments for resized %1$s images using %2$s."
 msgstr ""
 
 #: lib/filters.php:236
@@ -183,9 +183,11 @@ msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:61 lib/pro/admin/tie-general.php:66
+#: lib/gpl/admin/tie-general.php:61 lib/gpl/admin/tie-general.php:75
+#: lib/gpl/admin/tie-general.php:82 lib/pro/admin/tie-general.php:66
+#: lib/pro/admin/tie-general.php:80 lib/pro/admin/tie-general.php:87
 msgctxt "option comment"
-msgid "recommended value is 0.5 to 1.0"
+msgid "recommended value is %1$s to %2$s"
 msgstr ""
 
 #: lib/gpl/admin/tie-general.php:65 lib/pro/admin/tie-general.php:70
@@ -203,19 +205,9 @@ msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:75 lib/pro/admin/tie-general.php:80
-msgctxt "option comment"
-msgid "recommended value is 0.8 to 1.2"
-msgstr ""
-
 #: lib/gpl/admin/tie-general.php:79 lib/pro/admin/tie-general.php:84
 msgctxt "option label"
 msgid "Sharpening Threshold"
-msgstr ""
-
-#: lib/gpl/admin/tie-general.php:82 lib/pro/admin/tie-general.php:87
-msgctxt "option comment"
-msgid "recommended value is 0 to 0.05"
 msgstr ""
 
 #: lib/submenu/tie-general.php:39

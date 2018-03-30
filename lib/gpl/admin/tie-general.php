@@ -58,8 +58,8 @@ if ( ! class_exists( 'WpssoTieGplAdminTieGeneral' ) && class_exists( 'WpssoAdmin
 			$form->get_th_html( _x( 'Sharpening Sigma',
 				'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_sharpen_sigma' ).
 			'<td class="blank">'.$form->get_no_input( 'tie_imagick_jpeg_sharpen_sigma', 'short' ).' '.
-				_x( 'recommended value is 0.5 to 1.0',
-					'option comment', 'wpsso-tune-image-editors' ).'</td>';
+				sprintf( _x( 'recommended value is %1$s to %2$s',
+					'option comment', 'wpsso-tune-image-editors' ), '0.5', '1.0' ).'</td>';
 
 			$table_rows[] = $form->get_tr_hide( 'basic', 'tie_imagick_jpeg_sharpen_radius' ).
 			$form->get_th_html( _x( 'Sharpening Radius',
@@ -72,15 +72,15 @@ if ( ! class_exists( 'WpssoTieGplAdminTieGeneral' ) && class_exists( 'WpssoAdmin
 			$form->get_th_html( _x( 'Sharpening Amount',
 				'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_sharpen_amount' ).
 			'<td class="blank">'.$form->get_no_input( 'tie_imagick_jpeg_sharpen_amount', 'short' ).' '.
-				_x( 'recommended value is 0.8 to 1.2',
-					'option comment', 'wpsso-tune-image-editors' ).'</td>';
+				sprintf( _x( 'recommended value is %1$s to %2$s',
+					'option comment', 'wpsso-tune-image-editors' ), '0.8', '1.2' ).'</td>';
 
 			$table_rows[] = ''.
 			$form->get_th_html( _x( 'Sharpening Threshold',
 				'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_sharpen_threshold' ).
 			'<td class="blank">'.$form->get_no_input( 'tie_imagick_jpeg_sharpen_threshold', 'short' ).' '.
-				_x( 'recommended value is 0 to 0.05',
-					'option comment', 'wpsso-tune-image-editors' ).'</td>';
+				sprintf( _x( 'recommended value is %1$s to %2$s',
+					'option comment', 'wpsso-tune-image-editors' ), '0', '0.05' ).'</td>';
 
 			return $table_rows;
 		}

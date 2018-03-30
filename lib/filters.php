@@ -211,7 +211,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'tooltip-tie_wp_imagick_avail':
 
-					$text = sprintf( __( 'Status of the ImageMagick editor in the WordPress \'%s\' array.', 'wpsso-tune-image-editors' ), 'wp_image_editors' ).' ';
+					$text = sprintf( __( 'Status of the %1$s editor in the WordPress \'%2$s\' array.', 'wpsso-tune-image-editors' ), 'ImageMagick', 'wp_image_editors' ).' ';
 
 					$text .= sprintf( __( 'By default, WordPress uses the ImageMagick editor first, as editor #1 in the \'%s\' array.', 'wpsso-tune-image-editors' ), 'wp_image_editors' );
 
@@ -219,15 +219,15 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'tooltip-tie_php_imagick_avail':
 
-					$text = __( 'Status of the PHP "imagick" extension module.', 'wpsso-tune-image-editors' ).' ';
+					$text = sprintf( __( 'Status of the PHP "%s" extension module.', 'wpsso-tune-image-editors' ), 'imagick' ).' ';
 					
-					$text .= __( 'If the WordPress ImageMagick editor is available, but the PHP "imagick" extension is not loaded, contact your hosting provider and ask to have the PHP "imagick" extension installed.', 'wpsso-tune-image-editors' );
+					$text .= sprintf( __( 'If the WordPress %1$s editor is available, but the PHP "%2$s" extension is not loaded, contact your hosting provider and ask to have the PHP "%2$s" extension installed.', 'wpsso-tune-image-editors' ), 'ImageMagick', 'imagick' );
 
 					break;
 
 				case 'tooltip-tie_imagick_jpeg_adjust':
 
-					$text = sprintf( __( 'Enabled image adjustments for resized %s images.', 'wpsso-tune-image-editors' ), 'JPEG' );
+					$text = sprintf( __( 'Apply image adjustments for resized %1$s images using %2$s.', 'wpsso-tune-image-editors' ), 'JPEG', 'ImageMagick' );
 
 					break;
 
