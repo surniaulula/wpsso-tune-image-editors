@@ -65,7 +65,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally fine-tune the filter priority and image adjustment options:
 
 * Adjustment the 'image_make_intermediate_size' filter hook priority.
-* Enable or disable contrast leveling, to use the entire range of pixel colors.
+* Enable or disable contrast leveling, to use the entire range of pixel colors (useful for photography sites).
 * Increase or decrease the compression quality percentage.
 * Adjust each sharpening value individually (sigma, radius, amount, threshold).
 
