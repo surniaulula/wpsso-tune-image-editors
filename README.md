@@ -1,4 +1,4 @@
-<h1>WPSSO Tune WP Image Editors</h1><h3>Fastest / Easiest Way to Improve Social and SEO Images</h3>
+<h1>WPSSO Tune WP Image Editors</h1><h3>The Fastest and Easiest Way to Improve Your Social and SEO Images</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
@@ -15,7 +15,7 @@
 
 <p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png"></p>
 
-<p>Have you noticed that after carefully adjusting an image or photo in Photoshop, you upload it to your site and WordPress creates small images that seems a bit "fuzzy" &mdash; nothing like the nice and sharp original?</p>
+<p>Have you noticed that after carefully adjusting an image in Photoshop, you upload it to your site and WordPress creates small images that seems a bit "fuzzy" &mdash; nothing like the nice sharp original?</p>
 
 <p>The reason is that after resizing any image, <em>that image must be sharpened – always</em>, but WordPress doesn’t do any sharpening, so the resized image remains a bit "fuzzy" &mdash; probably not what you want for a featured image or share on social sites! ;-)</p>
 
