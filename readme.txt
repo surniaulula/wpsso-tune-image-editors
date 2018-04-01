@@ -23,7 +23,7 @@ Have you noticed that after carefully adjusting an image in Photoshop, you uploa
 
 The reason is that after resizing any image, <em>that image must be sharpened – always</em>, but WordPress doesn’t do any sharpening, so the resized image remains a bit "fuzzy" &mdash; probably not what you want for a featured image or share on social sites! ;-)
 
-The WPSSO Tune WP Image Editors add-on takes care of this &mdash; it automatically applies a reasonable amount of sharpening to all JPEG images resized using the default WordPress ImageMagick editor.
+The WPSSO Tune WP Image Editors add-on takes care of this &mdash; it automatically applies a reasonable amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
@@ -35,20 +35,20 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 
 <h4>WPSSO TIE Free / Standard Features</h4>
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of WPSSO Core Free or Pro.
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Extends the features of the WPSSO Core Free or Pro plugin.
 
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Allows you to select your preferred WordPress image editor(s):
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Apply adjustments to resized images (aka thumbnails) using ImageMagick:
+
+* Enable or disable image adjustments for resized images.
+* Sets a better compression quality of 92% (instead of the WordPress default of 82%).
+* Applies default / standard sharpening values to resized images.
+
+<span style="color:#33cc33">&#x0229b;</span> &nbsp; Allows you to select different WordPress image editor(s):
 
 * GD Only
 * GD and ImageMagick
 * ImageMagick Only
-* ImageMagick and GD (default)
-
-<span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally apply adjustments to resized images (aka thumbnails) using ImageMagick:
-
-* Enable or disable adjustments for resized images.
-* Sets a better compression quality of 92% (instead of the WordPress default of 82%).
-* Applies standard / default sharpening values to resized images.
+* ImageMagick and GD (WordPress default)
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-tune-image-editots/) or [WordPress.org](https://wordpress.org/plugins/wpsso-tune-image-editots/).
 
@@ -61,7 +61,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Optionally fine-tune the filter priority and image adjustment options:
 
 * Adjustment the 'image_make_intermediate_size' filter hook priority.
-* Enable or disable contrast leveling, to use the entire range of pixel colors (useful for photography sites).
+* Enable or disable contrast leveling, to use the entire range of pixel colors.
 * Increase or decrease the compression quality percentage.
 * Adjust each sharpening value individually (sigma, radius, amount, threshold).
 
