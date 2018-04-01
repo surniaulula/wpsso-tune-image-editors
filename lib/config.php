@@ -93,9 +93,11 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		}
 
 		public static function set_constants( $plugin_filepath ) { 
+
 			if ( defined( 'WPSSOTIE_VERSION' ) ) {			// execute and define constants only once
 				return;
 			}
+
 			define( 'WPSSOTIE_VERSION', self::$cf['plugin']['wpssotie']['version'] );						
 			define( 'WPSSOTIE_FILEPATH', $plugin_filepath );						
 			define( 'WPSSOTIE_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
