@@ -40,7 +40,7 @@ The Free add-on works with either the Free or Pro version of WPSSO Core. The [WP
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Apply adjustments to resized images (aka thumbnails) using ImageMagick:
 
 * Enable or disable image adjustments for resized images.
-* Sets a better compression quality of 92% (instead of the WordPress default of 82%).
+* Sets a better compression quality of 92% (WordPress default is 82%).
 * Applies default / standard sharpening values to resized images.
 
 <span style="color:#33cc33">&#x0229b;</span> &nbsp; Allows you to select different WordPress image editor(s):
