@@ -62,7 +62,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 			$metabox_id = 'tie-wp';
 			$tab_key = 'general';
 
-			$this->p->util->do_table_rows( apply_filters( SucomUtil::sanitize_hookname( $this->p->lca.'_'.$metabox_id.'_'.$tab_key.'_rows' ),
+			$this->p->util->do_metabox_table( apply_filters( SucomUtil::sanitize_hookname( $this->p->lca.'_'.$metabox_id.'_'.$tab_key.'_rows' ),
 				$this->get_table_rows( $metabox_id, $tab_key ), $this->form ), 'metabox-'.$metabox_id.'-'.$tab_key );
 		}
 
