@@ -13,7 +13,7 @@
  * Description: WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.
  * Requires PHP: 5.4
  * Requires At Least: 3.8
- * Tested Up To: 4.9.4
+ * Tested Up To: 4.9.5
  * Version: 1.1.1-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
