@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.5
-Stable Tag: 1.1.0
+Stable Tag: 1.1.1
 
 WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.
 
@@ -139,8 +139,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 1.1.1 =
 
 (2018/04/05) Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
-
-= 1.1.0 =
-
-(2018/03/29) Initial release.
 
