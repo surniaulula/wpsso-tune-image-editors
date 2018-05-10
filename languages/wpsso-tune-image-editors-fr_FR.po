@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Tune WP Image Editors 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2018-03-30 09:57-0400\n"
-"PO-Revision-Date: 2018-03-30 09:57-0400\n"
+"POT-Creation-Date: 2018-05-10 10:41-0600\n"
+"PO-Revision-Date: 2018-05-10 10:41-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -246,11 +246,6 @@ msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'ex
 #: wpsso-tune-image-editors.php:201
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
-
-#. translators: %s is the short plugin name
-#: wpsso-tune-image-editors.php:213
-msgid "%s warning:"
-msgstr "Alerte %s:"
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Tune WP Image Editors"
