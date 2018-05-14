@@ -21,7 +21,9 @@
 
 <p>The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies a default amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.</p>
 
-<p><strong>WPSSO TIE is compatible with all image compression / optimization plugins</strong> &mdash; it applies sharpening during the image resize operation, so the resulting resized image can be optimized afterwards as usual.</p>
+<p><strong>WPSSO TIE is compatible with all image compression / optimization plugins:</strong></p>
+
+<p>Image sharpening / adjustments are applied during the WordPress image resize operation, so the resulting resized image / thumbnail can be optimized afterwards as usual.</p>
 
 <div style="clear:both"></div>
 
