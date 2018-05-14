@@ -19,13 +19,13 @@ WPSSO Core add-on to provide tuning options for the WordPress image editors and 
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png">
 
-**Have you noticed that WordPress creates small images that seems a bit "fuzzy"** &mdash; nothing like the nice sharp original you uploaded?
+**Have you noticed that WordPress creates small images that seems a bit "fuzzy" &mdash; nothing like the nice sharp original you uploaded?**
 
-**The reason is that after resizing any image, *that image must be sharpened*** &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)
+The reason is that after an image is resized, that image *must* be sharpened &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)
 
-The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on takes care of this &mdash; it automatically applies a default amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
+The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies a default amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
 
-WPSSO TIE is compatible with all image compression / optimization plugins &mdash; it applies sharpening during the image resize operation, and the resulting resized image can be optimized as usual.
+WPSSO TIE is compatible with all image compression / optimization plugins &mdash; it applies sharpening during the image resize operation, so the resulting resized image can be optimized as usual.
 
 <div style="clear:both"></div>
 
