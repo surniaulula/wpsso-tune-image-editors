@@ -1,4 +1,4 @@
-=== WPSSO Tune WP Image Editors - The Fastest and Easiest Way to Improve Your Social and SEO Images ===
+=== WPSSO Tune WP Image Editors - The Easiest (and Only) Way to Sharpen Social and SEO Images ===
 Plugin Name: WPSSO Tune WP Image Editors
 Plugin Slug: wpsso-tune-image-editors
 Text Domain: wpsso-tune-image-editors
@@ -19,59 +19,49 @@ WPSSO Core add-on to provide tuning options for the WordPress image editors and 
 
 <img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png">
 
-Have you noticed that after carefully adjusting an image in Photoshop, you upload it to your site and WordPress creates small images that seems a bit "fuzzy" &mdash; nothing like the nice sharp original?
+**Have you noticed that WordPress creates small images that seems a bit "fuzzy"** &mdash; nothing like the nice sharp original you uploaded?
 
-The reason is that after resizing any image, <em>that image must be sharpened – always</em>, but WordPress doesn’t do any sharpening, so the resized image remains a bit "fuzzy" &mdash; probably not what you want for a featured image or share on social sites! ;-)
+**The reason is that after resizing any image, *that image must be sharpened*** &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)
 
-The WPSSO Tune WP Image Editors add-on takes care of this &mdash; it automatically applies a reasonable amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
+The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on takes care of this &mdash; it automatically applies a default amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
 
-<h3>WPSSO Core Plugin Prerequisite</h3>
+WPSSO TIE is compatible with all image compression / optimization plugins &mdash; it applies sharpening during the image resize operation, and the resulting resized image can be optimized as usual.
 
-WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin &mdash; which creates complete &amp; accurate meta tags and Schema markup from your existing content for social sharing, Social Media Optimization (SMO), Search Engine Optimization (SEO), Google Rich Cards, Pinterest Rich Pins, and more.
-
-The Free add-on works with either the Free or Pro version of WPSSO Core. The [WPSSO TIE Pro add-on](https://wpsso.com/extend/plugins/wpsso-tune-image-editors/?utm_source=wpssotie-readme) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/?utm_source=wpssotie-readme).
+<div style="clear:both"></div>
 
 <h3>WPSSO TIE Free / Standard Features</h3>
 
-&#x0229b; &nbsp; Extends the features of the WPSSO Core Free or Pro plugin.
+* Extends the features of the WPSSO Core Free or Pro plugin.
 
-&#x0229b; &nbsp; Apply adjustments to resized images (aka thumbnails) using ImageMagick:
+* Applies adjustments to resized images (aka thumbnails) using ImageMagick:
 
-* Enable or disable image adjustments for resized images.
-* Sets a better compression quality of 92% (WordPress default is 82%).
-* Applies default / standard sharpening values to resized images.
+	* Enable or disable image adjustments / sharpening for resized images.
+	* Uses a better compression quality of 92% (WordPress default is 82%).
+	* Applies a default amount of sharpening values to all resized images.
 
-&#x0229b; &nbsp; Allows you to select different WordPress image editor(s):
+* Optionally select different primary / secondary image editor(s) for WordPress:
 
-* GD Only
-* GD and ImageMagick
-* ImageMagick Only
-* ImageMagick and GD (WordPress default)
+	* GD Only
+	* GD and ImageMagick
+	* ImageMagick Only
+	* ImageMagick and GD (WordPress default)
 
-&#x0229b; &nbsp; Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-tune-image-editots/) or [WordPress.org](https://wordpress.org/plugins/wpsso-tune-image-editots/).
+* Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-tune-image-editots/) or [WordPress.org](https://wordpress.org/plugins/wpsso-tune-image-editots/).
 
 <h3>WPSSO TIE Pro / Additional Features</h3>
 
-&#x0229b; &nbsp; Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
+* Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 
-&#x0229b; &nbsp; Optionally fine-tune the filter priority and image adjustment options:
+* Optionally fine-tune the image filter priority and image adjustment options:
 
-* Adjustment the 'image_make_intermediate_size' filter hook priority.
-* Enable or disable contrast leveling, to use the entire range of pixel colors.
-* Increase or decrease the compression quality percentage.
-* Adjust each sharpening value individually (sigma, radius, amount, threshold).
+	* Modify the default 'image_make_intermediate_size' filter hook priority.
+	* Enable / disable contrast leveling.
+	* Increase / decrease the compression quality percentage.
+	* Adjust sharpening values individually (sigma, radius, amount, threshold).
 
-<h3>Extends the WPSSO Core Plugin</h3>
+<h3>WPSSO Core Plugin Prerequisite</h3>
 
-&#x0229b; &nbsp; The WPSSO Tune WP Image Editors (aka WPSSO TIE) Free add-on works with either the Free or Pro version of WPSSO Core.
-
-&#x0229b; &nbsp; The <a href="https://wpsso.com/extend/plugins/wpsso-tune-image-editors/?utm_source=wpssotie-readme">WPSSO TIE Pro add-on</a> uses many WPSSO Core Pro features, which requires an active and licensed <a href="https://wpsso.com/?utm_source=wpssotie-readme">WPSSO Core Pro plugin</a>.
-
-<!--smp-ignore-->
-
-&#x0229b; &nbsp; <a href="https://wpsso.com/extend/plugins/wpsso-tune-image-editors/?utm_source=wpssotie-readme">Purchase the WPSSO Tune WP Image Editors Pro add-on here</a> (all purchases include a <em>No Risk 30 Day Refund Policy</em>).
-
-<!--/smp-ignore-->
+WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plugin. The Free add-on works with either the Free or Pro versions of WPSSO Core. The [WPSSO TIE Pro add-on](https://wpsso.com/extend/plugins/wpsso-tune-image-editors/) uses many WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/).
 
 == Installation ==
 
