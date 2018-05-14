@@ -29,8 +29,6 @@ The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing Wor
 
 Image sharpening / adjustments are applied during the WordPress image resize operation, so the resulting resized image / thumbnail can be optimized afterwards as usual.
 
-<div style="clear:both"></div>
-
 <h3>WPSSO TIE Free / Standard Features</h3>
 
 * Extends the features of the WPSSO Core Free or Pro plugin.
@@ -113,22 +111,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None
 * *Developer Notes*
-	* Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
-
-**Version 1.1.0 (2018/03/29)**
-
-* *New Features*
-	* Initial release.
-* *Improvements*
-	* None
-* *Bugfixes*
-	* None
-* *Developer Notes*
-	* None
+	* Renamed some WpssoUtil methods for Gutenberg related changes in WPSSO v3.57.0.
 
 == Upgrade Notice ==
 
 = 1.1.1 =
 
-(2018/04/05) Renamed some WpssoUtil methods for Gutenberg changes in WPSSO v3.57.0.
+(2018/04/05) Renamed some WpssoUtil methods for Gutenberg related changes in WPSSO v3.57.0.
 
