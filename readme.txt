@@ -25,7 +25,7 @@ The reason is that after an image is resized, that image *must* be sharpened &md
 
 The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies a default amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
 
-WPSSO TIE is compatible with all image compression / optimization plugins &mdash; it applies sharpening during the image resize operation, so the resulting resized image can be optimized as usual.
+**WPSSO TIE is compatible with all image compression / optimization plugins** &mdash; it applies sharpening during the image resize operation, so the resulting resized image can be optimized afterwards as usual.
 
 <div style="clear:both"></div>
 
