@@ -88,6 +88,8 @@ WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the WPSSO Core plug
 
 == Screenshots ==
 
+01. WPSSO TIE settings page to select the default WordPress image editors (Free version).
+
 == Changelog ==
 
 <h3>Version Numbering</h3>
