@@ -17,7 +17,7 @@ WPSSO Core add-on to provide tuning options for the WordPress image editors and 
 
 == Description ==
 
-<img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png">
+<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png"></p>
 
 **Have you noticed that WordPress creates small images that seems a bit "fuzzy" &mdash; nothing like the nice sharp original you uploaded?**
 
