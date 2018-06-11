@@ -273,19 +273,19 @@ msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""
 
-#: wpsso-tune-image-editors.php:95
+#: wpsso-tune-image-editors.php:97
 msgid ""
 "%1$s is an add-on for the %2$s plugin &mdash; please install and activate "
 "the %3$s plugin before activating %4$s."
 msgstr ""
 
-#: wpsso-tune-image-editors.php:97
+#: wpsso-tune-image-editors.php:99
 msgid ""
 "The %1$s add-on requires the %2$s plugin &mdash; install and activate the "
 "%3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr ""
 
-#: wpsso-tune-image-editors.php:201
+#: wpsso-tune-image-editors.php:203
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
