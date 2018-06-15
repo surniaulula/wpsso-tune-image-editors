@@ -33,17 +33,17 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			/**
 			 * Run at lowest priority to re-define the default editors array. The array could be modified by other filters afterwards.
 			 */
-			add_filter( 'wp_image_editors', array( &$this, 'wp_image_editors' ), SucomUtil::get_min_int(), 1 );
+			add_filter( 'wp_image_editors', array( $this, 'wp_image_editors' ), SucomUtil::get_min_int(), 1 );
 
 			/**
 			 * Run at highest priority to make sure our quality setting is last.
 			 */
-			add_filter( 'wp_editor_set_quality', array( &$this, 'wp_editor_set_quality' ), SucomUtil::get_max_int(), 2 );
+			add_filter( 'wp_editor_set_quality', array( $this, 'wp_editor_set_quality' ), SucomUtil::get_max_int(), 2 );
 
 			/**
 			 * Run at a variable priority to allow image adjustments before / after some plugins or themes (default is -1000).
 			 */
-			add_filter( 'image_make_intermediate_size', array( &$this, 'image_make_intermediate_size' ), $this->p->options['tie_wp_image_adj_filter_prio'], 1 );
+			add_filter( 'image_make_intermediate_size', array( $this, 'image_make_intermediate_size' ), $this->p->options['tie_wp_image_adj_filter_prio'], 1 );
 		}
 
 		/**

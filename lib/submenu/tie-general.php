@@ -50,11 +50,11 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 			add_meta_box( $this->pagehook.'_wp',
 				_x( 'WordPress Settings', 'metabox title', 'wpsso-tune-image-editors' ), 
-					array( &$this, 'show_metabox_wp' ), $this->pagehook, 'normal' );
+					array( $this, 'show_metabox_wp' ), $this->pagehook, 'normal' );
 
 			add_meta_box( $this->pagehook.'_ext',
 				_x( 'PHP Extension Settings', 'metabox title', 'wpsso-tune-image-editors' ), 
-					array( &$this, 'show_metabox_ext' ), $this->pagehook, 'normal' );
+					array( $this, 'show_metabox_ext' ), $this->pagehook, 'normal' );
 		}
 
 		public function show_metabox_wp() {
