@@ -28,8 +28,7 @@ if ( ! class_exists( 'WpssoTieGplAdminTieGeneral' ) && class_exists( 'WpssoAdmin
 
 		public function filter_tie_wp_general_rows( $table_rows, $form ) {
 
-			$table_rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg',
-				array( 'lca' => 'wpssotie' ) ).'</td>';
+			$table_rows[] = '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssotie' ) ) . '</td>';
 
 			$table_rows[] = ''.
 			$form->get_th_html( _x( 'Adjustment Filter Priority',
@@ -41,8 +40,7 @@ if ( ! class_exists( 'WpssoTieGplAdminTieGeneral' ) && class_exists( 'WpssoAdmin
 
 		public function filter_tie_ext_imagick_rows( $table_rows, $form ) {
 
-			$table_rows[] = '<td colspan="2" align="center">'.$this->p->msgs->get( 'pro-feature-msg',
-				array( 'lca' => 'wpssotie' ) ).'</td>';
+			$table_rows[] = '<td colspan="2">' . $this->p->msgs->get( 'pro-feature-msg', array( 'lca' => 'wpssotie' ) ) . '</td>';
 
 			$table_rows[] = ''.
 			$form->get_th_html( _x( 'Contrast Leveling',

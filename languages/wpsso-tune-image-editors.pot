@@ -163,49 +163,49 @@ msgid ""
 "photographs."
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:35 lib/pro/admin/tie-general.php:43
+#: lib/gpl/admin/tie-general.php:34 lib/pro/admin/tie-general.php:43
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:48 lib/pro/admin/tie-general.php:53
+#: lib/gpl/admin/tie-general.php:46 lib/pro/admin/tie-general.php:53
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:53 lib/pro/admin/tie-general.php:58
+#: lib/gpl/admin/tie-general.php:51 lib/pro/admin/tie-general.php:58
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:58 lib/pro/admin/tie-general.php:63
+#: lib/gpl/admin/tie-general.php:56 lib/pro/admin/tie-general.php:63
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:61 lib/gpl/admin/tie-general.php:75
-#: lib/gpl/admin/tie-general.php:82 lib/pro/admin/tie-general.php:66
+#: lib/gpl/admin/tie-general.php:59 lib/gpl/admin/tie-general.php:73
+#: lib/gpl/admin/tie-general.php:80 lib/pro/admin/tie-general.php:66
 #: lib/pro/admin/tie-general.php:80 lib/pro/admin/tie-general.php:87
 msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:65 lib/pro/admin/tie-general.php:70
+#: lib/gpl/admin/tie-general.php:63 lib/pro/admin/tie-general.php:70
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:68 lib/pro/admin/tie-general.php:73
+#: lib/gpl/admin/tie-general.php:66 lib/pro/admin/tie-general.php:73
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:72 lib/pro/admin/tie-general.php:77
+#: lib/gpl/admin/tie-general.php:70 lib/pro/admin/tie-general.php:77
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:79 lib/pro/admin/tie-general.php:84
+#: lib/gpl/admin/tie-general.php:77 lib/pro/admin/tie-general.php:84
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
