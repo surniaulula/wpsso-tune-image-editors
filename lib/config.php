@@ -94,7 +94,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 
 		public static function set_constants( $plugin_filepath ) { 
 
-			if ( defined( 'WPSSOTIE_VERSION' ) ) {			// execute and define constants only once
+			if ( defined( 'WPSSOTIE_VERSION' ) ) {	// Define constants only once.
 				return;
 			}
 

@@ -150,7 +150,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 				return $avail;
 			}
 
-			$avail['p_ext']['tie'] = true;	// Signal that this extension / add-on is available.
+			$avail['p_ext']['tie'] = true;		// Signal that this extension / add-on is available.
 
 			if ( is_admin() ) {
 				$avail['admin']['tie-general'] = true;
@@ -199,12 +199,16 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 		private function min_version_notice() {
 
 			$info = WpssoTieConfig::$cf['plugin']['wpssotie'];
+
 			$have_version = $this->p->cf['plugin']['wpsso']['version'];
+
 			$error_msg = sprintf( __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
 				'wpsso-tune-image-editors' ), $info['name'], $info['version'], $info['req']['short'], $info['req']['min_version'], $have_version );
 
 			if ( is_admin() ) {
+
 				$this->p->notice->err( $error_msg );
+
 				if ( method_exists( $this->p->admin, 'get_check_for_updates_link' ) ) {
 					$this->p->notice->inf( $this->p->admin->get_check_for_updates_link() );
 				}
