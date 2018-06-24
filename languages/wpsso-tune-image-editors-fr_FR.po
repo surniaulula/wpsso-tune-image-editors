@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Tune WP Image Editors 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2018-05-10 10:41-0600\n"
-"PO-Revision-Date: 2018-05-10 10:41-0600\n"
+"POT-Creation-Date: 2018-06-24 14:24-0600\n"
+"PO-Revision-Date: 2018-06-24 14:24-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -128,49 +128,49 @@ msgstr "Les valeurs inférieures (plus proches de 0) permettent d'affûter les z
 msgid "A value of 0 may be desirable to retain fine skin details in portrait photographs."
 msgstr "Une valeur de 0 peut être souhaitable pour conserver les détails fins de la peau dans les photos de portrait."
 
-#: lib/gpl/admin/tie-general.php:35 lib/pro/admin/tie-general.php:43
+#: lib/gpl/admin/tie-general.php:34 lib/pro/admin/tie-general.php:43
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr "Priorité du filtre d'ajustement"
 
-#: lib/gpl/admin/tie-general.php:48 lib/pro/admin/tie-general.php:53
+#: lib/gpl/admin/tie-general.php:46 lib/pro/admin/tie-general.php:53
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr "Nivellement de contraste"
 
-#: lib/gpl/admin/tie-general.php:53 lib/pro/admin/tie-general.php:58
+#: lib/gpl/admin/tie-general.php:51 lib/pro/admin/tie-general.php:58
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr "Qualité de compression"
 
-#: lib/gpl/admin/tie-general.php:58 lib/pro/admin/tie-general.php:63
+#: lib/gpl/admin/tie-general.php:56 lib/pro/admin/tie-general.php:63
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr "Sigma d'affûtage"
 
-#: lib/gpl/admin/tie-general.php:61 lib/gpl/admin/tie-general.php:75
-#: lib/gpl/admin/tie-general.php:82 lib/pro/admin/tie-general.php:66
+#: lib/gpl/admin/tie-general.php:59 lib/gpl/admin/tie-general.php:73
+#: lib/gpl/admin/tie-general.php:80 lib/pro/admin/tie-general.php:66
 #: lib/pro/admin/tie-general.php:80 lib/pro/admin/tie-general.php:87
 msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr "la valeur recommandée est de %1$s à %2$s"
 
-#: lib/gpl/admin/tie-general.php:65 lib/pro/admin/tie-general.php:70
+#: lib/gpl/admin/tie-general.php:63 lib/pro/admin/tie-general.php:70
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr "Rayon d'affûtage"
 
-#: lib/gpl/admin/tie-general.php:68 lib/pro/admin/tie-general.php:73
+#: lib/gpl/admin/tie-general.php:66 lib/pro/admin/tie-general.php:73
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr "la valeur recommandée est 0 (auto)"
 
-#: lib/gpl/admin/tie-general.php:72 lib/pro/admin/tie-general.php:77
+#: lib/gpl/admin/tie-general.php:70 lib/pro/admin/tie-general.php:77
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr "Quantité d'affûtage"
 
-#: lib/gpl/admin/tie-general.php:79 lib/pro/admin/tie-general.php:84
+#: lib/gpl/admin/tie-general.php:77 lib/pro/admin/tie-general.php:84
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr "Seuil d'affûtage"
@@ -235,15 +235,15 @@ msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr "Ajuster les images %s"
 
-#: wpsso-tune-image-editors.php:95
+#: wpsso-tune-image-editors.php:97
 msgid "%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est un ajout pour l'extension %2$s &mdash; SVP installer et activer l'extension %3$s avant d'activer %4$s."
 
-#: wpsso-tune-image-editors.php:97
+#: wpsso-tune-image-editors.php:99
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-tune-image-editors.php:201
+#: wpsso-tune-image-editors.php:205
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
