@@ -43,7 +43,10 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			/**
 			 * Run at a variable priority to allow image adjustments before / after some plugins or themes (default is -1000).
 			 */
-			add_filter( 'image_make_intermediate_size', array( $this, 'image_make_intermediate_size' ), $this->p->options['tie_wp_image_adj_filter_prio'], 1 );
+			$filter_prio = isset( $this->p->options['tie_wp_image_adj_filter_prio'] ) ?	// Just in case.
+				$this->p->options['tie_wp_image_adj_filter_prio'] : -1000;
+
+			add_filter( 'image_make_intermediate_size', array( $this, 'image_make_intermediate_size' ), $filter_prio, 1 );
 		}
 
 		/**

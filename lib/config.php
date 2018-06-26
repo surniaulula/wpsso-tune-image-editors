@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version' => '1.1.1',		// Plugin version.
+					'version' => '1.1.2-dev.3',		// Plugin version.
 					'opt_version' => '4',		// Increment when changing default option values.
 					'short' => 'WPSSO TIE',		// Short plugin name.
 					'name' => 'WPSSO Tune WP Image Editors',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'req' => array(
 						'short' => 'WPSSO Core',
 						'name' => 'WPSSO Core',
-						'min_version' => '4.5.2',
+						'min_version' => '4.6.0-dev.3',
 					),
 					'img' => array(
 						'icons' => array(
@@ -56,15 +56,15 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 			),
 			'opt' => array(						// options
 				'defaults' => array(
-					'tie_wp_image_editors' => 'imagick+gd',
-					'tie_wp_image_adj_filter_prio' => -1000,	// integer
-					'tie_imagick_jpeg_adjust' => 1,			// checkbox
-					'tie_imagick_jpeg_auto_level' => 0,		// checkbox
-					'tie_imagick_jpeg_contrast_level' => 0,		// checkbox
-					'tie_imagick_jpeg_compress_quality' => 92,	// positive number
-					'tie_imagick_jpeg_sharpen_sigma' => 0.5,	// floating-point number
-					'tie_imagick_jpeg_sharpen_radius' => 0,		// integer
-					'tie_imagick_jpeg_sharpen_amount' => 1.0,	// floating-point number
+					'tie_wp_image_editors'               => 'imagick+gd',
+					'tie_wp_image_adj_filter_prio'       => -1000,	// integer
+					'tie_imagick_jpeg_adjust'            => 1,	// checkbox
+					'tie_imagick_jpeg_auto_level'        => 0,	// checkbox
+					'tie_imagick_jpeg_contrast_level'    => 0,	// checkbox
+					'tie_imagick_jpeg_compress_quality'  => 92,	// positive number
+					'tie_imagick_jpeg_sharpen_sigma'     => 0.5,	// floating-point number
+					'tie_imagick_jpeg_sharpen_radius'    => 0,	// integer
+					'tie_imagick_jpeg_sharpen_amount'    => 1.0,	// floating-point number
 					'tie_imagick_jpeg_sharpen_threshold' => 0.05,	// floating-point number
 				),
 			),
