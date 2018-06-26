@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 1.1.0\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 1.1.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2018-06-24 14:24-0600\n"
-"PO-Revision-Date: 2018-06-24 14:24-0600\n"
+"POT-Creation-Date: 2018-06-26 11:19-0600\n"
+"PO-Revision-Date: 2018-06-26 11:19-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -44,87 +44,87 @@ msgctxt "plugin description"
 msgid "WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions."
 msgstr "Extension d'ajout WPSSO Core pour fournir des options de réglage pour les éditeurs d'image WordPress et les extensions d'image PHP."
 
-#: lib/filters.php:196
+#: lib/filters.php:199
 msgid "By default, WordPress uses the ImageMagick editor first (provided the PHP \"imagick\" extension is loaded), and uses the GD editor as a fallback."
 msgstr "Par défaut, WordPress utilise d'abord l'éditeur ImageMagick (à condition que l'extension PHP \"imagick\" soit chargée), et utilise l'éditeur GD comme solution de repli."
 
-#: lib/filters.php:198
+#: lib/filters.php:201
 msgid "This option allows you to select a different default editor list for WordPress."
 msgstr "Cette option vous permet de sélectionner une autre liste d'éditeurs WordPress par défaut."
 
-#: lib/filters.php:206
+#: lib/filters.php:209
 msgid "%s hooks the WordPress 'image_make_intermediate_size' filter to adjust and sharpen images."
 msgstr "%s accroche le filtre WordPress 'image_make_intermediate_size' pour ajuster et affûter les images."
 
-#: lib/filters.php:208
+#: lib/filters.php:211
 msgid "You can change the priority at which these adjustments are made, to process images before / after other image processing plugins or custom filter hooks."
 msgstr "Vous pouvez modifier la priorité à laquelle ces ajustements sont effectués, pour traiter les images avant / après d'autres extensions de traitement d'image ou des crochets de filtres personnalisés."
 
-#: lib/filters.php:214
+#: lib/filters.php:217
 msgid "Status of the %1$s editor in the WordPress '%2$s' array."
 msgstr "Statut de l'éditeur %1$s dans le tableau WordPress '%2$s'."
 
-#: lib/filters.php:216
+#: lib/filters.php:219
 msgid "By default, WordPress uses the ImageMagick editor first, as editor #1 in the '%s' array."
 msgstr "Par défaut, WordPress utilise d'abord l'éditeur ImageMagick comme éditeur # 1 dans le tableau '%s'."
 
-#: lib/filters.php:222
+#: lib/filters.php:225
 msgid "Status of the PHP \"%s\" extension module."
 msgstr "Statut du module d'extension PHP \"%s\"."
 
-#: lib/filters.php:224
+#: lib/filters.php:227
 msgid "If the WordPress %1$s editor is available, but the PHP \"%2$s\" extension is not loaded, contact your hosting provider and ask to have the PHP \"%2$s\" extension installed."
 msgstr "Si l'éditeur de WordPress %1$s est disponible, mais que l'extension PHP \"%2$s\" n'est pas chargée, contactez votre fournisseur d'hébergement et demandez l'installation de l'extension PHP \"%2$s\"."
 
-#: lib/filters.php:230
+#: lib/filters.php:233
 msgid "Apply image adjustments for resized %1$s images using %2$s."
 msgstr "Appliquez les réglages d'image pour les images %1$s redimensionnées à l'aide de %2$s."
 
-#: lib/filters.php:236
+#: lib/filters.php:239
 msgid "Contrast leveling further enhances images by adjusting the pixel colors to span the entire range of available colors."
 msgstr "Le nivellement du contraste améliore les images d'avantage en ajustant les couleurs des pixels pour couvrir toute la gamme des couleurs disponibles."
 
-#: lib/filters.php:242
+#: lib/filters.php:245
 msgid "The resized image compression quality as a positive integer value between 1 and 100. The recommended value is 90 to 95."
 msgstr "La qualité de compression de l'image redimensionnée est une valeur entière positive comprise entre 1 et 100. La valeur recommandée est de 90 à 95."
 
-#: lib/filters.php:248
+#: lib/filters.php:251
 msgid "The sharpening sigma can be any floating-point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening."
 msgstr "Le sigma d'affûtage peut être n'importe quelle valeur en flottante, de 0.1 pour presque pas d'affûtage, à 3 ou plus pour un affûtage sévère."
 
-#: lib/filters.php:250
+#: lib/filters.php:253
 msgid "A sharpening sigma value between 0.5 and 1.0 is recommended."
 msgstr "Une valeur sigma d'affûtage comprise entre 0.5 et 1.0 est recommandée."
 
-#: lib/filters.php:256
+#: lib/filters.php:259
 msgid "The sharpening radius is an integer value, generally one to two times the sharpening sigma value."
 msgstr "Le rayon d'affûtage est une valeur entière, généralement une à deux fois la valeur sigma d'affûtage."
 
-#: lib/filters.php:258
+#: lib/filters.php:261
 msgid "The best sharpening radius depends on the resized image resolution, and for this reason, the recommended value is 0 (auto)."
 msgstr "Le meilleur rayon d'affûtage dépend de la résolution de l'image redimensionnée et, pour cette raison, la valeur recommandée est 0 (auto)."
 
-#: lib/filters.php:264
+#: lib/filters.php:267
 msgid "The amount (ie. strength) of the sharpening effect. A larger value increases the contrast of sharpened pixels."
 msgstr "La quantité (c'est-à-dire la force) de l'effet d'affûtage. Une valeur plus grande augmente le contraste des pixels affûtés."
 
-#: lib/filters.php:266
+#: lib/filters.php:269
 msgid "The default value is 1.0, and the recommended range is between 0.8 and 1.2."
 msgstr "La valeur par défaut est 1.0 et la plage recommandée est de 0.8 à 1.2."
 
-#: lib/filters.php:272
+#: lib/filters.php:275
 msgid "Minimum contrast required for a pixel to be considered an edge pixel for sharpening."
 msgstr "Contraste minimal requis pour qu'un pixel soit considéré comme un pixel de contour à affûter."
 
-#: lib/filters.php:274
+#: lib/filters.php:277
 msgid "Higher values (closer to 1) allow sharpening only in high-contrast regions, like strong edges, while leaving low-contrast areas unaffected."
 msgstr "Des valeurs plus élevées (plus proches de 1) permet d'affûter uniquement dans les zones à contraste élevée, comme les bordures fortes, et ignorer les zones à faible contraste."
 
-#: lib/filters.php:276
+#: lib/filters.php:279
 msgid "Lower values (closer to 0) allow sharpening in relatively smoother regions of the image."
 msgstr "Les valeurs inférieures (plus proches de 0) permettent d'affûter les zones relativement plus lisses de l'image."
 
-#: lib/filters.php:278
+#: lib/filters.php:281
 msgid "A value of 0 may be desirable to retain fine skin details in portrait photographs."
 msgstr "Une valeur de 0 peut être souhaitable pour conserver les détails fins de la peau dans les photos de portrait."
 
