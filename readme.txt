@@ -108,14 +108,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.2-dev.3 (2018/06/26)**
+**Version 1.1.2-b.1 (2018/06/27)**
 
 * *New Features*
 	* None
 * *Improvements*
 	* None
 * *Bugfixes*
-	* Fixed an undefined option key warning when the add-on is activated.
+	* Fixed an undefined option key warning when the add-on is first activated.
 * *Developer Notes*
 	* None
 
@@ -132,9 +132,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.2-dev.3 =
+= 1.1.2-b.1 =
 
-(2018/06/26) Fixed an undefined option key warning when the add-on is activated.
+(2018/06/27) Fixed an undefined option key warning when the add-on is first activated.
 
 = 1.1.1 =
 
