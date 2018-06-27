@@ -108,7 +108,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 1.1.2-b.1 (2018/06/27)**
+**Version 1.1.2-rc.1 (2018/06/27)**
 
 * *New Features*
 	* None
@@ -132,7 +132,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.1.2-b.1 =
+= 1.1.2-rc.1 =
 
 (2018/06/27) Fixed an undefined option key warning when the add-on is first activated.
 
