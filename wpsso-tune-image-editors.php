@@ -111,11 +111,11 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			} else {
 
 				$deactivate_url = html_entity_decode( wp_nonce_url( add_query_arg( array(
-					'action' => 'deactivate',
-					'plugin' => $info['base'],
+					'action'        => 'deactivate',
+					'plugin'        => $info['base'],
 					'plugin_status' => 'all',
-					'paged' => 1,
-					's' => '',
+					'paged'         => 1,
+					's'             => '',
 				), admin_url( 'plugins.php' ) ), 'deactivate-plugin_' . $info['base'] ) );
 
 				echo '<div class="notice notice-error error"><p>';
