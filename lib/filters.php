@@ -41,7 +41,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			add_filter( 'wp_editor_set_quality', array( $this, 'wp_editor_set_quality' ), SucomUtil::get_max_int(), 2 );
 
 			/**
-			 * Run at a variable priority to allow image adjustments before / after some plugins or themes (default is -1000).
+			 * Run at a variable priority to allow image adjustments before/after some plugins or themes (default is -1000).
 			 */
 			$filter_prio = isset( $this->p->options['tie_wp_image_adj_filter_prio'] ) ?	// Just in case.
 				$this->p->options['tie_wp_image_adj_filter_prio'] : -1000;
@@ -208,7 +208,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-editors' ), $short ).' ';
 					
-					$text .= __( 'You can change the priority at which these adjustments are made, to process images before / after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
+					$text .= __( 'You can change the priority at which these adjustments are made, to process images before/after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
 
 					break;
 

@@ -66,7 +66,7 @@ msgstr ""
 #: lib/filters.php:211
 msgid ""
 "You can change the priority at which these adjustments are made, to process "
-"images before / after other image processing plugins or custom filter hooks."
+"images before/after other image processing plugins or custom filter hooks."
 msgstr ""
 
 #: lib/filters.php:217
