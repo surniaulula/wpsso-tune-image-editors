@@ -101,13 +101,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 1.1.2 (2018/06/28)**
 
 * *New Features*
-	* None
+	* None.
 * *Improvements*
-	* None
+	* None.
 * *Bugfixes*
 	* Fixed an undefined option key warning when the add-on is first activated.
 * *Developer Notes*
-	* None
+	* None.
 
 == Upgrade Notice ==
 
