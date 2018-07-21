@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 1.1.2\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2018-06-26 11:19-0600\n"
-"PO-Revision-Date: 2018-06-26 11:19-0600\n"
+"POT-Creation-Date: 2018-07-21 08:52-0400\n"
+"PO-Revision-Date: 2018-07-21 08:53-0400\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -57,7 +57,7 @@ msgid "%s hooks the WordPress 'image_make_intermediate_size' filter to adjust an
 msgstr "%s accroche le filtre WordPress 'image_make_intermediate_size' pour ajuster et affûter les images."
 
 #: lib/filters.php:211
-msgid "You can change the priority at which these adjustments are made, to process images before / after other image processing plugins or custom filter hooks."
+msgid "You can change the priority at which these adjustments are made, to process images before/after other image processing plugins or custom filter hooks."
 msgstr "Vous pouvez modifier la priorité à laquelle ces ajustements sont effectués, pour traiter les images avant / après d'autres extensions de traitement d'image ou des crochets de filtres personnalisés."
 
 #: lib/filters.php:217
