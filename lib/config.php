@@ -16,24 +16,24 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version' => '1.1.2',		// Plugin version.
+					'version'     => '1.2.0-rc.1',	// Plugin version.
 					'opt_version' => '4',		// Increment when changing default option values.
-					'short' => 'WPSSO TIE',		// Short plugin name.
-					'name' => 'WPSSO Tune WP Image Editors',
-					'desc' => 'WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.',
-					'slug' => 'wpsso-tune-image-editors',
-					'base' => 'wpsso-tune-image-editors/wpsso-tune-image-editors.php',
+					'short'       => 'WPSSO TIE',	// Short plugin name.
+					'name'        => 'WPSSO Tune WP Image Editors',
+					'desc'        => 'WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.',
+					'slug'        => 'wpsso-tune-image-editors',
+					'base'        => 'wpsso-tune-image-editors/wpsso-tune-image-editors.php',
 					'update_auth' => 'tid',
 					'text_domain' => 'wpsso-tune-image-editors',
 					'domain_path' => '/languages',
 					'req' => array(
-						'short' => 'WPSSO Core',
-						'name' => 'WPSSO Core',
-						'min_version' => '4.7.0',
+						'short'       => 'WPSSO Core',
+						'name'        => 'WPSSO Core',
+						'min_version' => '4.9.0-rc.1',
 					),
 					'img' => array(
 						'icons' => array(
-							'low' => 'images/icon-128x128.png',
+							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
