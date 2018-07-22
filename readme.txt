@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.4
 Requires At Least: 3.8
 Tested Up To: 4.9.7
-Stable Tag: 1.1.2
+Stable Tag: 1.2.0
 
 WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions.
 
@@ -109,24 +109,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Developer Notes*
 	* None.
 
-**Version 1.1.2 (2018/06/28)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* Fixed an undefined option key warning when the add-on is first activated.
-* *Developer Notes*
-	* None.
-
 == Upgrade Notice ==
 
 = 1.2.0 =
 
 (2018/07/22) Maintenance release.
-
-= 1.1.2 =
-
-(2018/06/28) Fixed an undefined option key warning when the add-on is first activated.
 
