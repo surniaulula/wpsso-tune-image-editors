@@ -21,7 +21,7 @@ if ( ! class_exists( 'WpssoTieGplAdminTieGeneral' ) && class_exists( 'WpssoAdmin
 			}
 
 			$this->p->util->add_plugin_filters( $this, array( 
-				'tie_wp_general_rows' => 2,
+				'tie_wp_general_rows'  => 2,
 				'tie_ext_imagick_rows' => 2,
 			) );
 		}

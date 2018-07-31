@@ -25,7 +25,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 			if ( is_admin() ) {
 				$this->p->util->add_plugin_filters( $this, array( 
-					'option_type' => 2,
+					'option_type'      => 2,
 					'messages_tooltip' => 3,		// tooltip messages filter
 				) );
 			}
