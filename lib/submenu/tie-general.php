@@ -16,6 +16,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 		private $implementations = array();
 
 		public function __construct( &$plugin, $id, $name, $lib, $ext ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {

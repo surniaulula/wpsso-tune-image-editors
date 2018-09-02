@@ -17,6 +17,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		protected $editor = null;
 
 		public function __construct( &$plugin ) {
+
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
