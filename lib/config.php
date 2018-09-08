@@ -98,12 +98,12 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 				return;
 			}
 
-			define( 'WPSSOTIE_VERSION', self::$cf['plugin']['wpssotie']['version'] );						
 			define( 'WPSSOTIE_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOTIE_PLUGINBASE', self::$cf['plugin']['wpssotie']['base'] );		// wpsso-tune-image-editors/wpsso-tune-image-editors.php
 			define( 'WPSSOTIE_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
 			define( 'WPSSOTIE_PLUGINSLUG', self::$cf['plugin']['wpssotie']['slug'] );		// wpsso-tune-image-editors
-			define( 'WPSSOTIE_PLUGINBASE', self::$cf['plugin']['wpssotie']['base'] );		// wpsso-tune-image-editors/wpsso-tune-image-editors.php
 			define( 'WPSSOTIE_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOTIE_VERSION', self::$cf['plugin']['wpssotie']['version'] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {

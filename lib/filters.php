@@ -293,32 +293,53 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		public function filter_option_type( $type, $base_key ) {
 
 			if ( ! empty( $type ) ) {
+
 				return $type;
+
 			} elseif ( strpos( $base_key, 'tie_' ) !== 0 ) {
+
 				return $type;
 			}
 
 			switch ( $base_key ) {
+
 				case 'tie_wp_image_editors':
+
 					return 'not_blank';
+
 					break;
+
 				case 'tie_imagick_jpeg_compress_quality':
+
 					return 'pos_num';
+
 					break;
+
 				case 'tie_wp_image_adj_filter_prio':
 				case 'tie_imagick_jpeg_sharpen_radius':
+
 					return 'integer';
+
 					break;
+
 				case 'tie_imagick_jpeg_sharpen_sigma':
 				case 'tie_imagick_jpeg_sharpen_amount':
+
 					return 'fnum1';
+
 					break;
+
 				case 'tie_imagick_jpeg_sharpen_threshold':
+
 					return 'fnum2';
+
 					break;
+
 				case 'tie_imagick_jpeg_adjust':
 				case 'tie_imagick_jpeg_contrast_level':
+
 					return 'checkbox';
+
 					break;
 			}
 
