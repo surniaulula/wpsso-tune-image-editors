@@ -123,7 +123,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 						'option label', 'wpsso-tune-image-editors' ), 'ImageMagick' ), '', 'tie_php_imagick_avail' ).
 					'<td><strong>'.$php_imagick_status.'</strong></td>';
 
-					$table_rows['subsection_imagick_jpeg'] = '<td></td><td class="subsection"><h4>'.
+					$table_rows['subsection_imagick_jpeg'] = '<td colspan="2" class="subsection"><h4>'.
 						sprintf( _x( '%s Resized Images', 'metabox title', 'wpsso-tune-image-editors' ), 'JPEG' ).'</h4></td>';
 
 					$table_rows[] = ''.
