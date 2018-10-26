@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 1.2.0\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 1.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2018-09-07 08:44-0600\n"
-"PO-Revision-Date: 2018-09-07 08:44-0600\n"
+"POT-Creation-Date: 2018-10-26 10:34-0600\n"
+"PO-Revision-Date: 2018-10-26 10:34-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -175,62 +175,62 @@ msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr "Seuil d'affûtage"
 
-#: lib/submenu/tie-general.php:40
-msgid "When activating the add-on or changing these options, please do not forget to <a href=\"%s\">regenerate all image thumbnails / image sizes</a> to see the results."
-msgstr "Lorsque vous activez l'ajout ou modifiez ces options, n'oubliez pas de <a href=\"%s\">régénérer toutes les images / tailles d'image</a> pour voir les résultats."
-
-#: lib/submenu/tie-general.php:53
+#: lib/submenu/tie-general.php:38
 msgctxt "metabox title"
 msgid "WordPress Settings"
 msgstr "Réglages WordPress"
 
-#: lib/submenu/tie-general.php:57
+#: lib/submenu/tie-general.php:50
 msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr "Réglages d'extension PHP"
 
-#: lib/submenu/tie-general.php:73
+#: lib/submenu/tie-general.php:76
+msgid "When activating the %1$s add-on or changing these options, please do not forget to <a href=\"%2$s\">regenerate all image thumbnails / image sizes</a> to see the results."
+msgstr "Lorsque vous activez l'ajout %1$s ou modifiez ces réglages, n'oubliez pas de <a href=\"%2$s\">régénérer toutes les images / tailles d'image</a> pour voir les résultats."
+
+#: lib/submenu/tie-general.php:96
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr "ImageMagick"
 
-#: lib/submenu/tie-general.php:93
+#: lib/submenu/tie-general.php:119
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr "Éditeur(s) d'image WP par défaut"
 
-#: lib/submenu/tie-general.php:104
+#: lib/submenu/tie-general.php:130
 msgid "Used as editor #%d"
 msgstr "Utilisé comme éditeur #%d"
 
-#: lib/submenu/tie-general.php:107
+#: lib/submenu/tie-general.php:133
 msgid "Not used"
 msgstr "Non utilisé"
 
-#: lib/submenu/tie-general.php:111
+#: lib/submenu/tie-general.php:137
 msgid "Loaded"
 msgstr "Chargé"
 
-#: lib/submenu/tie-general.php:113
+#: lib/submenu/tie-general.php:139
 msgid "Not loaded"
 msgstr "Non chargé"
 
-#: lib/submenu/tie-general.php:117
+#: lib/submenu/tie-general.php:143
 msgctxt "option label"
 msgid "WordPress %s Editor"
 msgstr "Éditeur WordPress %s"
 
-#: lib/submenu/tie-general.php:122
+#: lib/submenu/tie-general.php:148
 msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr "Extension PHP %s"
 
-#: lib/submenu/tie-general.php:127
+#: lib/submenu/tie-general.php:153
 msgctxt "metabox title"
 msgid "%s Resized Images"
 msgstr "Images redimensionnées %s"
 
-#: lib/submenu/tie-general.php:130
+#: lib/submenu/tie-general.php:156
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr "Ajuster les images %s"
