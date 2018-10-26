@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 1.2.0\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 1.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2018-MO-DA HO:MI+ZONE\n"
@@ -210,65 +210,65 @@ msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
 
-#: lib/submenu/tie-general.php:40
-msgid ""
-"When activating the add-on or changing these options, please do not forget "
-"to <a href=\"%s\">regenerate all image thumbnails / image sizes</a> to see "
-"the results."
-msgstr ""
-
-#: lib/submenu/tie-general.php:53
+#: lib/submenu/tie-general.php:38
 msgctxt "metabox title"
 msgid "WordPress Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:65
+#: lib/submenu/tie-general.php:50
 msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:89
+#: lib/submenu/tie-general.php:76
+msgid ""
+"When activating the %1$s add-on or changing these options, please do not "
+"forget to <a href=\"%2$s\">regenerate all image thumbnails / image sizes</a> "
+"to see the results."
+msgstr ""
+
+#: lib/submenu/tie-general.php:96
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr ""
 
-#: lib/submenu/tie-general.php:114
+#: lib/submenu/tie-general.php:119
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:125
+#: lib/submenu/tie-general.php:130
 msgid "Used as editor #%d"
 msgstr ""
 
-#: lib/submenu/tie-general.php:128
+#: lib/submenu/tie-general.php:133
 msgid "Not used"
 msgstr ""
 
-#: lib/submenu/tie-general.php:132
+#: lib/submenu/tie-general.php:137
 msgid "Loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:134
+#: lib/submenu/tie-general.php:139
 msgid "Not loaded"
-msgstr ""
-
-#: lib/submenu/tie-general.php:138
-msgctxt "option label"
-msgid "WordPress %s Editor"
 msgstr ""
 
 #: lib/submenu/tie-general.php:143
 msgctxt "option label"
-msgid "PHP %s Extension"
+msgid "WordPress %s Editor"
 msgstr ""
 
 #: lib/submenu/tie-general.php:148
+msgctxt "option label"
+msgid "PHP %s Extension"
+msgstr ""
+
+#: lib/submenu/tie-general.php:153
 msgctxt "metabox title"
 msgid "%s Resized Images"
 msgstr ""
 
-#: lib/submenu/tie-general.php:151
+#: lib/submenu/tie-general.php:156
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""

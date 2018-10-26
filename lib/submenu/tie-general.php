@@ -34,21 +34,6 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 		 */
 		protected function add_meta_boxes() {
 
-			$regen_url  = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
-			$notice_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
-
-			$this->p->notice->inf( sprintf( __( 'When activating the add-on or changing these options, please do not forget to <a href="%s">regenerate all image thumbnails / image sizes</a> to see the results.', 'wpsso-tune-image-editors' ), $regen_url ).' ;-)', null, $notice_key, true );	// do not save in the user options table
-
-			/**
-			 * Load the WP class libraries to avoid triggering a known bug in EWWW
-			 * when applying the 'wp_image_editors' filter.
-			 */
-			require_once ABSPATH . WPINC . '/class-wp-image-editor.php';
-			require_once ABSPATH . WPINC . '/class-wp-image-editor-gd.php';
-			require_once ABSPATH . WPINC . '/class-wp-image-editor-imagick.php';
-
-			$this->implementations = apply_filters( 'wp_image_editors', array( 'WP_Image_Editor_Imagick', 'WP_Image_Editor_GD' ) );
-
 			$metabox_id      = 'wp';
 			$metabox_title   = _x( 'WordPress Settings', 'metabox title', 'wpsso-tune-image-editors' );
 			$metabox_screen  = $this->pagehook;
@@ -69,18 +54,40 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 			$callback_args   = array(	// Second argument passed to the callback function / method.
 			);
 
-			add_meta_box( $this->pagehook . '_ext',
+			add_meta_box( $this->pagehook . '_' . $metabox_id, $metabox_title,
 				array( $this, 'show_metabox_ext' ), $metabox_screen,
 					$metabox_context, $metabox_prio, $callback_args );
 		}
 
 		public function show_metabox_wp() {
 
-			$metabox_id = 'tie-wp';
-			$tab_key    = 'general';
+			/**
+			 * Load the WP class libraries to avoid triggering a known bug in EWWW
+			 * when applying the 'wp_image_editors' filter.
+			 */
+			require_once ABSPATH . WPINC . '/class-wp-image-editor.php';
+			require_once ABSPATH . WPINC . '/class-wp-image-editor-gd.php';
+			require_once ABSPATH . WPINC . '/class-wp-image-editor-imagick.php';
 
-			$this->p->util->do_metabox_table( apply_filters( SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows' ),
-				$this->get_table_rows( $metabox_id, $tab_key ), $this->form ), 'metabox-' . $metabox_id . '-' . $tab_key );
+			$this->implementations = apply_filters( 'wp_image_editors', array( 'WP_Image_Editor_Imagick', 'WP_Image_Editor_GD' ) );
+
+			$regen_url  = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
+			$notice_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
+			$info_msg   = __( 'When activating the %1$s add-on or changing these options, please do not forget to <a href="%2$s">regenerate all image thumbnails / image sizes</a> to see the results.', 'wpsso-tune-image-editors' );
+
+			/**
+			 * Do not save this notice in the user options table.
+			 */
+			$this->p->notice->inf( sprintf( $info_msg, $this->p->cf['plugin']['wpssotie']['short'], $regen_url ) . ' ;-)',
+				$user_id = false, $notice_key, true );
+
+			$metabox_id  = 'tie-wp';
+			$tab_key     = 'general';
+			$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows' );
+			$table_rows  = $this->get_table_rows( $metabox_id, $tab_key );
+
+			$this->p->util->do_metabox_table( apply_filters( $filter_name, $table_rows, $this->form ),
+				'metabox-' . $metabox_id . '-' . $tab_key );
 		}
 
 		public function show_metabox_ext() {
@@ -93,10 +100,8 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 				$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows' );
 
-				$table_rows[ $tab_key ] = array_merge(
-					$this->get_table_rows( $metabox_id, $tab_key ), 
-					(array) apply_filters( $filter_name, array(), $this->form )
-				);
+				$table_rows[ $tab_key ] = array_merge( $this->get_table_rows( $metabox_id, $tab_key ), 
+					(array) apply_filters( $filter_name, array(), $this->form ) );
 			}
 
 			$this->p->util->do_metabox_tabbed( $metabox_id, $tabs, $table_rows );
