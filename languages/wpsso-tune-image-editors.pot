@@ -220,7 +220,7 @@ msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:76
+#: lib/submenu/tie-general.php:77
 msgid ""
 "When activating the %1$s add-on or changing these options, please do not "
 "forget to <a href=\"%2$s\">regenerate all image thumbnails / image sizes</a> "
