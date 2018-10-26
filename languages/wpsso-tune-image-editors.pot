@@ -222,53 +222,53 @@ msgctxt "metabox title"
 msgid "WordPress Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:57
+#: lib/submenu/tie-general.php:65
 msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:73
+#: lib/submenu/tie-general.php:89
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr ""
 
-#: lib/submenu/tie-general.php:98
+#: lib/submenu/tie-general.php:114
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:109
+#: lib/submenu/tie-general.php:125
 msgid "Used as editor #%d"
 msgstr ""
 
-#: lib/submenu/tie-general.php:112
+#: lib/submenu/tie-general.php:128
 msgid "Not used"
 msgstr ""
 
-#: lib/submenu/tie-general.php:116
+#: lib/submenu/tie-general.php:132
 msgid "Loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:118
+#: lib/submenu/tie-general.php:134
 msgid "Not loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:122
+#: lib/submenu/tie-general.php:138
 msgctxt "option label"
 msgid "WordPress %s Editor"
 msgstr ""
 
-#: lib/submenu/tie-general.php:127
+#: lib/submenu/tie-general.php:143
 msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr ""
 
-#: lib/submenu/tie-general.php:132
+#: lib/submenu/tie-general.php:148
 msgctxt "metabox title"
 msgid "%s Resized Images"
 msgstr ""
 
-#: lib/submenu/tie-general.php:135
+#: lib/submenu/tie-general.php:151
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""

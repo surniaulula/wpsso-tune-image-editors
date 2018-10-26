@@ -49,13 +49,29 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 			$this->implementations = apply_filters( 'wp_image_editors', array( 'WP_Image_Editor_Imagick', 'WP_Image_Editor_GD' ) );
 
-			add_meta_box( $this->pagehook . '_wp',
-				_x( 'WordPress Settings', 'metabox title', 'wpsso-tune-image-editors' ), 
-					array( $this, 'show_metabox_wp' ), $this->pagehook, 'normal' );
+			$metabox_id      = 'wp';
+			$metabox_title   = _x( 'WordPress Settings', 'metabox title', 'wpsso-tune-image-editors' );
+			$metabox_screen  = $this->pagehook;
+			$metabox_context = 'normal';
+			$metabox_prio    = 'default';
+			$callback_args   = array(	// Second argument passed to the callback function / method.
+			);
+
+			add_meta_box( $this->pagehook . '_' . $metabox_id, $metabox_title,
+				array( $this, 'show_metabox_wp' ), $metabox_screen,
+					$metabox_context, $metabox_prio, $callback_args );
+
+			$metabox_id      = 'ext';
+			$metabox_title   = _x( 'PHP Extension Settings', 'metabox title', 'wpsso-tune-image-editors' );
+			$metabox_screen  = $this->pagehook;
+			$metabox_context = 'normal';
+			$metabox_prio    = 'default';
+			$callback_args   = array(	// Second argument passed to the callback function / method.
+			);
 
 			add_meta_box( $this->pagehook . '_ext',
-				_x( 'PHP Extension Settings', 'metabox title', 'wpsso-tune-image-editors' ), 
-					array( $this, 'show_metabox_ext' ), $this->pagehook, 'normal' );
+				array( $this, 'show_metabox_ext' ), $metabox_screen,
+					$metabox_context, $metabox_prio, $callback_args );
 		}
 
 		public function show_metabox_wp() {
