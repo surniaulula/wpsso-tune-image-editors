@@ -187,13 +187,13 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		/**
 		 * Option tooltips specific to this add-on.
 		 */
-		public function filter_messages_tooltip( $text, $idx, $info ) {
+		public function filter_messages_tooltip( $text, $msg_key, $info ) {
 
-			if ( strpos( $idx, 'tooltip-tie_' ) !== 0 ) {
+			if ( strpos( $msg_key, 'tooltip-tie_' ) !== 0 ) {
 				return $text;
 			}
 
-			switch ( $idx ) {
+			switch ( $msg_key ) {
 
 				case 'tooltip-tie_wp_image_editors':
 
