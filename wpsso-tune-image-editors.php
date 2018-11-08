@@ -35,11 +35,15 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 	class WpssoTie {
 
 		/**
-		 * Class Object Variables
+		 * Wpsso plugin class object variable.
 		 */
-		public $p;			// Wpsso
-		public $reg;			// WpssoTieRegister
-		public $filters;		// WpssoTieFilters
+		public $p;		// Wpsso
+
+		/**
+		 * Library class object variables.
+		 */
+		public $filters;	// WpssoTieFilters
+		public $reg;		// WpssoTieRegister
 
 		/**
 		 * Reference Variables (config, options, modules, etc.).
