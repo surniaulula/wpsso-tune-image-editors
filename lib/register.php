@@ -97,7 +97,7 @@ if ( ! class_exists( 'WpssoTieRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoTieConfig::$cf[ 'plugin' ]['wpssotie'][ 'version' ];	// only our config
+			$version = WpssoTieConfig::$cf[ 'plugin' ][ 'wpssotie' ][ 'version' ];	// only our config
 
 			if ( class_exists( 'WpssoUtil' ) ) {
 				WpssoUtil::save_all_times( 'wpssotie', $version );
