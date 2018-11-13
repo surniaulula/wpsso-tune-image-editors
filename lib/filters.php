@@ -205,7 +205,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'tooltip-tie_wp_image_adj_filter_prio':
 
-					$short = $this->p->cf['plugin']['wpssotie']['short'];
+					$short = $this->p->cf[ 'plugin' ]['wpssotie'][ 'short' ];
 
 					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-editors' ), $short ) . ' ';
 					
