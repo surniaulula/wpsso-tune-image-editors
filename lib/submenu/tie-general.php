@@ -126,7 +126,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 					$wp_imagick_position = array_search( 'WP_Image_Editor_Imagick', $this->implementations );
 
-					if ( $wp_imagick_position !== false ) {
+					if ( false !== $wp_imagick_position ) {
 						$wp_imagick_status = '<font color="green">' . sprintf( __( 'Used as editor #%d',
 							'wpsso-tune-image-editors' ), $wp_imagick_position + 1 ) . '</font>';
 					} else {
