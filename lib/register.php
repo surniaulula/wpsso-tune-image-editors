@@ -97,21 +97,24 @@ if ( ! class_exists( 'WpssoTieRegister' ) ) {
 
 		private function activate_plugin() {
 
-			$version = WpssoTieConfig::$cf[ 'plugin' ][ 'wpssotie' ][ 'version' ];	// only our config
+			if ( class_exists( 'Wpsso' ) ) {
 
-			if ( class_exists( 'WpssoUtil' ) ) {
-				WpssoUtil::save_all_times( 'wpssotie', $version );
+				if ( class_exists( 'WpssoUtil' ) ) {	// Just in case.
+
+					$version = WpssoTieConfig::$cf[ 'plugin' ][ 'wpssotie' ][ 'version' ];
+
+					WpssoUtil::save_all_times( 'wpssotie', $version );
+				}
+
 			} else {
-				WpssoTie::required_notice( true );			// $deactivate = true
+				WpssoTie::required_notice( $deactivate = true );
 			}
 		}
 
 		private function deactivate_plugin() {
-			// nothing to do
 		}
 
 		private static function uninstall_plugin() {
-			// nothing to do
 		}
 	}
 }
