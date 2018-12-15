@@ -13,38 +13,6 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: lib/config-gettext-extract.php:3
-msgctxt "option value"
-msgid "GD and ImageMagick"
-msgstr ""
-
-#: lib/config-gettext-extract.php:4
-msgctxt "option value"
-msgid "GD Only"
-msgstr ""
-
-#: lib/config-gettext-extract.php:5
-msgctxt "option value"
-msgid "ImageMagick and GD"
-msgstr ""
-
-#: lib/config-gettext-extract.php:6
-msgctxt "option value"
-msgid "ImageMagick Only"
-msgstr ""
-
-#: lib/config-gettext-extract.php:7
-msgctxt "lib file description"
-msgid "WP Image Editors"
-msgstr ""
-
-#: lib/config-gettext-extract.php:8
-msgctxt "plugin description"
-msgid ""
-"WPSSO Core add-on to provide tuning options for the WordPress image editors "
-"and PHP image extensions."
-msgstr ""
-
 #: lib/filters.php:200
 msgid ""
 "By default, WordPress uses the ImageMagick editor first (provided the PHP "
@@ -163,26 +131,63 @@ msgid ""
 "photographs."
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:35 lib/pro/admin/tie-general.php:44
+#: lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "WP Image Editors"
+msgstr ""
+
+#: lib/gettext-config.php:7
+msgctxt "plugin description"
+msgid ""
+"WPSSO Core add-on to provide tuning options for the WordPress image editors "
+"and PHP image extensions."
+msgstr ""
+
+#: lib/gettext-config.php:8
+msgctxt "option value"
+msgid "GD Only"
+msgstr ""
+
+#: lib/gettext-config.php:9
+msgctxt "option value"
+msgid "GD and ImageMagick"
+msgstr ""
+
+#: lib/gettext-config.php:10
+msgctxt "option value"
+msgid "ImageMagick Only"
+msgstr ""
+
+#: lib/gettext-config.php:11
+msgctxt "option value"
+msgid "ImageMagick and GD"
+msgstr ""
+
+#: lib/gettext-pro.php:6 lib/gpl/admin/tie-general.php:35
+#: lib/pro/admin/tie-general.php:44
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:47 lib/pro/admin/tie-general.php:54
+#: lib/gettext-pro.php:7 lib/gpl/admin/tie-general.php:47
+#: lib/pro/admin/tie-general.php:54
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:52 lib/pro/admin/tie-general.php:59
+#: lib/gettext-pro.php:8 lib/gpl/admin/tie-general.php:52
+#: lib/pro/admin/tie-general.php:59
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:57 lib/pro/admin/tie-general.php:64
+#: lib/gettext-pro.php:9 lib/gpl/admin/tie-general.php:57
+#: lib/pro/admin/tie-general.php:64
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
+#: lib/gettext-pro.php:10 lib/gettext-pro.php:14 lib/gettext-pro.php:16
 #: lib/gpl/admin/tie-general.php:60 lib/gpl/admin/tie-general.php:74
 #: lib/gpl/admin/tie-general.php:81 lib/pro/admin/tie-general.php:67
 #: lib/pro/admin/tie-general.php:81 lib/pro/admin/tie-general.php:88
@@ -190,22 +195,26 @@ msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:64 lib/pro/admin/tie-general.php:71
+#: lib/gettext-pro.php:11 lib/gpl/admin/tie-general.php:64
+#: lib/pro/admin/tie-general.php:71
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:67 lib/pro/admin/tie-general.php:74
+#: lib/gettext-pro.php:12 lib/gpl/admin/tie-general.php:67
+#: lib/pro/admin/tie-general.php:74
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:71 lib/pro/admin/tie-general.php:78
+#: lib/gettext-pro.php:13 lib/gpl/admin/tie-general.php:71
+#: lib/pro/admin/tie-general.php:78
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/gpl/admin/tie-general.php:78 lib/pro/admin/tie-general.php:85
+#: lib/gettext-pro.php:15 lib/gpl/admin/tie-general.php:78
+#: lib/pro/admin/tie-general.php:85
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
