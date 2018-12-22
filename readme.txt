@@ -50,8 +50,6 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 	* ImageMagick Only
 	* ImageMagick and GD (WordPress default)
 
-* Download the Free version from [GitHub](https://surniaulula.github.io/wpsso-tune-image-editots/) or [WordPress.org](https://wordpress.org/plugins/wpsso-tune-image-editots/).
-
 <h3>WPSSO TIE Additional Features (Pro version)</h3>
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).

@@ -48,7 +48,6 @@
 <li>ImageMagick Only</li>
 <li>ImageMagick and GD (WordPress default)</li>
 </ul></li>
-<li><p>Download the Free version from <a href="https://surniaulula.github.io/wpsso-tune-image-editots/">GitHub</a> or <a href="https://wordpress.org/plugins/wpsso-tune-image-editots/">WordPress.org</a>.</p></li>
 </ul>
 
 <h3>WPSSO TIE Additional Features (Pro version)</h3>
