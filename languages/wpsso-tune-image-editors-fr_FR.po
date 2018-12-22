@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Tune WP Image Editors 1.2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2018-10-26 18:01-0600\n"
-"PO-Revision-Date: 2018-10-26 18:01-0600\n"
+"POT-Creation-Date: 2018-12-21 19:14-0600\n"
+"PO-Revision-Date: 2018-12-21 19:14-0600\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -13,36 +13,6 @@ msgstr ""
 "X-Generator: Poedit 1.8.6\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-
-#: lib/config-gettext-extract.php:3
-msgctxt "option value"
-msgid "GD and ImageMagick"
-msgstr "GD et ImageMagick"
-
-#: lib/config-gettext-extract.php:4
-msgctxt "option value"
-msgid "GD Only"
-msgstr "GD uniquement"
-
-#: lib/config-gettext-extract.php:5
-msgctxt "option value"
-msgid "ImageMagick and GD"
-msgstr "ImageMagick et GD"
-
-#: lib/config-gettext-extract.php:6
-msgctxt "option value"
-msgid "ImageMagick Only"
-msgstr "ImageMagick uniquement"
-
-#: lib/config-gettext-extract.php:7
-msgctxt "lib file description"
-msgid "WP Image Editors"
-msgstr "Éditeurs d'image"
-
-#: lib/config-gettext-extract.php:8
-msgctxt "plugin description"
-msgid "WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions."
-msgstr "Extension d'ajout WPSSO Core pour fournir des options de réglage pour les éditeurs d'image WordPress et les extensions d'image PHP."
 
 #: lib/filters.php:200
 msgid "By default, WordPress uses the ImageMagick editor first (provided the PHP \"imagick\" extension is loaded), and uses the GD editor as a fallback."
@@ -128,26 +98,61 @@ msgstr "Les valeurs inférieures (plus proches de 0) permettent d'affûter les z
 msgid "A value of 0 may be desirable to retain fine skin details in portrait photographs."
 msgstr "Une valeur de 0 peut être souhaitable pour conserver les détails fins de la peau dans les photos de portrait."
 
-#: lib/gpl/admin/tie-general.php:35 lib/pro/admin/tie-general.php:44
+#: lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "WP Image Editors"
+msgstr "Éditeurs d'image"
+
+#: lib/gettext-config.php:7
+msgctxt "plugin description"
+msgid "WPSSO Core add-on offers tuning options for the WordPress image editors and PHP image extensions."
+msgstr "Ajout WPSSO Core pour fournir des options de réglage pour les éditeurs d'image WordPress et les extensions d'image PHP."
+
+#: lib/gettext-config.php:8
+msgctxt "option value"
+msgid "GD Only"
+msgstr "GD uniquement"
+
+#: lib/gettext-config.php:9
+msgctxt "option value"
+msgid "GD and ImageMagick"
+msgstr "GD et ImageMagick"
+
+#: lib/gettext-config.php:10
+msgctxt "option value"
+msgid "ImageMagick Only"
+msgstr "ImageMagick uniquement"
+
+#: lib/gettext-config.php:11
+msgctxt "option value"
+msgid "ImageMagick and GD"
+msgstr "ImageMagick et GD"
+
+#: lib/gettext-pro.php:6 lib/gpl/admin/tie-general.php:35
+#: lib/pro/admin/tie-general.php:44
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr "Priorité du filtre d'ajustement"
 
-#: lib/gpl/admin/tie-general.php:47 lib/pro/admin/tie-general.php:54
+#: lib/gettext-pro.php:7 lib/gpl/admin/tie-general.php:47
+#: lib/pro/admin/tie-general.php:54
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr "Nivellement de contraste"
 
-#: lib/gpl/admin/tie-general.php:52 lib/pro/admin/tie-general.php:59
+#: lib/gettext-pro.php:8 lib/gpl/admin/tie-general.php:52
+#: lib/pro/admin/tie-general.php:59
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr "Qualité de compression"
 
-#: lib/gpl/admin/tie-general.php:57 lib/pro/admin/tie-general.php:64
+#: lib/gettext-pro.php:9 lib/gpl/admin/tie-general.php:57
+#: lib/pro/admin/tie-general.php:64
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr "Sigma d'affûtage"
 
+#: lib/gettext-pro.php:10 lib/gettext-pro.php:14 lib/gettext-pro.php:16
 #: lib/gpl/admin/tie-general.php:60 lib/gpl/admin/tie-general.php:74
 #: lib/gpl/admin/tie-general.php:81 lib/pro/admin/tie-general.php:67
 #: lib/pro/admin/tie-general.php:81 lib/pro/admin/tie-general.php:88
@@ -155,22 +160,26 @@ msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr "la valeur recommandée est de %1$s à %2$s"
 
-#: lib/gpl/admin/tie-general.php:64 lib/pro/admin/tie-general.php:71
+#: lib/gettext-pro.php:11 lib/gpl/admin/tie-general.php:64
+#: lib/pro/admin/tie-general.php:71
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr "Rayon d'affûtage"
 
-#: lib/gpl/admin/tie-general.php:67 lib/pro/admin/tie-general.php:74
+#: lib/gettext-pro.php:12 lib/gpl/admin/tie-general.php:67
+#: lib/pro/admin/tie-general.php:74
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr "la valeur recommandée est 0 (auto)"
 
-#: lib/gpl/admin/tie-general.php:71 lib/pro/admin/tie-general.php:78
+#: lib/gettext-pro.php:13 lib/gpl/admin/tie-general.php:71
+#: lib/pro/admin/tie-general.php:78
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr "Quantité d'affûtage"
 
-#: lib/gpl/admin/tie-general.php:78 lib/pro/admin/tie-general.php:85
+#: lib/gettext-pro.php:15 lib/gpl/admin/tie-general.php:78
+#: lib/pro/admin/tie-general.php:85
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr "Seuil d'affûtage"
@@ -185,7 +194,7 @@ msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr "Réglages d'extension PHP"
 
-#: lib/submenu/tie-general.php:76
+#: lib/submenu/tie-general.php:77
 msgid "When activating the %1$s add-on or changing these options, please do not forget to <a href=\"%2$s\">regenerate all image thumbnails / image sizes</a> to see the results."
 msgstr "Lorsque vous activez l'ajout %1$s ou modifiez ces réglages, n'oubliez pas de <a href=\"%2$s\">régénérer toutes les images / tailles d'image</a> pour voir les résultats."
 
@@ -235,15 +244,15 @@ msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr "Ajuster les images %s"
 
-#: wpsso-tune-image-editors.php:97
+#: wpsso-tune-image-editors.php:101
 msgid "%1$s is an add-on for the %2$s plugin &mdash; please install and activate the %3$s plugin before activating %4$s."
 msgstr "%1$s est un ajout pour l'extension %2$s &mdash; SVP installer et activer l'extension %3$s avant d'activer %4$s."
 
-#: wpsso-tune-image-editors.php:99
+#: wpsso-tune-image-editors.php:103
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-tune-image-editors.php:205
+#: wpsso-tune-image-editors.php:207
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
@@ -256,8 +265,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
 
 #. Description of the plugin/theme
-msgid "WPSSO Core add-on to provide tuning options for the WordPress image editors and PHP image extensions."
-msgstr "Extension d'ajout WPSSO Core pour fournir des options de réglage pour les éditeurs d'image WordPress et les extensions d'image PHP."
+msgid "WPSSO Core add-on offers tuning options for the WordPress image editors and PHP image extensions."
+msgstr "Ajout WPSSO Core pour fournir des options de réglage pour les éditeurs d'image WordPress et les extensions d'image PHP."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
