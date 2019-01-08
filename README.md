@@ -1,4 +1,4 @@
-<h1>WPSSO Tune WP Image Editors</h1><h3>Sharpen Resized / Thumbnail Images for better Social Shares and SEO</h3>
+<h1>WPSSO Tune WP Image Editors</h1><h3>Sharpen Resized / Thumbnail Images for Social Shares and SEO</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
