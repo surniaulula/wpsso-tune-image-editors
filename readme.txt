@@ -96,6 +96,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 1.2.2 (2019/01/31)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* Maintenance release for WPSSO Core v4.22.0.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Updated the required minimum PHP version from 5.4 to 5.5.
+
 **Version 1.2.1 (2018/10/26)**
 
 * *New Features*
@@ -109,7 +120,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 1.2.1 =
+= 1.2.2 =
 
-(2018/10/26) Moved the add-on activation / settings change notice to the add-on settings page.
+(2019/01/31) Maintenance release for WPSSO Core v4.22.0.
 
