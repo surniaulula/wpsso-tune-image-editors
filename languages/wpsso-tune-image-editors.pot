@@ -231,7 +231,7 @@ msgstr ""
 
 #: lib/submenu/tie-general.php:77
 msgid ""
-"When activating the %1$s add-on or changing these options, please do not "
+"When activating the %1$s add-on, or changing these options, please do not "
 "forget to <a href=\"%2$s\">regenerate all image thumbnails / image sizes</a> "
 "to see the results."
 msgstr ""

@@ -74,7 +74,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 			$ext_name   = $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'name' ];
 			$regen_url  = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
 			$notice_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
-			$info_msg   = __( 'When activating the %1$s add-on or changing these options, please do not forget to <a href="%2$s">regenerate all image thumbnails / image sizes</a> to see the results.', 'wpsso-tune-image-editors' );
+			$info_msg   = __( 'When activating the %1$s add-on, or changing these options, please do not forget to <a href="%2$s">regenerate all image thumbnails / image sizes</a> to see the results.', 'wpsso-tune-image-editors' );
 
 			/**
 			 * Do not save this notice in the user options table.
