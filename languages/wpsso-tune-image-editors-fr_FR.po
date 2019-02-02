@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 1.2.1\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 1.2.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2018-12-21 19:14-0600\n"
-"PO-Revision-Date: 2018-12-21 19:14-0600\n"
+"POT-Creation-Date: 2019-02-02 10:50-0800\n"
+"PO-Revision-Date: 2019-02-02 10:51-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -195,8 +195,8 @@ msgid "PHP Extension Settings"
 msgstr "Réglages d'extension PHP"
 
 #: lib/submenu/tie-general.php:77
-msgid "When activating the %1$s add-on or changing these options, please do not forget to <a href=\"%2$s\">regenerate all image thumbnails / image sizes</a> to see the results."
-msgstr "Lorsque vous activez l'ajout %1$s ou modifiez ces réglages, n'oubliez pas de <a href=\"%2$s\">régénérer toutes les images / tailles d'image</a> pour voir les résultats."
+msgid "When activating the %1$s add-on, or changing these options, please do not forget to <a href=\"%2$s\">regenerate all image thumbnails / image sizes</a> to see the results."
+msgstr "Lorsque vous activez l'ajout %1$s, ou modifiez ces réglages, n'oubliez pas de <a href=\"%2$s\">régénérer toutes les images / tailles d'image</a> pour voir les résultats."
 
 #: lib/submenu/tie-general.php:96
 msgctxt "metabox tab"
