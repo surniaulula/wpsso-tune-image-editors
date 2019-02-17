@@ -23,7 +23,7 @@
  *      {bugfix}        Backwards-compatible bug fixes or small improvements.
  *      {stage}.{level} Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
  * 
- * Copyright 2016-2018 Jean-Sebastien Morisset (https://wpsso.com/)
+ * Copyright 2016-2019 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
