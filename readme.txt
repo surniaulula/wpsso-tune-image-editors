@@ -10,7 +10,7 @@ Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.8
-Tested Up To: 5.0
+Tested Up To: 5.1
 Stable Tag: 1.2.2
 
 WPSSO Core add-on offers tuning options for the WordPress image editors and PHP image extensions.
