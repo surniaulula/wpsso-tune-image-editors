@@ -1,4 +1,4 @@
-=== WPSSO Tune WP Image Editors - Sharpen Resized / Thumbnail Images for Social Shares and SEO ===
+=== WPSSO Tune WP Image Editors - Improve Resized Images for Sharing and SEO ===
 Plugin Name: WPSSO Tune WP Image Editors
 Plugin Slug: wpsso-tune-image-editors
 Text Domain: wpsso-tune-image-editors
