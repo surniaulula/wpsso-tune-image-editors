@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-tune-image-editors/assets/
 Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
 Requires At Least: 3.8
-Tested Up To: 5.1
+Tested Up To: 5.1.1
 Stable Tag: 1.2.2
 
 WPSSO Core add-on offers tuning options for the WordPress image editors and PHP image extensions.
