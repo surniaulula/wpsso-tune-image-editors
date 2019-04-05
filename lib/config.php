@@ -26,12 +26,12 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'update_auth' => 'tid',
 					'text_domain' => 'wpsso-tune-image-editors',
 					'domain_path' => '/languages',
-					'req' => array(
+					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
 						'min_version' => '4.25.2',
 					),
-					'img' => array(
+					'assets' => array(
 						'icons' => array(
 							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
