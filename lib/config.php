@@ -48,7 +48,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 								'tie-general' => 'WP Image Editors',
 							),
 						),
-						'submenu' => array(	// Note that submenu elements must have unique keys.
+						'submenu' => array(
 							'tie-general' => 'WP Image Editors',
 						),
 					),
