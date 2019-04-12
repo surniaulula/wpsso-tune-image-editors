@@ -38,9 +38,6 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						'submenu' => array(	// Note that submenu elements must have unique keys.
-							'tie-general' => 'WP Image Editors',
-						),
 						'gpl' => array(
 							'admin' => array(
 								'tie-general' => 'WP Image Editors',
@@ -50,6 +47,9 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 							'admin' => array(
 								'tie-general' => 'WP Image Editors',
 							),
+						),
+						'submenu' => array(	// Note that submenu elements must have unique keys.
+							'tie-general' => 'WP Image Editors',
 						),
 					),
 				),
