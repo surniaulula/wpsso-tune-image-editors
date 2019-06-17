@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '1.2.3',	// Plugin version.
+					'version'     => '2.0.0-dev.1',	// Plugin version.
 					'opt_version' => '4',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune WP Image Editors',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '4.29.0',
+						'min_version' => '5.0.0-dev.1',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -38,12 +38,12 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 						),
 					),
 					'lib' => array(
-						'gpl' => array(
+						'pro' => array(
 							'admin' => array(
 								'tie-general' => 'WP Image Editors',
 							),
 						),
-						'pro' => array(
+						'std' => array(
 							'admin' => array(
 								'tie-general' => 'WP Image Editors',
 							),

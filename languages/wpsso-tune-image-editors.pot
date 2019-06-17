@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 1.2.3\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 2.0.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2019-MO-DA HO:MI+ZONE\n"
@@ -163,58 +163,58 @@ msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
 
-#: lib/gettext-pro.php:6 lib/gpl/admin/tie-general.php:35
-#: lib/pro/admin/tie-general.php:44
+#: lib/gettext-pro.php:6 lib/pro/admin/tie-general.php:44
+#: lib/std/admin/tie-general.php:35
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr ""
 
-#: lib/gettext-pro.php:7 lib/gpl/admin/tie-general.php:47
-#: lib/pro/admin/tie-general.php:54
+#: lib/gettext-pro.php:7 lib/pro/admin/tie-general.php:54
+#: lib/std/admin/tie-general.php:47
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr ""
 
-#: lib/gettext-pro.php:8 lib/gpl/admin/tie-general.php:52
-#: lib/pro/admin/tie-general.php:59
+#: lib/gettext-pro.php:8 lib/pro/admin/tie-general.php:59
+#: lib/std/admin/tie-general.php:52
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/gettext-pro.php:9 lib/gpl/admin/tie-general.php:57
-#: lib/pro/admin/tie-general.php:64
+#: lib/gettext-pro.php:9 lib/pro/admin/tie-general.php:64
+#: lib/std/admin/tie-general.php:57
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
 #: lib/gettext-pro.php:10 lib/gettext-pro.php:14 lib/gettext-pro.php:16
-#: lib/gpl/admin/tie-general.php:60 lib/gpl/admin/tie-general.php:74
-#: lib/gpl/admin/tie-general.php:81 lib/pro/admin/tie-general.php:67
-#: lib/pro/admin/tie-general.php:81 lib/pro/admin/tie-general.php:88
+#: lib/pro/admin/tie-general.php:67 lib/pro/admin/tie-general.php:81
+#: lib/pro/admin/tie-general.php:88 lib/std/admin/tie-general.php:60
+#: lib/std/admin/tie-general.php:74 lib/std/admin/tie-general.php:81
 msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr ""
 
-#: lib/gettext-pro.php:11 lib/gpl/admin/tie-general.php:64
-#: lib/pro/admin/tie-general.php:71
+#: lib/gettext-pro.php:11 lib/pro/admin/tie-general.php:71
+#: lib/std/admin/tie-general.php:64
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/gettext-pro.php:12 lib/gpl/admin/tie-general.php:67
-#: lib/pro/admin/tie-general.php:74
+#: lib/gettext-pro.php:12 lib/pro/admin/tie-general.php:74
+#: lib/std/admin/tie-general.php:67
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr ""
 
-#: lib/gettext-pro.php:13 lib/gpl/admin/tie-general.php:71
-#: lib/pro/admin/tie-general.php:78
+#: lib/gettext-pro.php:13 lib/pro/admin/tie-general.php:78
+#: lib/std/admin/tie-general.php:71
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/gettext-pro.php:15 lib/gpl/admin/tie-general.php:78
-#: lib/pro/admin/tie-general.php:85
+#: lib/gettext-pro.php:15 lib/pro/admin/tie-general.php:85
+#: lib/std/admin/tie-general.php:78
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
