@@ -49,7 +49,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 	* ImageMagick Only
 	* ImageMagick and GD (WordPress default)
 
-<h3>WPSSO TIE Additional Features (Pro version)</h3>
+<h3>WPSSO TIE Pro / Premium Features</h3>
 
 * Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
 
@@ -97,6 +97,17 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.0.0-dev.1 (2019/06/17)**
+
+* *New Features*
+	* None.
+* *Improvements*
+	* None.
+* *Bugfixes*
+	* None.
+* *Developer Notes*
+	* Maintenance release for WPSSO Core v5.0.0.
+
 **Version 1.2.3 (2019/04/09)**
 
 * *New Features*
@@ -109,6 +120,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Maintenance release for WPSSO Core v4.27.2 config array updates.
 
 == Upgrade Notice ==
+
+= 2.0.0-dev.1 =
+
+(2019/06/17) Maintenance release for WPSSO Core v5.0.0.
 
 = 1.2.3 =
 
