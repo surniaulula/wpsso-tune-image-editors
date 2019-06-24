@@ -65,7 +65,7 @@
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-<p>WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> (Standard or Premium version).</p>
+<p>WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
 
 
 <h2>Installation</h2>
