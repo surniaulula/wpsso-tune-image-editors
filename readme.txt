@@ -97,7 +97,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.0-rc.1 (2019/06/23)**
+**Version 2.0.0 (2019/06/24)**
 
 * *New Features*
 	* None.
@@ -109,24 +109,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* Maintenance release for WPSSO Core v5.0.0.
 	* Renamed the 'gpl' library sub-folder to 'std'.
 
-**Version 1.2.3 (2019/04/09)**
-
-* *New Features*
-	* None.
-* *Improvements*
-	* None.
-* *Bugfixes*
-	* None.
-* *Developer Notes*
-	* Maintenance release for WPSSO Core v4.27.2 config array updates.
-
 == Upgrade Notice ==
 
-= 2.0.0-rc.1 =
+= 2.0.0 =
 
-(2019/06/23) Maintenance release for WPSSO Core v5.0.0.
-
-= 1.2.3 =
-
-(2019/04/09) Maintenance release for WPSSO Core v4.27.2 config array updates.
+(2019/06/24) Maintenance release for WPSSO Core v5.0.0.
 
