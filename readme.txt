@@ -49,7 +49,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 	* ImageMagick Only
 	* ImageMagick and GD (WordPress default)
 
-<h3>WPSSO TIE Pro / Premium Features</h3>
+<h3>WPSSO TIE Premium Features</h3>
 
 * Optionally fine-tune the image filter priority and image adjustment options:
 
@@ -73,7 +73,7 @@ WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plu
 
 == Screenshots ==
 
-01. WPSSO TIE settings page to select the default WordPress image editors (Standard version).
+01. WPSSO TIE settings page to select the default WordPress image editors (Standard add-on).
 
 == Changelog ==
 
@@ -86,7 +86,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * {bugfix} = Backwards-compatible bug fixes or small improvements.
 * {stage}.{level} = Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
 
-<h3>Free / Standard Add-on Repositories</h3>
+<h3>Standard Add-on Repositories</h3>
 
 * [GitHub](https://surniaulula.github.io/wpsso-tune-image-editors/)
 * [WordPress.org](https://plugins.trac.wordpress.org/browser/wpsso-tune-image-editors/)

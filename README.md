@@ -50,7 +50,7 @@
 </ul></li>
 </ul>
 
-<h3>WPSSO TIE Pro / Premium Features</h3>
+<h3>WPSSO TIE Premium Features</h3>
 
 <ul>
 <li><p>Optionally fine-tune the image filter priority and image adjustment options:</p>
