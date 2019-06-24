@@ -34,7 +34,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 
 <h3>WPSSO TIE Free / Standard Features</h3>
 
-* Extends the features of the WPSSO Core Free or Pro plugin.
+* Extends the features of the WPSSO Core plugin.
 
 * Applies adjustments to resized images (aka thumbnails) using ImageMagick:
 
@@ -73,7 +73,7 @@ WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plu
 
 == Screenshots ==
 
-01. WPSSO TIE settings page to select the default WordPress image editors (Free version).
+01. WPSSO TIE settings page to select the default WordPress image editors (Standard version).
 
 == Changelog ==
 
