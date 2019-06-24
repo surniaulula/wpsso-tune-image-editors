@@ -51,8 +51,6 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 
 <h3>WPSSO TIE Pro / Premium Features</h3>
 
-* Extends the features of WPSSO Core Pro (requires an active and licensed <a href="https://wpsso.com/">WPSSO Core Pro plugin</a>).
-
 * Optionally fine-tune the image filter priority and image adjustment options:
 
 	* Modify the default 'image_make_intermediate_size' filter hook priority.
@@ -62,9 +60,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 
 <h3>WPSSO Core Plugin Prerequisite</h3>
 
-WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core Plugin](https://wordpress.org/plugins/wpsso/) (Free or Pro version).
-
-The [WPSSO TIE Pro add-on](https://wpsso.com/extend/plugins/wpsso-tune-image-editors/) uses WPSSO Core Pro features and requires an active and licensed [WPSSO Core Pro plugin](https://wpsso.com/).
+WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (Standard or Premium version).
 
 == Installation ==
 
