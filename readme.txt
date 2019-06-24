@@ -10,7 +10,7 @@ Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
 Requires At Least: 3.8
 Tested Up To: 5.2.1
-Stable Tag: 1.2.3
+Stable Tag: 2.0.0
 
 WPSSO Core add-on offers tuning options for the WordPress image editors and PHP image extensions.
 
@@ -106,8 +106,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *Bugfixes*
 	* None.
 * *Developer Notes*
-	* Maintenance release for WPSSO Core v5.0.0.
 	* Renamed the 'gpl' library sub-folder to 'std'.
+	* Maintenance release for WPSSO Core v5.0.0.
 
 == Upgrade Notice ==
 
