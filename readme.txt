@@ -98,7 +98,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * *New Features*
 	* None.
 * *Improvements*
-	* None.
+	* Renamed "Pro" distribution to "Premium".
+	* Renamed "Free" distribution to "Standard".
 * *Bugfixes*
 	* None.
 * *Developer Notes*
