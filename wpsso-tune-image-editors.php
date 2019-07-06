@@ -128,6 +128,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 		}
 
 		public static function wpsso_init_textdomain() {
+
 			load_plugin_textdomain( 'wpsso-tune-image-editors', false, 'wpsso-tune-image-editors/languages/' );
 		}
 
@@ -139,7 +140,9 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			$info = WpssoTieConfig::$cf[ 'plugin' ][ 'wpssotie' ];
 
 			if ( version_compare( $plugin_version, $info[ 'req' ][ 'min_version' ], '<' ) ) {
+
 				$this->have_req_min = false;
+
 				return $cf;
 			}
 
@@ -149,14 +152,16 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 		public function wpsso_get_avail( $avail ) {
 
 			if ( ! $this->have_req_min ) {
-				$avail['p_ext']['tie'] = false;	// Signal that this extension / add-on is not available.
+
+				$avail[ 'p_ext' ][ 'tie' ] = false;	// Signal that this extension / add-on is not available.
+
 				return $avail;
 			}
 
-			$avail['p_ext']['tie'] = true;		// Signal that this extension / add-on is available.
+			$avail[ 'p_ext' ][ 'tie' ] = true;		// Signal that this extension / add-on is available.
 
 			if ( is_admin() ) {
-				$avail['admin']['tie-general'] = true;
+				$avail[ 'admin' ][ 'tie-general' ] = true;
 			}
 
 			return $avail;
