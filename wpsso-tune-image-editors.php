@@ -64,9 +64,15 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 				add_action( 'admin_init', array( __CLASS__, 'required_check' ) );
 			}
 
+			/**
+			 * Add WPSSO filter hooks.
+			 */
 			add_filter( 'wpsso_get_config', array( $this, 'wpsso_get_config' ), 10, 2 );	// Checks core version and merges config array.
 			add_filter( 'wpsso_get_avail', array( $this, 'wpsso_get_avail' ), 10, 1 );
 
+			/**
+			 * Add WPSSO action hooks.
+			 */
 			add_action( 'wpsso_init_textdomain', array( __CLASS__, 'wpsso_init_textdomain' ) );
 			add_action( 'wpsso_init_options', array( $this, 'wpsso_init_options' ), 100 );	// Sets the $this->p reference variable.
 			add_action( 'wpsso_init_objects', array( $this, 'wpsso_init_objects' ), 10 );
