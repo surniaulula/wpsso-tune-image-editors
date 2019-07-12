@@ -9,9 +9,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	die( 'These aren\'t the droids you\'re looking for...' );
 }
 
-if ( ! class_exists( 'WpssoTieStdAdminTieGeneral' ) && class_exists( 'WpssoAdmin' ) ) {
+if ( ! class_exists( 'WpssoTieStdAdminTieGeneral' ) ) {
 
 	class WpssoTieStdAdminTieGeneral {
+
+		private $p;
 
 		public function __construct( &$plugin ) {
 
