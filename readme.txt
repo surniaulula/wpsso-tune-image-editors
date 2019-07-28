@@ -58,7 +58,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 	* Increase / decrease the compression quality percentage.
 	* Adjust sharpening values individually (sigma, radius, amount, threshold).
 
-<h3>WPSSO Core Plugin Prerequisite</h3>
+<h3>WPSSO Core Plugin Required</h3>
 
 WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
