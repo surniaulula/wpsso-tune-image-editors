@@ -1,8 +1,8 @@
-<h1>WPSSO Tune WP Image Editors</h1><h3>Improve Resized Images for Sharing and SEO</h3>
+<h1>WPSSO Tune WP Image Editors</h1>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on offers tuning options for the WordPress image editors and PHP image extensions.</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>WPSSO Core add-on sharpens and improves WordPress thumbnails for social sharing and SEO.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.8</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.2.2</td></tr>
