@@ -12,7 +12,7 @@ Requires At Least: 3.8
 Tested Up To: 5.2.2
 Stable Tag: 2.0.0
 
-WPSSO Core add-on sharpens and improves WordPress thumbnails for social sharing and SEO.
+WPSSO Core add-on to sharpen and improve WordPress thumbnails and resized images for social sharing and SEO.
 
 == Description ==
 
