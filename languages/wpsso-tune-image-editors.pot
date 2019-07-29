@@ -139,8 +139,8 @@ msgstr ""
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on offers tuning options for the WordPress image editors and "
-"PHP image extensions."
+"WPSSO Core add-on to sharpen and improve WordPress thumbnails and resized "
+"images for social sharing and SEO."
 msgstr ""
 
 #: lib/gettext-config.php:8
@@ -310,8 +310,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"WPSSO Core add-on offers tuning options for the WordPress image editors and "
-"PHP image extensions."
+"WPSSO Core add-on to sharpen and improve WordPress thumbnails and resized "
+"images for social sharing and SEO."
 msgstr ""
 
 #. Author of the plugin/theme
