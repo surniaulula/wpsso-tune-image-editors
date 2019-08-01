@@ -192,7 +192,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
-				return;	// stop here
+				return;	// Stop here.
 			}
 
 			$this->filters = new WpssoTieFilters( $this->p );
@@ -205,8 +205,10 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			}
 
 			if ( ! $this->have_req_min ) {
+
 				$this->min_version_notice();
-				return;	// stop here
+
+				return;	// Stop here.
 			}
 		}
 
