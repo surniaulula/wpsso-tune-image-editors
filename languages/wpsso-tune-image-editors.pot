@@ -139,8 +139,8 @@ msgstr ""
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
 msgid ""
-"WPSSO Core add-on to sharpen and improve WordPress thumbnails and resized "
-"images for social sharing and SEO."
+"Sharpen and improve WordPress thumbnails and resized images for social "
+"sharing and better SEO."
 msgstr ""
 
 #: lib/gettext-config.php:8
