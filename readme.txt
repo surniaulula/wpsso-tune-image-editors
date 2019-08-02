@@ -1,4 +1,4 @@
-=== WPSSO Tune WP Image Editors ===
+=== Tune WP Image Editors | WPSSO Add-on ===
 Plugin Name: WPSSO Tune WP Image Editors
 Plugin Slug: wpsso-tune-image-editors
 Text Domain: wpsso-tune-image-editors
@@ -12,7 +12,7 @@ Requires At Least: 3.8
 Tested Up To: 5.2.2
 Stable Tag: 2.0.0
 
-WPSSO Core add-on to sharpen and improve WordPress thumbnails and resized images for social sharing and SEO.
+Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
 
 == Description ==
 
