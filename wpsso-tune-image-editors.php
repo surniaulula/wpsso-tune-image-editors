@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: WPSSO Core add-on to sharpen and improve WordPress thumbnails and resized images for social sharing and SEO.
+ * Description: Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
  * Version: 2.0.0
