@@ -102,7 +102,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Optimized loading of admin library modules for WPSSO Core v5.5.1.
+	* Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
 
 **Version 2.0.0 (2019/06/24)**
 
@@ -121,7 +121,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.0.1-dev.1 =
 
-(2019/08/05) Optimized loading of admin library modules for WPSSO Core v5.5.1.
+(2019/08/05) Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
 
 = 2.0.0 =
 
