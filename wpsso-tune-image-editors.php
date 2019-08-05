@@ -13,7 +13,7 @@
  * Description: Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
  * Requires At Least: 3.8
  * Tested Up To: 5.2.2
- * Version: 2.0.0
+ * Version: 2.0.1-dev.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -165,10 +165,6 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			}
 
 			$avail[ 'p_ext' ][ 'tie' ] = true;		// Signal that this extension / add-on is available.
-
-			if ( is_admin() ) {
-				$avail[ 'admin' ][ 'tie-general' ] = true;
-			}
 
 			return $avail;
 		}
