@@ -93,7 +93,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.1-rc.1 (2019/08/07)**
+**Version 2.0.1 (2019/08/07)**
 
 * **New Features**
 	* None.
@@ -104,26 +104,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Developer Notes**
 	* Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
 
-**Version 2.0.0 (2019/06/24)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Renamed "Pro" distribution to "Premium".
-	* Renamed "Free" distribution to "Standard".
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the 'gpl' library sub-folder to 'std'.
-	* Maintenance release for WPSSO Core v5.0.0.
-
 == Upgrade Notice ==
 
-= 2.0.1-rc.1 =
+= 2.0.1 =
 
 (2019/08/07) Minor update for "fr_FR" translations. Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
-
-= 2.0.0 =
-
-(2019/06/24) Maintenance release for WPSSO Core v5.0.0.
 
