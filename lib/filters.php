@@ -44,8 +44,8 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			/**
 			 * Run at a variable priority to allow image adjustments before/after some plugins or themes (default is -1000).
 			 */
-			$filter_prio = isset( $this->p->options['tie_wp_image_adj_filter_prio'] ) ?	// Just in case.
-				$this->p->options['tie_wp_image_adj_filter_prio'] : -1000;
+			$filter_prio = isset( $this->p->options[ 'tie_wp_image_adj_filter_prio' ] ) ?	// Just in case.
+				$this->p->options[ 'tie_wp_image_adj_filter_prio' ] : -1000;
 
 			add_filter( 'image_make_intermediate_size', array( $this, 'image_make_intermediate_size' ), $filter_prio, 1 );
 		}
@@ -68,14 +68,14 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		 */
 		public function wp_image_editors( $implementations ) {
 
-			if ( ! empty( $this->p->options['tie_wp_image_editors'] ) ) {
+			if ( ! empty( $this->p->options[ 'tie_wp_image_editors' ] ) ) {
 
-				$opt_val = $this->p->options['tie_wp_image_editors'];
+				$opt_val = $this->p->options[ 'tie_wp_image_editors' ];
 
-				if ( ! empty( $this->p->cf['wp']['editors'][$opt_val] ) && 
-					is_array( $this->p->cf['wp']['editors'][$opt_val] ) ) {
+				if ( ! empty( $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ] ) && 
+					is_array( $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ] ) ) {
 
-					return $this->p->cf['wp']['editors'][$opt_val];
+					return $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ];
 				}
 			}
 
@@ -100,7 +100,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 						case 'image/jpg':
 						case 'image/jpeg':
 
-							if ( $this->p->options['tie_imagick_jpeg_adjust'] ) {
+							if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
 								return 100;
 							}
 
@@ -124,12 +124,12 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				
 			$image_size = @getimagesize( $filepath );
 
-			if ( empty( $image_size['mime'] ) ) {
+			if ( empty( $image_size[ 'mime' ] ) ) {
 				return $filepath;
 			}
 
 			if ( $this->editor === null ) {	// Get the current editor only once.
-				$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size['mime'] ) );
+				$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size[ 'mime' ] ) );
 			}
 
 			/**
@@ -139,12 +139,12 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'WP_Image_Editor_Imagick':
 
-					switch ( $image_size['mime'] ) {
+					switch ( $image_size[ 'mime' ] ) {
 
 						case 'image/jpg':
 						case 'image/jpeg':
 
-							if ( $this->p->options['tie_imagick_jpeg_adjust'] ) {
+							if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
 								return $this->adjust_imagick_jpeg( $filepath );
 							}
 
@@ -164,20 +164,20 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 			$image = new Imagick( $filepath );
 
-			if ( $this->p->options['tie_imagick_jpeg_contrast_level'] ) {
+			if ( $this->p->options[ 'tie_imagick_jpeg_contrast_level' ] ) {
 				$image->normalizeImage();
 			}
 
 			$image->unsharpMaskImage(
-				$this->p->options['tie_imagick_jpeg_sharpen_radius'],
-				$this->p->options['tie_imagick_jpeg_sharpen_sigma'],
-				$this->p->options['tie_imagick_jpeg_sharpen_amount'],
-				$this->p->options['tie_imagick_jpeg_sharpen_threshold']
+				$this->p->options[ 'tie_imagick_jpeg_sharpen_radius' ],
+				$this->p->options[ 'tie_imagick_jpeg_sharpen_sigma' ],
+				$this->p->options[ 'tie_imagick_jpeg_sharpen_amount' ],
+				$this->p->options[ 'tie_imagick_jpeg_sharpen_threshold' ]
 			);
 
 			$image->setImageFormat( 'jpg' );
 			$image->setImageCompression( Imagick::COMPRESSION_JPEG );
-			$image->setImageCompressionQuality( $this->p->options['tie_imagick_jpeg_compress_quality'] );
+			$image->setImageCompressionQuality( $this->p->options[ 'tie_imagick_jpeg_compress_quality' ] );
 			$image->writeImage( $filepath );
 			$image->destroy();
 
