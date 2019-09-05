@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
  * Requires At Least: 3.9
- * Tested Up To: 5.2.2
+ * Tested Up To: 5.2.3
  * Version: 2.0.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
@@ -89,6 +89,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 		}
 
 		public static function required_check() {
+
 			if ( ! class_exists( 'Wpsso' ) ) {
 				add_action( 'all_admin_notices', array( __CLASS__, 'required_notice' ) );
 			}
@@ -113,7 +114,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 					require_once trailingslashit( ABSPATH ) . 'wp-admin/includes/plugin.php';
 				}
 
-				deactivate_plugins( $info[ 'base' ], true );	// $silent is true
+				deactivate_plugins( $info[ 'base' ], $silent = true );
 
 				wp_die( '<p>' . sprintf( $die_msg, $info[ 'name' ], $info[ 'req' ][ 'name' ], $info[ 'req' ][ 'short' ], $info[ 'short' ] ) . '</p>' );
 
