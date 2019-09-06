@@ -105,9 +105,6 @@ if ( ! class_exists( 'WpssoTieRegister' ) ) {
 
 					WpssoUtil::save_all_times( 'wpssotie', $version );
 				}
-
-			} else {
-				WpssoTie::required_notice( $deactivate = true );
 			}
 		}
 
