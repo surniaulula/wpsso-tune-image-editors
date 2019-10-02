@@ -13,7 +13,7 @@
  * Description: Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
  * Requires At Least: 3.9
  * Tested Up To: 5.2.3
- * Version: 2.0.1
+ * Version: 2.0.2-dev.3
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
