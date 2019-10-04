@@ -93,35 +93,20 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.2-rc.1 (2019/10/03)**
+**Version 2.0.2 (2019/10/04)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* Maintenance release for WPSSO Core v6.6.1.
+	* Maintenance release for WPSSO Core v6.7.0.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
 	* None.
-
-**Version 2.0.1 (2019/08/07)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor update for "fr_FR" translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
 
 == Upgrade Notice ==
 
-= 2.0.2-rc.1 =
+= 2.0.2 =
 
-(2019/10/03) Maintenance release for WPSSO Core v6.6.1.
-
-= 2.0.1 =
-
-(2019/08/07) Minor update for "fr_FR" translations. Simplified and optimized loading of admin library modules for WPSSO Core v5.5.1.
+(2019/10/04) Maintenance release for WPSSO Core v6.7.0.
 
