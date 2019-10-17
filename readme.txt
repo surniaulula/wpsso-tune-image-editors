@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-tune-image-editors/assets/
 Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
 Requires At Least: 3.9
-Tested Up To: 5.2.4
+Tested Up To: 5.3
 Stable Tag: 2.0.2
 
 Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
