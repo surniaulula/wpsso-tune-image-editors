@@ -1,4 +1,4 @@
-<h1>Tune WP Image Editors | WPSSO Add-on</h1>
+<h1>Tune WP Image Editors</h1><h3>WPSSO Add-on</h3>
 
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
