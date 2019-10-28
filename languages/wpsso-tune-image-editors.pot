@@ -163,57 +163,57 @@ msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
 
-#: lib/gettext-pro.php:6 lib/pro/admin/tie-general.php:46
+#: lib/gettext-pro.php:6 lib/pro/admin/tie-general.php:40
 #: lib/std/admin/tie-general.php:37
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr ""
 
-#: lib/gettext-pro.php:7 lib/pro/admin/tie-general.php:56
+#: lib/gettext-pro.php:7 lib/pro/admin/tie-general.php:50
 #: lib/std/admin/tie-general.php:49
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr ""
 
-#: lib/gettext-pro.php:8 lib/pro/admin/tie-general.php:61
+#: lib/gettext-pro.php:8 lib/pro/admin/tie-general.php:55
 #: lib/std/admin/tie-general.php:54
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/gettext-pro.php:9 lib/pro/admin/tie-general.php:66
+#: lib/gettext-pro.php:9 lib/pro/admin/tie-general.php:60
 #: lib/std/admin/tie-general.php:59
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
 #: lib/gettext-pro.php:10 lib/gettext-pro.php:14 lib/gettext-pro.php:16
-#: lib/pro/admin/tie-general.php:69 lib/pro/admin/tie-general.php:83
-#: lib/pro/admin/tie-general.php:90 lib/std/admin/tie-general.php:62
+#: lib/pro/admin/tie-general.php:63 lib/pro/admin/tie-general.php:77
+#: lib/pro/admin/tie-general.php:84 lib/std/admin/tie-general.php:62
 #: lib/std/admin/tie-general.php:76 lib/std/admin/tie-general.php:83
 msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr ""
 
-#: lib/gettext-pro.php:11 lib/pro/admin/tie-general.php:73
+#: lib/gettext-pro.php:11 lib/pro/admin/tie-general.php:67
 #: lib/std/admin/tie-general.php:66
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/gettext-pro.php:12 lib/pro/admin/tie-general.php:76
+#: lib/gettext-pro.php:12 lib/pro/admin/tie-general.php:70
 #: lib/std/admin/tie-general.php:69
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr ""
 
-#: lib/gettext-pro.php:13 lib/pro/admin/tie-general.php:80
+#: lib/gettext-pro.php:13 lib/pro/admin/tie-general.php:74
 #: lib/std/admin/tie-general.php:73
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/gettext-pro.php:15 lib/pro/admin/tie-general.php:87
+#: lib/gettext-pro.php:15 lib/pro/admin/tie-general.php:81
 #: lib/std/admin/tie-general.php:80
 msgctxt "option label"
 msgid "Sharpening Threshold"
