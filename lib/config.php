@@ -88,8 +88,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 
 		public static function get_version( $add_slug = false ) {
 
-			$ext  = 'wpssotie';
-			$info =& self::$cf[ 'plugin' ][$ext];
+			$info =& self::$cf[ 'plugin' ][ 'wpssotie' ];
 
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
@@ -100,12 +99,17 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 				return;
 			}
 
+			$info =& self::$cf[ 'plugin' ][ 'wpssotie' ];
+
+			/**
+			 * Define fixed constants.
+			 */
 			define( 'WPSSOTIE_FILEPATH', $plugin_filepath );						
-			define( 'WPSSOTIE_PLUGINBASE', self::$cf[ 'plugin' ][ 'wpssotie' ][ 'base' ] );		// wpsso-tune-image-editors/wpsso-tune-image-editors.php
+			define( 'WPSSOTIE_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-tune-image-editors/wpsso-tune-image-editors.php.
 			define( 'WPSSOTIE_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
-			define( 'WPSSOTIE_PLUGINSLUG', self::$cf[ 'plugin' ][ 'wpssotie' ][ 'slug' ] );		// wpsso-tune-image-editors
+			define( 'WPSSOTIE_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-tune-image-editors.
 			define( 'WPSSOTIE_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
-			define( 'WPSSOTIE_VERSION', self::$cf[ 'plugin' ][ 'wpssotie' ][ 'version' ] );						
+			define( 'WPSSOTIE_VERSION', $info[ 'version' ] );						
 		}
 
 		public static function require_libs( $plugin_filepath ) {
