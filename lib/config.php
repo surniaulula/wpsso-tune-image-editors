@@ -114,8 +114,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 
 		public static function require_libs( $plugin_filepath ) {
 
-			require_once WPSSOTIE_PLUGINDIR . 'lib/register.php';
 			require_once WPSSOTIE_PLUGINDIR . 'lib/filters.php';
+			require_once WPSSOTIE_PLUGINDIR . 'lib/register.php';
 
 			add_filter( 'wpssotie_load_lib', array( 'WpssoTieConfig', 'load_lib' ), 10, 3 );
 		}
