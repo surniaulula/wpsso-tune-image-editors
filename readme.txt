@@ -32,7 +32,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 
 &#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This plugin helped me tune my images to look really good on social media. Great job!" - [undergroundnetwork](https://wordpress.org/support/topic/really-useful-at-making-your-social-media-images-the-best/)
 
-<h3>WPSSO TIE Free / Standard Features</h3>
+<h3>WPSSO TIE Standard Features</h3>
 
 * Extends the features of the WPSSO Core plugin.
 
