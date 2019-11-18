@@ -103,7 +103,7 @@ if ( ! class_exists( 'WpssoTieRegister' ) ) {
 
 					$version = WpssoTieConfig::$cf[ 'plugin' ][ 'wpssotie' ][ 'version' ];
 
-					WpssoUtil::save_all_times( 'wpssotie', $version );
+					WpssoUtil::register_ext_version( 'wpssotie', $version );
 				}
 			}
 		}
