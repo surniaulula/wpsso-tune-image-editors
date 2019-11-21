@@ -74,7 +74,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 			$ext_name   = $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'name' ];
 			$regen_url  = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
 			$notice_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
-			$info_msg   = __( 'When activating the %1$s add-on, or changing these options, please do not forget to <a href="%2$s">regenerate all image thumbnails / image sizes</a> to see the results.', 'wpsso-tune-image-editors' );
+			$info_msg   = __( 'When activating the %1$s add-on or changing its settings, do not forget to <a href="%2$s">regenerate all image thumbnails / image sizes</a> to see the results.', 'wpsso-tune-image-editors' );
 
 			/**
 			 * Do not save this notice in the user options table.
@@ -115,10 +115,15 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 				case 'tie-wp-general':
 
-					$table_rows[] = '' . 
+					$table_rows[ 'tie_wp_image_editors' ] = '' . 
 					$this->form->get_th_html( _x( 'Default WordPress Image Editor(s)',
 						'option label', 'wpsso-tune-image-editors' ), '', 'tie_wp_image_editors' ) . 
-					'<td>' . $this->form->get_select( 'tie_wp_image_editors', $this->p->cf['form']['editors'], '', '', true ) . '</td>';
+					'<td>' . $this->form->get_select( 'tie_wp_image_editors', $this->p->cf[ 'form' ][ 'editors' ], '', '', true ) . '</td>';
+
+					$table_rows[ 'tie_wp_image_adj_filter_prio' ] = '' . 
+					$this->form->get_th_html( _x( 'Adjustment Filter Priority',
+						'option label', 'wpsso-tune-image-editors' ), '', 'tie_wp_image_adj_filter_prio' ) . 
+					'<td>' . $this->form->get_input( 'tie_wp_image_adj_filter_prio', 'medium' ) . '</td>';
 
 					break;
 
@@ -127,8 +132,16 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 					$wp_imagick_position = array_search( 'WP_Image_Editor_Imagick', $this->implementations );
 
 					if ( false !== $wp_imagick_position ) {
-						$wp_imagick_status = '<font color="green">' . sprintf( __( 'Used as editor #%d',
+
+						if ( $wp_imagick_position > 0 ) {
+							$css_color = 'orange';
+						} else {
+							$css_color = 'green';
+						}
+
+						$wp_imagick_status = '<font color="' . $css_color . '">' . sprintf( __( 'Used as editor #%d',
 							'wpsso-tune-image-editors' ), $wp_imagick_position + 1 ) . '</font>';
+
 					} else {
 						$wp_imagick_status = '<font color="red">' . __( 'Not used', 'wpsso-tune-image-editors' ) . '</font>';
 					}
@@ -139,23 +152,61 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 						$php_imagick_status = '<font color="red">' . __( 'Not loaded', 'wpsso-tune-image-editors' ) . '</font>';
 					}
 
-					$table_rows[] = '' . 
+					$table_rows[ 'tie_wp_imagick_avail' ] = '' . 
 					$this->form->get_th_html( sprintf( _x( 'WordPress %s Editor',
 						'option label', 'wpsso-tune-image-editors' ), 'ImageMagick' ), '', 'tie_wp_imagick_avail' ) . 
 					'<td><strong>' . $wp_imagick_status . '</strong></td>';
 
-					$table_rows[] = '' . 
+					$table_rows[ 'tie_php_imagick_avail' ] = '' . 
 					$this->form->get_th_html( sprintf( _x( 'PHP %s Extension',
 						'option label', 'wpsso-tune-image-editors' ), 'ImageMagick' ), '', 'tie_php_imagick_avail' ) . 
 					'<td><strong>' . $php_imagick_status . '</strong></td>';
 
-					$table_rows['subsection_imagick_jpeg'] = '<td colspan="2" class="subsection"><h4>' . 
+					$table_rows[ 'subsection_imagick_jpeg' ] = '<td colspan="2" class="subsection"><h4>' . 
 						sprintf( _x( '%s Resized Images', 'metabox title', 'wpsso-tune-image-editors' ), 'JPEG' ) . '</h4></td>';
 
-					$table_rows[] = '' . 
+					$table_rows[ 'tie_imagick_jpeg_adjust' ] = '' . 
 					$this->form->get_th_html( sprintf( _x( 'Adjust %s Images',
 						'option label', 'wpsso-tune-image-editors' ), 'JPEG' ), '', 'tie_imagick_jpeg_adjust' ) . 
 					'<td>' . $this->form->get_checkbox( 'tie_imagick_jpeg_adjust' ) . '</td>';
+
+					$table_rows[ 'tie_imagick_jpeg_contrast_level' ] = '' . 
+					$this->form->get_th_html( _x( 'Contrast Leveling',
+						'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_contrast_level' ) . 
+					'<td>' . $this->form->get_checkbox( 'tie_imagick_jpeg_contrast_level' ) . '</td>';
+
+					$table_rows[ 'tie_imagick_jpeg_compress_quality' ] = '' . 
+					$this->form->get_th_html( _x( 'Compression Quality',
+						'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_compress_quality' ) . 
+					'<td>' . $this->form->get_input( 'tie_imagick_jpeg_compress_quality', 'short' ) . ' jpeg</td>';
+
+					$table_rows[ 'tie_imagick_jpeg_sharpen_sigma' ] = '' . 
+					$this->form->get_th_html( _x( 'Sharpening Sigma',
+						'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_sharpen_sigma' ) . 
+					'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_sigma', 'short' ) . ' ' . 
+						sprintf( _x( 'recommended value is %1$s to %2$s',
+							'option comment', 'wpsso-tune-image-editors' ), '0.5', '1.0' ) . '</td>';
+
+					$table_rows[ 'tie_imagick_jpeg_sharpen_radius' ] = $this->form->get_tr_hide( 'basic', 'tie_imagick_jpeg_sharpen_radius' ) . 
+					$this->form->get_th_html( _x( 'Sharpening Radius',
+						'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_sharpen_radius' ) . 
+					'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_radius', 'short' ) . ' ' . 
+						_x( 'recommended value is 0 (auto)',
+							'option comment', 'wpsso-tune-image-editors' ) . '</td>';
+
+					$table_rows[ 'tie_imagick_jpeg_sharpen_amount' ] = '' . 
+					$this->form->get_th_html( _x( 'Sharpening Amount',
+						'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_sharpen_amount' ) . 
+					'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_amount', 'short' ) . ' ' . 
+						sprintf( _x( 'recommended value is %1$s to %2$s',
+							'option comment', 'wpsso-tune-image-editors' ), '0.8', '1.2' ) . '</td>';
+
+					$table_rows[ 'tie_imagick_jpeg_sharpen_threshold' ] = '' . 
+					$this->form->get_th_html( _x( 'Sharpening Threshold',
+						'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_sharpen_threshold' ) . 
+					'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_threshold', 'short' ) . ' ' . 
+						sprintf( _x( 'recommended value is %1$s to %2$s',
+							'option comment', 'wpsso-tune-image-editors' ), '0', '0.05' ) . '</td>';
 
 					break;
 			}

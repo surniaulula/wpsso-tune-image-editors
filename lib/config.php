@@ -16,20 +16,20 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '2.0.2',	// Plugin version.
+					'version'     => '2.0.3-dev.2',	// Plugin version.
 					'opt_version' => '4',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune WP Image Editors',
 					'desc'        => 'Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.',
 					'slug'        => 'wpsso-tune-image-editors',
 					'base'        => 'wpsso-tune-image-editors/wpsso-tune-image-editors.php',
-					'update_auth' => 'tid',
+					'update_auth' => '',	// No premium version.
 					'text_domain' => 'wpsso-tune-image-editors',
 					'domain_path' => '/languages',
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.12.0',
+						'min_version' => '6.13.0-dev.2',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -39,14 +39,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					),
 					'lib' => array(
 						'pro' => array(
-							'admin' => array(
-								'tie-general' => 'WP Image Editors',
-							),
 						),
 						'std' => array(
-							'admin' => array(
-								'tie-general' => 'WP Image Editors',
-							),
 						),
 						'submenu' => array(
 							'tie-general' => 'WP Image Editors',

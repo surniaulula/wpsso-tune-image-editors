@@ -28,9 +28,10 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			$max_int = SucomUtil::get_max_int();
 
 			if ( is_admin() ) {
+
 				$this->p->util->add_plugin_filters( $this, array( 
 					'option_type'      => 2,
-					'messages_tooltip' => 3,		// tooltip messages filter
+					'messages_tooltip' => 3,
 				) );
 			}
 
