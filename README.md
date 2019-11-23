@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.2</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires At Least</th><td>WordPress 3.9</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To</th><td>WordPress 5.3</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
