@@ -49,8 +49,6 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 	* ImageMagick Only
 	* ImageMagick and GD (WordPress default)
 
-<h3>WPSSO TIE Premium Features</h3>
-
 * Optionally fine-tune the image filter priority and image adjustment options:
 
 	* Modify the default 'image_make_intermediate_size' filter hook priority.
