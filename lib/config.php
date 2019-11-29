@@ -87,7 +87,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 			return $add_slug ? $info[ 'slug' ] . '-' . $info[ 'version' ] : $info[ 'version' ];
 		}
 
-		public static function set_constants( $plugin_filepath ) { 
+		public static function set_constants( $plugin_file_path ) { 
 
 			if ( defined( 'WPSSOTIE_VERSION' ) ) {	// Define constants only once.
 				return;
@@ -98,15 +98,15 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 			/**
 			 * Define fixed constants.
 			 */
-			define( 'WPSSOTIE_FILEPATH', $plugin_filepath );						
+			define( 'WPSSOTIE_FILEPATH', $plugin_file_path );						
 			define( 'WPSSOTIE_PLUGINBASE', $info[ 'base' ] );	// Example: wpsso-tune-image-editors/wpsso-tune-image-editors.php.
-			define( 'WPSSOTIE_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_filepath ) ) ) );
+			define( 'WPSSOTIE_PLUGINDIR', trailingslashit( realpath( dirname( $plugin_file_path ) ) ) );
 			define( 'WPSSOTIE_PLUGINSLUG', $info[ 'slug' ] );	// Example: wpsso-tune-image-editors.
-			define( 'WPSSOTIE_URLPATH', trailingslashit( plugins_url( '', $plugin_filepath ) ) );
+			define( 'WPSSOTIE_URLPATH', trailingslashit( plugins_url( '', $plugin_file_path ) ) );
 			define( 'WPSSOTIE_VERSION', $info[ 'version' ] );						
 		}
 
-		public static function require_libs( $plugin_filepath ) {
+		public static function require_libs( $plugin_file_path ) {
 
 			require_once WPSSOTIE_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOTIE_PLUGINDIR . 'lib/register.php';
@@ -118,11 +118,11 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 
 			if ( false === $ret && ! empty( $filespec ) ) {
 
-				$filepath = WPSSOTIE_PLUGINDIR . 'lib/' . $filespec . '.php';
+				$file_path = WPSSOTIE_PLUGINDIR . 'lib/' . $filespec . '.php';
 
-				if ( file_exists( $filepath ) ) {
+				if ( file_exists( $file_path ) ) {
 
-					require_once $filepath;
+					require_once $file_path;
 
 					if ( empty( $classname ) ) {
 						return SucomUtil::sanitize_classname( 'wpssotie' . $filespec, $allow_underscore = false );

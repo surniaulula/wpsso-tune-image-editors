@@ -122,16 +122,16 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		/**
 		 * Apply adjustments to the resized image (leveling, sharpening, etc.).
 		 */
-		public function image_make_intermediate_size( $filepath ) {
+		public function image_make_intermediate_size( $file_path ) {
 
-			if ( ! file_exists( $filepath ) ) {
-				return $filepath;
+			if ( ! file_exists( $file_path ) ) {
+				return $file_path;
 			}
 				
-			$image_size = @getimagesize( $filepath );
+			$image_size = @getimagesize( $file_path );
 
 			if ( empty( $image_size[ 'mime' ] ) ) {
-				return $filepath;
+				return $file_path;
 			}
 
 			if ( $this->editor === null ) {	// Get the current editor only once.
@@ -151,7 +151,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 						case 'image/jpeg':
 
 							if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
-								return $this->adjust_imagick_jpeg( $filepath );
+								return $this->adjust_imagick_jpeg( $file_path );
 							}
 
 							break;
@@ -160,15 +160,15 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 					break;
 			}
 
-			return $filepath;
+			return $file_path;
 		}
 
 		/**
 		 * Adjust a JPEG image using ImageMagick.
 		 */
-		protected function adjust_imagick_jpeg( $filepath ) {
+		protected function adjust_imagick_jpeg( $file_path ) {
 
-			$image = new Imagick( $filepath );
+			$image = new Imagick( $file_path );
 
 			if ( $this->p->options[ 'tie_imagick_jpeg_contrast_level' ] ) {
 				$image->normalizeImage();
@@ -184,10 +184,10 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			$image->setImageFormat( 'jpg' );
 			$image->setImageCompression( Imagick::COMPRESSION_JPEG );
 			$image->setImageCompressionQuality( $this->p->options[ 'tie_imagick_jpeg_compress_quality' ] );
-			$image->writeImage( $filepath );
+			$image->writeImage( $file_path );
 			$image->destroy();
 
-			return $filepath;
+			return $file_path;
 		}
 
 		/**
