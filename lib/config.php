@@ -23,13 +23,13 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'desc'        => 'Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.',
 					'slug'        => 'wpsso-tune-image-editors',
 					'base'        => 'wpsso-tune-image-editors/wpsso-tune-image-editors.php',
-					'update_auth' => '',	// No premium version.
+					'update_auth' => '',		// No premium version.
 					'text_domain' => 'wpsso-tune-image-editors',
 					'domain_path' => '/languages',
 					'req'         => array(
 						'short'       => 'WPSSO Core',
 						'name'        => 'WPSSO Core',
-						'min_version' => '6.13.2',
+						'min_version' => '6.14.0',
 					),
 					'assets' => array(
 						'icons' => array(
@@ -48,18 +48,18 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					),
 				),
 			),
-			'opt' => array(						// options
+			'opt' => array(
 				'defaults' => array(
 					'tie_wp_image_editors'               => 'imagick+gd',
-					'tie_wp_image_adj_filter_prio'       => -1000,	// integer
-					'tie_imagick_jpeg_adjust'            => 1,	// checkbox
-					'tie_imagick_jpeg_auto_level'        => 0,	// checkbox
-					'tie_imagick_jpeg_contrast_level'    => 0,	// checkbox
-					'tie_imagick_jpeg_compress_quality'  => 92,	// positive number
-					'tie_imagick_jpeg_sharpen_sigma'     => 0.5,	// floating-point number
-					'tie_imagick_jpeg_sharpen_radius'    => 0,	// integer
-					'tie_imagick_jpeg_sharpen_amount'    => 1.0,	// floating-point number
-					'tie_imagick_jpeg_sharpen_threshold' => 0.05,	// floating-point number
+					'tie_wp_image_adj_filter_prio'       => -1000,		// Integer.
+					'tie_imagick_jpeg_adjust'            => 1,		// Checkbox.
+					'tie_imagick_jpeg_auto_level'        => 0,		// Checkbox.
+					'tie_imagick_jpeg_contrast_level'    => 0,		// Checkbox.
+					'tie_imagick_jpeg_compress_quality'  => 92,		// Positive number.
+					'tie_imagick_jpeg_sharpen_sigma'     => 0.5,		// Floating-point number.
+					'tie_imagick_jpeg_sharpen_radius'    => 0,		// Integer.
+					'tie_imagick_jpeg_sharpen_amount'    => 1.0,		// Floating-point number.
+					'tie_imagick_jpeg_sharpen_threshold' => 0.05,		// Floating-point number.
 				),
 			),
 			'wp' => array(
