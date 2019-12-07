@@ -8,6 +8,7 @@ License URI: https://www.gnu.org/licenses/gpl.txt
 Assets URI: https://surniaulula.github.io/wpsso-tune-image-editors/assets/
 Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
+Requires PHP: 5.5
 Requires At Least: 3.9
 Tested Up To: 5.3
 Stable Tag: 2.0.3
