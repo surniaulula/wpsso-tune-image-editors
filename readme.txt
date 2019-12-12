@@ -10,7 +10,7 @@ Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
-Tested Up To: 5.3
+Tested Up To: 5.3.1
 Stable Tag: 2.0.3
 
 Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
@@ -72,7 +72,7 @@ WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plu
 
 == Screenshots ==
 
-01. WPSSO TIE settings page to select the default WordPress image editors (Standard add-on).
+01. WPSSO TIE settings page to select the default WordPress image editors and fine-tune the ImageMagick PHP extension.
 
 == Changelog ==
 
