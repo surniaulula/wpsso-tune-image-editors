@@ -10,7 +10,7 @@ Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 3.9
-Tested Up To: 5.3.1
+Tested Up To: 5.3.2
 Stable Tag: 2.0.3
 
 Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
