@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
  * Requires PHP: 5.5
- * Requires At Least: 3.9
+ * Requires At Least: 4.0
  * Tested Up To: 5.3.2
  * Version: 2.0.3
  * 
