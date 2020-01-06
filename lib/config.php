@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'version'     => '2.0.3',	// Plugin version.
 					'opt_version' => '4',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
-					'name'        => 'WPSSO Tune WP Image Editors',
+					'name'        => 'WPSSO Tune Image Editors',
 					'desc'        => 'Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.',
 					'slug'        => 'wpsso-tune-image-editors',
 					'base'        => 'wpsso-tune-image-editors/wpsso-tune-image-editors.php',
@@ -43,7 +43,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 						'std' => array(
 						),
 						'submenu' => array(
-							'tie-general' => 'WP Image Editors',
+							'tie-general' => 'Tune Image Editors',
 						),
 					),
 				),

@@ -120,7 +120,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 						'option label', 'wpsso-tune-image-editors' ), '', 'tie_wp_image_editors' ) . 
 					'<td>' . $this->form->get_select( 'tie_wp_image_editors', $this->p->cf[ 'form' ][ 'editors' ], '', '', true ) . '</td>';
 
-					$table_rows[ 'tie_wp_image_adj_filter_prio' ] = '' . 
+					$table_rows[ 'tie_wp_image_adj_filter_prio' ] = $this->form->get_tr_hide( 'basic', 'tie_wp_image_adj_filter_prio' ) . 
 					$this->form->get_th_html( _x( 'Adjustment Filter Priority',
 						'option label', 'wpsso-tune-image-editors' ), '', 'tie_wp_image_adj_filter_prio' ) . 
 					'<td>' . $this->form->get_input( 'tie_wp_image_adj_filter_prio', 'medium' ) . '</td>';
@@ -170,7 +170,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 						'option label', 'wpsso-tune-image-editors' ), 'JPEG' ), '', 'tie_imagick_jpeg_adjust' ) . 
 					'<td>' . $this->form->get_checkbox( 'tie_imagick_jpeg_adjust' ) . '</td>';
 
-					$table_rows[ 'tie_imagick_jpeg_contrast_level' ] = '' . 
+					$table_rows[ 'tie_imagick_jpeg_contrast_level' ] = $this->form->get_tr_hide( 'basic', 'tie_imagick_jpeg_contrast_level' ) . 
 					$this->form->get_th_html( _x( 'Contrast Leveling',
 						'option label', 'wpsso-tune-image-editors' ), '', 'tie_imagick_jpeg_contrast_level' ) . 
 					'<td>' . $this->form->get_checkbox( 'tie_imagick_jpeg_contrast_level' ) . '</td>';

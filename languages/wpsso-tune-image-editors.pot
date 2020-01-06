@@ -1,8 +1,8 @@
-# Copyright (C) 2020 WPSSO Tune WP Image Editors
-# This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
+# Copyright (C) 2020 WPSSO Tune Image Editors
+# This file is distributed under the same license as the WPSSO Tune Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 2.0.3\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -133,7 +133,7 @@ msgstr ""
 
 #: lib/gettext-config.php:6
 msgctxt "lib file description"
-msgid "WP Image Editors"
+msgid "Tune Image Editors"
 msgstr ""
 
 #: lib/gettext-config.php:7
@@ -286,7 +286,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Tune WP Image Editors"
+msgid "WPSSO Tune Image Editors"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
