@@ -133,7 +133,7 @@ msgstr ""
 
 #: lib/gettext-config.php:6
 msgctxt "lib file description"
-msgid "Tune Image Editors"
+msgid "Image Editors"
 msgstr ""
 
 #: lib/gettext-config.php:7

@@ -43,7 +43,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 						'std' => array(
 						),
 						'submenu' => array(
-							'tie-general' => 'Tune Image Editors',
+							'tie-general' => 'Image Editors',
 						),
 					),
 				),
