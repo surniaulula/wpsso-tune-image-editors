@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 2.0.3\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.0.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2019-11-23 11:21-0800\n"
-"PO-Revision-Date: 2019-11-23 11:21-0800\n"
+"POT-Creation-Date: 2020-01-06 12:09-0800\n"
+"PO-Revision-Date: 2020-01-06 12:10-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -100,8 +100,8 @@ msgstr "Une valeur de 0 peut être souhaitable pour conserver les détails fins 
 
 #: lib/gettext-config.php:6
 msgctxt "lib file description"
-msgid "WP Image Editors"
-msgstr "Éditeurs d'image"
+msgid "Tune Image Editors"
+msgstr "Réglez éditeurs d'images"
 
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
@@ -235,17 +235,17 @@ msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr "Ajuster les images %s"
 
-#: wpsso-tune-image-editors.php:105
+#: wpsso-tune-image-editors.php:106
 msgid "The %1$s add-on requires the %2$s plugin &mdash; install and activate the %3$s plugin or <a href=\"%4$s\">deactivate the %5$s add-on</a>."
 msgstr "L'ajout %1$s requiert l'extension %2$s &mdash; installer et activer l'extension %3$s ou <a href=\"%4$s\">désactiver l'ajout %5$s</a>."
 
-#: wpsso-tune-image-editors.php:203
+#: wpsso-tune-image-editors.php:204
 msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed)."
 msgstr "L'ajout %1$s version %2$s requiert %3$s version %4$s ou plus récente (version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Tune WP Image Editors"
-msgstr "WPSSO Tune WP Image Editors"
+msgid "WPSSO Tune Image Editors"
+msgstr "WPSSO Tune Image Editors"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
