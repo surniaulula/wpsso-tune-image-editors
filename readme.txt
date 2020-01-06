@@ -1,5 +1,5 @@
-=== Tune WP Image Editors | WPSSO Add-on ===
-Plugin Name: WPSSO Tune WP Image Editors
+=== Tune Image Editors | WPSSO Add-on ===
+Plugin Name: WPSSO Tune Image Editors
 Plugin Slug: wpsso-tune-image-editors
 Text Domain: wpsso-tune-image-editors
 Domain Path: /languages
@@ -23,7 +23,7 @@ Sharpen and improve WordPress thumbnails and resized images for social sharing a
 
 The reason is that after an image is resized, that image *must* be sharpened &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)
 
-The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies a default amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
+The WPSSO Tune Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies a default amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
 
 **Compatible with all image compression / optimization plugins:**
 
@@ -59,7 +59,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 
 <h3>WPSSO Core Plugin Required</h3>
 
-WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 == Installation ==
 
