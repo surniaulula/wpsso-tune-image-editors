@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.5
 Requires At Least: 4.0
 Tested Up To: 5.3.2
-Stable Tag: 2.0.3
+Stable Tag: 2.0.4
 
 Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
 
@@ -92,16 +92,16 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.0.3 (2019/11/23)**
+**Version 2.0.4 (2020/01/07)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Update for the add-on name, menu name, a few option labels, and their French translations.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Updated `WpssoTieRegister->activate_plugin()` for the new WpssoUtilReg class in WPSSO Core v6.13.1.
+	* None.
 * **Requires At Least**
 	* PHP v5.5.
 	* WordPress v4.0.
@@ -109,7 +109,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.0.3 =
+= 2.0.4 =
 
-(2019/11/23) Update for the new WpssoUtilReg class in WPSSO Core v6.13.1.
+(2020/01/07) Update for the add-on name, menu name, a few option labels, and their French translations.
 
