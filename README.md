@@ -4,7 +4,7 @@
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune Image Editors</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.0.4</td></tr>
-<tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.5 or newer</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.0 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.4</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
