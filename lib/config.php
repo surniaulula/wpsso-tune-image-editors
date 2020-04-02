@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '2.0.4',	// Plugin version.
+					'version'     => '2.1.0-dev.1',	// Plugin version.
 					'opt_version' => '4',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune Image Editors',
@@ -26,17 +26,31 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'update_auth' => '',		// No premium version.
 					'text_domain' => 'wpsso-tune-image-editors',
 					'domain_path' => '/languages',
-					'req'         => array(
-						'short'       => 'WPSSO Core',
-						'name'        => 'WPSSO Core',
-						'min_version' => '6.27.1',
+
+					/**
+					 * Required plugin and its version.
+					 */
+					'req' => array(
+						'wpsso' => array(
+							'class'       => 'Wpsso',
+							'name'        => 'WPSSO Core',
+							'min_version' => '6.27.1',
+						),
 					),
+
+					/**
+					 * Relative paths to asset images.
+					 */
 					'assets' => array(
 						'icons' => array(
 							'low'  => 'images/icon-128x128.png',
 							'high' => 'images/icon-256x256.png',
 						),
 					),
+
+					/**
+					 * Library files loaded and instantiated by WPSSO.
+					 */
 					'lib' => array(
 						'pro' => array(
 						),
@@ -48,6 +62,10 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					),
 				),
 			),
+
+			/**
+			 * Additional add-on setting options.
+			 */
 			'opt' => array(
 				'defaults' => array(
 					'tie_wp_image_editors'               => 'imagick+gd',
