@@ -90,7 +90,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 
 		public static function show_required_notices() {
 
-			$info = WpssoTieonfig::$cf[ 'plugin' ][ 'wpssotie' ];
+			$info = WpssoTieConfig::$cf[ 'plugin' ][ 'wpssotie' ];
 
 			foreach ( $info[ 'req' ] as $ext => $req_info ) {
 
