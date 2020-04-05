@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Tune Image Editors 2.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2020-04-03 11:30-0700\n"
-"PO-Revision-Date: 2020-04-03 11:30-0700\n"
+"POT-Creation-Date: 2020-04-05 15:51-0700\n"
+"PO-Revision-Date: 2020-04-05 15:51-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -105,8 +105,8 @@ msgstr "Éditeurs d'image"
 
 #: lib/gettext-config.php:7
 msgctxt "plugin description"
-msgid "Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO."
-msgstr "Affine et améliore les vignettes et images redimensionnées WordPress pour le partage social et SEO."
+msgid "Sharpen and Improve WordPress Thumbnails and Resized Images for Social Sharing and Better SEO."
+msgstr "Affinez et améliorez les images miniatures et redimensionnées WordPress pour le partage social et un meilleur référencement."
 
 #: lib/gettext-config.php:8
 msgctxt "option value"
@@ -252,8 +252,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
 
 #. Description of the plugin/theme
-msgid "Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO."
-msgstr "Affine et améliore les vignettes et images redimensionnées WordPress pour le partage social et SEO."
+msgid "Sharpen and Improve WordPress Thumbnails and Resized Images for Social Sharing and Better SEO."
+msgstr "Affinez et améliorez les images miniatures et redimensionnées WordPress pour le partage social et un meilleur référencement."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
