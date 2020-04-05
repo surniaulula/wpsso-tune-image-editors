@@ -13,7 +13,7 @@ Requires At Least: 4.2
 Tested Up To: 5.4
 Stable Tag: 2.0.4
 
-Sharpen and improve WordPress thumbnails and resized images for social sharing and better SEO.
+Sharpen and Improve WordPress Thumbnails and Resized Images for Social Sharing and Better SEO.
 
 == Description ==
 
