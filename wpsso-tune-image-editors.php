@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.2
  * Tested Up To: 5.4
- * Version: 2.1.0-rc.2
+ * Version: 2.1.0-rc.3
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -124,6 +124,9 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			}
 		}
 
+		/**
+		 * The 'wpsso_init_textdomain' action is run after the $check, $avail, and $debug properties are defined.
+		 */
 		public static function wpsso_init_textdomain() {
 
 			static $do_once = null;
