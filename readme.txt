@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
 Tested Up To: 5.4
-Stable Tag: 2.0.4
+Stable Tag: 2.1.0
 
 Sharpen and Improve WordPress Thumbnails and Resized Images for Social Sharing and Better SEO.
 
