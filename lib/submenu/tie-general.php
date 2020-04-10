@@ -34,6 +34,16 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 		 */
 		protected function add_meta_boxes() {
 
+			$ext_name = $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'name' ];
+
+			$regen_url = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
+
+			$notice_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
+
+			$notice_msg = '<p>' . __( 'After first activating the %1$s add-on or changing its settings,<br/>don\'t forget to <a href="%2$s">regenerate all image thumbnail and image sizes</a> to see the results.', 'wpsso-tune-image-editors' ) . '</p>';
+
+			$this->p->notice->nag( sprintf( $notice_msg, $ext_name, $regen_url ), null, $notice_key );
+
 			$metabox_id      = 'wp';
 			$metabox_title   = _x( 'WordPress Settings', 'metabox title', 'wpsso-tune-image-editors' );
 			$metabox_screen  = $this->pagehook;
@@ -71,20 +81,13 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 			$this->implementations = apply_filters( 'wp_image_editors', array( 'WP_Image_Editor_Imagick', 'WP_Image_Editor_GD' ) );
 
-			$ext_name   = $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'name' ];
-			$regen_url  = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
-			$notice_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
-			$info_msg   = __( 'When activating the %1$s add-on or changing its settings, do not forget to <a href="%2$s">regenerate all image thumbnails / image sizes</a> to see the results.', 'wpsso-tune-image-editors' );
+			$metabox_id = 'tie-wp';
 
-			/**
-			 * Do not save this notice in the user options table.
-			 */
-			$this->p->notice->inf( sprintf( $info_msg, $ext_name, $regen_url ) . ' ;-)', $user_id = false, $notice_key, true );
+			$tab_key = 'general';
 
-			$metabox_id  = 'tie-wp';
-			$tab_key     = 'general';
 			$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows' );
-			$table_rows  = $this->get_table_rows( $metabox_id, $tab_key );
+
+			$table_rows = $this->get_table_rows( $metabox_id, $tab_key );
 
 			$this->p->util->do_metabox_table( apply_filters( $filter_name, $table_rows, $this->form ),
 				'metabox-' . $metabox_id . '-' . $tab_key );
@@ -93,7 +96,9 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 		public function show_metabox_ext() {
 
 			$metabox_id = 'tie-ext';
-			$tabs       = array( 'imagick' => _x( 'ImageMagick', 'metabox tab', 'wpsso-tune-image-editors' ) );
+
+			$tabs = array( 'imagick' => _x( 'ImageMagick', 'metabox tab', 'wpsso-tune-image-editors' ) );
+
 			$table_rows = array();
 
 			foreach ( $tabs as $tab_key => $title ) {
