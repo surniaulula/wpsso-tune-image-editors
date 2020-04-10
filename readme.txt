@@ -92,6 +92,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.2.0-dev.1 (TBD)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Updated the reminder notice text to regenerate images after changing the add-on settings.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v6.28.0.
+
 **Version 2.1.0 (2020/04/06)**
 
 * **New Features**
