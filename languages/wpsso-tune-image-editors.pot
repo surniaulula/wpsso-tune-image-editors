@@ -163,49 +163,49 @@ msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
 
-#: lib/gettext-pro.php:6 lib/submenu/tie-general.php:129
+#: lib/gettext-pro.php:6 lib/submenu/tie-general.php:130
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr ""
 
-#: lib/gettext-pro.php:7 lib/submenu/tie-general.php:179
+#: lib/gettext-pro.php:7 lib/submenu/tie-general.php:180
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr ""
 
-#: lib/gettext-pro.php:8 lib/submenu/tie-general.php:184
+#: lib/gettext-pro.php:8 lib/submenu/tie-general.php:185
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/gettext-pro.php:9 lib/submenu/tie-general.php:189
+#: lib/gettext-pro.php:9 lib/submenu/tie-general.php:190
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
 #: lib/gettext-pro.php:10 lib/gettext-pro.php:14 lib/gettext-pro.php:16
-#: lib/submenu/tie-general.php:192 lib/submenu/tie-general.php:206
-#: lib/submenu/tie-general.php:213
+#: lib/submenu/tie-general.php:193 lib/submenu/tie-general.php:207
+#: lib/submenu/tie-general.php:214
 msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr ""
 
-#: lib/gettext-pro.php:11 lib/submenu/tie-general.php:196
+#: lib/gettext-pro.php:11 lib/submenu/tie-general.php:197
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/gettext-pro.php:12 lib/submenu/tie-general.php:199
+#: lib/gettext-pro.php:12 lib/submenu/tie-general.php:200
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr ""
 
-#: lib/gettext-pro.php:13 lib/submenu/tie-general.php:203
+#: lib/gettext-pro.php:13 lib/submenu/tie-general.php:204
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/gettext-pro.php:15 lib/submenu/tie-general.php:210
+#: lib/gettext-pro.php:15 lib/submenu/tie-general.php:211
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
@@ -227,48 +227,48 @@ msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:100
+#: lib/submenu/tie-general.php:99
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr ""
 
-#: lib/submenu/tie-general.php:124
+#: lib/submenu/tie-general.php:125
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:147
+#: lib/submenu/tie-general.php:148
 msgid "Used as editor #%d"
 msgstr ""
 
-#: lib/submenu/tie-general.php:151
+#: lib/submenu/tie-general.php:152
 msgid "Not used"
 msgstr ""
 
-#: lib/submenu/tie-general.php:155
+#: lib/submenu/tie-general.php:156
 msgid "Loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:157
+#: lib/submenu/tie-general.php:158
 msgid "Not loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:161
+#: lib/submenu/tie-general.php:162
 msgctxt "option label"
 msgid "WordPress %s Editor"
 msgstr ""
 
-#: lib/submenu/tie-general.php:166
+#: lib/submenu/tie-general.php:167
 msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr ""
 
-#: lib/submenu/tie-general.php:171
+#: lib/submenu/tie-general.php:172
 msgctxt "metabox title"
 msgid "%s Resized Images"
 msgstr ""
 
-#: lib/submenu/tie-general.php:174
+#: lib/submenu/tie-general.php:175
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""
