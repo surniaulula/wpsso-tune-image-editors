@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.1 (TBD)**
+**Version 2.2.0-dev.2 (TBD)**
 
 * **New Features**
 	* None.
@@ -105,7 +105,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v6.29.0-dev.1.
+	* WPSSO Core v6.29.0-dev.2.
 
 **Version 2.1.0 (2020/04/06)**
 
