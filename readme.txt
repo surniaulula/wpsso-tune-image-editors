@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.2.0-dev.2 (TBD)**
+**Version 2.2.0-dev.3 (2020/05/15)**
 
 * **New Features**
 	* None.
@@ -105,7 +105,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v6.29.0-dev.2.
+	* WPSSO Core v6.29.0-dev.3.
 
 **Version 2.1.0 (2020/04/06)**
 
@@ -138,6 +138,10 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WPSSO Core v6.27.1.
 
 == Upgrade Notice ==
+
+= 2.2.0-dev.3 =
+
+(2020/04/15) Updated the reminder notice text to regenerate images after changing the add-on settings.
 
 = 2.1.0 =
 
