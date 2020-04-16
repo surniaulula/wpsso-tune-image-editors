@@ -212,9 +212,9 @@ msgstr ""
 
 #: lib/submenu/tie-general.php:43
 msgid ""
-"After first activating the %1$s add-on or changing its settings,<br/>don't "
-"forget to <a href=\"%2$s\">regenerate all image thumbnail and image sizes</"
-"a> to see the results."
+"After activating the %1$s add-on or changing its settings,<br/>don't forget "
+"to <a href=\"%2$s\">regenerate all image thumbnail and image sizes</a> to "
+"see the results."
 msgstr ""
 
 #: lib/submenu/tie-general.php:48
