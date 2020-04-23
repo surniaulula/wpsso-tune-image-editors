@@ -13,7 +13,7 @@ Requires At Least: 4.2
 Tested Up To: 5.4
 Stable Tag: 2.2.0
 
-Sharpen and Improve WordPress Thumbnails and Resized Images for Social Sharing and Better SEO.
+Improve the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.
 
 == Description ==
 
@@ -23,7 +23,7 @@ Sharpen and Improve WordPress Thumbnails and Resized Images for Social Sharing a
 
 The reason is that after an image is resized, that image *must* be sharpened &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)
 
-The WPSSO Tune Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies a default amount of sharpening to all JPEG images resized by the WordPress ImageMagick editor.
+The WPSSO Tune Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.
 
 **Compatible with all image compression / optimization plugins:**
 
