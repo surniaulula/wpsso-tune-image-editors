@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Improve the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.
+ * Description: Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.
  * Requires PHP: 5.6
  * Requires At Least: 4.2
  * Tested Up To: 5.4
