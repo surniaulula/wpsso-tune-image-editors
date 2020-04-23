@@ -20,7 +20,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'opt_version' => '4',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune Image Editors',
-					'desc'        => 'Sharpen and Improve WordPress Thumbnails and Resized Images for Social Sharing and Better SEO.',
+					'desc'        => 'Improve the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.',
 					'slug'        => 'wpsso-tune-image-editors',
 					'base'        => 'wpsso-tune-image-editors/wpsso-tune-image-editors.php',
 					'update_auth' => '',		// No premium version.
