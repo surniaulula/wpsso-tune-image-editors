@@ -13,7 +13,7 @@ Requires At Least: 4.2
 Tested Up To: 5.4
 Stable Tag: 2.2.0
 
-Improve the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.
+Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.
 
 == Description ==
 
