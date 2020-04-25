@@ -65,8 +65,8 @@ WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin
 
 <h3 class="top">Install and Uninstall</h3>
 
-* [Install the WPSSO TIE Add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/)
-* [Uninstall the WPSSO TIE Add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/)
+* [Install the WPSSO Tune Image Editors add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/).
+* [Uninstall the WPSSO Tune Image Editors add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/).
 
 == Frequently Asked Questions ==
 

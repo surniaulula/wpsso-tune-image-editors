@@ -69,8 +69,8 @@
 <h3 class="top">Install and Uninstall</h3>
 
 <ul>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/">Install the WPSSO TIE Add-on</a></li>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/">Uninstall the WPSSO TIE Add-on</a></li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/">Install the WPSSO Tune Image Editors add-on</a>.</li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/">Uninstall the WPSSO Tune Image Editors add-on</a>.</li>
 </ul>
 
 
