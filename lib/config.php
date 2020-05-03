@@ -34,7 +34,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 						'wpsso' => array(
 							'class'       => 'Wpsso',
 							'name'        => 'WPSSO Core',
-							'min_version' => '7.0.1',
+							'min_version' => '7.3.0',
 						),
 					),
 
