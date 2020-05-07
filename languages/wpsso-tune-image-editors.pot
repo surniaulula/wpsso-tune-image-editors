@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 2.2.0\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.3.0-dev.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -273,16 +273,16 @@ msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""
 
-#: wpsso-tune-image-editors.php:111
+#: wpsso-tune-image-editors.php:224
 msgid ""
-"The %1$s add-on requires the %2$s plugin &mdash; please install and activate "
-"the missing plugin."
+"The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
+"activate the missing plugin."
 msgstr ""
 
-#: wpsso-tune-image-editors.php:258
+#: wpsso-tune-image-editors.php:227
 msgid ""
-"The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
-"%5$s is currently installed)."
+"The %1$s version %2$s add-on requires the %3$s version %4$s plugin or newer "
+"(version %5$s is currently installed)."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
