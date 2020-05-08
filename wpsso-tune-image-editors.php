@@ -14,7 +14,7 @@
  * Requires PHP: 5.6
  * Requires At Least: 4.2
  * Tested Up To: 5.4.1
- * Version: 2.3.0-dev.3
+ * Version: 2.3.0-dev.4
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -50,7 +50,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 		 */
 		private static $ext           = 'wpssotie';
 		private static $p_ext         = 'tie';
-		private static $notices_shown = false;
+		private static $missing_shown = false;
 		private static $instance      = null;
 
 		public function __construct() {
@@ -159,37 +159,53 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 
 		/**
 		 * All WPSSO objects are instantiated and configured.
+		 *
+		 * The $is_admin and $doing_ajax arguments are provided since WPSSO Core v7.4.0.
 		 */
-		public function wpsso_init_plugin() {
+		public function wpsso_init_plugin( $is_admin = null, $doing_ajax = null ) {
+
+			$is_admin = null === $is_admin ? is_admin() : $is_admin;
+
+			$doing_ajax = null === $doing_ajax ? SucomUtil::get_const( 'DOING_AJAX' ) : $doing_ajax;
 
 			$missing_reqs = self::get_missing_requirements();	// Returns false or an array of missing requirements.
 
-			if ( ! $missing_reqs ) {
+			self::$missing_shown = true;
+
+			if ( ! $doing_ajax && $missing_reqs ) {
+
+				$error_pre = sprintf( '%s error:', __METHOD__ );
+
+				foreach ( $missing_reqs as $key => $req_info ) {
+
+					if ( ! empty( $req_info[ 'notice' ] ) ) {
+
+						if ( $is_admin ) {
+
+							$this->p->notice->err( $req_info[ 'notice' ] );
+
+							SucomUtil::safe_error_log( $error_pre . ' ' . $req_info[ 'notice' ], $strip_html = true );
+						}
+			
+						if ( $this->p->debug->enabled ) {
+							$this->p->debug->log( strtolower( $req_info[ 'notice' ] ) );
+						}
+					}
+				}
 
 				return;	// Stop here.
 			}
-
-			foreach ( $missing_reqs as $key => $req_info ) {
-
-				if ( ! empty( $req_info[ 'notice' ] ) ) {
-
-					$this->p->notice->err( $req_info[ 'notice' ] );
-				}
-			}
-
-			self::$notices_shown = true;
 		}
 
 		public static function maybe_show_notices() {
 
-			if ( self::$notices_shown ) {	// Nothing to do.
-				return;
+			if ( self::$missing_shown ) {	// Nothing to do.
+				return;	// Stop here.
 			}
 
 			$missing_reqs = self::get_missing_requirements();	// Returns false or an array of missing requirements.
 
 			if ( ! $missing_reqs ) {
-
 				return;	// Stop here.
 			}
 
@@ -221,42 +237,44 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 
 			$info = WpssoTieConfig::$cf[ 'plugin' ][ self::$ext ];
 
-			$notice_missing_transl = __( 'The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin.',
+			$plugin_missing_transl = __( 'The %1$s version %2$s add-on requires the %3$s plugin &mdash; please activate the missing plugin.',
 				'wpsso-tune-image-editors' );
 
-			$notice_version_transl = __( 'The %1$s version %2$s add-on requires the %3$s version %4$s plugin or newer (version %5$s is currently installed).',
+			$old_version_transl = __( 'The %1$s version %2$s add-on requires %3$s version %4$s or newer (version %5$s is currently installed).',
 				'wpsso-tune-image-editors' );
 
 			foreach ( $info[ 'req' ] as $key => $req_info ) {
 
 				if ( ! empty( $req_info[ 'home' ] ) ) {
+
 					$req_name = '<a href="' . $req_info[ 'home' ] . '">' . $req_info[ 'name' ] . '</a>';
+
 				} else {
+
 					$req_name = $req_info[ 'name' ];
 				}
 
-				if ( ! empty( $req_info[ 'class' ] ) ) {
+				if ( ! empty( $req_info[ 'version_global' ] ) && ! empty( $GLOBALS[ $req_info[ 'version_global' ] ] ) ) {
 
-					if ( ! class_exists( $req_info[ 'class' ] ) ) {
+					$req_info[ 'version' ] = $GLOBALS[ $req_info[ 'version_global' ] ];
 
-						$req_info[ 'notice' ] = sprintf( $notice_missing_transl, $info[ 'name' ], $info[ 'version' ], $req_name );
-					}
+				} elseif ( ! empty( $req_info[ 'version_const' ] ) && defined( $req_info[ 'version_const' ] ) ) {
+
+					$req_info[ 'version' ] = constant( $req_info[ 'version_const' ] );
+
+				} elseif ( ! empty( $req_info[ 'plugin_class' ] ) && ! class_exists( $req_info[ 'plugin_class' ] ) ) {
+
+					$req_info[ 'notice' ] = sprintf( $plugin_missing_transl, $info[ 'name' ], $info[ 'version' ], $req_name );
 				}
 
+				if ( ! empty( $req_info[ 'version' ] ) ) {
 
-				if ( ! empty( $req_info[ 'version_const' ] ) ) {
+					if ( ! empty( $req_info[ 'min_version' ] ) ) {
 
-					if ( defined( $req_info[ 'version_const' ] ) ) {
+						if ( version_compare( $req_info[ 'version' ], $req_info[ 'min_version' ], '<' ) ) {
 
-						$req_info[ 'version' ] = constant( $req_info[ 'version_const' ] );
-
-						if ( ! empty( $req_info[ 'min_version' ] ) ) {
-
-							if ( version_compare( $req_info[ 'version' ], $req_info[ 'min_version' ], '<' ) ) {
-
-								$req_info[ 'notice' ] = sprintf( $notice_version_transl, $info[ 'name' ], $info[ 'version' ],
-									$req_name, $req_info[ 'min_version' ], $req_info[ 'version' ] );
-							}
+							$req_info[ 'notice' ] = sprintf( $old_version_transl, $info[ 'name' ], $info[ 'version' ],
+								$req_name, $req_info[ 'min_version' ], $req_info[ 'version' ] );
 						}
 					}
 				}
