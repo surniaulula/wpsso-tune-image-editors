@@ -3,7 +3,7 @@
 <table>
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune Image Editors</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.</td></tr>
-<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.2.0</td></tr>
+<tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.3.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.2 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>5.4.1</td></tr>
