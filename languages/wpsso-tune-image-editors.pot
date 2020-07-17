@@ -163,53 +163,6 @@ msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
 
-#: lib/gettext-pro.php:6 lib/submenu/tie-general.php:130
-msgctxt "option label"
-msgid "Adjustment Filter Priority"
-msgstr ""
-
-#: lib/gettext-pro.php:7 lib/submenu/tie-general.php:180
-msgctxt "option label"
-msgid "Contrast Leveling"
-msgstr ""
-
-#: lib/gettext-pro.php:8 lib/submenu/tie-general.php:185
-msgctxt "option label"
-msgid "Compression Quality"
-msgstr ""
-
-#: lib/gettext-pro.php:9 lib/submenu/tie-general.php:190
-msgctxt "option label"
-msgid "Sharpening Sigma"
-msgstr ""
-
-#: lib/gettext-pro.php:10 lib/gettext-pro.php:14 lib/gettext-pro.php:16
-#: lib/submenu/tie-general.php:193 lib/submenu/tie-general.php:207
-#: lib/submenu/tie-general.php:214
-msgctxt "option comment"
-msgid "recommended value is %1$s to %2$s"
-msgstr ""
-
-#: lib/gettext-pro.php:11 lib/submenu/tie-general.php:197
-msgctxt "option label"
-msgid "Sharpening Radius"
-msgstr ""
-
-#: lib/gettext-pro.php:12 lib/submenu/tie-general.php:200
-msgctxt "option comment"
-msgid "recommended value is 0 (auto)"
-msgstr ""
-
-#: lib/gettext-pro.php:13 lib/submenu/tie-general.php:204
-msgctxt "option label"
-msgid "Sharpening Amount"
-msgstr ""
-
-#: lib/gettext-pro.php:15 lib/submenu/tie-general.php:211
-msgctxt "option label"
-msgid "Sharpening Threshold"
-msgstr ""
-
 #: lib/submenu/tie-general.php:43
 msgid ""
 "After activating the %1$s add-on or changing its settings,<br/>don't forget "
@@ -235,6 +188,11 @@ msgstr ""
 #: lib/submenu/tie-general.php:125
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
+msgstr ""
+
+#: lib/submenu/tie-general.php:130
+msgctxt "option label"
+msgid "Adjustment Filter Priority"
 msgstr ""
 
 #: lib/submenu/tie-general.php:148
@@ -271,6 +229,47 @@ msgstr ""
 #: lib/submenu/tie-general.php:175
 msgctxt "option label"
 msgid "Adjust %s Images"
+msgstr ""
+
+#: lib/submenu/tie-general.php:180
+msgctxt "option label"
+msgid "Contrast Leveling"
+msgstr ""
+
+#: lib/submenu/tie-general.php:185
+msgctxt "option label"
+msgid "Compression Quality"
+msgstr ""
+
+#: lib/submenu/tie-general.php:190
+msgctxt "option label"
+msgid "Sharpening Sigma"
+msgstr ""
+
+#: lib/submenu/tie-general.php:193 lib/submenu/tie-general.php:207
+#: lib/submenu/tie-general.php:214
+msgctxt "option comment"
+msgid "recommended value is %1$s to %2$s"
+msgstr ""
+
+#: lib/submenu/tie-general.php:197
+msgctxt "option label"
+msgid "Sharpening Radius"
+msgstr ""
+
+#: lib/submenu/tie-general.php:200
+msgctxt "option comment"
+msgid "recommended value is 0 (auto)"
+msgstr ""
+
+#: lib/submenu/tie-general.php:204
+msgctxt "option label"
+msgid "Sharpening Amount"
+msgstr ""
+
+#: lib/submenu/tie-general.php:211
+msgctxt "option label"
+msgid "Sharpening Threshold"
 msgstr ""
 
 #: wpsso-tune-image-editors.php:241
