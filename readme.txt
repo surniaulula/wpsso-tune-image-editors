@@ -92,6 +92,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.4.0-dev.2 (2020/07/31)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* None.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* Renamed the config array keys for icons URLs from 'low' and 'high' to '1x' and '2x'.
+* **Requires At Least**
+	* PHP v5.6.
+	* WordPress v4.2.
+	* WPSSO Core v7.15.0-dev.2.
+
 **Version 2.3.0 (2020/05/09)**
 
 * **New Features**
@@ -107,66 +122,13 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.2.
 	* WPSSO Core v7.5.0.
 
-**Version 2.2.0 (2020/04/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the reminder notice text to regenerate images after activating the add-on or changing the settings.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v7.3.0.
-
-**Version 2.1.0 (2020/04/06)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated "Requires At Least" to WordPress v4.2.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored WPSSO Core active and minimum version dependency checks.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.2.
-	* WPSSO Core v6.28.0.
-
-**Version 2.0.4 (2020/01/07)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Update for the add-on name, menu name, a few option labels, and their French translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.0.
-	* WPSSO Core v6.27.1.
-
 == Upgrade Notice ==
+
+= 2.4.0-dev.2 =
+
+(2020/07/31) Renamed the config array keys for icons URLs from 'low' and 'high' to '1x' and '2x'.
 
 = 2.3.0 =
 
 (2020/05/09) Refactored the required plugin check to (optionally) check the class name and a version constant.
-
-= 2.2.0 =
-
-(2020/04/17) Updated the reminder notice text to regenerate images after activating the add-on or changing the settings.
-
-= 2.1.0 =
-
-(2020/04/06) Updated "Requires At Least" to WordPress v4.2. Refactored WPSSO Core active and minimum version dependency checks.
-
-= 2.0.4 =
-
-(2020/01/07) Update for the add-on name, menu name, a few option labels, and their French translations.
 
