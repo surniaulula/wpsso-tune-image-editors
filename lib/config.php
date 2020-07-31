@@ -45,8 +45,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					 */
 					'assets' => array(
 						'icons' => array(
-							'low'  => 'images/icon-128x128.png',
-							'high' => 'images/icon-256x256.png',
+							'1x' => 'images/icon-128x128.png',
+							'2x' => 'images/icon-256x256.png',
 						),
 					),
 
