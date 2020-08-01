@@ -16,7 +16,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '2.4.0-dev.2',	// Plugin version.
+					'version'     => '2.4.0-dev.3',	// Plugin version.
 					'opt_version' => '4',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune Image Editors',
@@ -36,7 +36,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '7.15.0-dev.2',
+							'min_version'   => '7.15.0-dev.3',
 						),
 					),
 
@@ -45,8 +45,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					 */
 					'assets' => array(
 						'icons' => array(
-							'1x' => 'images/icon-128x128.png',
-							'2x' => 'images/icon-256x256.png',
+							'low'  => 'images/icon-128x128.png',
+							'high' => 'images/icon-256x256.png',
 						),
 					),
 
