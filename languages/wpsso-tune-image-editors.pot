@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 2.4.0-dev.3\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.4.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -272,13 +272,13 @@ msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
 
-#: wpsso-tune-image-editors.php:241
+#: wpsso-tune-image-editors.php:249
 msgid ""
 "The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
 "activate the missing plugin."
 msgstr ""
 
-#: wpsso-tune-image-editors.php:244
+#: wpsso-tune-image-editors.php:252
 msgid ""
 "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
 "%5$s is currently installed)."
