@@ -134,9 +134,9 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 			add_filter( 'wpssotie_load_lib', array( 'WpssoTieConfig', 'load_lib' ), 10, 3 );
 		}
 
-		public static function load_lib( $ret = false, $filespec = '', $classname = '' ) {
+		public static function load_lib( $success = false, $filespec = '', $classname = '' ) {
 
-			if ( false === $ret && ! empty( $filespec ) ) {
+			if ( false === $success && ! empty( $filespec ) ) {
 
 				$file_path = WPSSOTIE_PLUGINDIR . 'lib/' . $filespec . '.php';
 
@@ -145,14 +145,15 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					require_once $file_path;
 
 					if ( empty( $classname ) ) {
+
 						return SucomUtil::sanitize_classname( 'wpssotie' . $filespec, $allow_underscore = false );
-					} else {
-						return $classname;
 					}
+
+					return $classname;
 				}
 			}
 
-			return $ret;
+			return $success;
 		}
 	}
 }
