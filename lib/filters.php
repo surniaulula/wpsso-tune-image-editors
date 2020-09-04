@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -18,12 +19,10 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 		public function __construct( &$plugin ) {
 
-			/**
-			 * Just in case - prevent filters from being hooked and executed more than once.
-			 */
 			static $do_once = null;
 
 			if ( true === $do_once ) {
+
 				return;	// Stop here.
 			}
 
@@ -32,6 +31,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -155,6 +155,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		public function wp_editor_set_quality( $quality, $mime_type ) {
 
 			if ( $this->editor === null ) {	// Get the current editor only once.
+
 				$editor = _wp_image_editor_choose( array( 'mime_type' => $mime_type ) );
 			}
 
@@ -168,6 +169,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 						case 'image/jpeg':
 
 							if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
+
 								return 100;
 							}
 
@@ -186,16 +188,19 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		public function image_make_intermediate_size( $file_path ) {
 
 			if ( ! file_exists( $file_path ) ) {
+
 				return $file_path;
 			}
 				
 			$image_size = @getimagesize( $file_path );
 
 			if ( empty( $image_size[ 'mime' ] ) ) {
+
 				return $file_path;
 			}
 
 			if ( $this->editor === null ) {	// Get the current editor only once.
+
 				$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size[ 'mime' ] ) );
 			}
 
@@ -212,6 +217,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 						case 'image/jpeg':
 
 							if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
+
 								return $this->adjust_imagick_jpeg( $file_path );
 							}
 
@@ -232,6 +238,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			$image = new Imagick( $file_path );
 
 			if ( $this->p->options[ 'tie_imagick_jpeg_contrast_level' ] ) {
+
 				$image->normalizeImage();
 			}
 
@@ -257,6 +264,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		public function filter_messages_tooltip( $text, $msg_key, $info ) {
 
 			if ( strpos( $msg_key, 'tooltip-tie_' ) !== 0 ) {
+
 				return $text;
 			}
 
