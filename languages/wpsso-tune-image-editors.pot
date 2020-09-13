@@ -13,6 +13,38 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
+#: gettext/gettext-config.php:6 lib/gettext-config.php:6
+msgctxt "lib file description"
+msgid "Image Editors"
+msgstr ""
+
+#: gettext/gettext-config.php:7 lib/gettext-config.php:7
+msgctxt "plugin description"
+msgid ""
+"Improves the Look of Thumbnails and Resized Images for Better Click-Through-"
+"Rates on Social and Search Sites."
+msgstr ""
+
+#: gettext/gettext-config.php:8 lib/gettext-config.php:8
+msgctxt "option value"
+msgid "GD Only"
+msgstr ""
+
+#: gettext/gettext-config.php:9 lib/gettext-config.php:9
+msgctxt "option value"
+msgid "GD and ImageMagick"
+msgstr ""
+
+#: gettext/gettext-config.php:10 lib/gettext-config.php:10
+msgctxt "option value"
+msgid "ImageMagick Only"
+msgstr ""
+
+#: gettext/gettext-config.php:11 lib/gettext-config.php:11
+msgctxt "option value"
+msgid "ImageMagick and GD"
+msgstr ""
+
 #: lib/filters.php:275
 msgid ""
 "By default, WordPress uses the ImageMagick editor first (provided the PHP "
@@ -129,38 +161,6 @@ msgstr ""
 msgid ""
 "A value of 0 may be desirable to retain fine skin details in portrait "
 "photographs."
-msgstr ""
-
-#: lib/gettext-config.php:6
-msgctxt "lib file description"
-msgid "Image Editors"
-msgstr ""
-
-#: lib/gettext-config.php:7
-msgctxt "plugin description"
-msgid ""
-"Improves the Look of Thumbnails and Resized Images for Better Click-Through-"
-"Rates on Social and Search Sites."
-msgstr ""
-
-#: lib/gettext-config.php:8
-msgctxt "option value"
-msgid "GD Only"
-msgstr ""
-
-#: lib/gettext-config.php:9
-msgctxt "option value"
-msgid "GD and ImageMagick"
-msgstr ""
-
-#: lib/gettext-config.php:10
-msgctxt "option value"
-msgid "ImageMagick Only"
-msgstr ""
-
-#: lib/gettext-config.php:11
-msgctxt "option value"
-msgid "ImageMagick and GD"
 msgstr ""
 
 #: lib/submenu/tie-general.php:43
