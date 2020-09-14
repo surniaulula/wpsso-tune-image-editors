@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WPSSO Tune Image Editors 2.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2020-09-13 12:23-0700\n"
-"PO-Revision-Date: 2020-09-13 12:23-0700\n"
+"POT-Creation-Date: 2020-09-14 11:18-0700\n"
+"PO-Revision-Date: 2020-09-14 11:18-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,32 +14,32 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: gettext/gettext-config.php:6 lib/gettext-config.php:6
+#: gettext/gettext-lib-config.php:6
 msgctxt "lib file description"
 msgid "Image Editors"
 msgstr "Éditeurs d'image"
 
-#: gettext/gettext-config.php:7 lib/gettext-config.php:7
+#: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid "Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites."
 msgstr "Améliore l'apparence des images redimensionnées pour de meilleurs taux de clics sur les sites sociaux et de recherche."
 
-#: gettext/gettext-config.php:8 lib/gettext-config.php:8
+#: gettext/gettext-lib-config.php:8
 msgctxt "option value"
 msgid "GD Only"
 msgstr "GD uniquement"
 
-#: gettext/gettext-config.php:9 lib/gettext-config.php:9
+#: gettext/gettext-lib-config.php:9
 msgctxt "option value"
 msgid "GD and ImageMagick"
 msgstr "GD et ImageMagick"
 
-#: gettext/gettext-config.php:10 lib/gettext-config.php:10
+#: gettext/gettext-lib-config.php:10
 msgctxt "option value"
 msgid "ImageMagick Only"
 msgstr "ImageMagick uniquement"
 
-#: gettext/gettext-config.php:11 lib/gettext-config.php:11
+#: gettext/gettext-lib-config.php:11
 msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr "ImageMagick et GD"
