@@ -13,34 +13,34 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: gettext/gettext-config.php:6 lib/gettext-config.php:6
+#: gettext/gettext-lib-config.php:6
 msgctxt "lib file description"
 msgid "Image Editors"
 msgstr ""
 
-#: gettext/gettext-config.php:7 lib/gettext-config.php:7
+#: gettext/gettext-lib-config.php:7
 msgctxt "plugin description"
 msgid ""
 "Improves the Look of Thumbnails and Resized Images for Better Click-Through-"
 "Rates on Social and Search Sites."
 msgstr ""
 
-#: gettext/gettext-config.php:8 lib/gettext-config.php:8
+#: gettext/gettext-lib-config.php:8
 msgctxt "option value"
 msgid "GD Only"
 msgstr ""
 
-#: gettext/gettext-config.php:9 lib/gettext-config.php:9
+#: gettext/gettext-lib-config.php:9
 msgctxt "option value"
 msgid "GD and ImageMagick"
 msgstr ""
 
-#: gettext/gettext-config.php:10 lib/gettext-config.php:10
+#: gettext/gettext-lib-config.php:10
 msgctxt "option value"
 msgid "ImageMagick Only"
 msgstr ""
 
-#: gettext/gettext-config.php:11 lib/gettext-config.php:11
+#: gettext/gettext-lib-config.php:11
 msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
