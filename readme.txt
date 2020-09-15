@@ -1,5 +1,5 @@
-=== Tune Image Editors | WPSSO Add-on ===
-Plugin Name: WPSSO Tune Image Editors
+=== Tune WP Image Editors | WPSSO Add-on ===
+Plugin Name: WPSSO Tune WP Image Editors
 Plugin Slug: wpsso-tune-image-editors
 Text Domain: wpsso-tune-image-editors
 Domain Path: /languages
@@ -13,7 +13,7 @@ Requires At Least: 4.2
 Tested Up To: 5.5
 Stable Tag: 2.5.0
 
-Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.
+Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites.
 
 == Description ==
 
@@ -23,7 +23,7 @@ Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rate
 
 The reason is that after an image is resized, that image *must* be sharpened &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)
 
-The WPSSO Tune Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.
+The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.
 
 **Compatible with all image compression / optimization plugins:**
 
@@ -59,14 +59,14 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 
 <h3>WPSSO Core Plugin Required</h3>
 
-WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 == Installation ==
 
 <h3 class="top">Install and Uninstall</h3>
 
-* [Install the WPSSO Tune Image Editors add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/).
-* [Uninstall the WPSSO Tune Image Editors add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/).
+* [Install the WPSSO Tune WP Image Editors add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/).
+* [Uninstall the WPSSO Tune WP Image Editors add-on](https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/).
 
 == Frequently Asked Questions ==
 
@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.5.1-b.2 (2020/09/15)**
+**Version 2.5.1-rc.1 (2020/09/15)**
 
 * **New Features**
 	* None.
@@ -105,7 +105,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v5.6.
 	* WordPress v4.2.
-	* WPSSO Core v8.5.0-b.2.
+	* WPSSO Core v8.5.0-rc.1.
 
 **Version 2.5.0 (2020/08/11)**
 
@@ -124,7 +124,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.5.1-b.2 =
+= 2.5.1-rc.1 =
 
 (2020/09/15) Updated the French plugin translations.
 

@@ -1,8 +1,8 @@
-<h1>Tune Image Editors</h1><h3>WPSSO Add-on</h3>
+<h1>Tune WP Image Editors</h1><h3>WPSSO Add-on</h3>
 
 <table>
-<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune Image Editors</td></tr>
-<tr><th align="right" valign="top" nowrap>Summary</th><td>Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites.</td></tr>
+<tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
+<tr><th align="right" valign="top" nowrap>Summary</th><td>Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>2.5.0</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires PHP</th><td>5.6 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>4.2 or newer</td></tr>
@@ -20,7 +20,7 @@
 
 <p>The reason is that after an image is resized, that image <em>must</em> be sharpened &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)</p>
 
-<p>The WPSSO Tune Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.</p>
+<p>The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.</p>
 
 <p><strong>Compatible with all image compression / optimization plugins:</strong></p>
 
@@ -61,7 +61,7 @@
 
 <h3>WPSSO Core Plugin Required</h3>
 
-<p>WPSSO Tune Image Editors (aka WPSSO TIE) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
+<p>WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
 
 
 <h2>Installation</h2>
@@ -69,8 +69,8 @@
 <h3 class="top">Install and Uninstall</h3>
 
 <ul>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/">Install the WPSSO Tune Image Editors add-on</a>.</li>
-<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/">Uninstall the WPSSO Tune Image Editors add-on</a>.</li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/install-the-plugin/">Install the WPSSO Tune WP Image Editors add-on</a>.</li>
+<li><a href="https://wpsso.com/docs/plugins/wpsso-tune-image-editors/installation/uninstall-the-plugin/">Uninstall the WPSSO Tune WP Image Editors add-on</a>.</li>
 </ul>
 
 
