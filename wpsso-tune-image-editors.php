@@ -13,7 +13,7 @@
  * Description: Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites.
  * Requires PHP: 5.6
  * Requires At Least: 4.2
- * Tested Up To: 5.5
+ * Tested Up To: 5.5.1
  * Version: 2.5.1
  * 
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
