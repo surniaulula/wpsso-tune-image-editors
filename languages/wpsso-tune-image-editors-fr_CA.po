@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 2.5.0\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.5.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2020-09-14 11:18-0700\n"
-"PO-Revision-Date: 2020-09-15 09:03-0700\n"
+"POT-Creation-Date: 2020-09-15 11:16-0700\n"
+"PO-Revision-Date: 2020-09-15 11:18-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -20,26 +20,31 @@ msgid "Image Editors"
 msgstr "Éditeurs d'image"
 
 #: gettext/gettext-lib-config.php:7
-msgctxt "plugin description"
-msgid "Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites."
-msgstr "Améliore l'apparence des images redimensionnées pour de meilleurs taux de clics sur les sites sociaux et de recherche."
+msgctxt "plugin name"
+msgid "WPSSO Tune WP Image Editors"
+msgstr "WPSSO ajuster les éditeurs d'image WP"
 
 #: gettext/gettext-lib-config.php:8
+msgctxt "plugin description"
+msgid "Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites."
+msgstr "Améliore l'apparence des images pour de meilleurs taux de clics des sites sociaux et de recherche."
+
+#: gettext/gettext-lib-config.php:9
 msgctxt "option value"
 msgid "GD Only"
 msgstr "GD uniquement"
 
-#: gettext/gettext-lib-config.php:9
+#: gettext/gettext-lib-config.php:10
 msgctxt "option value"
 msgid "GD and ImageMagick"
 msgstr "GD et ImageMagick"
 
-#: gettext/gettext-lib-config.php:10
+#: gettext/gettext-lib-config.php:11
 msgctxt "option value"
 msgid "ImageMagick Only"
 msgstr "ImageMagick uniquement"
 
-#: gettext/gettext-lib-config.php:11
+#: gettext/gettext-lib-config.php:12
 msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr "ImageMagick et GD"
@@ -243,16 +248,16 @@ msgid "The %1$s version %2$s add-on requires %3$s version %4$s or newer (version
 msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente (la version %5$s est actuellement installée)."
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Tune Image Editors"
-msgstr "WPSSO ajuster les éditeurs d'images"
+msgid "WPSSO Tune WP Image Editors"
+msgstr "WPSSO ajuster les éditeurs d'image WP"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
 
 #. Description of the plugin/theme
-msgid "Improves the Look of Thumbnails and Resized Images for Better Click-Through-Rates on Social and Search Sites."
-msgstr "Améliore l'apparence des images redimensionnées pour de meilleurs taux de clics sur les sites sociaux et de recherche."
+msgid "Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites."
+msgstr "Améliore l'apparence des images pour de meilleurs taux de clics des sites sociaux et de recherche."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"

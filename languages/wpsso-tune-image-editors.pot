@@ -1,8 +1,8 @@
-# Copyright (C) 2020 WPSSO Tune Image Editors
-# This file is distributed under the same license as the WPSSO Tune Image Editors package.
+# Copyright (C) 2020 WPSSO Tune WP Image Editors
+# This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 2.5.1-b.2\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 2.5.1-rc.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -20,14 +20,14 @@ msgstr ""
 
 #: gettext/gettext-lib-config.php:7
 msgctxt "plugin name"
-msgid "WPSSO Tune Image Editors"
+msgid "WPSSO Tune WP Image Editors"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid ""
-"Improves the Look of Thumbnails and Resized Images for Better Click-Through-"
-"Rates on Social and Search Sites."
+"Improves the Appearance of Images for Better Click-Through-Rates from Social "
+"and Search Sites."
 msgstr ""
 
 #: gettext/gettext-lib-config.php:9
@@ -290,7 +290,7 @@ msgid ""
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "WPSSO Tune Image Editors"
+msgid "WPSSO Tune WP Image Editors"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
@@ -299,8 +299,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Improves the Look of Thumbnails and Resized Images for Better Click-Through-"
-"Rates on Social and Search Sites."
+"Improves the Appearance of Images for Better Click-Through-Rates from Social "
+"and Search Sites."
 msgstr ""
 
 #. Author of the plugin/theme
