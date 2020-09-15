@@ -10,8 +10,8 @@ Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.2
-Tested Up To: 5.5
-Stable Tag: 2.5.0
+Tested Up To: 5.5.1
+Stable Tag: 2.5.1
 
 Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites.
 
