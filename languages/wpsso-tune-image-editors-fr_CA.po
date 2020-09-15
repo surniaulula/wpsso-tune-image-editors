@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: WPSSO Tune Image Editors 2.5.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
 "POT-Creation-Date: 2020-09-14 11:18-0700\n"
-"PO-Revision-Date: 2020-09-14 11:18-0700\n"
+"PO-Revision-Date: 2020-09-15 09:03-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -244,7 +244,7 @@ msgstr "L'ajout %1$s version %2$s nécessite %3$s version %4$s ou plus récente 
 
 #. Plugin Name of the plugin/theme
 msgid "WPSSO Tune Image Editors"
-msgstr "WPSSO Tune Image Editors"
+msgstr "WPSSO ajuster les éditeurs d'images"
 
 #. Plugin URI of the plugin/theme
 msgid "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"

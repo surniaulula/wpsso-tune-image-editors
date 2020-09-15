@@ -19,28 +19,33 @@ msgid "Image Editors"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:7
+msgctxt "plugin name"
+msgid "WPSSO Tune Image Editors"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid ""
 "Improves the Look of Thumbnails and Resized Images for Better Click-Through-"
 "Rates on Social and Search Sites."
 msgstr ""
 
-#: gettext/gettext-lib-config.php:8
+#: gettext/gettext-lib-config.php:9
 msgctxt "option value"
 msgid "GD Only"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:9
+#: gettext/gettext-lib-config.php:10
 msgctxt "option value"
 msgid "GD and ImageMagick"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:10
+#: gettext/gettext-lib-config.php:11
 msgctxt "option value"
 msgid "ImageMagick Only"
 msgstr ""
 
-#: gettext/gettext-lib-config.php:11
+#: gettext/gettext-lib-config.php:12
 msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
