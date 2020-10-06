@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 2.5.1\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 2.6.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2020-MO-DA HO:MI+ZONE\n"
@@ -48,6 +48,18 @@ msgstr ""
 #: gettext/gettext-lib-config.php:12
 msgctxt "option value"
 msgid "ImageMagick and GD"
+msgstr ""
+
+#: lib/abstracts/com/add-on.php:155
+msgid ""
+"The %1$s add-on requires the %2$s plugin &mdash; please activate the missing "
+"plugin."
+msgstr ""
+
+#: lib/abstracts/com/add-on.php:169
+msgid ""
+"The %1$s add-on requires %2$s version %3$s or newer (version %4$s is "
+"currently installed)."
 msgstr ""
 
 #: lib/filters.php:275
@@ -275,18 +287,6 @@ msgstr ""
 #: lib/submenu/tie-general.php:211
 msgctxt "option label"
 msgid "Sharpening Threshold"
-msgstr ""
-
-#: wpsso-tune-image-editors.php:270
-msgid ""
-"The %1$s version %2$s add-on requires the %3$s plugin &mdash; please "
-"activate the missing plugin."
-msgstr ""
-
-#: wpsso-tune-image-editors.php:283
-msgid ""
-"The %1$s version %2$s add-on requires %3$s version %4$s or newer (version "
-"%5$s is currently installed)."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
