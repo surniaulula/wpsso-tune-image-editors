@@ -92,7 +92,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.6.0-dev.4 (2020/10/12)**
+**Version 2.6.0-dev.4 (2020/10/13)**
 
 * **New Features**
 	* None.
@@ -127,7 +127,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 = 2.6.0-dev.4 =
 
-(2020/10/12) Refactored the add-on class to extend a new WpssoAddOn abstract class.
+(2020/10/13) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
 = 2.5.1 =
 
