@@ -191,7 +191,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				return $file_path;
 			}
-				
+
 			$image_size = @getimagesize( $file_path );
 
 			if ( empty( $image_size[ 'mime' ] ) ) {
@@ -273,7 +273,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				case 'tooltip-tie_wp_image_editors':
 
 					$text = __( 'By default, WordPress uses the ImageMagick editor first (provided the PHP "imagick" extension is loaded), and uses the GD editor as a fallback.', 'wpsso-tune-image-editors' ) . ' ';
-					
+
 					$text .= __( 'This option allows you to select a different default editor list for WordPress.', 'wpsso-tune-image-editors' );
 
 					break;
@@ -283,7 +283,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 					$short = $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'short' ];
 
 					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-editors' ), $short ) . ' ';
-					
+
 					$text .= __( 'You can change the priority at which these adjustments are made, to process images before/after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
 
 					break;
@@ -299,7 +299,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				case 'tooltip-tie_php_imagick_avail':
 
 					$text = sprintf( __( 'Status of the PHP "%s" extension module.', 'wpsso-tune-image-editors' ), 'imagick' ) . ' ';
-					
+
 					$text .= sprintf( __( 'If the WordPress %1$s editor is available, but the PHP "%2$s" extension is not loaded, contact your hosting provider and ask to have the PHP "%2$s" extension installed.', 'wpsso-tune-image-editors' ), 'ImageMagick', 'imagick' );
 
 					break;
@@ -333,7 +333,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				case 'tooltip-tie_imagick_jpeg_sharpen_radius':
 
 					$text = __( 'The sharpening radius is an integer value, generally one to two times the sharpening sigma value.', 'wpsso-tune-image-editors' ) . ' ';
-					
+
 					$text .= __( 'The best sharpening radius depends on the resized image resolution, and for this reason, the recommended value is 0 (auto).', 'wpsso-tune-image-editors' );
 
 					break;
@@ -341,7 +341,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				case 'tooltip-tie_imagick_jpeg_sharpen_amount':
 
 					$text = __( 'The amount (ie. strength) of the sharpening effect. A larger value increases the contrast of sharpened pixels.', 'wpsso-tune-image-editors' ) . ' ';
-					
+
 					$text .= __( 'The default value is 1.0, and the recommended range is between 0.8 and 1.2.', 'wpsso-tune-image-editors' );
 
 					break;
@@ -349,11 +349,11 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				case 'tooltip-tie_imagick_jpeg_sharpen_threshold':
 
 					$text = __( 'Minimum contrast required for a pixel to be considered an edge pixel for sharpening.', 'wpsso-tune-image-editors' ) . ' ';
-					
+
 					$text .= __( 'Higher values (closer to 1) allow sharpening only in high-contrast regions, like strong edges, while leaving low-contrast areas unaffected.', 'wpsso-tune-image-editors' ) . ' ';
-					
+
 					$text .= __( 'Lower values (closer to 0) allow sharpening in relatively smoother regions of the image.', 'wpsso-tune-image-editors' ) . ' ';
-					
+
 					$text .= __( 'A value of 0 may be desirable to retain fine skin details in portrait photographs.', 'wpsso-tune-image-editors' );
 
 					break;
