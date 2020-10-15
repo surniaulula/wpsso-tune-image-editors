@@ -38,8 +38,8 @@ msgstr ""
 #: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
 msgid ""
-"Improves the Appearance of Images for Better Click-Through-Rates from Social "
-"and Search Sites."
+"Improves the appearance of WordPress images for better click-through-rates "
+"from social and search sites."
 msgstr ""
 
 #: gettext/gettext-lib-config.php:9
@@ -299,8 +299,8 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Improves the Appearance of Images for Better Click-Through-Rates from Social "
-"and Search Sites."
+"Improves the appearance of WordPress images for better click-through-rates "
+"from social and search sites."
 msgstr ""
 
 #. Author of the plugin/theme

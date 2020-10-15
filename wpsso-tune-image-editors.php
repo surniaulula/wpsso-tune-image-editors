@@ -10,7 +10,7 @@
  * Author URI: https://wpsso.com/
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
- * Description: Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites.
+ * Description: Improves the appearance of WordPress images for better click-through-rates from social and search sites.
  * Requires PHP: 5.6
  * Requires At Least: 4.4
  * Tested Up To: 5.5.1

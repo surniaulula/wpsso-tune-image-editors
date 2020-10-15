@@ -21,7 +21,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'opt_version' => '4',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune WP Image Editors',
-					'desc'        => 'Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites.',
+					'desc'        => 'Improves the appearance of WordPress images for better click-through-rates from social and search sites.',
 					'slug'        => 'wpsso-tune-image-editors',
 					'base'        => 'wpsso-tune-image-editors/wpsso-tune-image-editors.php',
 					'update_auth' => '',		// No premium version.
