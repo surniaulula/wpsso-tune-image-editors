@@ -13,7 +13,7 @@ Requires At Least: 4.4
 Tested Up To: 5.5.1
 Stable Tag: 2.5.1
 
-Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites.
+Improves the appearance of WordPress images for better click-through-rates from social and search sites.
 
 == Description ==
 
@@ -60,6 +60,8 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 <h3>WPSSO Core Plugin Required</h3>
 
 WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
+
+WPSSO Core and its add-ons make sure your content looks great on social sites and in search results, no matter how your URLs are crawled, shared, re-shared, posted, or embedded.
 
 == Installation ==
 
