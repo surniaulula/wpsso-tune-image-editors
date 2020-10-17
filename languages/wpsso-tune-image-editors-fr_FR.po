@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 2.6.0\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.6.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
-"POT-Creation-Date: 2020-10-07 16:29-0700\n"
-"PO-Revision-Date: 2020-10-07 16:29-0700\n"
+"POT-Creation-Date: 2020-10-17 11:41-0700\n"
+"PO-Revision-Date: 2020-10-17 11:41-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,11 +14,11 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:157
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:161
 msgid "The %1$s add-on requires the %2$s plugin &mdash; please activate the missing plugin."
 msgstr "L'ajout %1$s nécessite l'extension %2$s &mdash; veuillez activer l'extension manquante."
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:171
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:179
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est actuellement installée)."
 
@@ -34,8 +34,8 @@ msgstr "WPSSO ajuster les éditeurs d'image WP"
 
 #: gettext/gettext-lib-config.php:8
 msgctxt "plugin description"
-msgid "Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites."
-msgstr "Améliore l'apparence des images pour de meilleurs taux de clics des sites sociaux et de recherche."
+msgid "Improves the appearance of WordPress images for better click-through-rates from social and search sites."
+msgstr "Améliore l'apparence des images WordPress pour de meilleurs taux de clics des sites sociaux et de recherche."
 
 #: gettext/gettext-lib-config.php:9
 msgctxt "option value"
@@ -256,8 +256,8 @@ msgid "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
 msgstr "https://wpsso.com/extend/plugins/wpsso-tune-image-editors/"
 
 #. Description of the plugin/theme
-msgid "Improves the Appearance of Images for Better Click-Through-Rates from Social and Search Sites."
-msgstr "Améliore l'apparence des images pour de meilleurs taux de clics des sites sociaux et de recherche."
+msgid "Improves the appearance of WordPress images for better click-through-rates from social and search sites."
+msgstr "Améliore l'apparence des images WordPress pour de meilleurs taux de clics des sites sociaux et de recherche."
 
 #. Author of the plugin/theme
 msgid "JS Morisset"
