@@ -66,7 +66,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			load_plugin_textdomain( 'wpsso-tune-image-editors', false, 'wpsso-tune-image-editors/languages/' );
 		}
 
-		public function init_objects( $is_admin, $doing_ajax, $doing_cron ) {
+		public function init_objects( $is_admin ) {
 
 			$this->p =& Wpsso::get_instance();
 
