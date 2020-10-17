@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.4
 Tested Up To: 5.5.1
-Stable Tag: 2.5.1
+Stable Tag: 2.6.0
 
 Improves the appearance of WordPress images for better click-through-rates from social and search sites.
 
@@ -110,28 +110,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v4.4.
 	* WPSSO Core v8.8.0.
 
-**Version 2.5.1 (2020/09/15)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the French plugin translations.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Moved extracted translation strings from lib/gettext-*.php files to a new gettext/ folder.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.5.0.
-
 == Upgrade Notice ==
 
 = 2.6.0 =
 
 (2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
-
-= 2.5.1 =
-
-(2020/09/15) Updated the French plugin translations.
 
