@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.4
 Tested Up To: 5.5.1
-Stable Tag: 2.6.0
+Stable Tag: 2.6.1
 
 Improves the appearance of WordPress images for better click-through-rates from social and search sites.
 
@@ -94,14 +94,14 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 2.6.0 (2020/10/17)**
+**Version 2.6.1 (2020/10/17)**
 
 * **New Features**
 	* None.
 * **Improvements**
 	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
 * **Bugfixes**
-	* None.
+	* Fixed backwards compatibility with WPSSO Core v8.7.1 'init_objects' and 'init_plugin' action arguments.
 * **Developer Notes**
 	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
 	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
@@ -112,7 +112,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 2.6.0 =
+= 2.6.1 =
 
 (2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
