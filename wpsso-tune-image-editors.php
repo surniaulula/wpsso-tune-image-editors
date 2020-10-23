@@ -40,11 +40,11 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 
 	class WpssoTie extends WpssoAddOn {
 
-		public $filters;	// WpssoTieFilters class.
+		public $filters;	// WpssoTieFilters class object.
 
-		protected $p;
+		protected $p;	// Wpsso class object.
 
-		private static $instance = null;
+		private static $instance = null;	// WpssoTie class object.
 
 		public function __construct() {
 

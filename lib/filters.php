@@ -14,7 +14,8 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 	class WpssoTieFilters {
 
-		private $p;
+		private $p;	// Wpsso class object.
+
 		private $editor = null;
 
 		public function __construct( &$plugin ) {
