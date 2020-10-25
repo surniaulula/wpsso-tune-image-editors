@@ -105,7 +105,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 				$filter_name = SucomUtil::sanitize_hookname( $this->p->lca . '_' . $metabox_id . '_' . $tab_key . '_rows' );
 
 				$table_rows[ $tab_key ] = array_merge(
-					$this->get_table_rows( $metabox_id, $tab_key ), 
+					$this->get_table_rows( $metabox_id, $tab_key ),
 					(array) apply_filters( $filter_name, array(), $this->form )
 				);
 			}
