@@ -6,6 +6,7 @@
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
+
 	die( 'These aren\'t the droids you\'re looking for.' );
 }
 
@@ -20,6 +21,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 			$this->p =& $plugin;
 
 			if ( $this->p->debug->enabled ) {
+
 				$this->p->debug->mark();
 			}
 
@@ -140,8 +142,11 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 					if ( false !== $wp_imagick_position ) {
 
 						if ( $wp_imagick_position > 0 ) {
+
 							$css_color = 'orange';
+
 						} else {
+
 							$css_color = 'green';
 						}
 
@@ -153,8 +158,11 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 					}
 
 					if ( extension_loaded( 'imagick' ) ) {
+
 						$php_imagick_status = '<font color="green">' . __( 'Loaded', 'wpsso-tune-image-editors' ) . '</font>';
+
 					} else {
+
 						$php_imagick_status = '<font color="red">' . __( 'Not loaded', 'wpsso-tune-image-editors' ) . '</font>';
 					}
 

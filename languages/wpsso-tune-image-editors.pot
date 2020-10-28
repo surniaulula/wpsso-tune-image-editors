@@ -180,111 +180,111 @@ msgid ""
 "photographs."
 msgstr ""
 
-#: lib/submenu/tie-general.php:43
+#: lib/submenu/tie-general.php:45
 msgid ""
 "After activating the %1$s add-on or changing its settings,<br/>don't forget "
 "to <a href=\"%2$s\">regenerate all image thumbnail and image sizes</a> to "
 "see the results."
 msgstr ""
 
-#: lib/submenu/tie-general.php:48
+#: lib/submenu/tie-general.php:50
 msgctxt "metabox title"
 msgid "WordPress Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:60
+#: lib/submenu/tie-general.php:62
 msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:99
+#: lib/submenu/tie-general.php:101
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr ""
 
-#: lib/submenu/tie-general.php:125
+#: lib/submenu/tie-general.php:127
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:130
+#: lib/submenu/tie-general.php:132
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr ""
 
-#: lib/submenu/tie-general.php:148
+#: lib/submenu/tie-general.php:153
 msgid "Used as editor #%d"
 msgstr ""
 
-#: lib/submenu/tie-general.php:152
+#: lib/submenu/tie-general.php:157
 msgid "Not used"
 msgstr ""
 
-#: lib/submenu/tie-general.php:156
+#: lib/submenu/tie-general.php:162
 msgid "Loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:158
+#: lib/submenu/tie-general.php:166
 msgid "Not loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:162
+#: lib/submenu/tie-general.php:170
 msgctxt "option label"
 msgid "WordPress %s Editor"
 msgstr ""
 
-#: lib/submenu/tie-general.php:167
+#: lib/submenu/tie-general.php:175
 msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr ""
 
-#: lib/submenu/tie-general.php:172
+#: lib/submenu/tie-general.php:180
 msgctxt "metabox title"
 msgid "%s Resized Images"
 msgstr ""
 
-#: lib/submenu/tie-general.php:175
+#: lib/submenu/tie-general.php:183
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""
 
-#: lib/submenu/tie-general.php:180
+#: lib/submenu/tie-general.php:188
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr ""
 
-#: lib/submenu/tie-general.php:185
+#: lib/submenu/tie-general.php:193
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/submenu/tie-general.php:190
+#: lib/submenu/tie-general.php:198
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
-#: lib/submenu/tie-general.php:193 lib/submenu/tie-general.php:207
-#: lib/submenu/tie-general.php:214
+#: lib/submenu/tie-general.php:201 lib/submenu/tie-general.php:215
+#: lib/submenu/tie-general.php:222
 msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr ""
 
-#: lib/submenu/tie-general.php:197
+#: lib/submenu/tie-general.php:205
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/submenu/tie-general.php:200
+#: lib/submenu/tie-general.php:208
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:204
+#: lib/submenu/tie-general.php:212
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/submenu/tie-general.php:211
+#: lib/submenu/tie-general.php:219
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
