@@ -1,4 +1,4 @@
-=== Tune WP Image Editors | WPSSO Add-on ===
+=== WPSSO Tune WP Image Editors ===
 Plugin Name: WPSSO Tune WP Image Editors
 Plugin Slug: wpsso-tune-image-editors
 Text Domain: wpsso-tune-image-editors
