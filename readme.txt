@@ -61,7 +61,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 
 WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
-WPSSO Core and its add-ons make sure your content looks great on social sites and in search results, no matter how your URLs are crawled, shared, re-shared, posted, or embedded.
+WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how your webpages are shared, re-shared, messaged, posted, embedded, or crawled.
 
 == Installation ==
 
