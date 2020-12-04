@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires PHP: 5.6
 Requires At Least: 4.4
 Tested Up To: 5.6
-Stable Tag: 2.6.1
+Stable Tag: 2.7.0
 
 Improves the appearance of WordPress images for better click-through-rates from social and search sites.
 
