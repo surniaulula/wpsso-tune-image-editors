@@ -15,10 +15,14 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 	class WpssoTieFilters {
 
 		private $p;	// Wpsso class object.
+		private $a;	// WpssoTie class object.
 
 		private $editor = null;
 
-		public function __construct( &$plugin ) {
+		/**
+		 * Instantiated by WpssoTie->init_objects().
+		 */
+		public function __construct( &$plugin, &$addon ) {
 
 			static $do_once = null;
 
@@ -30,11 +34,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			$do_once = true;
 
 			$this->p =& $plugin;
-
-			if ( $this->p->debug->enabled ) {
-
-				$this->p->debug->mark();
-			}
+			$this->a =& $addon;
 
 			$min_int = SucomUtil::get_min_int();
 			$max_int = SucomUtil::get_max_int();
