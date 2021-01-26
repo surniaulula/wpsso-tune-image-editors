@@ -193,6 +193,9 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				return $file_path;
 			}
 
+			/**
+			 * Note that PHP v7.1 or better is required to get the image size of WebP images.
+			 */
 			$image_size = @getimagesize( $file_path );
 
 			if ( empty( $image_size[ 'mime' ] ) ) {
@@ -200,7 +203,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				return $file_path;
 			}
 
-			if ( $this->editor === null ) {	// Get the current editor only once.
+			if ( null === $this->editor ) {	// Get the current editor only once.
 
 				$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size[ 'mime' ] ) );
 			}
