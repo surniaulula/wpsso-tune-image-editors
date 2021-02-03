@@ -28,7 +28,7 @@
 
 <p>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This plugin helped me tune my images to look really good on social media. Great job!" - <a href="https://wordpress.org/support/topic/really-useful-at-making-your-social-media-images-the-best/">undergroundnetwork</a></p>
 
-<h3>WPSSO TIE Standard Features</h3>
+<h3>WPSSO TIE Add-on Features</h3>
 
 <p>Extends the features of the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> (required plugin).</p>
 
