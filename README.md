@@ -30,38 +30,37 @@
 
 <h3>WPSSO TIE Standard Features</h3>
 
-<ul>
-<li><p>Extends the features of the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p></li>
-<li><p>Applies adjustments to resized images (aka thumbnails) using ImageMagick:</p>
+<p>Extends the features of the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a> (required plugin).</p>
+
+<p>Applies adjustments to resized images (aka thumbnails) using ImageMagick:</p>
 
 <ul>
 <li>Enable or disable image adjustments / sharpening for resized images.</li>
 <li>Uses a better compression quality of 92% (WordPress default is 82%).</li>
 <li>Applies a default amount of sharpening values to all resized images.</li>
-</ul></li>
-<li><p>Optionally select different primary / secondary image editor(s) for WordPress:</p>
+</ul>
+
+<p>Optionally select different primary / secondary image editor(s) for WordPress:</p>
 
 <ul>
 <li>GD Only</li>
 <li>GD and ImageMagick</li>
 <li>ImageMagick Only</li>
 <li>ImageMagick and GD (WordPress default)</li>
-</ul></li>
-<li><p>Optionally fine-tune the image filter priority and image adjustment options:</p>
+</ul>
+
+<p>Optionally fine-tune the image filter priority and image adjustment options:</p>
 
 <ul>
 <li>Modify the default 'image_make_intermediate_size' filter hook priority.</li>
 <li>Enable / disable contrast leveling.</li>
 <li>Increase / decrease the compression quality percentage.</li>
 <li>Adjust sharpening values individually (sigma, radius, amount, threshold).</li>
-</ul></li>
 </ul>
 
 <h3>WPSSO Core Plugin Required</h3>
 
-<p>WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>.</p>
-
-<p>WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how webpages are shared, re-shared, messaged, posted, embedded, or crawled.</p>
+<p>WPSSO Tune WP Image Editors (aka WPSSO TIE) is an add-on for the <a href="https://wordpress.org/plugins/wpsso/">WPSSO Core plugin</a>. WPSSO Core and its add-ons make sure your content looks best on social sites and in search results, no matter how webpages are shared, re-shared, messaged, posted, embedded, or crawled.</p>
 
 
 <h2>Installation</h2>
