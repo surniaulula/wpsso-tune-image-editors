@@ -17,9 +17,7 @@ Improves the appearance of WordPress images for better click-through-rates from 
 
 == Description ==
 
-<p style="margin:0;"><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png"></p>
-
-**Have you noticed that WordPress creates small images that seems a bit "fuzzy" &mdash; nothing like the nice sharp original you uploaded?**
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png"> <strong>Have you noticed that WordPress creates small images that seems a bit "fuzzy" &mdash; nothing like the nice sharp original you uploaded?</strong></p>
 
 The reason is that after an image is resized, that image *must* be sharpened &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)
 
@@ -35,7 +33,7 @@ Image sharpening / adjustments are applied during the WordPress image resize ope
 
 <h3>WPSSO TIE Standard Features</h3>
 
-* Extends the features of the WPSSO Core plugin.
+* Extends the features of the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/).
 
 * Applies adjustments to resized images (aka thumbnails) using ImageMagick:
 
