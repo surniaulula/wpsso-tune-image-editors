@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 2.7.1\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 2.7.2-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
@@ -182,9 +182,9 @@ msgstr ""
 
 #: lib/submenu/tie-general.php:45
 msgid ""
-"After activating the %1$s add-on or changing its settings,<br/>don't forget "
-"to <a href=\"%2$s\">regenerate all image thumbnail and image sizes</a> to "
-"see the results."
+"After activating the %1$s add-on, or changing its settings, don't forget to "
+"<a href=\"%2$s\">regenerate all image thumbnail and image sizes</a> to see "
+"the results."
 msgstr ""
 
 #: lib/submenu/tie-general.php:50
