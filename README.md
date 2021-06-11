@@ -14,11 +14,11 @@
 
 <h2>Description</h2>
 
-<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png"> <strong>Have you noticed that WordPress creates small images that seems a bit "fuzzy" &mdash; nothing like the nice sharp original you uploaded?</strong></p>
+<p><img class="readme-icon" src="https://surniaulula.github.io/wpsso-tune-image-editors/assets/icon-256x256.png"> <strong>Have you noticed that WordPress creates small images that seems a bit "fuzzy" - nothing like the nice sharp original you uploaded?</strong></p>
 
-<p>The reason is that after an image is resized, that image <em>must</em> be sharpened &mdash; but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" &mdash; not what you want for a featured image or shared image on social sites! ;-)</p>
+<p>The reason is that after an image is resized, that image <em>must</em> be sharpened - but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" - not what you want for a featured image or shared image on social sites! ;-)</p>
 
-<p>The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature &mdash; it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.</p>
+<p>The WPSSO Tune WP Image Editors (aka WPSSO TIE) add-on provides this missing WordPress feature - it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.</p>
 
 <p><strong>Compatible with all image compression / optimization plugins:</strong></p>
 
@@ -26,7 +26,7 @@
 
 <h3>Users Love the WPSSO TIE Add-on</h3>
 
-<p>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; &mdash; "This plugin helped me tune my images to look really good on social media. Great job!" - <a href="https://wordpress.org/support/topic/really-useful-at-making-your-social-media-images-the-best/">undergroundnetwork</a></p>
+<p>&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; - "This plugin helped me tune my images to look really good on social media. Great job!" - <a href="https://wordpress.org/support/topic/really-useful-at-making-your-social-media-images-the-best/">undergroundnetwork</a></p>
 
 <h3>WPSSO TIE Add-on Features</h3>
 
