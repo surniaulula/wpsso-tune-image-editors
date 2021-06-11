@@ -15,7 +15,7 @@ msgstr ""
 
 #: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:178
 msgid ""
-"The %1$s add-on requires the %2$s plugin &mdash; please activate the missing "
+"The %1$s add-on requires the %2$s plugin - please activate the missing "
 "plugin."
 msgstr ""
 
