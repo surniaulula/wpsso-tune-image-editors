@@ -9,7 +9,7 @@ Assets URI: https://surniaulula.github.io/wpsso-tune-image-editors/assets/
 Tags: image, sharpen, imagemagick, imagick, resize
 Contributors: jsmoriss
 Requires PHP: 7.0
-Requires At Least: 4.5
+Requires At Least: 5.0
 Tested Up To: 5.7.2
 Stable Tag: 2.7.2
 
@@ -102,8 +102,8 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* None.
 * **Requires At Least**
 	* PHP v7.0.
-	* WordPress v4.5.
-	* WPSSO Core v8.28.0.
+	* WordPress v5.0.
+	* WPSSO Core v8.34.0.
 
 **Version 2.7.1 (2021/02/25)**
 
