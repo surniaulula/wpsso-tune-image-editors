@@ -72,7 +72,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		}
 
 		/**
-		 * Return a sanitation type for each option.
+		 * Return the sanitation type for a given option key.
 		 */
 		public function filter_option_type( $type, $base_key ) {
 
