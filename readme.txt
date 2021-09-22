@@ -13,7 +13,7 @@ Requires At Least: 5.0
 Tested Up To: 5.8.1
 Stable Tag: 2.7.2
 
-Improves the appearance of WordPress images for better click-through-rates from social and search sites.
+Improves the appearance of WordPress images for better click through rates from social and search sites.
 
 == Description ==
 
