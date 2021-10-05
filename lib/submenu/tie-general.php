@@ -89,7 +89,9 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 			$filter_name = SucomUtil::sanitize_hookname( 'wpsso_' . $metabox_id . '_' . $tab_key . '_rows' );
 
-			$table_rows = apply_filters( $filter_name, $this->get_table_rows( $metabox_id, $tab_key ), $this->form );
+			$table_rows = $this->get_table_rows( $metabox_id, $tab_key );
+
+			$table_rows = apply_filters( $filter_name, $table_rows, $this->form, $network = false );
 
 			$this->p->util->metabox->do_table( $table_rows, 'metabox-' . $metabox_id . '-' . $tab_key );
 		}
@@ -106,10 +108,9 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 				$filter_name = SucomUtil::sanitize_hookname( 'wpsso_' . $metabox_id . '_' . $tab_key . '_rows' );
 
-				$table_rows[ $tab_key ] = array_merge(
-					$this->get_table_rows( $metabox_id, $tab_key ),
-					(array) apply_filters( $filter_name, array(), $this->form )
-				);
+				$table_rows[ $tab_key ] = $this->get_table_rows( $metabox_id, $tab_key );
+
+				$table_rows[ $tab_key ] = apply_filters( $filter_name, $table_rows[ $tab_key ], $this->form, $network = false );
 			}
 
 			$this->p->util->metabox->do_tabbed( $metabox_id, $tabs, $table_rows );
