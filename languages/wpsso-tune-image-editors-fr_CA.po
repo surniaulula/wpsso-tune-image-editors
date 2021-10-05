@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 2.8.0\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.8.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-09-23 11:34-0700\n"
+"PO-Revision-Date: 2021-10-05 08:53-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -142,8 +142,8 @@ msgid "A value of 0 may be desirable to retain fine skin details in portrait pho
 msgstr "Une valeur de 0 peut être souhaitable pour conserver les détails fins de la peau dans les photos de portrait."
 
 #: lib/submenu/tie-general.php:45
-msgid "After activating the %1$s add-on, or changing its settings, don't forget to <a href=\"%2$s\">regenerate all image thumbnail and image sizes</a> to see the results."
-msgstr "Après avoir activé l'ajout %1$s, ou modifié ses paramètres, n'oubliez pas de <a href=\"%2$s\">régénérer toutes les vignettes et tailles d'image</a> pour voir les résultats ."
+msgid "After activating the %1$s add-on or changing its settings, don't forget to <a href=\"%2$s\">regenerate all image thumbnail and image sizes</a> to see the results."
+msgstr "Après avoir activé l'ajout %1$s ou modifié ses paramètres, n'oubliez pas de <a href=\"%2$s\">régénérer toutes les vignettes et tailles d'image</a> pour voir les résultats ."
 
 #: lib/submenu/tie-general.php:50
 msgctxt "metabox title"
@@ -155,94 +155,94 @@ msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr "Réglages d'extension PHP"
 
-#: lib/submenu/tie-general.php:101
+#: lib/submenu/tie-general.php:103
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr "ImageMagick"
 
-#: lib/submenu/tie-general.php:127
+#: lib/submenu/tie-general.php:128
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr "Éditeur(s) d'image WP par défaut"
 
-#: lib/submenu/tie-general.php:133
+#: lib/submenu/tie-general.php:134
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr "Priorité du filtre d'ajustement"
 
-#: lib/submenu/tie-general.php:154
+#: lib/submenu/tie-general.php:155
 msgid "Used as editor #%d"
 msgstr "Utilisé comme éditeur #%d"
 
-#: lib/submenu/tie-general.php:158
+#: lib/submenu/tie-general.php:159
 msgid "Not used"
 msgstr "Non utilisé"
 
-#: lib/submenu/tie-general.php:163
+#: lib/submenu/tie-general.php:164
 msgid "Loaded"
 msgstr "Chargé"
 
-#: lib/submenu/tie-general.php:167
+#: lib/submenu/tie-general.php:168
 msgid "Not loaded"
 msgstr "Non chargé"
 
-#: lib/submenu/tie-general.php:171
+#: lib/submenu/tie-general.php:172
 msgctxt "option label"
 msgid "WordPress %s Editor"
 msgstr "Éditeur WordPress %s"
 
-#: lib/submenu/tie-general.php:176
+#: lib/submenu/tie-general.php:177
 msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr "Extension PHP %s"
 
-#: lib/submenu/tie-general.php:182
+#: lib/submenu/tie-general.php:183
 msgctxt "metabox title"
 msgid "%s Resized Images"
 msgstr "Images redimensionnées %s"
 
-#: lib/submenu/tie-general.php:185
+#: lib/submenu/tie-general.php:186
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr "Ajuster les images %s"
 
-#: lib/submenu/tie-general.php:190
+#: lib/submenu/tie-general.php:191
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr "Nivellement de contraste"
 
-#: lib/submenu/tie-general.php:195
+#: lib/submenu/tie-general.php:196
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr "Qualité de compression"
 
-#: lib/submenu/tie-general.php:200
+#: lib/submenu/tie-general.php:201
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr "Sigma d'affûtage"
 
-#: lib/submenu/tie-general.php:203 lib/submenu/tie-general.php:215
-#: lib/submenu/tie-general.php:221
+#: lib/submenu/tie-general.php:204 lib/submenu/tie-general.php:216
+#: lib/submenu/tie-general.php:222
 msgctxt "option comment"
 msgid "recommended value is %1$s to %2$s"
 msgstr "la valeur recommandée est de %1$s à %2$s"
 
-#: lib/submenu/tie-general.php:206
+#: lib/submenu/tie-general.php:207
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr "Rayon d'affûtage"
 
-#: lib/submenu/tie-general.php:209
+#: lib/submenu/tie-general.php:210
 msgctxt "option comment"
 msgid "recommended value is 0 (auto)"
 msgstr "la valeur recommandée est 0 (auto)"
 
-#: lib/submenu/tie-general.php:212
+#: lib/submenu/tie-general.php:213
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr "Quantité d'affûtage"
 
-#: lib/submenu/tie-general.php:218
+#: lib/submenu/tie-general.php:219
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr "Seuil d'affûtage"
