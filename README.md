@@ -14,15 +14,17 @@
 
 <h2>Description</h2>
 
+<!-- about -->
+
 <p><strong>Have you noticed that WordPress creates small images that are a bit "fuzzy" - nothing like the nice sharp original you uploaded?</strong></p>
 
-<p>After resizing an image, that image must be sharpened - but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" - not what you want for a featured image or shared image on social sites!</p>
-
-<p>The WPSSO Tune WP Image Editors (WPSSO TIE) add-on provides this missing WordPress feature - it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.</p>
+<p>After resizing an image, the image must be sharpened but WordPress doesn't do any sharpening, so the resized image remains a bit "fuzzy" - not what you want for a featured image or shared image on social sites! The WPSSO Tune WP Image Editors (WPSSO TIE) add-on provides this missing WordPress image sharpened feature - it automatically applies sharpening to all JPEG images resized by the WordPress ImageMagick library.</p>
 
 <p><strong>Compatible with all image compression / optimization plugins:</strong></p>
 
-<p>Image sharpening / adjustments are applied during the WordPress image resize operation, so the resulting resized image / thumbnail can be optimized afterwards as usual.</p>
+<p>Image sharpening is applied during the WordPress resize operation so the resulting images can still be optimized with any compression / optimization plugin.</p>
+
+<!-- /about -->
 
 <h3>Users Love the WPSSO TIE Add-on</h3>
 
