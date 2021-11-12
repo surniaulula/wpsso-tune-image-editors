@@ -109,7 +109,7 @@ if ( ! class_exists( 'WpssoTieRegister' ) ) {
 				 */
 				if ( class_exists( 'WpssoUtilReg' ) ) { // Since WPSSO Core v6.13.1.
 
-					$version = WpssoTieConfig::$cf[ 'plugin' ][ 'wpssotie' ][ 'version' ];
+					$version = WpssoTieConfig::get_version();
 
 					WpssoUtilReg::update_ext_version( 'wpssotie', $version );
 				}
