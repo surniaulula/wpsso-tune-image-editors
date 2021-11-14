@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 2.8.1\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 2.8.2-dev.3\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
@@ -13,11 +13,11 @@ msgstr ""
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:180
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:213
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr ""
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:196
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:227
 msgid ""
 "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is "
 "currently installed)."
@@ -41,21 +41,26 @@ msgid ""
 msgstr ""
 
 #: gettext/gettext-lib-config.php:9
-msgctxt "option value"
-msgid "GD Only"
+msgctxt "plugin name"
+msgid "WPSSO Core"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:10
 msgctxt "option value"
-msgid "GD and ImageMagick"
+msgid "GD Only"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:11
 msgctxt "option value"
-msgid "ImageMagick Only"
+msgid "GD and ImageMagick"
 msgstr ""
 
 #: gettext/gettext-lib-config.php:12
+msgctxt "option value"
+msgid "ImageMagick Only"
+msgstr ""
+
+#: gettext/gettext-lib-config.php:13
 msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
