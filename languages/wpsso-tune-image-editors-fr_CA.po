@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 2.8.1\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.8.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
 "POT-Creation-Date: 2021-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2021-11-13 20:00-0800\n"
+"PO-Revision-Date: 2021-11-15 09:11-0800\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -14,11 +14,11 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:182
+#: gettext/gettext-lib-abstracts-com.php:6 lib/abstracts/com/add-on.php:213
 msgid "The %1$s add-on requires the %2$s plugin."
 msgstr "L'ajout %1$s requiert l'extension %2$s."
 
-#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:198
+#: gettext/gettext-lib-abstracts-com.php:7 lib/abstracts/com/add-on.php:227
 msgid "The %1$s add-on requires %2$s version %3$s or newer (version %4$s is currently installed)."
 msgstr "L'ajout %1$s nécessite %2$s version %3$s ou plus récente (la version %4$s est installée actuellement)."
 
@@ -38,21 +38,26 @@ msgid "Improves the appearance of WordPress images for better click through rate
 msgstr "Améliore l'apparence des images WordPress pour de meilleurs taux de clics sur les sites sociaux et de recherche."
 
 #: gettext/gettext-lib-config.php:9
+msgctxt "plugin name"
+msgid "WPSSO Core"
+msgstr "WPSSO Core"
+
+#: gettext/gettext-lib-config.php:10
 msgctxt "option value"
 msgid "GD Only"
 msgstr "GD uniquement"
 
-#: gettext/gettext-lib-config.php:10
+#: gettext/gettext-lib-config.php:11
 msgctxt "option value"
 msgid "GD and ImageMagick"
 msgstr "GD et ImageMagick"
 
-#: gettext/gettext-lib-config.php:11
+#: gettext/gettext-lib-config.php:12
 msgctxt "option value"
 msgid "ImageMagick Only"
 msgstr "ImageMagick uniquement"
 
-#: gettext/gettext-lib-config.php:12
+#: gettext/gettext-lib-config.php:13
 msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr "ImageMagick et GD"
