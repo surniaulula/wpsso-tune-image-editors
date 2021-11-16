@@ -11,8 +11,8 @@
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Improves the appearance of WordPress images for better click through rates from social and search sites.
- * Requires PHP: 7.0
- * Requires At Least: 5.0
+ * Requires PHP: 7.2
+ * Requires At Least: 5.2
  * Tested Up To: 5.8.2
  * Version: 2.8.2
  * 
