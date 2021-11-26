@@ -133,12 +133,25 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 			require_once WPSSOTIE_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOTIE_PLUGINDIR . 'lib/register.php';
 
-			add_filter( 'wpssotie_load_lib', array( 'WpssoTieConfig', 'load_lib' ), 10, 3 );
+			add_filter( 'wpssotie_load_lib', array( __CLASS__, 'load_lib' ), 10, 3 );
 		}
 
 		public static function load_lib( $success = false, $filespec = '', $classname = '' ) {
 
-			if ( false === $success && ! empty( $filespec ) ) {
+			if ( false !== $success ) {
+
+				return $success;
+			}
+
+			if ( ! empty( $classname ) ) {
+
+				if ( class_exists( $classname ) ) {
+
+					return $classname;
+				}
+			}
+
+			if ( ! empty( $filespec ) ) {
 
 				$file_path = WPSSOTIE_PLUGINDIR . 'lib/' . $filespec . '.php';
 
