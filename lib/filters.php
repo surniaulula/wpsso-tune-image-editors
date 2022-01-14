@@ -51,8 +51,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			}
 
 			/**
-			 * Run at lowest priority to re-define the default editors array. The array could be modified by other
-			 * filters afterwards.
+			 * Run at lowest priority to re-define the default editors array.
 			 */
 			add_filter( 'wp_image_editors', array( $this, 'wp_image_editors' ), $min_int, 1 );
 
@@ -62,13 +61,11 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			add_filter( 'wp_editor_set_quality', array( $this, 'wp_editor_set_quality' ), $max_int, 2 );
 
 			/**
-			 * Run at a variable priority to allow image adjustments before/after some plugins or themes (default is
-			 * -1000).
+			 * Run at a variable priority to allow image adjustments before/after some plugins or themes.
 			 */
-			$filter_prio = isset( $this->p->options[ 'tie_wp_image_adj_filter_prio' ] ) ?	// Just in case.
-				$this->p->options[ 'tie_wp_image_adj_filter_prio' ] : -1000;
+			$prio = isset( $this->p->options[ 'tie_wp_image_adj_filter_prio' ] ) ? $this->p->options[ 'tie_wp_image_adj_filter_prio' ] : -1000;
 
-			add_filter( 'image_make_intermediate_size', array( $this, 'image_make_intermediate_size' ), $filter_prio, 1 );
+			add_filter( 'image_make_intermediate_size', array( $this, 'image_make_intermediate_size' ), $prio, 1 );
 		}
 
 		/**
@@ -140,8 +137,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				$opt_val = $this->p->options[ 'tie_wp_image_editors' ];
 
-				if ( ! empty( $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ] ) && 
-					is_array( $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ] ) ) {
+				if ( ! empty( $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ] ) && is_array( $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ] ) ) {
 
 					return $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ];
 				}
@@ -284,9 +280,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				case 'tooltip-tie_wp_image_adj_filter_prio':
 
-					$short = $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'short' ];
-
-					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-editors' ), $short ) . ' ';
+					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-editors' ), $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'short' ] ) . ' ';
 
 					$text .= __( 'You can change the priority at which these adjustments are made, to process images before/after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
 
