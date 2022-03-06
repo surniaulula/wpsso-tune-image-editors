@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 2.9.1-b.1\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 2.9.1-b.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
