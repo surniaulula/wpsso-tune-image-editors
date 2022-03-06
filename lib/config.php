@@ -17,8 +17,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '2.9.0',	// Plugin version.
-					'opt_version' => '4',		// Increment when changing default option values.
+					'version'     => '2.9.1-b.1',	// Plugin version.
+					'opt_version' => '5',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune WP Image Editors',
 					'desc'        => 'Improves the appearance of WordPress images for better click through rates from social and search sites.',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '9.14.0',
+							'min_version'   => '11.5.0-b.1',
 						),
 					),
 
