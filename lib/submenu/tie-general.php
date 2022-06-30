@@ -130,7 +130,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 						'<td>' . $this->form->get_select( 'tie_wp_image_editors', $this->p->cf[ 'form' ][ 'editors' ],
 							$css_class = '', $css_id = '', $is_assoc = true ) . '</td>';
 
-					$table_rows[ 'tie_wp_image_adj_filter_prio' ] = $this->form->get_tr_hide( 'basic', 'tie_wp_image_adj_filter_prio' ) . 
+					$table_rows[ 'tie_wp_image_adj_filter_prio' ] = $this->form->get_tr_hide( $in_view = 'basic', 'tie_wp_image_adj_filter_prio' ) . 
 						$this->form->get_th_html( _x( 'Adjustment Filter Priority', 'option label', 'wpsso-tune-image-editors' ),
 							$css_class = '', 'tie_wp_image_adj_filter_prio' ) . 
 						'<td>' . $this->form->get_input( 'tie_wp_image_adj_filter_prio', $css_class = 'medium' ) . '</td>';
@@ -187,7 +187,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 							$css_class = '', $css_id = 'tie_imagick_jpeg_adjust' ) . 
 						'<td>' . $this->form->get_checkbox( 'tie_imagick_jpeg_adjust' ) . '</td>';
 
-					$table_rows[ 'tie_imagick_jpeg_contrast_level' ] = $this->form->get_tr_hide( 'basic', 'tie_imagick_jpeg_contrast_level' ) . 
+					$table_rows[ 'tie_imagick_jpeg_contrast_level' ] = $this->form->get_tr_hide( $in_view = 'basic', 'tie_imagick_jpeg_contrast_level' ) . 
 						$this->form->get_th_html( _x( 'Contrast Leveling', 'option label', 'wpsso-tune-image-editors' ),
 							$css_class = '', $css_id = 'tie_imagick_jpeg_contrast_level' ) . 
 						'<td>' . $this->form->get_checkbox( 'tie_imagick_jpeg_contrast_level' ) . '</td>';
@@ -203,7 +203,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 						'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_sigma', $css_class = 'short' ) . ' ' . 
 						sprintf( _x( 'recommended value is %1$s to %2$s', 'option comment', 'wpsso-tune-image-editors' ), '0.5', '1.0' ) . '</td>';
 
-					$table_rows[ 'tie_imagick_jpeg_sharpen_radius' ] = $this->form->get_tr_hide( 'basic', 'tie_imagick_jpeg_sharpen_radius' ) . 
+					$table_rows[ 'tie_imagick_jpeg_sharpen_radius' ] = $this->form->get_tr_hide( $in_view = 'basic', 'tie_imagick_jpeg_sharpen_radius' ) . 
 						$this->form->get_th_html( _x( 'Sharpening Radius', 'option label', 'wpsso-tune-image-editors' ),
 							$css_class = '', $css_id = 'tie_imagick_jpeg_sharpen_radius' ) . 
 						'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_radius', $css_class = 'short' ) . ' ' . 
