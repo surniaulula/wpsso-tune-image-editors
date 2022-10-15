@@ -36,13 +36,13 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			$this->p =& $plugin;
 			$this->a =& $addon;
 
-			$this->p->util->add_plugin_filters( $this, array( 
+			$this->p->util->add_plugin_filters( $this, array(
 				'option_type' => 2,
 			) );
 
 			if ( is_admin() ) {
 
-				$this->p->util->add_plugin_filters( $this, array( 
+				$this->p->util->add_plugin_filters( $this, array(
 					'messages_tooltip' => 3,
 				) );
 			}
@@ -114,7 +114,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 		/**
 		 * Re-define the default image editors array. The array could be modified by other filters afterwards.
-		 * 
+		 *
 		 * Possible 'tie_wp_image_editors' option values:
 		 *
 		 * $cf = array(

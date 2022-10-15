@@ -15,14 +15,14 @@
  * Requires At Least: 5.2
  * Tested Up To: 6.1.0
  * Version: 2.9.1
- * 
+ *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
  *      {major}         Major structural code changes and/or incompatible API changes (ie. breaking changes).
  *      {minor}         New functionality was added or improved in a backwards-compatible manner.
  *      {bugfix}        Backwards-compatible bug fixes or small improvements.
  *      {stage}.{level} Pre-production release: dev < a (alpha) < b (beta) < rc (release candidate).
- * 
+ *
  * Copyright 2016-2022 Jean-Sebastien Morisset (https://wpsso.com/)
  */
 
