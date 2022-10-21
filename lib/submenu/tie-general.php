@@ -36,16 +36,6 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 		 */
 		protected function add_meta_boxes() {
 
-			$ext_name = $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'name' ];
-
-			$regen_url = 'https://wordpress.org/plugins/search/regenerate+thumbnails/';
-
-			$notice_key = 'wpsso-tie-notice-regenrate-all-image-thumbnails';
-
-			$notice_msg = '<p>' . __( 'After activating the %1$s add-on or changing its settings, don\'t forget to <a href="%2$s">regenerate all image thumbnail and image sizes</a> to see the results.', 'wpsso-tune-image-editors' ) . '</p>';
-
-			$this->p->notice->nag( sprintf( $notice_msg, $ext_name, $regen_url ), null, $notice_key );
-
 			$metabox_id      = 'wp';
 			$metabox_title   = _x( 'WordPress Settings', 'metabox title', 'wpsso-tune-image-editors' );
 			$metabox_screen  = $this->pagehook;
