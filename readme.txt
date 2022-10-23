@@ -99,6 +99,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
+**Version 2.10.0-dev.1 (2022/10/23)**
+
+* **New Features**
+	* None.
+* **Improvements**
+	* Added a 'wpsso_error_handler' for getimagesize and imagick exceptions.
+* **Bugfixes**
+	* None.
+* **Developer Notes**
+	* None.
+* **Requires At Least**
+	* PHP v7.2.
+	* WordPress v5.2.
+	* WPSSO Core v13.6.1.
+
 **Version 2.9.1 (2022/03/07)**
 
 Maintenance release.
@@ -243,6 +258,10 @@ Maintenance release for WPSSO Core v9.0.0.
 	* WPSSO Core v8.13.0.
 
 == Upgrade Notice ==
+
+= 2.10.0-dev.1 =
+
+(2022/10/23) Added a 'wpsso_error_handler' for getimagesize and imagick exceptions.
 
 = 2.9.1 =
 
