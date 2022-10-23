@@ -74,7 +74,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 				return $type;
 
-			} elseif ( strpos( $base_key, 'tie_' ) !== 0 ) {	// Nothing to do.
+			} elseif ( 0 !== strpos( $base_key, 'tie_' ) ) {	// Nothing to do.
 
 				return $type;
 			}
@@ -148,7 +148,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		 */
 		public function wp_editor_set_quality( $quality, $mime_type ) {
 
-			if ( $this->editor === null ) {	// Get the current editor only once.
+			if ( null === $this->editor ) {	// Get the current editor only once.
 
 				$editor = _wp_image_editor_choose( array( 'mime_type' => $mime_type ) );
 			}
@@ -187,42 +187,57 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			}
 
 			/**
+			 * Since WPSSO TIE v2.10.0.
+			 *
+			 * Use 'wpsso_error_handler' to handle any getimagesize or imagick exceptions.
+			 */
+			$previous_error_handler = set_error_handler( 'wpsso_error_handler' );
+
+			/**
 			 * Note that PHP v7.1 or better is required to get the image size of WebP images.
 			 */
-			$image_size = @getimagesize( $file_path );
+			$image_size = getimagesize( $file_path );
 
-			if ( empty( $image_size[ 'mime' ] ) ) {
+			if ( $this->p->debug->enabled ) {
 
-				return $file_path;
+				$this->p->debug->log_arr( 'getimagesize', $image_size );
 			}
 
-			if ( null === $this->editor ) {	// Get the current editor only once.
+			if ( ! empty( $image_size[ 'mime' ] ) ) {	// Just in case.
 
-				$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size[ 'mime' ] ) );
+				if ( null === $this->editor ) {	// Get the current editor only once.
+	
+					$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size[ 'mime' ] ) );
+				}
+	
+				/**
+				 * Adjust resized images based on the image editor and the image type.
+				 */
+				switch ( $editor ) {
+	
+					case 'WP_Image_Editor_Imagick':
+	
+						switch ( $image_size[ 'mime' ] ) {
+	
+							case 'image/jpg':
+							case 'image/jpeg':
+	
+								if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
+	
+									$file_path = $this->adjust_imagick_jpeg( $file_path );
+								}
+	
+								break;
+						}
+	
+						break;
+				}
 			}
 
 			/**
-			 * Adjust resized images based on the image editor and the image type.
+			 * Since WPSSO TIE v2.10.0.
 			 */
-			switch ( $editor ) {
-
-				case 'WP_Image_Editor_Imagick':
-
-					switch ( $image_size[ 'mime' ] ) {
-
-						case 'image/jpg':
-						case 'image/jpeg':
-
-							if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
-
-								return $this->adjust_imagick_jpeg( $file_path );
-							}
-
-							break;
-					}
-
-					break;
-			}
+			restore_error_handler();
 
 			return $file_path;
 		}
@@ -230,7 +245,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		/**
 		 * Adjust a JPEG image using ImageMagick.
 		 */
-		protected function adjust_imagick_jpeg( $file_path ) {
+		public function adjust_imagick_jpeg( $file_path ) {
 
 			$image = new Imagick( $file_path );
 
@@ -260,7 +275,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		 */
 		public function filter_messages_tooltip( $text, $msg_key, $info ) {
 
-			if ( strpos( $msg_key, 'tooltip-tie_' ) !== 0 ) {
+			if ( 0 !== strpos( $msg_key, 'tooltip-tie_' ) ) {
 
 				return $text;
 			}
