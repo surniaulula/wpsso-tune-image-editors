@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2
 Requires At Least: 5.2
 Tested Up To: 6.1.0
-Stable Tag: 2.9.1
+Stable Tag: 2.10.0
 
 Improves the appearance of WordPress images for better click through rates from social and search sites.
 
