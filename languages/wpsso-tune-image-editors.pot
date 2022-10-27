@@ -262,7 +262,7 @@ msgstr ""
 #: lib/submenu/tie-general.php:194 lib/submenu/tie-general.php:206
 #: lib/submenu/tie-general.php:212
 msgctxt "option comment"
-msgid "recommended value is %1$s to %2$s"
+msgid "(recommended value is %1$s to %2$s)"
 msgstr ""
 
 #: lib/submenu/tie-general.php:197
@@ -272,7 +272,7 @@ msgstr ""
 
 #: lib/submenu/tie-general.php:200
 msgctxt "option comment"
-msgid "recommended value is 0 (auto)"
+msgid "(recommended value is 0)"
 msgstr ""
 
 #: lib/submenu/tie-general.php:203

@@ -191,25 +191,25 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 						$this->form->get_th_html( _x( 'Sharpening Sigma', 'option label', 'wpsso-tune-image-editors' ),
 							$css_class = '', $css_id = 'tie_imagick_jpeg_sharpen_sigma' ) .
 						'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_sigma', $css_class = 'short' ) . ' ' .
-						sprintf( _x( 'recommended value is %1$s to %2$s', 'option comment', 'wpsso-tune-image-editors' ), '0.5', '1.0' ) . '</td>';
+						sprintf( _x( '(recommended value is %1$s to %2$s)', 'option comment', 'wpsso-tune-image-editors' ), '0.5', '1.0' ) . '</td>';
 
 					$table_rows[ 'tie_imagick_jpeg_sharpen_radius' ] = $this->form->get_tr_hide( $in_view = 'basic', 'tie_imagick_jpeg_sharpen_radius' ) .
 						$this->form->get_th_html( _x( 'Sharpening Radius', 'option label', 'wpsso-tune-image-editors' ),
 							$css_class = '', $css_id = 'tie_imagick_jpeg_sharpen_radius' ) .
 						'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_radius', $css_class = 'short' ) . ' ' .
-						_x( 'recommended value is 0 (auto)', 'option comment', 'wpsso-tune-image-editors' ) . '</td>';
+						_x( '(recommended value is 0)', 'option comment', 'wpsso-tune-image-editors' ) . '</td>';
 
 					$table_rows[ 'tie_imagick_jpeg_sharpen_amount' ] = '' .
 						$this->form->get_th_html( _x( 'Sharpening Amount', 'option label', 'wpsso-tune-image-editors' ),
 							$css_class = '', $css_id = 'tie_imagick_jpeg_sharpen_amount' ) .
 						'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_amount', $css_class = 'short' ) . ' ' .
-						sprintf( _x( 'recommended value is %1$s to %2$s', 'option comment', 'wpsso-tune-image-editors' ), '0.8', '1.2' ) . '</td>';
+						sprintf( _x( '(recommended value is %1$s to %2$s)', 'option comment', 'wpsso-tune-image-editors' ), '0.8', '1.2' ) . '</td>';
 
 					$table_rows[ 'tie_imagick_jpeg_sharpen_threshold' ] = '' .
 						$this->form->get_th_html( _x( 'Sharpening Threshold', 'option label', 'wpsso-tune-image-editors' ),
 							$css_class = '', $css_id = 'tie_imagick_jpeg_sharpen_threshold' ) .
 						'<td>' . $this->form->get_input( 'tie_imagick_jpeg_sharpen_threshold', $css_class = 'short' ) . ' ' .
-						sprintf( _x( 'recommended value is %1$s to %2$s', 'option comment', 'wpsso-tune-image-editors' ), '0', '0.05' ) . '</td>';
+						sprintf( _x( '(recommended value is %1$s to %2$s)', 'option comment', 'wpsso-tune-image-editors' ), '0', '0.05' ) . '</td>';
 
 					break;
 			}
