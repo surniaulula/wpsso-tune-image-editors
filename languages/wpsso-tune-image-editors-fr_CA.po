@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 2.9.1\n"
+"Project-Id-Version: WPSSO Tune Image Editors 2.10.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
 "POT-Creation-Date: 2022-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2022-03-07 06:41-0800\n"
+"PO-Revision-Date: 2022-10-28 10:37-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.2\n"
 "X-Poedit-Basepath: .\n"
 
 #: gettext/gettext-lib-abstract-com.php:6 lib/abstract/com/add-on.php:207
@@ -62,192 +62,188 @@ msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr "ImageMagick et GD"
 
-#: lib/filters.php:272
+#: lib/filters.php:287
 msgid "By default, WordPress uses the ImageMagick editor first (provided the PHP \"imagick\" extension is loaded), and uses the GD editor as a fallback."
 msgstr "Par défaut, WordPress utilise d'abord l'éditeur ImageMagick (à condition que l'extension PHP \"imagick\" soit chargée), et utilise l'éditeur GD comme solution de repli."
 
-#: lib/filters.php:274
+#: lib/filters.php:289
 msgid "This option allows you to select a different default editor list for WordPress."
 msgstr "Cette option vous permet de sélectionner une autre liste d'éditeurs WordPress par défaut."
 
-#: lib/filters.php:280
+#: lib/filters.php:295
 msgid "%s hooks the WordPress 'image_make_intermediate_size' filter to adjust and sharpen images."
 msgstr "%s accroche le filtre WordPress 'image_make_intermediate_size' pour ajuster et affûter les images."
 
-#: lib/filters.php:282
+#: lib/filters.php:297
 msgid "You can change the priority at which these adjustments are made, to process images before/after other image processing plugins or custom filter hooks."
 msgstr "Vous pouvez modifier la priorité à laquelle ces ajustements sont effectués, pour traiter les images avant / après d'autres extensions de traitement d'image ou des crochets de filtres personnalisés."
 
-#: lib/filters.php:288
+#: lib/filters.php:303
 msgid "Status of the %1$s editor in the WordPress '%2$s' array."
 msgstr "Statut de l'éditeur %1$s dans le tableau WordPress '%2$s'."
 
-#: lib/filters.php:290
+#: lib/filters.php:305
 msgid "By default, WordPress uses the ImageMagick editor first, as editor #1 in the '%s' array."
 msgstr "Par défaut, WordPress utilise d'abord l'éditeur ImageMagick comme éditeur # 1 dans le tableau '%s'."
 
-#: lib/filters.php:296
+#: lib/filters.php:311
 msgid "Status of the PHP \"%s\" extension module."
 msgstr "Statut du module d'extension PHP \"%s\"."
 
-#: lib/filters.php:298
+#: lib/filters.php:313
 msgid "If the WordPress %1$s editor is available, but the PHP \"%2$s\" extension is not loaded, contact your hosting provider and ask to have the PHP \"%2$s\" extension installed."
 msgstr "Si l'éditeur de WordPress %1$s est disponible, mais que l'extension PHP \"%2$s\" n'est pas chargée, contactez votre fournisseur d'hébergement et demandez l'installation de l'extension PHP \"%2$s\"."
 
-#: lib/filters.php:304
+#: lib/filters.php:319
 msgid "Apply image adjustments for resized %1$s images using %2$s."
 msgstr "Appliquez les réglages d'image pour les images %1$s redimensionnées à l'aide de %2$s."
 
-#: lib/filters.php:310
+#: lib/filters.php:325
 msgid "Contrast leveling further enhances images by adjusting the pixel colors to span the entire range of available colors."
 msgstr "Le nivellement du contraste améliore les images d'avantage en ajustant les couleurs des pixels pour couvrir toute la gamme des couleurs disponibles."
 
-#: lib/filters.php:316
+#: lib/filters.php:331
 msgid "The resized image compression quality as a positive integer value between 1 and 100. The recommended value is 90 to 95."
 msgstr "La qualité de compression de l'image redimensionnée est une valeur entière positive comprise entre 1 et 100. La valeur recommandée est de 90 à 95."
 
-#: lib/filters.php:322
+#: lib/filters.php:337
 msgid "The sharpening sigma can be any floating-point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening."
 msgstr "Le sigma d'affûtage peut être n'importe quelle valeur en flottante, de 0.1 pour presque pas d'affûtage, à 3 ou plus pour un affûtage sévère."
 
-#: lib/filters.php:324
+#: lib/filters.php:339
 msgid "A sharpening sigma value between 0.5 and 1.0 is recommended."
 msgstr "Une valeur sigma d'affûtage comprise entre 0.5 et 1.0 est recommandée."
 
-#: lib/filters.php:330
+#: lib/filters.php:345
 msgid "The sharpening radius is an integer value, generally one to two times the sharpening sigma value."
 msgstr "Le rayon d'affûtage est une valeur entière, généralement une à deux fois la valeur sigma d'affûtage."
 
-#: lib/filters.php:332
+#: lib/filters.php:347
 msgid "The best sharpening radius depends on the resized image resolution, and for this reason, the recommended value is 0 (auto)."
 msgstr "Le meilleur rayon d'affûtage dépend de la résolution de l'image redimensionnée et, pour cette raison, la valeur recommandée est 0 (auto)."
 
-#: lib/filters.php:338
+#: lib/filters.php:353
 msgid "The amount (ie. strength) of the sharpening effect. A larger value increases the contrast of sharpened pixels."
 msgstr "La quantité (c'est-à-dire la force) de l'effet d'affûtage. Une valeur plus grande augmente le contraste des pixels affûtés."
 
-#: lib/filters.php:340
+#: lib/filters.php:355
 msgid "The default value is 1.0, and the recommended range is between 0.8 and 1.2."
 msgstr "La valeur par défaut est 1.0 et la plage recommandée est de 0.8 à 1.2."
 
-#: lib/filters.php:346
+#: lib/filters.php:361
 msgid "Minimum contrast required for a pixel to be considered an edge pixel for sharpening."
 msgstr "Contraste minimal requis pour qu'un pixel soit considéré comme un pixel de contour à affûter."
 
-#: lib/filters.php:348
+#: lib/filters.php:363
 msgid "Higher values (closer to 1) allow sharpening only in high-contrast regions, like strong edges, while leaving low-contrast areas unaffected."
 msgstr "Des valeurs plus élevées (plus proches de 1) permet d'affûter uniquement dans les zones à contraste élevée, comme les bordures fortes, et ignorer les zones à faible contraste."
 
-#: lib/filters.php:350
+#: lib/filters.php:365
 msgid "Lower values (closer to 0) allow sharpening in relatively smoother regions of the image."
 msgstr "Les valeurs inférieures (plus proches de 0) permettent d'affûter les zones relativement plus lisses de l'image."
 
-#: lib/filters.php:352
+#: lib/filters.php:367
 msgid "A value of 0 may be desirable to retain fine skin details in portrait photographs."
 msgstr "Une valeur de 0 peut être souhaitable pour conserver les détails fins de la peau dans les photos de portrait."
 
-#: lib/submenu/tie-general.php:45
-msgid "After activating the %1$s add-on or changing its settings, don't forget to <a href=\"%2$s\">regenerate all image thumbnail and image sizes</a> to see the results."
-msgstr "Après avoir activé l'ajout %1$s ou modifié ses paramètres, n'oubliez pas de <a href=\"%2$s\">régénérer toutes les vignettes et tailles d'image</a> pour voir les résultats ."
-
-#: lib/submenu/tie-general.php:50
+#: lib/submenu/tie-general.php:40
 msgctxt "metabox title"
 msgid "WordPress Settings"
 msgstr "Réglages WordPress"
 
-#: lib/submenu/tie-general.php:62
+#: lib/submenu/tie-general.php:52
 msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr "Réglages d'extension PHP"
 
-#: lib/submenu/tie-general.php:103
+#: lib/submenu/tie-general.php:93
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr "ImageMagick"
 
-#: lib/submenu/tie-general.php:128
+#: lib/submenu/tie-general.php:118
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr "Éditeur(s) d'image WP par défaut"
 
-#: lib/submenu/tie-general.php:134
+#: lib/submenu/tie-general.php:124
 msgctxt "option label"
 msgid "Adjustment Filter Priority"
 msgstr "Priorité du filtre d'ajustement"
 
-#: lib/submenu/tie-general.php:155
+#: lib/submenu/tie-general.php:145
 msgid "Used as editor #%d"
 msgstr "Utilisé comme éditeur #%d"
 
-#: lib/submenu/tie-general.php:159
+#: lib/submenu/tie-general.php:149
 msgid "Not used"
 msgstr "Non utilisé"
 
-#: lib/submenu/tie-general.php:164
+#: lib/submenu/tie-general.php:154
 msgid "Loaded"
 msgstr "Chargé"
 
-#: lib/submenu/tie-general.php:168
+#: lib/submenu/tie-general.php:158
 msgid "Not loaded"
 msgstr "Non chargé"
 
-#: lib/submenu/tie-general.php:172
+#: lib/submenu/tie-general.php:162
 msgctxt "option label"
 msgid "WordPress %s Editor"
 msgstr "Éditeur WordPress %s"
 
-#: lib/submenu/tie-general.php:177
+#: lib/submenu/tie-general.php:167
 msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr "Extension PHP %s"
 
-#: lib/submenu/tie-general.php:183
+#: lib/submenu/tie-general.php:173
 msgctxt "metabox title"
 msgid "%s Resized Images"
 msgstr "Images redimensionnées %s"
 
-#: lib/submenu/tie-general.php:186
+#: lib/submenu/tie-general.php:176
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr "Ajuster les images %s"
 
-#: lib/submenu/tie-general.php:191
+#: lib/submenu/tie-general.php:181
 msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr "Nivellement de contraste"
 
-#: lib/submenu/tie-general.php:196
+#: lib/submenu/tie-general.php:186
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr "Qualité de compression"
 
-#: lib/submenu/tie-general.php:201
+#: lib/submenu/tie-general.php:191
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr "Sigma d'affûtage"
 
-#: lib/submenu/tie-general.php:204 lib/submenu/tie-general.php:216
-#: lib/submenu/tie-general.php:222
+#: lib/submenu/tie-general.php:194 lib/submenu/tie-general.php:206
+#: lib/submenu/tie-general.php:212
 msgctxt "option comment"
-msgid "recommended value is %1$s to %2$s"
-msgstr "la valeur recommandée est de %1$s à %2$s"
+msgid "(recommended value is %1$s to %2$s)"
+msgstr "(valeur recommandée est de %1$s à %2$s)"
 
-#: lib/submenu/tie-general.php:207
+#: lib/submenu/tie-general.php:197
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr "Rayon d'affûtage"
 
-#: lib/submenu/tie-general.php:210
+#: lib/submenu/tie-general.php:200
 msgctxt "option comment"
-msgid "recommended value is 0 (auto)"
-msgstr "la valeur recommandée est 0 (auto)"
+msgid "(recommended value is 0)"
+msgstr "(valeur recommandée est 0)"
 
-#: lib/submenu/tie-general.php:213
+#: lib/submenu/tie-general.php:203
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr "Quantité d'affûtage"
 
-#: lib/submenu/tie-general.php:219
+#: lib/submenu/tie-general.php:209
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr "Seuil d'affûtage"
