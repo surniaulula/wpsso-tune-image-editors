@@ -206,30 +206,30 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			if ( ! empty( $image_size[ 'mime' ] ) ) {	// Just in case.
 
 				if ( null === $this->editor ) {	// Get the current editor only once.
-	
+
 					$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size[ 'mime' ] ) );
 				}
-	
+
 				/**
 				 * Adjust resized images based on the image editor and the image type.
 				 */
 				switch ( $editor ) {
-	
+
 					case 'WP_Image_Editor_Imagick':
-	
+
 						switch ( $image_size[ 'mime' ] ) {
-	
+
 							case 'image/jpg':
 							case 'image/jpeg':
-	
+
 								if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
-	
+
 									$file_path = $this->adjust_imagick_jpeg( $file_path );
 								}
-	
+
 								break;
 						}
-	
+
 						break;
 				}
 			}
