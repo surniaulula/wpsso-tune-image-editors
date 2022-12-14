@@ -181,7 +181,17 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		 */
 		public function image_make_intermediate_size( $file_path ) {
 
+			if ( $this->p->debug->enabled ) {
+
+				$this->p->debug->mark();
+			}
+
 			if ( ! file_exists( $file_path ) ) {
+
+				if ( $this->p->debug->enabled ) {
+
+					$this->p->debug->log( 'skipped ' . $file_path . ': file does not exist' );
+				}
 
 				return $file_path;
 			}
@@ -196,6 +206,11 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			/**
 			 * Note that PHP v7.1 or better is required to get the image size of WebP images.
 			 */
+			if ( $this->p->debug->enabled ) {
+
+				$this->p->debug->log( 'calling getimagesize() for ' . $file_path );
+			}
+
 			$image_size = getimagesize( $file_path );
 
 			if ( $this->p->debug->enabled ) {
@@ -246,6 +261,11 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 		 * Adjust a JPEG image using ImageMagick.
 		 */
 		public function adjust_imagick_jpeg( $file_path ) {
+
+			if ( $this->p->debug->enabled ) {
+
+				$this->p->debug->mark();
+			}
 
 			$image = new Imagick( $file_path );
 
