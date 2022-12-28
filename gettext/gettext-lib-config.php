@@ -1,8 +1,7 @@
 <?php die( 'These aren\'t the droids you\'re looking for.' );
-
-/**
- * Extract of translatable strings from lib/config.php.
- */
+// 
+// Extract of translatable strings from lib/config.php.
+// 
 _x( 'Image Editors', 'lib file description', 'wpsso-tune-image-editors' );
 _x( 'WPSSO Tune WP Image Editors', 'plugin name', 'wpsso-tune-image-editors' );
 _x( 'Improves the appearance of WordPress images for better click through rates from social and search sites.', 'plugin description', 'wpsso-tune-image-editors' );
