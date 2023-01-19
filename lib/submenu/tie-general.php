@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2018-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -31,7 +31,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 			$this->menu_ext  = $ext;
 		}
 
-		/**
+		/*
 		 * Called by the extended WpssoAdmin class.
 		 */
 		protected function add_meta_boxes() {
@@ -63,7 +63,7 @@ if ( ! class_exists( 'WpssoTieSubmenuTieGeneral' ) && class_exists( 'WpssoAdmin'
 
 		public function show_metabox_wp() {
 
-			/**
+			/*
 			 * Load the WP class libraries to avoid triggering a known bug in EWWW
 			 * when applying the 'wp_image_editors' filter.
 			 */

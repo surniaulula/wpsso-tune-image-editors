@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2018-2023 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -19,7 +19,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 		private $editor = null;
 
-		/**
+		/*
 		 * Instantiated by WpssoTie->init_objects().
 		 */
 		public function __construct( &$plugin, &$addon ) {
@@ -47,17 +47,17 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				) );
 			}
 
-			/**
+			/*
 			 * Run at lowest priority to re-define the default editors array.
 			 */
 			add_filter( 'wp_image_editors', array( $this, 'wp_image_editors' ), PHP_INT_MIN, 1 );
 
-			/**
+			/*
 			 * Run at highest priority to make sure our quality setting is last.
 			 */
 			add_filter( 'wp_editor_set_quality', array( $this, 'wp_editor_set_quality' ), PHP_INT_MAX, 2 );
 
-			/**
+			/*
 			 * Run at a variable priority to allow image adjustments before/after some plugins or themes.
 			 */
 			$prio = isset( $this->p->options[ 'tie_wp_image_adj_filter_prio' ] ) ? $this->p->options[ 'tie_wp_image_adj_filter_prio' ] : -1000;
@@ -65,7 +65,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			add_filter( 'image_make_intermediate_size', array( $this, 'image_make_intermediate_size' ), $prio, 1 );
 		}
 
-		/**
+		/*
 		 * Return the sanitation type for a given option key.
 		 */
 		public function filter_option_type( $type, $base_key ) {
@@ -112,7 +112,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $type;
 		}
 
-		/**
+		/*
 		 * Re-define the default image editors array. The array could be modified by other filters afterwards.
 		 *
 		 * Possible 'tie_wp_image_editors' option values:
@@ -143,7 +143,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $implementations;
 		}
 
-		/**
+		/*
 		 * Set image quality to 100 for the image types we are adjusting so we don't re-compress the resized images.
 		 */
 		public function wp_editor_set_quality( $quality, $mime_type ) {
@@ -176,7 +176,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $quality;
 		}
 
-		/**
+		/*
 		 * Apply adjustments to the resized image (leveling, sharpening, etc.).
 		 */
 		public function image_make_intermediate_size( $file_path ) {
@@ -196,14 +196,14 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				return $file_path;
 			}
 
-			/**
+			/*
 			 * Since WPSSO TIE v2.10.0.
 			 *
 			 * Use 'wpsso_error_handler' to handle any getimagesize or imagick exceptions.
 			 */
 			$previous_error_handler = set_error_handler( 'wpsso_error_handler' );
 
-			/**
+			/*
 			 * Note that PHP v7.1 or better is required to get the image size of WebP images.
 			 */
 			if ( $this->p->debug->enabled ) {
@@ -225,7 +225,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 					$editor = _wp_image_editor_choose( array( 'mime_type' => $image_size[ 'mime' ] ) );
 				}
 
-				/**
+				/*
 				 * Adjust resized images based on the image editor and the image type.
 				 */
 				switch ( $editor ) {
@@ -249,7 +249,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 				}
 			}
 
-			/**
+			/*
 			 * Since WPSSO TIE v2.10.0.
 			 */
 			restore_error_handler();
@@ -257,7 +257,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $file_path;
 		}
 
-		/**
+		/*
 		 * Adjust a JPEG image using ImageMagick.
 		 */
 		public function adjust_imagick_jpeg( $file_path ) {
@@ -290,7 +290,7 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 			return $file_path;
 		}
 
-		/**
+		/*
 		 * Option tooltips specific to this add-on.
 		 */
 		public function filter_messages_tooltip( $text, $msg_key, $info ) {
