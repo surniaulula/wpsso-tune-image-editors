@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Copyright 2016-2022 Jean-Sebastien Morisset (https://wpsso.com/)
@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '2.11.0-rc.1',	// Plugin version.
+					'version'     => '2.11.0-rc.2',	// Plugin version.
 					'opt_version' => '5',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune WP Image Editors',
@@ -28,7 +28,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'text_domain' => 'wpsso-tune-image-editors',
 					'domain_path' => '/languages',
 
-					/**
+					/*
 					 * Required plugin and its version.
 					 */
 					'req' => array(
@@ -37,16 +37,16 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '14.5.0-rc.1',
+							'min_version'   => '14.5.0-rc.2',
 						),
 					),
 
-					/**
+					/*
 					 * URLs or relative paths to plugin banners and icons.
 					 */
 					'assets' => array(
 
-						/**
+						/*
 						 * Icon image array keys are '1x' and '2x'.
 						 */
 						'icons' => array(
@@ -55,7 +55,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 						),
 					),
 
-					/**
+					/*
 					 * Library files loaded and instantiated by WPSSO.
 					 */
 					'lib' => array(
@@ -66,7 +66,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 				),
 			),
 
-			/**
+			/*
 			 * Additional add-on setting options.
 			 */
 			'opt' => array(
@@ -117,7 +117,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 
 			$info =& self::$cf[ 'plugin' ][ 'wpssotie' ];
 
-			/**
+			/*
 			 * Define fixed constants.
 			 */
 			define( 'WPSSOTIE_FILEPATH', $plugin_file );
