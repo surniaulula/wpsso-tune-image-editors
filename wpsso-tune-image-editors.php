@@ -67,6 +67,9 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 			load_plugin_textdomain( 'wpsso-tune-image-editors', false, 'wpsso-tune-image-editors/languages/' );
 		}
 
+		/*
+		 * Called by Wpsso->set_objects which runs at init priority 10.
+		 */
 		public function init_objects() {
 
 			$this->p =& Wpsso::get_instance();
