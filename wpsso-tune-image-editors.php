@@ -13,7 +13,7 @@
  * Description: Improves the appearance of WordPress images for better click through rates from social and search sites.
  * Requires Plugins: wpsso
  * Requires PHP: 7.2
- * Requires At Least: 5.4
+ * Requires At Least: 5.5
  * Tested Up To: 6.2.0
  * Version: 2.11.1
  *
