@@ -101,7 +101,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.0.0-dev.1 (2023/05/14)**
+**Version 3.0.0-dev.1 (TBD)**
 
 * **New Features**
 	* None.
@@ -308,7 +308,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.0.0-dev.1 =
 
-(2023/05/14) None.
+(TBD) None.
 
 = 2.11.1 =
 
