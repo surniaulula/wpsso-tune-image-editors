@@ -15,7 +15,7 @@
  * Requires PHP: 7.2.5
  * Requires At Least: 5.5
  * Tested Up To: 6.2.0
- * Version: 2.11.1
+ * Version: 3.0.0-dev.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -42,6 +42,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 	class WpssoTie extends WpssoAbstractAddOn {
 
 		public $filters;	// WpssoTieFilters class object.
+		public $imagick;	// WpssoTieImagick class object.
 
 		protected $p;	// Wpsso class object.
 
@@ -84,7 +85,13 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 				return;	// Stop here.
 			}
 
+			require_once WPSSOTIE_PLUGINDIR . 'lib/filters.php';
+
 			$this->filters = new WpssoTieFilters( $this->p, $this );
+
+			require_once WPSSOTIE_PLUGINDIR . 'lib/imagick.php';
+
+			$this->imagick = new WpssoTieImagick( $this->p, $this );
 		}
 	}
 

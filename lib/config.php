@@ -17,8 +17,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '2.11.1',	// Plugin version.
-					'opt_version' => '5',		// Increment when changing default option values.
+					'version'     => '3.0.0-dev.1',	// Plugin version.
+					'opt_version' => '7',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune WP Image Editors',
 					'desc'        => 'Improves the appearance of WordPress images for better click through rates from social and search sites.',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '14.7.0',
+							'min_version'   => '15.11.0',
 						),
 					),
 
@@ -75,13 +75,13 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 					'tie_wp_image_adj_filter_prio'       => -1000,		// Integer.
 					'tie_imagick_jpeg_adjust'            => 1,		// Checkbox.
 					'tie_imagick_jpeg_auto_level'        => 0,		// Checkbox.
-					'tie_imagick_jpeg_contrast_level'    => 0,		// Checkbox.
-					'tie_imagick_jpeg_compress_quality'  => 92,		// Positive number.
-					'tie_imagick_jpeg_sharpen_sigma'     => 0.5,		// Floating-point number.
+					'tie_imagick_jpeg_normalize'         => 0,		// Checkbox.
+					'tie_imagick_jpeg_compress_quality'  => 92,		// Positive integer.
+					'tie_imagick_jpeg_sharpen_sigma'     => '0.5',		// Floating-point number (string).
 					'tie_imagick_jpeg_sharpen_radius'    => 0,		// Integer.
-					'tie_imagick_jpeg_sharpen_amount'    => 1.0,		// Floating-point number.
-					'tie_imagick_jpeg_sharpen_threshold' => 0.05,		// Floating-point number.
-				),
+					'tie_imagick_jpeg_sharpen_amount'    => '1.0',		// Floating-point number (string).
+					'tie_imagick_jpeg_sharpen_threshold' => '0.05',		// Floating-point number (string).
+				),	// End of 'defaults' array.
 			),
 			'wp' => array(
 				'editors' => array(
@@ -130,7 +130,6 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 
 		public static function require_libs( $plugin_file ) {
 
-			require_once WPSSOTIE_PLUGINDIR . 'lib/filters.php';
 			require_once WPSSOTIE_PLUGINDIR . 'lib/register.php';
 
 			add_filter( 'wpssotie_load_lib', array( __CLASS__, 'load_lib' ), 10, 3 );

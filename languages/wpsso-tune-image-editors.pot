@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 2.11.1\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 3.0.0-dev.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
@@ -65,119 +65,119 @@ msgctxt "option value"
 msgid "ImageMagick and GD"
 msgstr ""
 
-#: lib/filters.php:307
+#: lib/filters-messages.php:44
 msgid ""
 "By default, WordPress uses the ImageMagick editor first (provided the PHP "
 "\"imagick\" extension is loaded), and uses the GD editor as a fallback."
 msgstr ""
 
-#: lib/filters.php:309
+#: lib/filters-messages.php:46
 msgid ""
 "This option allows you to select a different default editor list for "
 "WordPress."
 msgstr ""
 
-#: lib/filters.php:315
+#: lib/filters-messages.php:52
 msgid ""
 "%s hooks the WordPress 'image_make_intermediate_size' filter to adjust and "
 "sharpen images."
 msgstr ""
 
-#: lib/filters.php:317
+#: lib/filters-messages.php:54
 msgid ""
 "You can change the priority at which these adjustments are made, to process "
 "images before/after other image processing plugins or custom filter hooks."
 msgstr ""
 
-#: lib/filters.php:323
+#: lib/filters-messages.php:60
 msgid "Status of the %1$s editor in the WordPress '%2$s' array."
 msgstr ""
 
-#: lib/filters.php:325
+#: lib/filters-messages.php:62
 msgid ""
 "By default, WordPress uses the ImageMagick editor first, as editor #1 in the "
 "'%s' array."
 msgstr ""
 
-#: lib/filters.php:331
+#: lib/filters-messages.php:68
 msgid "Status of the PHP \"%s\" extension module."
 msgstr ""
 
-#: lib/filters.php:333
+#: lib/filters-messages.php:70
 msgid ""
 "If the WordPress %1$s editor is available, but the PHP \"%2$s\" extension is "
 "not loaded, contact your hosting provider and ask to have the PHP \"%2$s\" "
 "extension installed."
 msgstr ""
 
-#: lib/filters.php:339
+#: lib/filters-messages.php:76
 msgid "Apply image adjustments for resized %1$s images using %2$s."
 msgstr ""
 
-#: lib/filters.php:345
+#: lib/filters-messages.php:82
 msgid ""
-"Contrast leveling further enhances images by adjusting the pixel colors to "
-"span the entire range of available colors."
+"Enhances the contrast of a color image by adjusting the pixels color to span "
+"the entire range of colors available."
 msgstr ""
 
-#: lib/filters.php:351
+#: lib/filters-messages.php:88
 msgid ""
 "The resized image compression quality as a positive integer value between 1 "
 "and 100. The recommended value is 90 to 95."
 msgstr ""
 
-#: lib/filters.php:357
+#: lib/filters-messages.php:94
 msgid ""
 "The sharpening sigma can be any floating-point value, from 0.1 for almost no "
 "sharpening, to 3 or more for severe sharpening."
 msgstr ""
 
-#: lib/filters.php:359
+#: lib/filters-messages.php:96
 msgid "A sharpening sigma value between 0.5 and 1.0 is recommended."
 msgstr ""
 
-#: lib/filters.php:365
+#: lib/filters-messages.php:102
 msgid ""
 "The sharpening radius is an integer value, generally one to two times the "
 "sharpening sigma value."
 msgstr ""
 
-#: lib/filters.php:367
+#: lib/filters-messages.php:104
 msgid ""
 "The best sharpening radius depends on the resized image resolution, and for "
 "this reason, the recommended value is 0 (auto)."
 msgstr ""
 
-#: lib/filters.php:373
+#: lib/filters-messages.php:110
 msgid ""
 "The amount (ie. strength) of the sharpening effect. A larger value increases "
 "the contrast of sharpened pixels."
 msgstr ""
 
-#: lib/filters.php:375
+#: lib/filters-messages.php:112
 msgid ""
 "The default value is 1.0, and the recommended range is between 0.8 and 1.2."
 msgstr ""
 
-#: lib/filters.php:381
+#: lib/filters-messages.php:118
 msgid ""
 "Minimum contrast required for a pixel to be considered an edge pixel for "
 "sharpening."
 msgstr ""
 
-#: lib/filters.php:383
+#: lib/filters-messages.php:120
 msgid ""
 "Higher values (closer to 1) allow sharpening only in high-contrast regions, "
 "like strong edges, while leaving low-contrast areas unaffected."
 msgstr ""
 
-#: lib/filters.php:385
+#: lib/filters-messages.php:122
 msgid ""
 "Lower values (closer to 0) allow sharpening in relatively smoother regions "
 "of the image."
 msgstr ""
 
-#: lib/filters.php:387
+#: lib/filters-messages.php:124
 msgid ""
 "A value of 0 may be desirable to retain fine skin details in portrait "
 "photographs."
@@ -249,38 +249,43 @@ msgctxt "option label"
 msgid "Contrast Leveling"
 msgstr ""
 
-#: lib/submenu/tie-general.php:186
+#: lib/submenu/tie-general.php:184
+msgctxt "option comment"
+msgid "(not recommended)"
+msgstr ""
+
+#: lib/submenu/tie-general.php:187
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/submenu/tie-general.php:191
+#: lib/submenu/tie-general.php:190 lib/submenu/tie-general.php:196
+#: lib/submenu/tie-general.php:208 lib/submenu/tie-general.php:214
+msgctxt "option comment"
+msgid "(recommended %1$s to %2$s)"
+msgstr ""
+
+#: lib/submenu/tie-general.php:193
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
-#: lib/submenu/tie-general.php:194 lib/submenu/tie-general.php:206
-#: lib/submenu/tie-general.php:212
-msgctxt "option comment"
-msgid "(recommended value is %1$s to %2$s)"
-msgstr ""
-
-#: lib/submenu/tie-general.php:197
+#: lib/submenu/tie-general.php:199
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/submenu/tie-general.php:200
+#: lib/submenu/tie-general.php:202
 msgctxt "option comment"
-msgid "(recommended value is 0)"
+msgid "(recommended 0)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:203
+#: lib/submenu/tie-general.php:205
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/submenu/tie-general.php:209
+#: lib/submenu/tie-general.php:211
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
