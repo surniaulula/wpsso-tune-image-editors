@@ -101,16 +101,21 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.0.0-dev.1 (TBD)**
+**Version 3.0.0-dev.1 (2023/05/18)**
 
 * **New Features**
 	* None.
 * **Improvements**
-	* None.
+	* Removed the "Contrast Leveling" option.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* None.
+	* Added new library files and classes:
+		* WpssoTieFiltersMessages
+		* WpssoTieFiltersOptions
+		* WpssoTieFiltersUpgrade
+		* WpssoTieFiltersWp
+		* WpssoTieImagick
 * **Requires At Least**
 	* PHP v7.2.5.
 	* WordPress v5.5.
@@ -308,7 +313,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.0.0-dev.1 =
 
-(TBD) None.
+(2023/05/18) Removed the "Contrast Leveling" option.
 
 = 2.11.1 =
 
