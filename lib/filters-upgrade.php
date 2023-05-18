@@ -33,8 +33,9 @@ if ( ! class_exists( 'WpssoTieFiltersUpgrade' ) ) {
 		public function filter_rename_options_keys( $options_keys ) {
 
 			$options_keys[ 'wpssotie' ] = array(
-				6 => array(
-					'tie_imagick_jpeg_contrast_level' => 'tie_imagick_jpeg_normalize',
+				7 => array(
+					'tie_imagick_jpeg_contrast_level' => '',
+					'tie_imagick_jpeg_normalize'      => '',
 				),
 			);
 

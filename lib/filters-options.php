@@ -69,7 +69,6 @@ if ( ! class_exists( 'WpssoTieFiltersOptions' ) ) {
 					return 'fnum2';
 
 				case 'tie_imagick_jpeg_adjust':
-				case 'tie_imagick_jpeg_normalize':
 
 					return 'checkbox';
 			}

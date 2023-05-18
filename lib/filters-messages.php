@@ -77,12 +77,6 @@ if ( ! class_exists( 'WpssoTieFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-tie_imagick_jpeg_normalize':
-
-					$text = __( 'Enhances the contrast of a color image by adjusting the pixels color to span the entire range of colors available.', 'wpsso-tune-image-editors' );
-
-					break;
-
 				case 'tooltip-tie_imagick_jpeg_compress_quality':
 
 					$text = __( 'The resized image compression quality as a positive integer value between 1 and 100. The recommended value is 90 to 95.', 'wpsso-tune-image-editors' );

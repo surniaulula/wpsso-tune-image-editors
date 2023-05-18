@@ -47,11 +47,15 @@ if ( ! class_exists( 'WpssoTieImagick' ) ) {
 
 			$image = new Imagick( $file_path );
 
-			if ( $this->p->options[ 'tie_imagick_jpeg_normalize' ] ) {
-
-				$image->normalizeImage();
-			}
-
+			/*
+			 * Imagick::unsharpMaskImage
+			 *
+			 * Sharpens an image. We convolve the image with a Gaussian operator of the given radius and standard
+			 * deviation (sigma). For reasonable results, radius should be larger than sigma. Use a radius of 0 and
+			 * Imagick::UnsharpMaskImage() selects a suitable radius for you. 
+			 *
+			 * See https://www.php.net/manual/en/imagick.unsharpmaskimage.php.
+			 */
 			$image->unsharpMaskImage(
 				$this->p->options[ 'tie_imagick_jpeg_sharpen_radius' ],
 				$this->p->options[ 'tie_imagick_jpeg_sharpen_sigma' ],
@@ -70,6 +74,12 @@ if ( ! class_exists( 'WpssoTieImagick' ) ) {
 			$image->destroy();
 
 			return $file_path;
+		}
+		
+		/*
+		 * Adjust a WEBP image.
+		 */
+		public function adjust_webp( $file_path ) {
 		}
 	}
 }
