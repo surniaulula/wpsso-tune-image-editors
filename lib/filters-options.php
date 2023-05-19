@@ -50,25 +50,26 @@ if ( ! class_exists( 'WpssoTieFiltersOptions' ) ) {
 
 					return 'not_blank';
 
-				case 'tie_imagick_jpeg_compress_quality':
+				case 'tie_imagick_compress_quality':
 
 					return 'pos_int';
 
 				case 'tie_wp_image_adj_filter_prio':
-				case 'tie_imagick_jpeg_sharpen_radius':
+				case 'tie_imagick_sharpen_radius':
 
 					return 'integer';
 
-				case 'tie_imagick_jpeg_sharpen_sigma':
-				case 'tie_imagick_jpeg_sharpen_amount':
+				case 'tie_imagick_sharpen_sigma':
+				case 'tie_imagick_sharpen_amount':
 
 					return 'fnum1';
 
-				case 'tie_imagick_jpeg_sharpen_threshold':
+				case 'tie_imagick_sharpen_threshold':
 
 					return 'fnum2';
 
 				case 'tie_imagick_jpeg_adjust':
+				case 'tie_imagick_webp_adjust':
 
 					return 'checkbox';
 			}

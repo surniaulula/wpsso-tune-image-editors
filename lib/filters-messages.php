@@ -39,7 +39,7 @@ if ( ! class_exists( 'WpssoTieFiltersMessages' ) ) {
 
 			switch ( $msg_key ) {
 
-				case 'tooltip-tie_wp_image_editors':
+				case 'tooltip-tie_wp_image_editors':	// Default WordPress Image Editor(s).
 
 					$text = __( 'By default, WordPress uses the ImageMagick editor first (provided the PHP "imagick" extension is loaded), and uses the GD editor as a fallback.', 'wpsso-tune-image-editors' ) . ' ';
 
@@ -47,11 +47,11 @@ if ( ! class_exists( 'WpssoTieFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-tie_wp_image_adj_filter_prio':
+				case 'tooltip-tie_wp_image_adj_filter_prio':	// Image Adjust Filter Priority.
 
 					$text = sprintf( __( '%s hooks the WordPress \'image_make_intermediate_size\' filter to adjust and sharpen images.', 'wpsso-tune-image-editors' ), $this->p->cf[ 'plugin' ][ 'wpssotie' ][ 'short' ] ) . ' ';
 
-					$text .= __( 'You can change the priority at which these adjustments are made, to process images before/after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
+					$text .= __( 'You can change the filter priority to process images before/after other image processing plugins or custom filter hooks.', 'wpsso-tune-image-editors' );
 
 					break;
 
@@ -71,27 +71,25 @@ if ( ! class_exists( 'WpssoTieFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-tie_imagick_jpeg_adjust':
+				case 'tooltip-tie_imagick_jpeg_adjust':	// Adjust JPEG Images.
 
 					$text = sprintf( __( 'Apply image adjustments for resized %1$s images using %2$s.', 'wpsso-tune-image-editors' ), 'JPEG', 'ImageMagick' );
 
 					break;
 
-				case 'tooltip-tie_imagick_jpeg_compress_quality':
+				case 'tooltip-tie_imagick_webp_adjust':	// Adjust WEBP Images.
+
+					$text = sprintf( __( 'Apply image adjustments for resized %1$s images using %2$s.', 'wpsso-tune-image-editors' ), 'WEBP', 'ImageMagick' );
+
+					break;
+
+				case 'tooltip-tie_imagick_compress_quality':	// Compression Quality.
 
 					$text = __( 'The resized image compression quality as a positive integer value between 1 and 100. The recommended value is 90 to 95.', 'wpsso-tune-image-editors' );
 
 					break;
 
-				case 'tooltip-tie_imagick_jpeg_sharpen_sigma':
-
-					$text = __( 'The sharpening sigma can be any floating-point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening.', 'wpsso-tune-image-editors' ) . ' ';
-
-					$text .= __( 'A sharpening sigma value between 0.5 and 1.0 is recommended.', 'wpsso-tune-image-editors' );
-
-					break;
-
-				case 'tooltip-tie_imagick_jpeg_sharpen_radius':
+				case 'tooltip-tie_imagick_sharpen_radius':	// Sharpening Radius.
 
 					$text = __( 'The sharpening radius is an integer value, generally one to two times the sharpening sigma value.', 'wpsso-tune-image-editors' ) . ' ';
 
@@ -99,7 +97,15 @@ if ( ! class_exists( 'WpssoTieFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-tie_imagick_jpeg_sharpen_amount':
+				case 'tooltip-tie_imagick_sharpen_sigma':	// Sharpening Sigma.
+
+					$text = __( 'The sharpening sigma can be any floating-point value, from 0.1 for almost no sharpening, to 3 or more for severe sharpening.', 'wpsso-tune-image-editors' ) . ' ';
+
+					$text .= __( 'A sharpening sigma value between 0.5 and 1.0 is recommended.', 'wpsso-tune-image-editors' );
+
+					break;
+
+				case 'tooltip-tie_imagick_sharpen_amount':	// Sharpening Amount.
 
 					$text = __( 'The amount (ie. strength) of the sharpening effect. A larger value increases the contrast of sharpened pixels.', 'wpsso-tune-image-editors' ) . ' ';
 
@@ -107,7 +113,7 @@ if ( ! class_exists( 'WpssoTieFiltersMessages' ) ) {
 
 					break;
 
-				case 'tooltip-tie_imagick_jpeg_sharpen_threshold':
+				case 'tooltip-tie_imagick_sharpen_threshold':	// Sharpening Threshold.
 
 					$text = __( 'Minimum contrast required for a pixel to be considered an edge pixel for sharpening.', 'wpsso-tune-image-editors' ) . ' ';
 

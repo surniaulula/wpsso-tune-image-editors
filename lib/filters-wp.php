@@ -81,29 +81,40 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 		 */
 		public function wp_editor_set_quality( $quality, $mime_type ) {
 
-			if ( empty( $this->cache_editors[ $mime_type ] ) ) {
+			if ( ! empty( $mime_type ) ) {	// Just in case.
 
-				$this->cache_editors[ $mime_type ] = _wp_image_editor_choose( array( 'mime_type' => $mime_type ) );
-			}
-
-			switch ( $this->cache_editors[ $mime_type ] ) {
-
-				case 'WP_Image_Editor_Imagick':
-
-					switch ( $mime_type ) {
-
-						case 'image/jpg':
-						case 'image/jpeg':
-
-							if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
-
+				if ( empty( $this->cache_editors[ $mime_type ] ) ) {
+	
+					$this->cache_editors[ $mime_type ] = _wp_image_editor_choose( array( 'mime_type' => $mime_type ) );
+				}
+	
+				switch ( $mime_type ) {
+	
+					case 'image/jpg':
+					case 'image/jpeg':
+	
+						if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
+	
+							if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
+							
 								return 100;
 							}
-
-							break;
-					}
-
-					break;
+						}
+	
+						break;
+	
+					case 'image/webp':
+	
+						if ( $this->p->options[ 'tie_imagick_webp_adjust' ] ) {
+	
+							if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
+							
+								return 100;
+							}
+						}
+	
+						break;
+				}
 			}
 
 			return $quality;
@@ -160,24 +171,29 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 					$this->cache_editors[ $mime_type ] = _wp_image_editor_choose( array( 'mime_type' => $mime_type ) );
 				}
 
-				/*
-				 * Adjust resized images based on the image editor and the image type.
-				 */
-				switch ( $this->cache_editors[ $mime_type ] ) {
+				switch ( $mime_type ) {
 
-					case 'WP_Image_Editor_Imagick':
+					case 'image/jpg':
+					case 'image/jpeg':
 
-						switch ( $mime_type ) {
+						if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
 
-							case 'image/jpg':
-							case 'image/jpeg':
+							if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
 
-								if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
+								$file_path = $this->a->imagick->adjust_image( $mime_type, $file_path );
+							}
+						}
 
-									$file_path = $this->a->imagick->adjust_jpeg( $file_path );
-								}
+						break;
 
-								break;
+					case 'image/webp':
+
+						if ( $this->p->options[ 'tie_imagick_webp_adjust' ] ) {
+
+							if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
+
+								$file_path = $this->a->imagick->adjust_image( $mime_type, $file_path );
+							}
 						}
 
 						break;

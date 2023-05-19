@@ -17,8 +17,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '3.0.0-dev.1',	// Plugin version.
-					'opt_version' => '8',		// Increment when changing default option values.
+					'version'     => '3.0.0-dev.2',	// Plugin version.
+					'opt_version' => '9',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune WP Image Editors',
 					'desc'        => 'Improves the appearance of WordPress images for better click through rates from social and search sites.',
@@ -71,15 +71,16 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 			 */
 			'opt' => array(
 				'defaults' => array(
-					'tie_wp_image_editors'               => 'imagick+gd',
-					'tie_wp_image_adj_filter_prio'       => -1000,		// Integer.
-					'tie_imagick_jpeg_adjust'            => 1,		// Checkbox.
-					'tie_imagick_jpeg_auto_level'        => 0,		// Checkbox.
-					'tie_imagick_jpeg_compress_quality'  => 92,		// Positive integer.
-					'tie_imagick_jpeg_sharpen_radius'    => 0,		// Integer.
-					'tie_imagick_jpeg_sharpen_sigma'     => '0.5',		// Floating-point number (string).
-					'tie_imagick_jpeg_sharpen_amount'    => '1.0',		// Floating-point number (string).
-					'tie_imagick_jpeg_sharpen_threshold' => '0.05',		// Floating-point number (string).
+					'tie_wp_image_editors'          => 'imagick+gd',
+					'tie_wp_image_adj_filter_prio'  => -1000,		// Integer.
+					'tie_imagick_jpeg_adjust'       => 1,			// Checkbox.
+					'tie_imagick_webp_adjust'       => 1,			// Checkbox.
+					'tie_imagick_auto_level'        => 0,			// Checkbox.
+					'tie_imagick_compress_quality'  => 92,			// Positive integer.
+					'tie_imagick_sharpen_radius'    => 0,			// Integer.
+					'tie_imagick_sharpen_sigma'     => '0.5',		// Floating-point number (string).
+					'tie_imagick_sharpen_amount'    => '1.0',		// Floating-point number (string).
+					'tie_imagick_sharpen_threshold' => '0.05',		// Floating-point number (string).
 				),	// End of 'defaults' array.
 			),
 			'wp' => array(

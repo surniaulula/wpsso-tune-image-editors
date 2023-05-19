@@ -33,9 +33,14 @@ if ( ! class_exists( 'WpssoTieFiltersUpgrade' ) ) {
 		public function filter_rename_options_keys( $options_keys ) {
 
 			$options_keys[ 'wpssotie' ] = array(
-				7 => array(
-					'tie_imagick_jpeg_contrast_level' => '',
-					'tie_imagick_jpeg_normalize'      => '',
+				8 => array(
+					'tie_imagick_jpeg_contrast_level'    => '',
+					'tie_imagick_jpeg_normalize'         => '',
+					'tie_imagick_jpeg_compress_quality'  => 'tie_imagick_compress_quality',
+					'tie_imagick_jpeg_sharpen_radius'    => 'tie_imagick_sharpen_radius',
+					'tie_imagick_jpeg_sharpen_sigma'     => 'tie_imagick_sharpen_sigma',
+					'tie_imagick_jpeg_sharpen_amount'    => 'tie_imagick_sharpen_amount',
+					'tie_imagick_jpeg_sharpen_threshold' => 'tie_imagick_sharpen_threshold',
 				),
 			);
 

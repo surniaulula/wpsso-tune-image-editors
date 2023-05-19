@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 3.0.0-dev.1\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 3.0.0-dev.2\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
@@ -85,8 +85,8 @@ msgstr ""
 
 #: lib/filters-messages.php:54
 msgid ""
-"You can change the priority at which these adjustments are made, to process "
-"images before/after other image processing plugins or custom filter hooks."
+"You can change the filter priority to process images before/after other "
+"image processing plugins or custom filter hooks."
 msgstr ""
 
 #: lib/filters-messages.php:60
@@ -110,68 +110,68 @@ msgid ""
 "extension installed."
 msgstr ""
 
-#: lib/filters-messages.php:76
+#: lib/filters-messages.php:76 lib/filters-messages.php:82
 msgid "Apply image adjustments for resized %1$s images using %2$s."
 msgstr ""
 
-#: lib/filters-messages.php:82
+#: lib/filters-messages.php:88
 msgid ""
 "The resized image compression quality as a positive integer value between 1 "
 "and 100. The recommended value is 90 to 95."
 msgstr ""
 
-#: lib/filters-messages.php:88
-msgid ""
-"The sharpening sigma can be any floating-point value, from 0.1 for almost no "
-"sharpening, to 3 or more for severe sharpening."
-msgstr ""
-
-#: lib/filters-messages.php:90
-msgid "A sharpening sigma value between 0.5 and 1.0 is recommended."
-msgstr ""
-
-#: lib/filters-messages.php:96
+#: lib/filters-messages.php:94
 msgid ""
 "The sharpening radius is an integer value, generally one to two times the "
 "sharpening sigma value."
 msgstr ""
 
-#: lib/filters-messages.php:98
+#: lib/filters-messages.php:96
 msgid ""
 "The best sharpening radius depends on the resized image resolution, and for "
 "this reason, the recommended value is 0 (auto)."
 msgstr ""
 
+#: lib/filters-messages.php:102
+msgid ""
+"The sharpening sigma can be any floating-point value, from 0.1 for almost no "
+"sharpening, to 3 or more for severe sharpening."
+msgstr ""
+
 #: lib/filters-messages.php:104
+msgid "A sharpening sigma value between 0.5 and 1.0 is recommended."
+msgstr ""
+
+#: lib/filters-messages.php:110
 msgid ""
 "The amount (ie. strength) of the sharpening effect. A larger value increases "
 "the contrast of sharpened pixels."
 msgstr ""
 
-#: lib/filters-messages.php:106
+#: lib/filters-messages.php:112
 msgid ""
 "The default value is 1.0, and the recommended range is between 0.8 and 1.2."
 msgstr ""
 
-#: lib/filters-messages.php:112
+#: lib/filters-messages.php:118
 msgid ""
 "Minimum contrast required for a pixel to be considered an edge pixel for "
 "sharpening."
 msgstr ""
 
-#: lib/filters-messages.php:114
+#: lib/filters-messages.php:120
 msgid ""
 "Higher values (closer to 1) allow sharpening only in high-contrast regions, "
 "like strong edges, while leaving low-contrast areas unaffected."
 msgstr ""
 
-#: lib/filters-messages.php:116
+#: lib/filters-messages.php:122
 msgid ""
 "Lower values (closer to 0) allow sharpening in relatively smoother regions "
 "of the image."
 msgstr ""
 
-#: lib/filters-messages.php:118
+#: lib/filters-messages.php:124
 msgid ""
 "A value of 0 may be desirable to retain fine skin details in portrait "
 "photographs."
@@ -199,7 +199,7 @@ msgstr ""
 
 #: lib/submenu/tie-general.php:124
 msgctxt "option label"
-msgid "Adjustment Filter Priority"
+msgid "Image Adjust Filter Priority"
 msgstr ""
 
 #: lib/submenu/tie-general.php:145
@@ -228,48 +228,43 @@ msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr ""
 
-#: lib/submenu/tie-general.php:173
-msgctxt "metabox title"
-msgid "%s Images"
-msgstr ""
-
-#: lib/submenu/tie-general.php:176
+#: lib/submenu/tie-general.php:172 lib/submenu/tie-general.php:177
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""
 
-#: lib/submenu/tie-general.php:181
+#: lib/submenu/tie-general.php:182
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/submenu/tie-general.php:184 lib/submenu/tie-general.php:196
-#: lib/submenu/tie-general.php:202 lib/submenu/tie-general.php:208
+#: lib/submenu/tie-general.php:185 lib/submenu/tie-general.php:197
+#: lib/submenu/tie-general.php:203 lib/submenu/tie-general.php:209
 msgctxt "option comment"
 msgid "(recommended %1$s to %2$s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:187
+#: lib/submenu/tie-general.php:188
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/submenu/tie-general.php:190
+#: lib/submenu/tie-general.php:191
 msgctxt "option comment"
 msgid "(recommended 0)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:193
+#: lib/submenu/tie-general.php:194
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
-#: lib/submenu/tie-general.php:199
+#: lib/submenu/tie-general.php:200
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/submenu/tie-general.php:205
+#: lib/submenu/tie-general.php:206
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""

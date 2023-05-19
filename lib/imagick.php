@@ -35,14 +35,14 @@ if ( ! class_exists( 'WpssoTieImagick' ) ) {
 			$this->a =& $addon;
 		}
 
-		/*
-		 * Adjust a JPEG image.
-		 */
-		public function adjust_jpeg( $file_path ) {
+		public function adjust_image( $mime_type, $file_path ) {
 
 			if ( $this->p->debug->enabled ) {
 
-				$this->p->debug->mark();
+				$this->p->debug->log_args( array(
+					'mime_type' => $mime_type,
+					'file_path' => $file_path,
+				) );
 			}
 
 			$image = new Imagick( $file_path );
@@ -57,29 +57,37 @@ if ( ! class_exists( 'WpssoTieImagick' ) ) {
 			 * See https://www.php.net/manual/en/imagick.unsharpmaskimage.php.
 			 */
 			$image->unsharpMaskImage(
-				$this->p->options[ 'tie_imagick_jpeg_sharpen_radius' ],
-				$this->p->options[ 'tie_imagick_jpeg_sharpen_sigma' ],
-				$this->p->options[ 'tie_imagick_jpeg_sharpen_amount' ],
-				$this->p->options[ 'tie_imagick_jpeg_sharpen_threshold' ]
+				$this->p->options[ 'tie_imagick_sharpen_radius' ],
+				$this->p->options[ 'tie_imagick_sharpen_sigma' ],
+				$this->p->options[ 'tie_imagick_sharpen_amount' ],
+				$this->p->options[ 'tie_imagick_sharpen_threshold' ]
 			);
 
-			$image->setImageFormat( 'jpg' );
+			switch ( $mime_type ) {
 
-			$image->setImageCompression( Imagick::COMPRESSION_JPEG );
+				case 'image/jpg':
+				case 'image/jpeg':
 
-			$image->setImageCompressionQuality( $this->p->options[ 'tie_imagick_jpeg_compress_quality' ] );
+					$image->setImageFormat( 'jpg' );
+					$image->setImageCompression( Imagick::COMPRESSION_JPEG );
+
+					break;
+
+				case 'image/webp':
+
+					$image->setImageFormat( 'webp' );
+					$image->setImageCompression( Imagick::COMPRESSION_WEBP );
+
+					break;
+			}
+
+			$image->setImageCompressionQuality( $this->p->options[ 'tie_imagick_compress_quality' ] );
 
 			$image->writeImage( $file_path );
 
 			$image->destroy();
 
 			return $file_path;
-		}
-		
-		/*
-		 * Adjust a WEBP image.
-		 */
-		public function adjust_webp( $file_path ) {
 		}
 	}
 }
