@@ -104,7 +104,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 **Version 3.0.0-dev.2 (2023/05/19)**
 
 * **New Features**
-	* Added "Adjust WEBP Images" option.
+	* Added a new "Adjust WEBP Images" option.
 * **Improvements**
 	* Removed the "Contrast Leveling" option.
 * **Bugfixes**
@@ -313,7 +313,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 3.0.0-dev.2 =
 
-(2023/05/19) Removed the "Contrast Leveling" option.
+(2023/05/19) Added a new "Adjust WEBP Images" option. Removed the "Contrast Leveling" option.
 
 = 2.11.1 =
 
