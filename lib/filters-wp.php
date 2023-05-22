@@ -69,7 +69,7 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 
 				if ( ! empty( $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ] ) && is_array( $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ] ) ) {
 
-					return $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ];
+					$implementations = $this->p->cf[ 'wp' ][ 'editors' ][ $opt_val ];
 				}
 			}
 
@@ -171,6 +171,8 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 					$this->cache_editors[ $mime_type ] = _wp_image_editor_choose( array( 'mime_type' => $mime_type ) );
 				}
 
+				$adjust_file_type = false;
+
 				switch ( $mime_type ) {
 
 					case 'image/jpg':
@@ -178,10 +180,7 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 
 						if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
 
-							if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
-
-								$file_path = $this->a->imagick->adjust_image( $mime_type, $file_path );
-							}
+							$adjust_file_type = 'JPEG';
 						}
 
 						break;
@@ -190,13 +189,28 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 
 						if ( $this->p->options[ 'tie_imagick_webp_adjust' ] ) {
 
-							if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
-
-								$file_path = $this->a->imagick->adjust_image( $mime_type, $file_path );
-							}
+							$adjust_file_type = 'WEBP';
 						}
 
 						break;
+				}
+
+				if ( $adjust_file_type ) {
+
+					if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
+
+						$file_path = $this->a->imagick->adjust_image( $mime_type, $file_path );
+
+					} else {
+
+						$option_label = sprintf( _x( 'Adjust %s Images', 'option label', 'wpsso-tune-image-editors' ), $adjust_file_type );
+						$option_link  = $this->p->util->get_admin_url( 'tie-general#sucom-tabset_tie-ext-tab_imagick', $option_label );
+						$notice_key   = 'imagemagick-adjust-' . $adjust_file_type . '-with-' . $this->cache_editors[ $mime_type ];
+						$notice_msg   = sprintf(  __( '%1$s option for ImageMagick is enabled, but WordPress is using the %2$s library for %3$s images.',
+							'wpsso-tune-image-editors' ), $option_link, $this->cache_editors[ $mime_type ], $adjust_file_type );
+
+						$this->p->notice->warn( $notice_msg, $user_id = null, $notice_key );
+					}
 				}
 			}
 

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 3.0.0-dev.3\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 3.0.0-dev.4\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
@@ -177,6 +177,18 @@ msgid ""
 "photographs."
 msgstr ""
 
+#: lib/filters-wp.php:206 lib/submenu/tie-general.php:172
+#: lib/submenu/tie-general.php:177
+msgctxt "option label"
+msgid "Adjust %s Images"
+msgstr ""
+
+#: lib/filters-wp.php:209
+msgid ""
+"%1$s option for ImageMagick is enabled, but WordPress is using the %2$s "
+"library for %3$s images."
+msgstr ""
+
 #: lib/submenu/tie-general.php:40
 msgctxt "metabox title"
 msgid "WordPress Settings"
@@ -226,11 +238,6 @@ msgstr ""
 #: lib/submenu/tie-general.php:167
 msgctxt "option label"
 msgid "PHP %s Extension"
-msgstr ""
-
-#: lib/submenu/tie-general.php:172 lib/submenu/tie-general.php:177
-msgctxt "option label"
-msgid "Adjust %s Images"
 msgstr ""
 
 #: lib/submenu/tie-general.php:182
