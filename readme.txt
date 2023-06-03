@@ -101,7 +101,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.0.0-dev.8 (2023/06/02)**
+**Version 3.0.0-dev.9 (2023/06/03)**
 
 * **New Features**
 	* Added a new "Adjust WEBP Images" option.
@@ -120,7 +120,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Requires At Least**
 	* PHP v7.2.5.
 	* WordPress v5.5.
-	* WPSSO Core v15.13.0-dev.8.
+	* WPSSO Core v15.13.0-dev.9.
 
 **Version 2.11.1 (2023/01/26)**
 
@@ -312,9 +312,9 @@ Maintenance release for WPSSO Core v9.0.0.
 
 == Upgrade Notice ==
 
-= 3.0.0-dev.8 =
+= 3.0.0-dev.9 =
 
-(2023/06/02) Added a new "Adjust WEBP Images" option. Removed the "Contrast Leveling" option.
+(2023/06/03) Added a new "Adjust WEBP Images" option. Removed the "Contrast Leveling" option.
 
 = 2.11.1 =
 
