@@ -127,7 +127,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **New Features**
 	* None.
 * **Improvements**
-	* Updated the minimum WordPress version from v5.2 to v5.4.
+	* Updated the minimum WordPress version from v5.2 to v5.5.
 * **Bugfixes**
 	* None.
 * **Developer Notes**
@@ -167,149 +167,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.2.
 	* WPSSO Core v13.6.2.
 
-**Version 2.9.1 (2022/03/07)**
-
-Maintenance release.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v11.5.0.
-
-**Version 2.9.0 (2022/01/19)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Renamed the lib/abstracts/ folder to lib/abstract/.
-	* Renamed the `SucomAddOn` class to `SucomAbstractAddOn`.
-	* Renamed the `WpssoAddOn` class to `WpssoAbstractAddOn`.
-	* Renamed the `WpssoWpMeta` class to `WpssoAbstractWpMeta`.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.14.0.
-
-**Version 2.8.2 (2021/11/16)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Refactored the `SucomAddOn->get_missing_requirements()` method.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v9.8.0.
-
-**Version 2.8.1 (2021/10/06)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Standardized `get_table_rows()` calls and filters in 'submenu' and 'sitesubmenu' classes.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v9.1.0.
-
-**Version 2.8.0 (2021/09/24)**
-
-Maintenance release for WPSSO Core v9.0.0.
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v9.0.0.
-
-**Version 2.7.2 (2021/04/30)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Minor CSS and text formatting updates.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v5.0.
-	* WPSSO Core v8.34.0.
-
-**Version 2.7.1 (2021/02/25)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the banners and icons of WPSSO Core and its add-ons.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.5.
-	* WPSSO Core v8.25.2.
-
-**Version 2.7.0 (2020/12/04)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Included the `$addon` argument for library class constructors.
-* **Requires At Least**
-	* PHP v7.0.
-	* WordPress v4.5.
-	* WPSSO Core v8.16.0.
-
-**Version 2.6.1 (2020/10/17)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Refactored the add-on class to extend a new WpssoAddOn abstract class.
-* **Bugfixes**
-	* Fixed backwards compatibility with older 'init_objects' and 'init_plugin' action arguments.
-* **Developer Notes**
-	* Added a new WpssoAddOn class in lib/abstracts/add-on.php.
-	* Added a new SucomAddOn class in lib/abstracts/com/add-on.php.
-* **Requires At Least**
-	* PHP v5.6.
-	* WordPress v4.4.
-	* WPSSO Core v8.13.0.
-
 == Upgrade Notice ==
 
 = 3.0.0-b.2 =
@@ -318,7 +175,7 @@ Maintenance release for WPSSO Core v9.0.0.
 
 = 2.11.1 =
 
-(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.4.
+(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.5.
 
 = 2.11.0 =
 
@@ -327,40 +184,4 @@ Maintenance release for WPSSO Core v9.0.0.
 = 2.10.0 =
 
 (2022/10/23) Added a 'wpsso_error_handler' for getimagesize and imagick exceptions.
-
-= 2.9.1 =
-
-(2022/03/07) Maintenance release.
-
-= 2.9.0 =
-
-(2022/01/19) Renamed the lib/abstracts/ folder and its classes.
-
-= 2.8.2 =
-
-(2021/11/16) Refactored the `SucomAddOn->get_missing_requirements()` method.
-
-= 2.8.1 =
-
-(2021/10/06) Standardized `get_table_rows()` calls and filters in 'submenu' and 'sitesubmenu' classes.
-
-= 2.8.0 =
-
-(2021/09/24) Maintenance release for WPSSO Core v9.0.0.
-
-= 2.7.2 =
-
-(2021/04/30) Minor CSS and text formatting updates.
-
-= 2.7.1 =
-
-(2021/02/25) Updated the banners and icons of WPSSO Core and its add-ons.
-
-= 2.7.0 =
-
-(2020/12/04) Included the `$addon` argument for library class constructors.
-
-= 2.6.1 =
-
-(2020/10/17) Refactored the add-on class to extend a new WpssoAddOn abstract class.
 
