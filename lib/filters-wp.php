@@ -84,35 +84,35 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 			if ( ! empty( $mime_type ) ) {	// Just in case.
 
 				if ( empty( $this->cache_editors[ $mime_type ] ) ) {
-	
+
 					$this->cache_editors[ $mime_type ] = _wp_image_editor_choose( array( 'mime_type' => $mime_type ) );
 				}
-	
+
 				switch ( $mime_type ) {
-	
+
 					case 'image/jpg':
 					case 'image/jpeg':
-	
+
 						if ( $this->p->options[ 'tie_imagick_jpeg_adjust' ] ) {
-	
+
 							if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
-							
+
 								return 100;
 							}
 						}
-	
+
 						break;
-	
+
 					case 'image/webp':
-	
+
 						if ( $this->p->options[ 'tie_imagick_webp_adjust' ] ) {
-	
+
 							if ( 'WP_Image_Editor_Imagick' === $this->cache_editors[ $mime_type ] ) {
-							
+
 								return 100;
 							}
 						}
-	
+
 						break;
 				}
 			}

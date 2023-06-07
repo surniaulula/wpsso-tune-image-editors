@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! class_exists( 'WpssoTieImagick' ) ) {
 
 	class WpssoTieImagick {
-		
+
 		private $p;	// Wpsso class object.
 		private $a;	// WpssoTie class object.
 
