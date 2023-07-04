@@ -122,66 +122,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.5.
 	* WPSSO Core v15.13.0.
 
-**Version 2.11.1 (2023/01/26)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Updated the minimum WordPress version from v5.2 to v5.5.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated the `WpssoAbstractAddOn` library class.
-* **Requires At Least**
-	* PHP v7.2.5.
-	* WordPress v5.5.
-	* WPSSO Core v14.7.0.
-
-**Version 2.11.0 (2023/01/20)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* None.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Updated the `SucomAbstractAddOn` common library class.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v14.5.0.
-
-**Version 2.10.0 (2022/10/23)**
-
-* **New Features**
-	* None.
-* **Improvements**
-	* Added a 'wpsso_error_handler' for getimagesize and imagick exceptions.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* None.
-* **Requires At Least**
-	* PHP v7.2.
-	* WordPress v5.2.
-	* WPSSO Core v13.6.2.
-
 == Upgrade Notice ==
 
 = 3.0.0 =
 
 (2023/06/07) Added a new "Adjust WEBP Images" option. Removed the "Contrast Leveling" option.
-
-= 2.11.1 =
-
-(2023/01/26) Updated the minimum WordPress version from v5.2 to v5.5.
-
-= 2.11.0 =
-
-(2023/01/20) Updated the `SucomAbstractAddOn` common library class.
-
-= 2.10.0 =
-
-(2022/10/23) Added a 'wpsso_error_handler' for getimagesize and imagick exceptions.
 
