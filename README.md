@@ -4,7 +4,7 @@
 <tr><th align="right" valign="top" nowrap>Plugin Name</th><td>WPSSO Tune WP Image Editors</td></tr>
 <tr><th align="right" valign="top" nowrap>Summary</th><td>Improves the appearance of WordPress images for better click through rates from social and search sites.</td></tr>
 <tr><th align="right" valign="top" nowrap>Stable Version</th><td>3.0.0</td></tr>
-<tr><th align="right" valign="top" nowrap>Requires PHP</th><td>7.2.5 or newer</td></tr>
+<tr><th align="right" valign="top" nowrap>Requires PHP</th><td>7.2.34 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Requires WordPress</th><td>5.5 or newer</td></tr>
 <tr><th align="right" valign="top" nowrap>Tested Up To WordPress</th><td>6.2.2</td></tr>
 <tr><th align="right" valign="top" nowrap>Contributors</th><td>jsmoriss</td></tr>
