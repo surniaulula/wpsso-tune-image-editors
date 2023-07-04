@@ -12,7 +12,7 @@
  * License URI: https://www.gnu.org/licenses/gpl.txt
  * Description: Improves the appearance of WordPress images for better click through rates from social and search sites.
  * Requires Plugins: wpsso
- * Requires PHP: 7.2.5
+ * Requires PHP: 7.2.34
  * Requires At Least: 5.5
  * Tested Up To: 6.2.2
  * Version: 3.0.0
