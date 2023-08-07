@@ -16,10 +16,10 @@ if ( ! class_exists( 'WpssoTieFilters' ) ) {
 
 		private $p;	// Wpsso class object.
 		private $a;	// WpssoTie class object.
-		private $msgs;  // WpssoTieFiltersMessages class object.
-		private $opts;  // WpssoTieFiltersOptions class object.
+		private $msgs;	// WpssoTieFiltersMessages class object.
+		private $opts;	// WpssoTieFiltersOptions class object.
 		private $upg;	// WpssoTieFiltersUpgrade class object.
-		private $wp;    // WpssoTieFiltersWp class object.
+		private $wp;	// WpssoTieFiltersWp class object.
 
 		/*
 		 * Instantiated by WpssoTie->init_objects().

@@ -107,7 +107,7 @@ if ( ! class_exists( 'WpssoTieRegister' ) ) {
 				/*
 				 * Register plugin install, activation, update times.
 				 */
-				if ( class_exists( 'WpssoUtilReg' ) ) { // Since WPSSO Core v6.13.1.
+				if ( class_exists( 'WpssoUtilReg' ) ) {	// Since WPSSO Core v6.13.1.
 
 					$version = WpssoTieConfig::get_version();
 
