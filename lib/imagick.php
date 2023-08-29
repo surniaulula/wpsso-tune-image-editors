@@ -52,7 +52,7 @@ if ( ! class_exists( 'WpssoTieImagick' ) ) {
 			 *
 			 * Sharpens an image. We convolve the image with a Gaussian operator of the given radius and standard
 			 * deviation (sigma). For reasonable results, radius should be larger than sigma. Use a radius of 0 and
-			 * Imagick::UnsharpMaskImage() selects a suitable radius for you. 
+			 * Imagick::UnsharpMaskImage() selects a suitable radius for you.
 			 *
 			 * See https://www.php.net/manual/en/imagick.unsharpmaskimage.php.
 			 */
