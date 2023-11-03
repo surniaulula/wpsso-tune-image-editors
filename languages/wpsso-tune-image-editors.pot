@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WPSSO Tune WP Image Editors package.
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune WP Image Editors 3.0.0\n"
+"Project-Id-Version: WPSSO Tune WP Image Editors 3.1.0-dev.8\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-"
 "editors\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
@@ -177,8 +177,8 @@ msgid ""
 "photographs."
 msgstr ""
 
-#: lib/filters-wp.php:206 lib/submenu/tie-general.php:172
-#: lib/submenu/tie-general.php:177
+#: lib/filters-wp.php:206 lib/submenu/image-editors.php:117
+#: lib/submenu/image-editors.php:122
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""
@@ -189,89 +189,89 @@ msgid ""
 "library for %3$s images."
 msgstr ""
 
-#: lib/submenu/tie-general.php:40
+#: lib/submenu/image-editors.php:32
 msgctxt "metabox title"
 msgid "WordPress Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:52
+#: lib/submenu/image-editors.php:33
 msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr ""
 
-#: lib/submenu/tie-general.php:93
+#: lib/submenu/image-editors.php:40
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr ""
 
-#: lib/submenu/tie-general.php:118
+#: lib/submenu/image-editors.php:56
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:124
+#: lib/submenu/image-editors.php:62
 msgctxt "option label"
 msgid "Image Adjust Filter Priority"
 msgstr ""
 
-#: lib/submenu/tie-general.php:145
+#: lib/submenu/image-editors.php:89
 msgid "Used as editor #%d"
 msgstr ""
 
-#: lib/submenu/tie-general.php:149
+#: lib/submenu/image-editors.php:94
 msgid "Not used"
 msgstr ""
 
-#: lib/submenu/tie-general.php:154
+#: lib/submenu/image-editors.php:99
 msgid "Loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:158
+#: lib/submenu/image-editors.php:103
 msgid "Not loaded"
 msgstr ""
 
-#: lib/submenu/tie-general.php:162
+#: lib/submenu/image-editors.php:107
 msgctxt "option label"
 msgid "WordPress %s Editor"
 msgstr ""
 
-#: lib/submenu/tie-general.php:167
+#: lib/submenu/image-editors.php:112
 msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr ""
 
-#: lib/submenu/tie-general.php:182
+#: lib/submenu/image-editors.php:127
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr ""
 
-#: lib/submenu/tie-general.php:185 lib/submenu/tie-general.php:197
-#: lib/submenu/tie-general.php:203 lib/submenu/tie-general.php:209
+#: lib/submenu/image-editors.php:130 lib/submenu/image-editors.php:142
+#: lib/submenu/image-editors.php:148 lib/submenu/image-editors.php:154
 msgctxt "option comment"
 msgid "(recommended %1$s to %2$s)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:188
+#: lib/submenu/image-editors.php:133
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr ""
 
-#: lib/submenu/tie-general.php:191
+#: lib/submenu/image-editors.php:136
 msgctxt "option comment"
 msgid "(recommended 0)"
 msgstr ""
 
-#: lib/submenu/tie-general.php:194
+#: lib/submenu/image-editors.php:139
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr ""
 
-#: lib/submenu/tie-general.php:200
+#: lib/submenu/image-editors.php:145
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr ""
 
-#: lib/submenu/tie-general.php:206
+#: lib/submenu/image-editors.php:151
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr ""
