@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: WPSSO Tune Image Editors 3.0.0\n"
+"Project-Id-Version: WPSSO Tune Image Editors 3.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wpsso-tune-image-editors\n"
 "POT-Creation-Date: 2023-MO-DA HO:MI+ZONE\n"
-"PO-Revision-Date: 2023-05-26 04:35-0700\n"
+"PO-Revision-Date: 2023-11-03 21:32-0700\n"
 "Last-Translator: JS Morisset <jsm@surniaulula.com>\n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.3.1\n"
+"X-Generator: Poedit 3.4.1\n"
 "X-Poedit-Basepath: .\n"
 
 #: gettext/gettext-lib-abstract-com.php:5 lib/abstract/com/add-on.php:209
@@ -142,8 +142,8 @@ msgstr "Les valeurs inférieures (plus proches de 0) permettent d'affûter les z
 msgid "A value of 0 may be desirable to retain fine skin details in portrait photographs."
 msgstr "Une valeur de 0 peut être souhaitable pour conserver les détails fins de la peau dans les photos de portrait."
 
-#: lib/filters-wp.php:206 lib/submenu/tie-general.php:172
-#: lib/submenu/tie-general.php:177
+#: lib/filters-wp.php:206 lib/submenu/image-editors.php:117
+#: lib/submenu/image-editors.php:122
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr "Ajuster les images %s"
@@ -152,89 +152,89 @@ msgstr "Ajuster les images %s"
 msgid "%1$s option for ImageMagick is enabled, but WordPress is using the %2$s library for %3$s images."
 msgstr "L'option %1$s pour ImageMagick est activée, mais WordPress utilise la bibliothèque %2$s pour les images %3$s."
 
-#: lib/submenu/tie-general.php:40
+#: lib/submenu/image-editors.php:32
 msgctxt "metabox title"
 msgid "WordPress Settings"
 msgstr "Réglages WordPress"
 
-#: lib/submenu/tie-general.php:52
+#: lib/submenu/image-editors.php:33
 msgctxt "metabox title"
 msgid "PHP Extension Settings"
 msgstr "Réglages d'extension PHP"
 
-#: lib/submenu/tie-general.php:93
+#: lib/submenu/image-editors.php:40
 msgctxt "metabox tab"
 msgid "ImageMagick"
 msgstr "ImageMagick"
 
-#: lib/submenu/tie-general.php:118
+#: lib/submenu/image-editors.php:56
 msgctxt "option label"
 msgid "Default WordPress Image Editor(s)"
 msgstr "Éditeur(s) d'image WP par défaut"
 
-#: lib/submenu/tie-general.php:124
+#: lib/submenu/image-editors.php:62
 msgctxt "option label"
 msgid "Image Adjust Filter Priority"
 msgstr "Priorité du filtre d'ajustement d'image"
 
-#: lib/submenu/tie-general.php:145
+#: lib/submenu/image-editors.php:89
 msgid "Used as editor #%d"
 msgstr "Utilisé comme éditeur #%d"
 
-#: lib/submenu/tie-general.php:149
+#: lib/submenu/image-editors.php:94
 msgid "Not used"
 msgstr "Non utilisé"
 
-#: lib/submenu/tie-general.php:154
+#: lib/submenu/image-editors.php:99
 msgid "Loaded"
 msgstr "Chargé"
 
-#: lib/submenu/tie-general.php:158
+#: lib/submenu/image-editors.php:103
 msgid "Not loaded"
 msgstr "Non chargé"
 
-#: lib/submenu/tie-general.php:162
+#: lib/submenu/image-editors.php:107
 msgctxt "option label"
 msgid "WordPress %s Editor"
 msgstr "Éditeur WordPress %s"
 
-#: lib/submenu/tie-general.php:167
+#: lib/submenu/image-editors.php:112
 msgctxt "option label"
 msgid "PHP %s Extension"
 msgstr "Extension PHP %s"
 
-#: lib/submenu/tie-general.php:182
+#: lib/submenu/image-editors.php:127
 msgctxt "option label"
 msgid "Compression Quality"
 msgstr "Qualité de compression"
 
-#: lib/submenu/tie-general.php:185 lib/submenu/tie-general.php:197
-#: lib/submenu/tie-general.php:203 lib/submenu/tie-general.php:209
+#: lib/submenu/image-editors.php:130 lib/submenu/image-editors.php:142
+#: lib/submenu/image-editors.php:148 lib/submenu/image-editors.php:154
 msgctxt "option comment"
 msgid "(recommended %1$s to %2$s)"
 msgstr "(recommandé %1$s à %2$s)"
 
-#: lib/submenu/tie-general.php:188
+#: lib/submenu/image-editors.php:133
 msgctxt "option label"
 msgid "Sharpening Radius"
 msgstr "Rayon d'affûtage"
 
-#: lib/submenu/tie-general.php:191
+#: lib/submenu/image-editors.php:136
 msgctxt "option comment"
 msgid "(recommended 0)"
 msgstr "(recommandé 0)"
 
-#: lib/submenu/tie-general.php:194
+#: lib/submenu/image-editors.php:139
 msgctxt "option label"
 msgid "Sharpening Sigma"
 msgstr "Sigma d'affûtage"
 
-#: lib/submenu/tie-general.php:200
+#: lib/submenu/image-editors.php:145
 msgctxt "option label"
 msgid "Sharpening Amount"
 msgstr "Quantité d'affûtage"
 
-#: lib/submenu/tie-general.php:206
+#: lib/submenu/image-editors.php:151
 msgctxt "option label"
 msgid "Sharpening Threshold"
 msgstr "Seuil d'affûtage"
