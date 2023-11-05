@@ -101,7 +101,7 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 <h3>Changelog / Release Notes</h3>
 
-**Version 3.1.0-dev.11 (2021/11/05)**
+**Version 4.0.0-dev.13 (2021/11/05)**
 
 * **New Features**
 	* None.
@@ -110,11 +110,11 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 * **Bugfixes**
 	* None.
 * **Developer Notes**
-	* Refactored the settings page load process.
+	* Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
 * **Requires At Least**
 	* PHP v7.2.34.
 	* WordPress v5.5.
-	* WPSSO Core v16.7.0-dev.11.
+	* WPSSO Core v17.0.0-dev.13.
 
 **Version 3.0.0 (2023/06/07)**
 
@@ -139,9 +139,9 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 
 == Upgrade Notice ==
 
-= 3.1.0-dev.11 =
+= 4.0.0-dev.13 =
 
-(2021/11/05) Refactored the settings page load process.
+(2021/11/05) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
 
 = 3.0.0 =
 
