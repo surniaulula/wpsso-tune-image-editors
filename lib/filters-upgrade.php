@@ -30,9 +30,9 @@ if ( ! class_exists( 'WpssoTieFiltersUpgrade' ) ) {
 			) );
 		}
 
-		public function filter_rename_options_keys( $options_keys ) {
+		public function filter_rename_options_keys( $rename_options ) {
 
-			$options_keys[ 'wpssotie' ] = array(
+			$rename_options[ 'wpssotie' ] = array(
 				8 => array(
 					'tie_imagick_jpeg_contrast_level'    => '',
 					'tie_imagick_jpeg_normalize'         => '',
@@ -44,7 +44,7 @@ if ( ! class_exists( 'WpssoTieFiltersUpgrade' ) ) {
 				),
 			);
 
-			return $options_keys;
+			return $rename_options;
 		}
 	}
 }
