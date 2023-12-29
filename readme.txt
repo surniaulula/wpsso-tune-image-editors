@@ -30,10 +30,6 @@ Image sharpening is applied during the WordPress resize operation so the resulti
 
 <!-- /about -->
 
-<h3>Users Love the WPSSO TIE Add-on</h3>
-
-&#x2605;&#x2605;&#x2605;&#x2605;&#x2605; - "This plugin helped me tune my images to look really good on social media. Great job!" - [undergroundnetwork](https://wordpress.org/support/topic/really-useful-at-making-your-social-media-images-the-best/)
-
 <h3>WPSSO TIE Add-on Features</h3>
 
 Extends the features of the [WPSSO Core plugin](https://wordpress.org/plugins/wpsso/) (required plugin).
