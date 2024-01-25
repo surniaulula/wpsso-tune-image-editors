@@ -11,7 +11,7 @@ Contributors: jsmoriss
 Requires Plugins: wpsso
 Requires PHP: 7.2.34
 Requires At Least: 5.8
-Tested Up To: 6.4.2
+Tested Up To: 6.4.3
 Stable Tag: 4.0.0
 
 Improves the appearance of WordPress images for better click through rates from social and search sites.
