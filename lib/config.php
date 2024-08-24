@@ -17,7 +17,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 		public static $cf = array(
 			'plugin' => array(
 				'wpssotie' => array(			// Plugin acronym.
-					'version'     => '4.0.0',	// Plugin version.
+					'version'     => '4.1.0-dev.1',	// Plugin version.
 					'opt_version' => '9',		// Increment when changing default option values.
 					'short'       => 'WPSSO TIE',	// Short plugin name.
 					'name'        => 'WPSSO Tune WP Image Editors',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 							'home'          => 'https://wordpress.org/plugins/wpsso/',
 							'plugin_class'  => 'Wpsso',
 							'version_const' => 'WPSSO_VERSION',
-							'min_version'   => '17.18.0',
+							'min_version'   => '18.4.1-dev.1',
 						),
 					),
 
@@ -130,6 +130,8 @@ if ( ! class_exists( 'WpssoTieConfig' ) ) {
 
 		public static function require_libs( $plugin_file ) {
 
+			require_once WPSSOTIE_PLUGINDIR . 'lib/filters.php';
+			require_once WPSSOTIE_PLUGINDIR . 'lib/imagick.php';
 			require_once WPSSOTIE_PLUGINDIR . 'lib/register.php';
 
 			add_filter( 'wpssotie_load_lib', array( __CLASS__, 'load_lib' ), 10, 3 );

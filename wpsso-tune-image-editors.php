@@ -15,7 +15,7 @@
  * Requires PHP: 7.2.34
  * Requires At Least: 5.8
  * Tested Up To: 6.6.1
- * Version: 4.0.0
+ * Version: 4.1.0-dev.1
  *
  * Version Numbering: {major}.{minor}.{bugfix}[-{stage}.{level}]
  *
@@ -41,7 +41,6 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 
 	class WpssoTie extends WpssoAbstractAddOn {
 
-		public $filters;	// WpssoTieFilters class object.
 		public $imagick;	// WpssoTieImagick class object.
 
 		protected $p;	// Wpsso class object.
@@ -71,7 +70,7 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 		/*
 		 * Called by Wpsso->set_objects() which runs at init priority 10.
 		 */
-		public function init_objects() {
+		public function init_objects_preloader() {
 
 			$this->p =& Wpsso::get_instance();
 
@@ -85,12 +84,11 @@ if ( ! class_exists( 'WpssoTie' ) ) {
 				return;	// Stop here.
 			}
 
-			require_once WPSSOTIE_PLUGINDIR . 'lib/filters.php';
+			new WpssoTieFilters( $this->p, $this );
 
-			$this->filters = new WpssoTieFilters( $this->p, $this );
-
-			require_once WPSSOTIE_PLUGINDIR . 'lib/imagick.php';
-
+			/*
+			 * See WpssoTieFiltersWp->image_make_intermediate_size().
+			 */
 			$this->imagick = new WpssoTieImagick( $this->p, $this );
 		}
 	}
