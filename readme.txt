@@ -12,7 +12,7 @@ Requires Plugins: wpsso
 Requires PHP: 7.2.34
 Requires At Least: 5.8
 Tested Up To: 6.6.1
-Stable Tag: 4.0.0
+Stable Tag: 4.1.0
 
 Improves the appearance of WordPress images for better click through rates from social and search sites.
 
@@ -127,27 +127,6 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 	* WordPress v5.8.
 	* WPSSO Core v17.18.0.
 
-**Version 3.0.0 (2023/06/07)**
-
-* **New Features**
-	* Added a new "Adjust WEBP Images" option.
-* **Improvements**
-	* Removed the "Contrast Leveling" option.
-	* Added a notification message if ImageMagick image adjustments are enabled and WordPress is using a different image library.
-* **Bugfixes**
-	* None.
-* **Developer Notes**
-	* Added new library files and classes:
-		* WpssoTieFiltersMessages
-		* WpssoTieFiltersOptions
-		* WpssoTieFiltersUpgrade
-		* WpssoTieFiltersWp
-		* WpssoTieImagick
-* **Requires At Least**
-	* PHP v7.2.34.
-	* WordPress v5.5.
-	* WPSSO Core v15.13.0.
-
 == Upgrade Notice ==
 
 = 4.1.0 =
@@ -157,8 +136,4 @@ Version components: `{major}.{minor}.{bugfix}[-{stage}.{level}]`
 = 4.0.0 =
 
 (2023/11/08) Refactored the settings page and metabox load process for WPSSO Core v17.0.0.
-
-= 3.0.0 =
-
-(2023/06/07) Added a new "Adjust WEBP Images" option. Removed the "Contrast Leveling" option.
 
