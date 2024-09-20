@@ -177,13 +177,13 @@ msgid ""
 "photographs."
 msgstr ""
 
-#: lib/filters-wp.php:206 lib/submenu/image-editors.php:117
+#: lib/filters-wp.php:204 lib/submenu/image-editors.php:117
 #: lib/submenu/image-editors.php:122
 msgctxt "option label"
 msgid "Adjust %s Images"
 msgstr ""
 
-#: lib/filters-wp.php:209
+#: lib/filters-wp.php:207
 msgid ""
 "%1$s option for ImageMagick is enabled, but WordPress is using the %2$s "
 "library for %3$s images."

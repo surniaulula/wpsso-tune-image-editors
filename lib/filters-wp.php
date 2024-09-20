@@ -141,8 +141,6 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 			}
 
 			/*
-			 * Since WPSSO TIE v2.10.0.
-			 *
 			 * Use 'wpsso_error_handler' to handle any getimagesize or imagick exceptions.
 			 */
 			$previous_error_handler = set_error_handler( 'wpsso_error_handler' );
@@ -214,9 +212,6 @@ if ( ! class_exists( 'WpssoTieFiltersWp' ) ) {
 				}
 			}
 
-			/*
-			 * Since WPSSO TIE v2.10.0.
-			 */
 			restore_error_handler();
 
 			return $file_path;
